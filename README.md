@@ -19,9 +19,9 @@ Data analysis was carried out over the reference materials below:
 ## Available Baseline Settings
 - **Azure AD Conditional Access** - Three baseline CA policies to block legacy auth, enfore App Protection Policies, and require MFA for all users but exclude the Intune Enrolment for improved user experience.
 - **Autopilot Profile** - Azure AD Joined with a name template of %SERIAL%.
-- **Default ESP** - Reduced timeout to 30 minutes.
-- **Device Enrolment Restrictions** - All platforms blocked minus Corp Windows MDM.
-- **Compliance Policy** - Four available, depending on usage of Windows Hello and Defender for Endpoint
+- **Enrollment Status Page** - Default ESP disabled. Autopilot Device ESP configured. Reduced timeout to 30 minutes.
+- **Device Enrolment Restrictions** - All platforms blocked. Devices going through Autopilot [bypass enrolment restrictions](https://learn.microsoft.com/en-gb/mem/intune/enrollment/enrollment-restrictions-set).
+- **Compliance Policy** - Four available, depending on usage of Windows Hello and Defender for Endpoint.
 - **Windows Configuration Profile Pack** - Logically-arranged policies to hit relevant security baseline concepts (excluding AppLocker/WDAC). Almost all policies are configured via the Settings Catalog or Endpoint Security.
 - **Windows Update for Business** - Pilot/UAT/Prod Update Rings to ensure OS update compliance, and Feature Update policies for Win10/11 21H2.
 - **BYOD App Protection Policies** - Covers all Microsoft Apps on both Android & iOS. Based off the [level 2 framework](https://docs.microsoft.com/en-us/mem/intune/apps/app-protection-framework).
@@ -43,16 +43,16 @@ There is an included AAD Dynamic Device group with a rule for Hyper-V VMs to aid
 - **Windows Compliance Policy** - Four configs available, two if the tenant is utilising Defender for Endpoint/Business, one without, and duplicate policies if not utilising Windows Hello for Business.
 
 #### Settings that need amending:
-- **OneDrive (Device)** - Two settings that require the Azure tenant ID , one setting that needs the Tenant Association Key from [config.office.com](https://config.office.com/officeSettings/settings)
-- **OneDrive (User)** - One setting that requires the Azure tenant ID
-- **Preferred AAD Tenant Domain** - Configure to the primary AAD tenant domain name
+- **OneDrive (Device)** - Two settings that require the Azure tenant ID , one setting that needs the Tenant Association Key from [config.office.com](https://config.office.com/officeSettings/settings).
+- **OneDrive (User)** - One setting that requires the Azure tenant ID.
+- **Preferred AAD Tenant Domain** - Configure to the primary AAD tenant domain name.
 
 #### Settings that need manual creation:
 - **Defender EDR** - As automatic onboarding of devices into MDE requires the link to the Defender Portal configuring first, a Defender EDR policy will need to be created (via the [Endpoint detection and response](https://endpoint.microsoft.com/#view/Microsoft_Intune_Workflows/SecurityManagementMenu/~/edr) menu and set to "Auto from connector") once the link is configured which automatically adds the onboarding blob file to the policy.
 
 #### Settings with additional requirements:
 - **Windows Update Compliance** - With an appropriate Azure subscription, a Log Analytics Workspace can be created to monitor update compliance of devices. Additionally the v2 (currently in Preview) can link directly into the O365 Admin Portal. The included policy is configured to support the v2 Preview and lacks the CommercialID setting which used to be required. - [Additional information](https://docs.microsoft.com/en-us/windows/deployment/update/update-compliance-v2-overview) 
-- **Office Apps Updates** - Creation of a [Servicing Profile](https://docs.microsoft.com/en-gb/deployoffice/admincenter/servicing-profile) through [config.office.com](https://config.office.com/officeSettings/serviceprofile) can ensure Office Apps for Business/Enterprise remain up-to-date on the Monthly Enterprise Channel. Settings in the "Office - Update Settings" policy can remain as Servicing Profiles take priority of any other Office management.
+- **Office Apps Updates** - Creation of a [Servicing Profile](https://docs.microsoft.com/en-gb/deployoffice/admincenter/servicing-profile) through [config.office.com](https://config.office.com/officeSettings/serviceprofile) can ensure Office Apps for Business/Enterprise remain up-to-date on the Monthly Enterprise Channel. Settings in the "Office - Update Settings" policy can remain as Servicing Profiles take priority of any other Office management. Ensure the [Inventory](https://config.office.com/officeSettings/inventory) is enabled.
 
 #### Settings not covered by the baseline:
 Due to the wildly differing nature of environments, it is not possible to create a "baseline" for AppLocker or Windows Defender Application Control. While the baseline ensures standard users cannot elevate to install applications, apps that do not require elevation or install to a user's AppData folder may not be blocked.
@@ -70,3 +70,8 @@ There are some settings that fall outside of this baseline, however should be co
 | AAD Company Branding (can cause Autopilot to fail)  | [Company Branding](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/LoginTenantBranding)  |
 | Disable Security Defaults (if utilising Conditional Access)  | [Properties](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/~/Properties)  |
 | Ensure legacy "per-user" MFA is disabled  |  [Multi-factor Authentication](https://account.activedirectory.windowsazure.com/usermanagement/multifactorverification.aspx)  |
+
+---
+
+## Changelog
+See [CHANGELOG.MD](/CHANGELOG.md) for latest baseline changes.
