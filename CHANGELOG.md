@@ -1,5 +1,10 @@
 ## OpenIntuneBaseline Changelog
 
+### v1.2.1
+**Date: 20/09/2022**
+</br>
+* Reverted the [MSIAlwaysInstallWithElevatedPrivileges](https://www.tenable.com/audits/items/CIS_MS_Windows_Server_2008_v3.2.0_MS_L1.audit:b3c85a4b21fbb4f496ba693f7a3d4602) policy for both User and Device.
+
 ### v1.2
 **Date: 20/09/2022**
 </br>

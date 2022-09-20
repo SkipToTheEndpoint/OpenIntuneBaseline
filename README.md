@@ -1,4 +1,12 @@
 # OpenIntuneBaseline
+
+<p align="center">
+  <a href="https://twitter.com/SkipToEndpoint">
+    <img src="https://img.shields.io/twitter/follow/SkipToEndpoint.svg?style=social" target="_blank" />
+  </a>
+</p>
+
+---
 <sup>**NOTE** :- This has been developed as a starting point or foundation and is not necessarily considered "complete". It is being made available to allow learning, development, and knowledge-sharing amongst communities. 
 I assume no liability for the usage or application of the settings within this project in production tenants.<sup>
 ---
