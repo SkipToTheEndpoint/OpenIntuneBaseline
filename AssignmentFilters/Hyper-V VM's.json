@@ -1,0 +1,24 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/assignmentFilters/$entity",
+    "@odata.type":  "#microsoft.graph.deviceAndAppManagementAssignmentFilter",
+    "@odata.id":  "deviceManagement/assignmentFilters(\u0027c2b6398b-68fe-462a-baff-17ffa9b09a08\u0027)",
+    "@odata.editLink":  "deviceManagement/assignmentFilters(\u0027c2b6398b-68fe-462a-baff-17ffa9b09a08\u0027)",
+    "id":  "c2b6398b-68fe-462a-baff-17ffa9b09a08",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2022-09-05T20:02:54.0295385Z",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2022-09-05T20:02:54.0295385Z",
+    "displayName":  "Hyper-V VM\u0027s",
+    "description":  "",
+    "platform@odata.type":  "#microsoft.graph.devicePlatformType",
+    "platform":  "windows10AndLater",
+    "rule":  "(device.manufacturer -eq \"Microsoft Corporation\") and (device.model -eq \"Virtual Machine\")",
+    "roleScopeTags@odata.type":  "#Collection(String)",
+    "roleScopeTags":  [
+                          "0"
+                      ],
+    "#microsoft.graph.getSupportedProperties":  {
+                                                    "title":  "microsoft.graph.getSupportedProperties",
+                                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/assignmentFilters(\u0027c2b6398b-68fe-462a-baff-17ffa9b09a08\u0027)/microsoft.graph.getSupportedProperties"
+                                                }
+}

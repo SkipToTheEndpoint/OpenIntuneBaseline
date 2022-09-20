@@ -1,0 +1,24 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/assignmentFilters/$entity",
+    "@odata.type":  "#microsoft.graph.deviceAndAppManagementAssignmentFilter",
+    "@odata.id":  "deviceManagement/assignmentFilters(\u0027387f0ad9-7d76-49ff-852b-33d43d56dd44\u0027)",
+    "@odata.editLink":  "deviceManagement/assignmentFilters(\u0027387f0ad9-7d76-49ff-852b-33d43d56dd44\u0027)",
+    "id":  "387f0ad9-7d76-49ff-852b-33d43d56dd44",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2022-09-05T20:02:54.2249673Z",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2022-09-05T20:02:54.2249673Z",
+    "displayName":  "Windows 10 Devices",
+    "description":  "",
+    "platform@odata.type":  "#microsoft.graph.devicePlatformType",
+    "platform":  "windows10AndLater",
+    "rule":  "(device.deviceOwnership -eq \"Corporate\") and (device.osVersion -notStartsWith \"10.0.2\")",
+    "roleScopeTags@odata.type":  "#Collection(String)",
+    "roleScopeTags":  [
+                          "0"
+                      ],
+    "#microsoft.graph.getSupportedProperties":  {
+                                                    "title":  "microsoft.graph.getSupportedProperties",
+                                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/assignmentFilters(\u0027387f0ad9-7d76-49ff-852b-33d43d56dd44\u0027)/microsoft.graph.getSupportedProperties"
+                                                }
+}

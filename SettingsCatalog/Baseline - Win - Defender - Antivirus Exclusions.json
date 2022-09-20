@@ -1,0 +1,222 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+    "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicy",
+    "@odata.id":  "deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)",
+    "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2022-09-20T16:58:10.489143Z",
+    "creationSource":  null,
+    "description":  "",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2022-09-20T16:58:10.489143Z",
+    "name":  "Baseline - Win - Defender - Antivirus Exclusions",
+    "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
+    "platforms":  "windows10",
+    "roleScopeTagIds@odata.type":  "#Collection(String)",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "settingCount":  2,
+    "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
+    "technologies":  "mdm,microsoftSense",
+    "id":  "d1cd87cf-b796-41db-b61e-89d4e8efd427",
+    "templateReference":  {
+                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+                              "templateId":  "45fea5e9-280d-4da1-9792-fb5736da0ca9_1",
+                              "templateFamily@odata.type":  "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+                              "templateFamily":  "endpointSecurityAntivirus",
+                              "templateDisplayName":  "Microsoft Defender Antivirus exclusions",
+                              "templateDisplayVersion":  "Version 1"
+                          },
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/assignments",
+    "assignments":  [
+                        {
+                            "id":  "d1cd87cf-b796-41db-b61e-89d4e8efd427_adadadad-808e-44e2-905a-0b7873a8a531",
+                            "source":  "direct",
+                            "sourceId":  "d1cd87cf-b796-41db-b61e-89d4e8efd427",
+                            "target":  {
+                                           "@odata.type":  "#microsoft.graph.allDevicesAssignmentTarget",
+                                           "deviceAndAppManagementAssignmentFilterId":  null,
+                                           "deviceAndAppManagementAssignmentFilterType":  "none"
+                                       }
+                        }
+                    ],
+    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings",
+    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings/$ref",
+    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings",
+    "settings":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings(\u00270\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings(\u00270\u0027)",
+                         "id":  "0",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_defender_excludedpaths",
+                                                 "settingInstanceTemplateReference":  {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                                          "settingInstanceTemplateId":  "aaf04adc-c639-464f-b4a7-152e784092e8"
+                                                                                      },
+                                                 "simpleSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
+                                                 "simpleSettingCollectionValue":  [
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%ProgramFiles%\\\\Windows Defender\\\\"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%ProgramFiles(x86)%\\\\Microsoft Intune Management Extension\\\\Content\\\\"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%ProgramFiles(x86)%\\\\Windows Defender\\\\"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\Security\\\\Database\\\\*.chk"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\Security\\\\Database\\\\*.cmtx"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\Security\\\\Database\\\\*.csv"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\Security\\\\Database\\\\*.edb"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\Security\\\\Database\\\\*.jrs"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\Security\\\\Database\\\\*.log"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\Security\\\\Database\\\\*.sdb"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\Security\\\\Database\\\\*.xml"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\SoftwareDistribution\\\\Datastore\\\\Datastore.edb"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\SoftwareDistribution\\\\Datastore\\\\Logs\\\\edb*.jrs"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\SoftwareDistribution\\\\Datastore\\\\Logs\\\\edb.chk"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\SoftwareDistribution\\\\Datastore\\\\Logs\\\\res*.jrs"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\SoftwareDistribution\\\\Datastore\\\\Logs\\\\res*.log"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\SoftwareDistribution\\\\Datastore\\\\Logs\\\\tmp.edb"
+                                                                                      }
+                                                                                  ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings(\u00271\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings(\u00271\u0027)",
+                         "id":  "1",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_defender_excludedprocesses",
+                                                 "settingInstanceTemplateReference":  {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                                          "settingInstanceTemplateId":  "96b046ed-f138-4250-9ae0-b0772a93d16f"
+                                                                                      },
+                                                 "simpleSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
+                                                 "simpleSettingCollectionValue":  [
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%ProgramFiles%\\\\Windows Defender\\\\MpCmdRun.exe"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%ProgramFiles%\\\\Windows Defender\\\\MsMpEng.exe"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%ProgramFiles%\\\\Windows Defender\\\\NisSrv.exe"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\System32\\\\AppVClient.exe"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\System32\\\\ApplicationFrameHost.exe"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\System32\\\\Lsalso.exe"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\System32\\\\SearchIndexer.exe"
+                                                                                      },
+                                                                                      {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                          "settingValueTemplateReference":  null,
+                                                                                          "value":  "%windir%\\\\System32\\\\wlanext.exe"
+                                                                                      }
+                                                                                  ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings(\u00271\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/settings(\u00271\u0027)/settingDefinitions"
+                     }
+                 ],
+    "#microsoft.graph.assign":  {
+                                    "title":  "microsoft.graph.assign",
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/microsoft.graph.assign"
+                                },
+    "#microsoft.graph.createCopy":  {
+                                        "title":  "microsoft.graph.createCopy",
+                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027d1cd87cf-b796-41db-b61e-89d4e8efd427\u0027)/microsoft.graph.createCopy"
+                                    }
+}

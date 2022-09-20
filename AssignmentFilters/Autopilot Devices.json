@@ -1,0 +1,24 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/assignmentFilters/$entity",
+    "@odata.type":  "#microsoft.graph.deviceAndAppManagementAssignmentFilter",
+    "@odata.id":  "deviceManagement/assignmentFilters(\u002716ef7e7d-1ae2-4ef1-80b6-7b3d933e2b8c\u0027)",
+    "@odata.editLink":  "deviceManagement/assignmentFilters(\u002716ef7e7d-1ae2-4ef1-80b6-7b3d933e2b8c\u0027)",
+    "id":  "16ef7e7d-1ae2-4ef1-80b6-7b3d933e2b8c",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2022-09-05T20:02:53.8381695Z",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2022-09-05T20:02:53.8381695Z",
+    "displayName":  "Autopilot Devices",
+    "description":  "",
+    "platform@odata.type":  "#microsoft.graph.devicePlatformType",
+    "platform":  "windows10AndLater",
+    "rule":  "(device.enrollmentProfileName -eq \"Windows Autopilot\")",
+    "roleScopeTags@odata.type":  "#Collection(String)",
+    "roleScopeTags":  [
+                          "0"
+                      ],
+    "#microsoft.graph.getSupportedProperties":  {
+                                                    "title":  "microsoft.graph.getSupportedProperties",
+                                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/assignmentFilters(\u002716ef7e7d-1ae2-4ef1-80b6-7b3d933e2b8c\u0027)/microsoft.graph.getSupportedProperties"
+                                                }
+}

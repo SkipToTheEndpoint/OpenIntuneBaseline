@@ -1,0 +1,49 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsFeatureUpdateProfiles(assignments())/$entity",
+    "@odata.type":  "#microsoft.graph.windowsFeatureUpdateProfile",
+    "@odata.id":  "deviceManagement/windowsFeatureUpdateProfiles(\u0027bf005c13-50bd-4694-a90c-917127c65cd3\u0027)",
+    "@odata.editLink":  "deviceManagement/windowsFeatureUpdateProfiles(\u0027bf005c13-50bd-4694-a90c-917127c65cd3\u0027)",
+    "id":  "bf005c13-50bd-4694-a90c-917127c65cd3",
+    "displayName":  "Windows 10 21H2",
+    "description":  "",
+    "featureUpdateVersion":  "Windows 10, version 21H2",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2022-09-05T20:02:59.2148931Z",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2022-09-20T00:12:47Z",
+    "roleScopeTagIds@odata.type":  "#Collection(String)",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "deployableContentDisplayName":  "Windows 10, version 21H2",
+    "endOfSupportDate@odata.type":  "#DateTimeOffset",
+    "endOfSupportDate":  "2024-06-11T00:00:00Z",
+    "rolloutSettings":  {
+                            "@odata.type":  "#microsoft.graph.windowsUpdateRolloutSettings",
+                            "offerStartDateTimeInUTC":  null,
+                            "offerEndDateTimeInUTC":  null,
+                            "offerIntervalInDays":  null
+                        },
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/windowsFeatureUpdateProfiles(\u0027bf005c13-50bd-4694-a90c-917127c65cd3\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles(\u0027bf005c13-50bd-4694-a90c-917127c65cd3\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles(\u0027bf005c13-50bd-4694-a90c-917127c65cd3\u0027)/assignments",
+    "assignments":  [
+                        {
+                            "@odata.type":  "#microsoft.graph.windowsFeatureUpdateProfileAssignment",
+                            "@odata.id":  "deviceManagement/windowsFeatureUpdateProfiles(\u0027bf005c13-50bd-4694-a90c-917127c65cd3\u0027)/assignments(\u0027bf005c13-50bd-4694-a90c-917127c65cd3_de429e37-d6f6-47a0-be9c-834032801431\u0027)",
+                            "@odata.editLink":  "deviceManagement/windowsFeatureUpdateProfiles(\u0027bf005c13-50bd-4694-a90c-917127c65cd3\u0027)/assignments(\u0027bf005c13-50bd-4694-a90c-917127c65cd3_de429e37-d6f6-47a0-be9c-834032801431\u0027)",
+                            "id":  "bf005c13-50bd-4694-a90c-917127c65cd3_de429e37-d6f6-47a0-be9c-834032801431",
+                            "target":  {
+                                           "@odata.type":  "#microsoft.graph.groupAssignmentTarget",
+                                           "deviceAndAppManagementAssignmentFilterId":  null,
+                                           "deviceAndAppManagementAssignmentFilterType@odata.type":  "#microsoft.graph.deviceAndAppManagementAssignmentFilterType",
+                                           "deviceAndAppManagementAssignmentFilterType":  "none",
+                                           "groupId":  "de429e37-d6f6-47a0-be9c-834032801431"
+                                       }
+                        }
+                    ],
+    "#microsoft.graph.assign":  {
+                                    "title":  "microsoft.graph.assign",
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles(\u0027bf005c13-50bd-4694-a90c-917127c65cd3\u0027)/microsoft.graph.assign"
+                                }
+}
