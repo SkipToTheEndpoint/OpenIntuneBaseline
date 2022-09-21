@@ -8,7 +8,7 @@
     "creationSource":  null,
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2022-09-20T16:58:18.5439638Z",
+    "lastModifiedDateTime":  "2022-09-21T17:34:18.5360438Z",
     "name":  "Baseline - Win - Microsoft Edge - Security (Device)",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
@@ -32,16 +32,7 @@
     "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027072db78c-943d-4051-87d3-f56cd3379d4b\u0027)/assignments/$ref",
     "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027072db78c-943d-4051-87d3-f56cd3379d4b\u0027)/assignments",
     "assignments":  [
-                        {
-                            "id":  "072db78c-943d-4051-87d3-f56cd3379d4b_adadadad-808e-44e2-905a-0b7873a8a531",
-                            "source":  "direct",
-                            "sourceId":  "072db78c-943d-4051-87d3-f56cd3379d4b",
-                            "target":  {
-                                           "@odata.type":  "#microsoft.graph.allDevicesAssignmentTarget",
-                                           "deviceAndAppManagementAssignmentFilterId":  null,
-                                           "deviceAndAppManagementAssignmentFilterType":  "none"
-                                       }
-                        }
+
                     ],
     "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027072db78c-943d-4051-87d3-f56cd3379d4b\u0027)/settings",
     "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027072db78c-943d-4051-87d3-f56cd3379d4b\u0027)/settings/$ref",
@@ -403,7 +394,7 @@
                                                                                                  "choiceSettingValue":  {
                                                                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                             "settingValueTemplateReference":  null,
-                                                                                                                            "value":  "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_trackingprevention_trackingprevention_0",
+                                                                                                                            "value":  "device_vendor_msft_policy_config_microsoft_edgev78diff~policy~microsoft_edge_trackingprevention_trackingprevention_2",
                                                                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                             "children":  [
 

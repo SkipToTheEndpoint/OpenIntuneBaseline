@@ -1,5 +1,21 @@
 ## OpenIntuneBaseline Changelog
 
+### v1.3
+**Date: 21/09/2022**
+</br>
+* **New Policies**:
+
+   - **Lock Screen Experience (Device)** - Removed policies for Windows Spotlight as they were apparently user-scoped so wouldn't have worked on a device-assigned policy anyway. Created separate policy.
+   - **Windows Spotlight (User)** - Blocked both "Allow Windows Spotlight" and "Allow Windows Spotlight on Settings" as they were consumer-level features. [Info](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-Experience?WT.mc_id=Portal-fx#experience-allowwindowsspotlight)
+
+* **Amended Policies**:
+
+   - **Microsoft Edge - Security (Device)** - Changed "Block tracking of users' web-browsing activity" from "Off" to "Balanced".
+
+* **Removed Policies**:
+
+   - **Lock Screen Experience** - Replaced by above.
+
 ### v1.2.1
 **Date: 20/09/2022**
 </br>
