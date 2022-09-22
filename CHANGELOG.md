@@ -1,5 +1,11 @@
 ## OpenIntuneBaseline Changelog
 
+### v1.3.1
+**Date: 22/09/2022**
+* **Amended Policies**:
+
+   - **Microsoft Edge - Security (Device)** - Changed "Allow Download Restrictions" from "Block potentially dangerous downloads (2)" to "No special restrictions (0)" after user testing feedback of blocking pretty much anything from being downloaded. While secure, not the best user experience or intended result. Set policy to 0, which is the default behaviour.
+  
 ### v1.3
 **Date: 21/09/2022**
 </br>
