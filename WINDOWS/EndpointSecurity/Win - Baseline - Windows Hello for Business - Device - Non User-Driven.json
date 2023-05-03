@@ -1,0 +1,200 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents(assignments(),settings())/$entity",
+    "@odata.type":  "#microsoft.graph.deviceManagementIntent",
+    "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)",
+    "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)",
+    "id":  "d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501",
+    "displayName":  "Win - Baseline - Windows Hello for Business - Device - Non User-Driven",
+    "description":  null,
+    "isAssigned":  false,
+    "isMigratingToConfigurationPolicy":  null,
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2023-05-03T04:50:18.0516168Z",
+    "templateId":  "0f2b5d70-d4e9-4156-8c16-1397eb6c54a5",
+    "roleScopeTagIds@odata.type":  "#Collection(String)",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/assignments",
+    "assignments":  [
+
+                    ],
+    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings",
+    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings/$ref",
+    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings",
+    "settings":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementIntegerSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027f21ebdbf-6af3-4d7c-9c18-0d3b32d14061\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027f21ebdbf-6af3-4d7c-9c18-0d3b32d14061\u0027)/microsoft.graph.deviceManagementIntegerSettingInstance",
+                         "id":  "f21ebdbf-6af3-4d7c-9c18-0d3b32d14061",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_pinMaximumLength",
+                         "valueJson":  "null",
+                         "value":  null
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u002758879c01-11b0-4145-80a0-10f99e1bcab3\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u002758879c01-11b0-4145-80a0-10f99e1bcab3\u0027)/microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "id":  "58879c01-11b0-4145-80a0-10f99e1bcab3",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_useSecurityKeyForSignin",
+                         "valueJson":  "false",
+                         "value":  false
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementIntegerSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027ca48c0b4-bca7-4e9f-9fd6-1467e4defb4a\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027ca48c0b4-bca7-4e9f-9fd6-1467e4defb4a\u0027)/microsoft.graph.deviceManagementIntegerSettingInstance",
+                         "id":  "ca48c0b4-bca7-4e9f-9fd6-1467e4defb4a",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_pinPreviousBlockCount",
+                         "valueJson":  "null",
+                         "value":  null
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027cb01631a-88b4-42dc-b9c7-189e1187d043\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027cb01631a-88b4-42dc-b9c7-189e1187d043\u0027)/microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "id":  "cb01631a-88b4-42dc-b9c7-189e1187d043",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_unlockWithBiometricsEnabled",
+                         "valueJson":  "false",
+                         "value":  false
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementStringSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027cfface9c-3d51-4f1d-b245-269961470c39\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027cfface9c-3d51-4f1d-b245-269961470c39\u0027)/microsoft.graph.deviceManagementStringSettingInstance",
+                         "id":  "cfface9c-3d51-4f1d-b245-269961470c39",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_pinSpecialCharactersUsage",
+                         "valueJson":  "\"notConfigured\"",
+                         "value":  "notConfigured"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementStringSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027727ccf82-da19-42b0-ad72-2d02b59de772\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027727ccf82-da19-42b0-ad72-2d02b59de772\u0027)/microsoft.graph.deviceManagementStringSettingInstance",
+                         "id":  "727ccf82-da19-42b0-ad72-2d02b59de772",
+                         "definitionId":  "deviceConfiguration--windows10EndpointProtectionConfiguration_deviceGuardLocalSystemAuthorityCredentialGuardSettings",
+                         "valueJson":  "\"notConfigured\"",
+                         "value":  "notConfigured"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027aa2520e0-f8f6-4ecd-a7ce-5bb56705a00a\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027aa2520e0-f8f6-4ecd-a7ce-5bb56705a00a\u0027)/microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "id":  "aa2520e0-f8f6-4ecd-a7ce-5bb56705a00a",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_enhancedAntiSpoofingForFacialFeaturesEnabled",
+                         "valueJson":  "false",
+                         "value":  false
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementStringSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u002750d45ea9-d33c-4afd-98e8-77c8b1d4d864\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u002750d45ea9-d33c-4afd-98e8-77c8b1d4d864\u0027)/microsoft.graph.deviceManagementStringSettingInstance",
+                         "id":  "50d45ea9-d33c-4afd-98e8-77c8b1d4d864",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_pinUppercaseCharactersUsage",
+                         "valueJson":  "\"notConfigured\"",
+                         "value":  "notConfigured"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementStringSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u00278a25f146-34b5-452a-ac69-7a2430ef4309\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u00278a25f146-34b5-452a-ac69-7a2430ef4309\u0027)/microsoft.graph.deviceManagementStringSettingInstance",
+                         "id":  "8a25f146-34b5-452a-ac69-7a2430ef4309",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_pinLowercaseCharactersUsage",
+                         "valueJson":  "\"notConfigured\"",
+                         "value":  "notConfigured"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027298496b0-52b3-480a-9968-af57b0fb6f17\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027298496b0-52b3-480a-9968-af57b0fb6f17\u0027)/microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "id":  "298496b0-52b3-480a-9968-af57b0fb6f17",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_securityDeviceRequired",
+                         "valueJson":  "false",
+                         "value":  false
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027c74474bf-d8df-44da-8ba8-c197589dcbe7\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027c74474bf-d8df-44da-8ba8-c197589dcbe7\u0027)/microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "id":  "c74474bf-d8df-44da-8ba8-c197589dcbe7",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_windowsHelloForBusinessBlocked",
+                         "valueJson":  "true",
+                         "value":  true
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementIntegerSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u00276076e445-84ae-4250-8198-e295907c1c1f\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u00276076e445-84ae-4250-8198-e295907c1c1f\u0027)/microsoft.graph.deviceManagementIntegerSettingInstance",
+                         "id":  "6076e445-84ae-4250-8198-e295907c1c1f",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_pinExpirationInDays",
+                         "valueJson":  "null",
+                         "value":  null
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027864dd23c-b921-4bba-aa64-e7bb8617d919\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027864dd23c-b921-4bba-aa64-e7bb8617d919\u0027)/microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "id":  "864dd23c-b921-4bba-aa64-e7bb8617d919",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_pinRecoveryEnabled",
+                         "valueJson":  "false",
+                         "value":  false
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementIntegerSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027072bf618-0f27-405d-814d-e86f6e80fe22\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u0027072bf618-0f27-405d-814d-e86f6e80fe22\u0027)/microsoft.graph.deviceManagementIntegerSettingInstance",
+                         "id":  "072bf618-0f27-405d-814d-e86f6e80fe22",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_pinMinimumLength",
+                         "valueJson":  "null",
+                         "value":  null
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "@odata.id":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u00273b37aa2b-9d64-4faa-8d0d-f5edc865aadb\u0027)",
+                         "@odata.editLink":  "deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/settings(\u00273b37aa2b-9d64-4faa-8d0d-f5edc865aadb\u0027)/microsoft.graph.deviceManagementBooleanSettingInstance",
+                         "id":  "3b37aa2b-9d64-4faa-8d0d-f5edc865aadb",
+                         "definitionId":  "deviceConfiguration--windowsIdentityProtectionConfiguration_useCertificatesForOnPremisesAuthEnabled",
+                         "valueJson":  "false",
+                         "value":  false
+                     }
+                 ],
+    "categories@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/categories/$ref",
+    "categories@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/categories",
+    "deviceSettingStateSummaries@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/deviceSettingStateSummaries/$ref",
+    "deviceSettingStateSummaries@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/deviceSettingStateSummaries",
+    "deviceStates@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/deviceStates/$ref",
+    "deviceStates@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/deviceStates",
+    "deviceStateSummary@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/deviceStateSummary/$ref",
+    "deviceStateSummary@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/deviceStateSummary",
+    "userStates@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/userStates/$ref",
+    "userStates@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/userStates",
+    "userStateSummary@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/userStateSummary/$ref",
+    "userStateSummary@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/userStateSummary",
+    "#microsoft.graph.assign":  {
+                                    "title":  "microsoft.graph.assign",
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/microsoft.graph.assign"
+                                },
+    "#microsoft.graph.createCopy":  {
+                                        "title":  "microsoft.graph.createCopy",
+                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/microsoft.graph.createCopy"
+                                    },
+    "#microsoft.graph.migrateToTemplate":  {
+                                               "title":  "microsoft.graph.migrateToTemplate",
+                                               "target":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/microsoft.graph.migrateToTemplate"
+                                           },
+    "#microsoft.graph.updateSettings":  {
+                                            "title":  "microsoft.graph.updateSettings",
+                                            "target":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/microsoft.graph.updateSettings"
+                                        },
+    "#microsoft.graph.compare(templateId)":  {
+                                                 "title":  "microsoft.graph.compare",
+                                                 "target":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/microsoft.graph.compare(templateId=@templateId)"
+                                             },
+    "#microsoft.graph.getCustomizedSettings":  {
+                                                   "title":  "microsoft.graph.getCustomizedSettings",
+                                                   "target":  "https://graph.microsoft.com/beta/deviceManagement/intents(\u0027d3ac1f0b-dec7-464a-a8a0-9dcd60e8b501\u0027)/microsoft.graph.getCustomizedSettings"
+                                               }
+}
