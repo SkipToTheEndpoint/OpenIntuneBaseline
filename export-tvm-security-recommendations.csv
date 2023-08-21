@@ -1,0 +1,27 @@
+Security Recommendations Export,21 Aug 2023 09:42 AM +00:00,,,,,,,,,,,,,,,
+Security recommendation,Weaknesses,Related component,Has Exploit,Has Known Threats,Has Associated Alerts,Exposed Machines,Total Machines,Status,Type,Exposure Score impact,Configuration Score impact,EOS software state,EOS software from,Has EOS Versions,Has Upcoming EOS Versions,Tags
+Disable the built-in Administrator account,1,Accounts,FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Enable Local Admin password management,1,Accounts,FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,HumanOperatedRansomware
+Disable the local storage of passwords and credentials,1,Accounts,FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,HumanOperatedRansomware
+Disable 'Installation and configuration of Network Bridge on your DNS domain network',1,Network,FALSE,FALSE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Enable 'Local Security Authority (LSA) protection',1,OS,FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,HumanOperatedRansomware
+Set User Account Control (UAC) to automatically deny elevation requests,1,OS,FALSE,FALSE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Set 'Interactive logon: Machine inactivity limit' to '1-900 seconds',1,OS,FALSE,FALSE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,covid19
+Set 'Minimum PIN length for startup' to '6 or more characters',1,OS,FALSE,FALSE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Turn on Microsoft Defender Application Guard managed mode,1,Security controls (Application Guard),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Block executable content from email client and webmail,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Block all Office applications from creating child processes,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,"UserImpactAssessment, HumanOperatedRansomware"
+Block Office applications from creating executable content,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,UserImpactAssessment
+Block Office applications from injecting code into other processes,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Block JavaScript or VBScript from launching downloaded executable content,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,UserImpactAssessment
+Block execution of potentially obfuscated scripts,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Block Win32 API calls from Office macros,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+"Block executable files from running unless they meet a prevalence, age, or trusted list criterion",1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,UserImpactAssessment
+Use advanced protection against ransomware,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
+Block credential stealing from the Windows local security authority subsystem (lsass.exe),1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,"UserImpactAssessment, HumanOperatedRansomware"
+Block process creations originating from PSExec and WMI commands,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,"UserImpactAssessment, HumanOperatedRansomware"
+Block untrusted and unsigned processes that run from USB,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,UserImpactAssessment
+Block Office communication application from creating child processes,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,UserImpactAssessment
+Block Adobe Reader from creating child processes,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,UserImpactAssessment
+Block persistence through WMI event subscription,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,UserImpactAssessment
+Block abuse of exploited vulnerable signed drivers,1,Security controls (Attack Surface Reduction),FALSE,TRUE,FALSE,1,0,Active,Configuration change,0,0,,,FALSE,FALSE,
