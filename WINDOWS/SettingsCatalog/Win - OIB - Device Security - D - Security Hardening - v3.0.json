@@ -1,14 +1,14 @@
 {
     "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
     "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicy",
-    "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)",
-    "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)",
+    "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)",
+    "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)",
     "createdDateTime@odata.type":  "#DateTimeOffset",
-    "createdDateTime":  "2023-08-09T15:01:25.9975435Z",
+    "createdDateTime":  "2023-10-27T15:13:41.4245681Z",
     "creationSource":  null,
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2023-08-19T14:36:07.4277944Z",
+    "lastModifiedDateTime":  "2023-10-27T15:13:41.4245681Z",
     "name":  "Win - OIB - Device Security - D - Security Hardening - v3.0",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
@@ -20,7 +20,7 @@
     "settingCount":  56,
     "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
     "technologies":  "mdm",
-    "id":  "bef2de2d-b8e2-4653-bb5a-7c50e90c0b21",
+    "id":  "a1055f0c-532a-465b-91a5-005c99a3e4b1",
     "templateReference":  {
                               "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
                               "templateId":  "",
@@ -29,17 +29,20 @@
                               "templateDisplayName":  null,
                               "templateDisplayVersion":  null
                           },
-    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/assignments",
-    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/assignments/$ref",
-    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/assignments",
-    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings",
-    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings/$ref",
-    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings",
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/assignments",
+    "assignments":  [
+
+                    ],
+    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings",
+    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings/$ref",
+    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings",
     "settings":  [
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00270\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00270\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00270\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00270\u0027)",
                          "id":  "0",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -55,13 +58,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00270\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00271\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00271\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00271\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00271\u0027)",
                          "id":  "1",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -90,13 +93,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00271\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00271\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00271\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00271\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00272\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00272\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00272\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00272\u0027)",
                          "id":  "2",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -112,13 +115,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00272\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00272\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00272\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00272\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00273\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00273\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00273\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00273\u0027)",
                          "id":  "3",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -134,13 +137,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00273\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00273\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00273\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00273\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00274\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00274\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00274\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00274\u0027)",
                          "id":  "4",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -156,13 +159,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00274\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00274\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00274\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00274\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00275\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00275\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00275\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00275\u0027)",
                          "id":  "5",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -191,13 +194,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00275\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00275\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00275\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00275\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00276\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00276\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00276\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00276\u0027)",
                          "id":  "6",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -226,13 +229,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00276\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00276\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00276\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00276\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00277\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00277\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00277\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00277\u0027)",
                          "id":  "7",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -248,13 +251,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00277\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00277\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00277\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00277\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00278\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00278\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00278\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00278\u0027)",
                          "id":  "8",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -270,13 +273,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00278\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00278\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00278\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00278\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00279\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00279\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00279\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00279\u0027)",
                          "id":  "9",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -301,13 +304,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00279\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u00279\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00279\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u00279\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002710\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002710\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002710\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002710\u0027)",
                          "id":  "10",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -323,13 +326,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002710\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002710\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002710\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002710\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002711\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002711\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002711\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002711\u0027)",
                          "id":  "11",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -345,13 +348,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002711\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002711\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002711\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002711\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002712\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002712\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002712\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002712\u0027)",
                          "id":  "12",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -367,13 +370,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002712\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002712\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002712\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002712\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002713\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002713\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002713\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002713\u0027)",
                          "id":  "13",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -402,13 +405,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002713\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002713\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002713\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002713\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002714\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002714\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002714\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002714\u0027)",
                          "id":  "14",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -424,13 +427,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002714\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002714\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002714\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002714\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002715\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002715\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002715\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002715\u0027)",
                          "id":  "15",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -446,13 +449,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002715\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002715\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002715\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002715\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002716\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002716\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002716\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002716\u0027)",
                          "id":  "16",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -468,13 +471,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002716\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002716\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002716\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002716\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002717\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002717\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002717\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002717\u0027)",
                          "id":  "17",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -490,13 +493,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002717\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002717\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002717\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002717\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002718\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002718\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002718\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002718\u0027)",
                          "id":  "18",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -512,13 +515,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002718\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002718\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002718\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002718\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002719\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002719\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002719\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002719\u0027)",
                          "id":  "19",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -547,13 +550,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002719\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002719\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002719\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002719\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002720\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002720\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002720\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002720\u0027)",
                          "id":  "20",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -582,13 +585,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002720\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002720\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002720\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002720\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002721\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002721\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002721\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002721\u0027)",
                          "id":  "21",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -604,13 +607,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002721\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002721\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002721\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002721\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002722\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002722\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002722\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002722\u0027)",
                          "id":  "22",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -639,13 +642,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002722\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002722\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002722\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002722\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002723\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002723\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002723\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002723\u0027)",
                          "id":  "23",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -661,13 +664,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002723\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002723\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002723\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002723\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002724\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002724\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002724\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002724\u0027)",
                          "id":  "24",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -683,13 +686,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002724\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002724\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002724\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002724\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002725\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002725\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002725\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002725\u0027)",
                          "id":  "25",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -705,13 +708,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002725\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002725\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002725\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002725\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002726\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002726\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002726\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002726\u0027)",
                          "id":  "26",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -727,13 +730,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002726\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002726\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002726\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002726\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002727\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002727\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002727\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002727\u0027)",
                          "id":  "27",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -749,13 +752,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002727\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002727\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002727\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002727\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002728\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002728\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002728\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002728\u0027)",
                          "id":  "28",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -771,13 +774,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002728\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002728\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002728\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002728\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002729\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002729\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002729\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002729\u0027)",
                          "id":  "29",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -806,13 +809,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002729\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002729\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002729\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002729\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002730\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002730\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002730\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002730\u0027)",
                          "id":  "30",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -828,13 +831,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002730\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002730\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002730\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002730\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002731\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002731\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002731\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002731\u0027)",
                          "id":  "31",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -850,13 +853,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002731\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002731\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002731\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002731\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002732\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002732\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002732\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002732\u0027)",
                          "id":  "32",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -872,13 +875,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002732\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002732\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002732\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002732\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002733\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002733\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002733\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002733\u0027)",
                          "id":  "33",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -894,13 +897,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002733\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002733\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002733\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002733\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002734\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002734\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002734\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002734\u0027)",
                          "id":  "34",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -916,13 +919,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002734\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002734\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002734\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002734\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002735\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002735\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002735\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002735\u0027)",
                          "id":  "35",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -938,13 +941,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002735\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002735\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002735\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002735\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002736\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002736\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002736\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002736\u0027)",
                          "id":  "36",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -960,13 +963,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002736\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002736\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002736\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002736\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002737\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002737\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002737\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002737\u0027)",
                          "id":  "37",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -982,13 +985,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002737\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002737\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002737\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002737\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002738\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002738\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002738\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002738\u0027)",
                          "id":  "38",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1004,13 +1007,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002738\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002738\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002738\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002738\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002739\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002739\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002739\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002739\u0027)",
                          "id":  "39",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1026,13 +1029,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002739\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002739\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002739\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002739\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002740\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002740\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002740\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002740\u0027)",
                          "id":  "40",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1048,13 +1051,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002740\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002740\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002740\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002740\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002741\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002741\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002741\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002741\u0027)",
                          "id":  "41",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1070,13 +1073,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002741\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002741\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002741\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002741\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002742\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002742\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002742\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002742\u0027)",
                          "id":  "42",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1092,13 +1095,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002742\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002742\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002742\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002742\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002743\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002743\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002743\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002743\u0027)",
                          "id":  "43",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1114,13 +1117,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002743\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002743\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002743\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002743\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002744\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002744\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002744\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002744\u0027)",
                          "id":  "44",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1136,13 +1139,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002744\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002744\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002744\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002744\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002745\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002745\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002745\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002745\u0027)",
                          "id":  "45",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1158,13 +1161,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002745\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002745\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002745\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002745\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002746\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002746\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002746\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002746\u0027)",
                          "id":  "46",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1180,13 +1183,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002746\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002746\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002746\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002746\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002747\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002747\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002747\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002747\u0027)",
                          "id":  "47",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
@@ -1198,13 +1201,13 @@
                                                                             "value":  "hide:gaming-gamebar;gaming-gamedvr;gaming-broadcasting;gaming-gamemode;gaming-xboxnetworking"
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002747\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002747\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002747\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002747\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002748\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002748\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002748\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002748\u0027)",
                          "id":  "48",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1220,13 +1223,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002748\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002748\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002748\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002748\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002749\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002749\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002749\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002749\u0027)",
                          "id":  "49",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1242,13 +1245,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002749\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002749\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002749\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002749\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002750\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002750\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002750\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002750\u0027)",
                          "id":  "50",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1264,13 +1267,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002750\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002750\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002750\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002750\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002751\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002751\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002751\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002751\u0027)",
                          "id":  "51",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1286,13 +1289,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002751\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002751\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002751\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002751\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002752\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002752\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002752\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002752\u0027)",
                          "id":  "52",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1308,13 +1311,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002752\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002752\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002752\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002752\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002753\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002753\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002753\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002753\u0027)",
                          "id":  "53",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1330,13 +1333,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002753\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002753\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002753\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002753\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002754\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002754\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002754\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002754\u0027)",
                          "id":  "54",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1352,13 +1355,13 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002754\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002754\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002754\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002754\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002755\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002755\u0027)",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002755\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002755\u0027)",
                          "id":  "55",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
@@ -1374,32 +1377,20 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002755\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/settings(\u002755\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002755\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/settings(\u002755\u0027)/settingDefinitions"
                      }
                  ],
     "#microsoft.graph.assign":  {
                                     "title":  "microsoft.graph.assign",
-                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/microsoft.graph.assign"
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/microsoft.graph.assign"
                                 },
     "#microsoft.graph.createCopy":  {
                                         "title":  "microsoft.graph.createCopy",
-                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/microsoft.graph.createCopy"
+                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/microsoft.graph.createCopy"
                                     },
     "#microsoft.graph.reorder":  {
                                      "title":  "microsoft.graph.reorder",
-                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027bef2de2d-b8e2-4653-bb5a-7c50e90c0b21\u0027)/microsoft.graph.reorder"
-                                 },
-    "assignments":  [
-                        {
-                            "id":  "bef2de2d-b8e2-4653-bb5a-7c50e90c0b21_adadadad-808e-44e2-905a-0b7873a8a531",
-                            "source":  "direct",
-                            "sourceId":  "bef2de2d-b8e2-4653-bb5a-7c50e90c0b21",
-                            "target":  {
-                                           "@odata.type":  "#microsoft.graph.allDevicesAssignmentTarget",
-                                           "deviceAndAppManagementAssignmentFilterId":  null,
-                                           "deviceAndAppManagementAssignmentFilterType":  "none"
-                                       }
-                        }
-                    ]
+                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a1055f0c-532a-465b-91a5-005c99a3e4b1\u0027)/microsoft.graph.reorder"
+                                 }
 }

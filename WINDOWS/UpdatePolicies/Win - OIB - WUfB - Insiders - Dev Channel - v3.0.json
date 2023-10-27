@@ -1,11 +1,11 @@
 {
     "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations(assignments())/$entity",
     "@odata.type":  "#microsoft.graph.windowsUpdateForBusinessConfiguration",
-    "@odata.id":  "deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)",
-    "@odata.editLink":  "deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration",
-    "id":  "82075cc0-4f80-459e-9079-a49d85cd51e4",
+    "@odata.id":  "deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)",
+    "@odata.editLink":  "deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration",
+    "id":  "86a48f31-e2ff-4418-a66c-b2b731604fb3",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2023-08-19T16:41:37.7720539Z",
+    "lastModifiedDateTime":  "2023-10-27T15:13:32.7324666Z",
     "roleScopeTagIds@odata.type":  "#Collection(String)",
     "roleScopeTagIds":  [
                             "0"
@@ -15,10 +15,10 @@
     "deviceManagementApplicabilityRuleOsVersion":  null,
     "deviceManagementApplicabilityRuleDeviceMode":  null,
     "createdDateTime@odata.type":  "#DateTimeOffset",
-    "createdDateTime":  "2023-08-09T15:01:12.8165611Z",
+    "createdDateTime":  "2023-10-27T15:13:32.7324666Z",
     "description":  "Devices in this ring are moved to the Dev Insider Channel and receive updates immediately after release with 1 day grace period before a forced reboot.",
     "displayName":  "Win - OIB - WUfB - Insiders - Dev Channel - v3.0",
-    "version":  2,
+    "version":  1,
     "deliveryOptimizationMode@odata.type":  "#microsoft.graph.windowsDeliveryOptimizationMode",
     "deliveryOptimizationMode":  "userDefined",
     "prereleaseFeatures@odata.type":  "#microsoft.graph.prereleaseFeatures",
@@ -67,43 +67,46 @@
     "updateNotificationLevel@odata.type":  "#microsoft.graph.windowsUpdateNotificationDisplayOption",
     "updateNotificationLevel":  "defaultNotifications",
     "allowWindows11Upgrade":  false,
-    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/assignments",
-    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/assignments/$ref",
-    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/assignments",
-    "deviceSettingStateSummaries@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceSettingStateSummaries/$ref",
-    "deviceSettingStateSummaries@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceSettingStateSummaries",
-    "deviceStatuses@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceStatuses/$ref",
-    "deviceStatuses@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceStatuses",
-    "deviceStatusOverview@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceStatusOverview/$ref",
-    "deviceStatusOverview@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceStatusOverview",
-    "groupAssignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/groupAssignments/$ref",
-    "groupAssignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/groupAssignments",
-    "userStatuses@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/userStatuses/$ref",
-    "userStatuses@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/userStatuses",
-    "userStatusOverview@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/userStatusOverview/$ref",
-    "userStatusOverview@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/userStatusOverview",
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/assignments",
+    "assignments":  [
+
+                    ],
+    "deviceSettingStateSummaries@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceSettingStateSummaries/$ref",
+    "deviceSettingStateSummaries@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceSettingStateSummaries",
+    "deviceStatuses@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceStatuses/$ref",
+    "deviceStatuses@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceStatuses",
+    "deviceStatusOverview@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceStatusOverview/$ref",
+    "deviceStatusOverview@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/deviceStatusOverview",
+    "groupAssignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/groupAssignments/$ref",
+    "groupAssignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/groupAssignments",
+    "userStatuses@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/userStatuses/$ref",
+    "userStatuses@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/userStatuses",
+    "userStatusOverview@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/userStatusOverview/$ref",
+    "userStatusOverview@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/userStatusOverview",
     "#microsoft.graph.assign":  {
                                     "title":  "microsoft.graph.assign",
-                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.deviceConfiguration/microsoft.graph.assign"
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.deviceConfiguration/microsoft.graph.assign"
                                 },
     "#microsoft.graph.assignedAccessMultiModeProfiles":  {
                                                              "title":  "microsoft.graph.assignedAccessMultiModeProfiles",
-                                                             "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.deviceConfiguration/microsoft.graph.assignedAccessMultiModeProfiles"
+                                                             "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.deviceConfiguration/microsoft.graph.assignedAccessMultiModeProfiles"
                                                          },
     "#microsoft.graph.windowsPrivacyAccessControls":  {
                                                           "title":  "microsoft.graph.windowsPrivacyAccessControls",
-                                                          "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.deviceConfiguration/microsoft.graph.windowsPrivacyAccessControls"
+                                                          "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.deviceConfiguration/microsoft.graph.windowsPrivacyAccessControls"
                                                       },
     "#microsoft.graph.extendFeatureUpdatesPause":  {
                                                        "title":  "microsoft.graph.extendFeatureUpdatesPause",
-                                                       "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/microsoft.graph.extendFeatureUpdatesPause"
+                                                       "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/microsoft.graph.extendFeatureUpdatesPause"
                                                    },
     "#microsoft.graph.extendQualityUpdatesPause":  {
                                                        "title":  "microsoft.graph.extendQualityUpdatesPause",
-                                                       "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/microsoft.graph.extendQualityUpdatesPause"
+                                                       "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.windowsUpdateForBusinessConfiguration/microsoft.graph.extendQualityUpdatesPause"
                                                    },
     "#microsoft.graph.getOmaSettingPlainTextValue":  {
                                                          "title":  "microsoft.graph.getOmaSettingPlainTextValue",
-                                                         "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002782075cc0-4f80-459e-9079-a49d85cd51e4\u0027)/microsoft.graph.deviceConfiguration/microsoft.graph.getOmaSettingPlainTextValue"
+                                                         "target":  "https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations(\u002786a48f31-e2ff-4418-a66c-b2b731604fb3\u0027)/microsoft.graph.deviceConfiguration/microsoft.graph.getOmaSettingPlainTextValue"
                                                      }
 }
