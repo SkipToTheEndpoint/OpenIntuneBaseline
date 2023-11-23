@@ -4,7 +4,7 @@
     "@odata.id":  "deviceManagement/windowsDriverUpdateProfiles(\u002720572f16-c163-459f-9b9a-d521de925793\u0027)",
     "@odata.editLink":  "deviceManagement/windowsDriverUpdateProfiles(\u002720572f16-c163-459f-9b9a-d521de925793\u0027)",
     "id":  "20572f16-c163-459f-9b9a-d521de925793",
-    "displayName":  "Win - OIB - WUfB Drivers - Ring 1 - Pilot - v3.0",
+    "displayName":  "Win - WUfB Drivers - Ring 1 - Pilot - v3.0",
     "description":  "",
     "approvalType@odata.type":  "#microsoft.graph.driverUpdateProfileApprovalType",
     "approvalType":  "automatic",

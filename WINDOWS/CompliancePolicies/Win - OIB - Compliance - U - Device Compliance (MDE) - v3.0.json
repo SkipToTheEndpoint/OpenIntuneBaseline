@@ -13,7 +13,7 @@
     "description":  "Assign if target tenant has Defender for Endpoint.",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2023-10-27T15:13:58.062157Z",
-    "displayName":  "Win - OIB - Compliance - U - Device Compliance (MDE) - v3.0",
+    "displayName":  "Win - Compliance - User - Device Compliance (MDE) - v3.0",
     "version":  1,
     "passwordRequired":  true,
     "passwordBlockSimple":  true,
