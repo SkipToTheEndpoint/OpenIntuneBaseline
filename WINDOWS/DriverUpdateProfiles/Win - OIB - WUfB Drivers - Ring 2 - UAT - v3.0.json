@@ -4,7 +4,7 @@
     "@odata.id":  "deviceManagement/windowsDriverUpdateProfiles(\u0027dcab2d75-347b-4a7f-bc35-4580493e8c0c\u0027)",
     "@odata.editLink":  "deviceManagement/windowsDriverUpdateProfiles(\u0027dcab2d75-347b-4a7f-bc35-4580493e8c0c\u0027)",
     "id":  "dcab2d75-347b-4a7f-bc35-4580493e8c0c",
-    "displayName":  "Win - OIB - WUfB Drivers - Ring 2 - UAT - v3.0",
+    "displayName":  "Win - WUfB Drivers - Ring 2 - UAT - v3.0",
     "description":  "",
     "approvalType@odata.type":  "#microsoft.graph.driverUpdateProfileApprovalType",
     "approvalType":  "automatic",
