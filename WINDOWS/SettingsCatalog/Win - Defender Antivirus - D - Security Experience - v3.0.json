@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2023-10-27T15:13:35.2993751Z",
-    "name":  "Win - OIB - Defender Antivirus - D - Security Experience - v3.0",
+    "name":  "Win - Defender Antivirus - D - Security Experience - v3.0",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
