@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2023-10-27T15:13:38.1519991Z",
-    "name":  "Win - OIB - Device Security - D - Audit and Event Logging - v3.0",
+    "name":  "Win - Device Security - D - Audit and Event Logging - v3.0",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
