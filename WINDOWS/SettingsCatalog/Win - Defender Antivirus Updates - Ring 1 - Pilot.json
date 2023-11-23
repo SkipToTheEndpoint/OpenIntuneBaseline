@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2023-10-27T15:13:35.7012712Z",
-    "name":  "Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot",
+    "name":  "Win - Defender Antivirus Updates - Ring 1 - Pilot",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
