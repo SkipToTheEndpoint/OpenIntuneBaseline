@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2023-10-27T15:13:45.2003415Z",
-    "name":  "Win - OIB - Google Chrome - U - Experience and Extensions - v3.0",
+    "name":  "Win - Google Chrome - U - Experience and Extensions - v3.0",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
