@@ -1,0 +1,86 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+    "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicy",
+    "@odata.id":  "deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)",
+    "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2024-04-10T19:35:10.9655299Z",
+    "creationSource":  null,
+    "description":  "",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2024-04-10T19:35:10.9655299Z",
+    "name":  "Win - OIB - Windows User Experience - U - Copilot - v3.1",
+    "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
+    "platforms":  "windows10",
+    "priorityMetaData":  null,
+    "roleScopeTagIds@odata.type":  "#Collection(String)",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "settingCount":  1,
+    "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
+    "technologies":  "mdm",
+    "id":  "a48b98ee-84b8-4010-9a4c-65741327dbf7",
+    "templateReference":  {
+                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+                              "templateId":  "",
+                              "templateFamily@odata.type":  "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+                              "templateFamily":  "none",
+                              "templateDisplayName":  null,
+                              "templateDisplayVersion":  null
+                          },
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/assignments",
+    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings",
+    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings/$ref",
+    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings",
+    "settings":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings(\u00270\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings(\u00270\u0027)",
+                         "id":  "0",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "user_vendor_msft_policy_config_windowsai_turnoffwindowscopilot",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "settingValueTemplateReference":  null,
+                                                                            "value":  "user_vendor_msft_policy_config_windowsai_turnoffwindowscopilot_0",
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                     }
+                 ],
+    "#microsoft.graph.assign":  {
+                                    "title":  "microsoft.graph.assign",
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/microsoft.graph.assign"
+                                },
+    "#microsoft.graph.assignJustInTimeConfiguration":  {
+                                                           "title":  "microsoft.graph.assignJustInTimeConfiguration",
+                                                           "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/microsoft.graph.assignJustInTimeConfiguration"
+                                                       },
+    "#microsoft.graph.createCopy":  {
+                                        "title":  "microsoft.graph.createCopy",
+                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/microsoft.graph.createCopy"
+                                    },
+    "#microsoft.graph.reorder":  {
+                                     "title":  "microsoft.graph.reorder",
+                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/microsoft.graph.reorder"
+                                 },
+    "#microsoft.graph.retrieveJustInTimeConfiguration":  {
+                                                             "title":  "microsoft.graph.retrieveJustInTimeConfiguration",
+                                                             "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/microsoft.graph.retrieveJustInTimeConfiguration"
+                                                         },
+    "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy":  {
+                                                                        "title":  "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+                                                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+                                                                    }
+}
