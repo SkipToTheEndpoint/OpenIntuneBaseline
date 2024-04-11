@@ -65,7 +65,8 @@ Added separate compliance policies to allow for much better granularity and cont
 **Win - OIB - Microsoft Edge - U - Extensions**
 * Added extension ID's to enable the use of Bing Chat for Enterprise/Copilot.
 
-**Win - OIB - Microsoft Edge - U - Experience and Extensions**
+**Win - OIB - Microsoft Edge - U - User Experience**
+* Split from Extensions policy.
 * Removed "Enable Discover access to page contents for AAD profiles" that was set to "Disabled" as it's used for Bing Chat/Copilot.
 
 **Win - OIB - Microsoft OneDrive - D - Configuration**
