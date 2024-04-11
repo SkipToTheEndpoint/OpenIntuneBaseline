@@ -28,6 +28,9 @@
 **Win - OIB - Windows User Experience - U - Copilot - v3.1**
 * Added user policy to allow the use of Copilot (because without M365 Copilot it's just Bing Chat for Enterprise...).
 
+**Win - OIB - Windows Update for Business - D - Restart Warnings - v3.1**
+* Added policy to extend the scheduled and imminent restart warnings and force the user to manually dismiss them. No more "I didn't see the warning" excuses.
+
 #### <u>Endpoint Security</u>
 **Win - OIB - Defender Antivirus - D - Default Exclusions - v3.1**
 * Added a default AV exclusions policy based on NCSC recommendations.
