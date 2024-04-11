@@ -52,8 +52,11 @@ Added separate compliance policies to allow for much better granularity and cont
 
 ### <u>Changed</u>
 #### <u>Settings Catalog</u>
- **Win - OIB - Device Security - D - Login and Lock Screen**
- * Removed "Preferred Aad Tenant Domain Name" setting as it can cause certain issues. It also saves you from having to go change it :)
+**Win - OIB - Device Security - D - Audit and Event Logging**
+* Aligned settings to match CIS L1.
+
+**Win - OIB - Device Security - D - Login and Lock Screen**
+* Removed "Preferred Aad Tenant Domain Name" setting as it can cause certain issues. It also saves you from having to go change it :)
 
 **Win - OIB - Device Security - D - Security Hardening**
 * Changed policy "Prohibit installation and configuration of Network Bridge on your DNS domain network" from "Disabled" to "Enabled" as this had been set incorrectly.
