@@ -8,7 +8,7 @@
     "creationSource":  null,
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2024-04-10T19:36:24.2283517Z",
+    "lastModifiedDateTime":  "2024-04-11T18:41:53.0357Z",
     "name":  "Win - OIB - Microsoft Store - D - Configuration - v3.1",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
@@ -131,12 +131,12 @@
                          "id":  "4",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_applicationmanagement_blocknonadminuserinstall",
+                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_applicationmanagement_msiallowusercontroloverinstall",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_policy_config_applicationmanagement_blocknonadminuserinstall_1",
+                                                                            "value":  "device_vendor_msft_policy_config_applicationmanagement_msiallowusercontroloverinstall_0",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 

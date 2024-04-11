@@ -80,6 +80,7 @@ Added separate compliance policies to allow for much better granularity and cont
 
 **Win - OIB - Microsoft Store - D - Configuration**
 * Changed "Block Non Admin User Install" and "Allow All Trusted Apps" from "Block" to "Allow" and "Explicit allow unlock." to "Explicit deny" respectively as per suggestion [here](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/discussions/4) - You'd think "Block" would mean it's blocked, but no, thanks Microsoft.
+* Removed "Block Non Admin User Install" and added "MSI Allow User Control Over Install" set to "Disabled".
 
 **Win - OIB - Microsoft Store - U - Configuration**
 * Added "Do not allow pinning Store app to the Taskbar (User)" setting configured to "Enabled".
