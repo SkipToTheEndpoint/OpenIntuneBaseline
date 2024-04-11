@@ -1,0 +1,605 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+    "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicy",
+    "@odata.id":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)",
+    "@odata.editLink":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2023-08-09T15:01:44.7250075Z",
+    "creationSource":  null,
+    "description":  "",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2024-04-10T19:53:19.3268566Z",
+    "name":  "Win - OIB - Windows Firewall - D - Firewall Configuration - v3.1",
+    "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
+    "platforms":  "windows10",
+    "priorityMetaData":  null,
+    "roleScopeTagIds@odata.type":  "#Collection(String)",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "settingCount":  6,
+    "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
+    "technologies":  "mdm,microsoftSense",
+    "id":  "15ebc35d-e671-4bc9-8638-b9320f27de1e",
+    "templateReference":  {
+                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+                              "templateId":  "6078910e-d808-4a9f-a51d-1b8a7bacb7c0_1",
+                              "templateFamily@odata.type":  "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+                              "templateFamily":  "endpointSecurityFirewall",
+                              "templateDisplayName":  "Windows Firewall",
+                              "templateDisplayVersion":  "Version 1"
+                          },
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/assignments",
+    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings",
+    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings/$ref",
+    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings",
+    "settings":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00270\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00270\u0027)",
+                         "id":  "0",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_audit_objectaccess_auditfilteringplatformconnection",
+                                                 "settingInstanceTemplateReference":  {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                                          "settingInstanceTemplateId":  "be9453a7-6348-4112-a49e-ad029d5d3548"
+                                                                                      },
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "value":  "device_vendor_msft_policy_config_audit_objectaccess_auditfilteringplatformconnection_2",
+                                                                            "settingValueTemplateReference":  {
+                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                  "settingValueTemplateId":  "f5e48ffe-d924-4ee1-a1a1-677e259952fa",
+                                                                                                                  "useTemplateDefault":  false
+                                                                                                              },
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00271\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00271\u0027)",
+                         "id":  "1",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_audit_objectaccess_auditfilteringplatformpacketdrop",
+                                                 "settingInstanceTemplateReference":  {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                                          "settingInstanceTemplateId":  "43f5366a-7e27-47a9-be51-d14189d02a17"
+                                                                                      },
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "value":  "device_vendor_msft_policy_config_audit_objectaccess_auditfilteringplatformpacketdrop_2",
+                                                                            "settingValueTemplateReference":  {
+                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                  "settingValueTemplateId":  "bf48ef86-73e5-4a66-a693-24ff8e4be799",
+                                                                                                                  "useTemplateDefault":  false
+                                                                                                              },
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00271\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00271\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00272\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00272\u0027)",
+                         "id":  "2",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_global_disablestatefulftp",
+                                                 "settingInstanceTemplateReference":  {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                                          "settingInstanceTemplateId":  "38329af6-2670-4a71-972d-482010ca97fc"
+                                                                                      },
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "value":  "vendor_msft_firewall_mdmstore_global_disablestatefulftp_true",
+                                                                            "settingValueTemplateReference":  {
+                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                  "settingValueTemplateId":  "559f6e01-53a9-4c10-9f10-d09d8fe7f903",
+                                                                                                                  "useTemplateDefault":  false
+                                                                                                              },
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00272\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00272\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00273\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00273\u0027)",
+                         "id":  "3",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_enablefirewall",
+                                                 "settingInstanceTemplateReference":  {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                                          "settingInstanceTemplateId":  "7714c373-a19a-4b64-ba6d-2e9db04a7684"
+                                                                                      },
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "value":  "vendor_msft_firewall_mdmstore_domainprofile_enablefirewall_true",
+                                                                            "settingValueTemplateReference":  {
+                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                  "settingValueTemplateId":  "120c5dbe-0c88-46f0-b897-2c996d3e5277",
+                                                                                                                  "useTemplateDefault":  false
+                                                                                                              },
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_defaultinboundaction",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_domainprofile_defaultinboundaction_1",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_defaultoutboundaction",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_domainprofile_defaultoutboundaction_0",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_disableinboundnotifications",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_domainprofile_disableinboundnotifications_true",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_logmaxfilesize",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "simpleSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  16384
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_disablestealthmode",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_domainprofile_disablestealthmode_false",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_enablelogdroppedpackets",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_domainprofile_enablelogdroppedpackets_true",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "120c5dbe-0c88-46f0-b897-2c996d3e5277",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              },
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_enablelogsuccessconnections",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_domainprofile_enablelogsuccessconnections_true",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "120c5dbe-0c88-46f0-b897-2c996d3e5277",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              },
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_domainprofile_logfilepath",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "simpleSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                            "value":  "%SystemRoot%\\System32\\logfiles\\firewall\\domainfw.log",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "120c5dbe-0c88-46f0-b897-2c996d3e5277",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              }
+                                                                                                                        }
+                                                                                             }
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00273\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00273\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00274\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00274\u0027)",
+                         "id":  "4",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_privateprofile_enablefirewall",
+                                                 "settingInstanceTemplateReference":  {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                                          "settingInstanceTemplateId":  "1c14f914-69bb-49f8-af5b-e29173a6ee95"
+                                                                                      },
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "value":  "vendor_msft_firewall_mdmstore_privateprofile_enablefirewall_true",
+                                                                            "settingValueTemplateReference":  {
+                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                  "settingValueTemplateId":  "9d55dfae-d55f-4f2a-af03-9a9524f61e76",
+                                                                                                                  "useTemplateDefault":  false
+                                                                                                              },
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_privateprofile_disableinboundnotifications",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_privateprofile_disableinboundnotifications_true",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_privateprofile_defaultoutboundaction",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_privateprofile_defaultoutboundaction_0",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_privateprofile_logmaxfilesize",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "simpleSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  16384
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_privateprofile_defaultinboundaction",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_privateprofile_defaultinboundaction_1",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "9d55dfae-d55f-4f2a-af03-9a9524f61e76",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              },
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_privateprofile_enablelogdroppedpackets",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_privateprofile_enablelogdroppedpackets_true",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "9d55dfae-d55f-4f2a-af03-9a9524f61e76",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              },
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_privateprofile_enablelogsuccessconnections",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_privateprofile_enablelogsuccessconnections_true",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "9d55dfae-d55f-4f2a-af03-9a9524f61e76",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              },
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_privateprofile_logfilepath",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "simpleSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                            "value":  "%SystemRoot%\\System32\\logfiles\\firewall\\privatefw.log",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "9d55dfae-d55f-4f2a-af03-9a9524f61e76",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              }
+                                                                                                                        }
+                                                                                             }
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00274\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00274\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00275\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00275\u0027)",
+                         "id":  "5",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_enablefirewall",
+                                                 "settingInstanceTemplateReference":  {
+                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingInstanceTemplateReference",
+                                                                                          "settingInstanceTemplateId":  "e2714734-708e-4286-8ae9-d56821e306a3"
+                                                                                      },
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_enablefirewall_true",
+                                                                            "settingValueTemplateReference":  {
+                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                  "settingValueTemplateId":  "c38694c7-51a4-4a35-8f64-b10866a04776",
+                                                                                                                  "useTemplateDefault":  false
+                                                                                                              },
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_logmaxfilesize",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "simpleSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  16384
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_allowlocalpolicymerge",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_allowlocalpolicymerge_false",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_defaultoutboundaction",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_defaultoutboundaction_0",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_disableinboundnotifications",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_disableinboundnotifications_true",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_defaultinboundaction",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_defaultinboundaction_1",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_enablelogignoredrules",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "settingValueTemplateReference":  null,
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_enablelogignoredrules_false",
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_enablelogdroppedpackets",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_enablelogdroppedpackets_true",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "c38694c7-51a4-4a35-8f64-b10866a04776",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              },
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_enablelogsuccessconnections",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_enablelogsuccessconnections_true",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "c38694c7-51a4-4a35-8f64-b10866a04776",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              },
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_logfilepath",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "simpleSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                            "value":  "%SystemRoot%\\System32\\logfiles\\firewall\\publicfw.log",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "c38694c7-51a4-4a35-8f64-b10866a04776",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              }
+                                                                                                                        }
+                                                                                             },
+                                                                                             {
+                                                                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                 "settingDefinitionId":  "vendor_msft_firewall_mdmstore_publicprofile_allowlocalipsecpolicymerge",
+                                                                                                 "settingInstanceTemplateReference":  null,
+                                                                                                 "choiceSettingValue":  {
+                                                                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                            "value":  "vendor_msft_firewall_mdmstore_publicprofile_allowlocalipsecpolicymerge_false",
+                                                                                                                            "settingValueTemplateReference":  {
+                                                                                                                                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+                                                                                                                                                                  "settingValueTemplateId":  "c38694c7-51a4-4a35-8f64-b10866a04776",
+                                                                                                                                                                  "useTemplateDefault":  false
+                                                                                                                                                              },
+                                                                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                            "children":  [
+
+                                                                                                                                         ]
+                                                                                                                        }
+                                                                                             }
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00275\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/settings(\u00275\u0027)/settingDefinitions"
+                     }
+                 ],
+    "#microsoft.graph.assign":  {
+                                    "title":  "microsoft.graph.assign",
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/microsoft.graph.assign"
+                                },
+    "#microsoft.graph.assignJustInTimeConfiguration":  {
+                                                           "title":  "microsoft.graph.assignJustInTimeConfiguration",
+                                                           "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/microsoft.graph.assignJustInTimeConfiguration"
+                                                       },
+    "#microsoft.graph.createCopy":  {
+                                        "title":  "microsoft.graph.createCopy",
+                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/microsoft.graph.createCopy"
+                                    },
+    "#microsoft.graph.reorder":  {
+                                     "title":  "microsoft.graph.reorder",
+                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/microsoft.graph.reorder"
+                                 },
+    "#microsoft.graph.retrieveJustInTimeConfiguration":  {
+                                                             "title":  "microsoft.graph.retrieveJustInTimeConfiguration",
+                                                             "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/microsoft.graph.retrieveJustInTimeConfiguration"
+                                                         },
+    "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy":  {
+                                                                        "title":  "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+                                                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002715ebc35d-e671-4bc9-8638-b9320f27de1e\u0027)/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+                                                                    }
+}
