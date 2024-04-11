@@ -1,123 +1,4 @@
-﻿<style type="text/css">
-    
-html { }
-
-html,body {
-    margin:0;
-    padding:0 px;
-    position:relative;
-}
-
-h6 {
-    margin-top: 2px !important;
-}
-
-.table-settings {
-    padding-right: 5px;
-    font-family:"Arial",sans-serif;
-    font-size: 11px;
-    margin-bottom: 0px !important;
-}
-
-.table-settings p {
-    margin-bottom: 0px !important;
-}
-
-.table-settings TR:nth-child(even) {
-    background-color: #FAFAFA
-}
-
-.table-settings td {
-    text-align:left;
-    border-width: 5px;
-    padding: 5px !important;
-    border-style: none;
-    border-color: #F2F2F2;
-    border-bottom: 1px solid #ddd;
-}
-
-.table-header1 td {
-    background-color: #D0D0D0;
-    text-align: left;
-    font-size: 12px;
-    font-weight: bold;
-    border-width: 5px;
-    padding: 5px;
-    border-style: none;
-    border-color: #F2F2F2;
-}
-
-.category-level1 {
-    background-color: #E0E0E0;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.category-level2 {
-    background-color: #E0E0E0;
-    font-size: 11px;
-}
-
-.anchor-style {
-    font-family:"Arial",sans-serif;
-    font-size: 11px;
-}
-
-.anchor-level2 {
-
-}
-
-.table-value {
-    border: 0px;
-    width: 100%;
-    padding: 0px;
-    font-family:"Arial",sans-serif;
-    font-size: 11px;
-}
-
-.table-value th {
-    background-color: #F9F9F9;
-    padding: 0px;
-    text-align:left;
-    font-size: 11px;
-    padding-right: 0px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-weight: normal;
-    border-width: 0px;
-    border-style: none;
-}
-
-.table-value tr {
-    background-color: #FFFFFF;
-}
-
-.table-value td {
-    border-bottom: 0;
-    padding: 1px;
-}
-
-.row-new-property {
-    background-color: #E7E7E7 !important;
-}
-
-.description summary {
-    list-style: none;
-    cursor: pointer;
-}
-
-details.description[open] summary::after {
-  content: attr(data-open);
-}
-
-details.description:not([open]) summary::after {
-  content: attr(data-close);
-}
-
-</style>
-# Intune documentation
-
-*Generated:* 26/10/2023 22:09:46
+﻿*Generated:* 11/04/2024 20:04:15
 
 
 ## Table of Contents
@@ -125,88 +6,110 @@ details.description:not([open]) summary::after {
 
   - [Settings Catalog](#section-2)
 
-    - [Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.0](#section-3)
+    - [Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.1](#section-3)
 
-    - [Win - OIB - Defender Antivirus - D - AV Configuration - v3.0](#section-4)
+    - [Win - OIB - Credential Management - D - Passwordlesss - v3.1](#section-4)
 
-    - [Win - OIB - Defender Antivirus - D - Security Experience - v3.0](#section-5)
+    - [Win - OIB - Defender Antivirus - D - Additional Configuration - v3.1](#section-5)
 
-    - [Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot](#section-6)
+    - [Win - OIB - Defender Antivirus - D - AV Configuration - v3.1](#section-6)
 
-    - [Win - OIB - Defender Antivirus Updates - Ring 2 - UAT](#section-7)
+    - [Win - OIB - Defender Antivirus - D - Default Exclusions - v3.1](#section-7)
 
-    - [Win - OIB - Defender Antivirus Updates - Ring 3 - Production](#section-8)
+    - [Win - OIB - Defender Antivirus - D - Security Experience - v3.0](#section-8)
 
-    - [Win - OIB - Defender Firewall - D - Firewall Configuration - v3.0](#section-9)
+    - [Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot](#section-9)
 
-    - [Win - OIB - Device Security - D - Audit and Event Logging - v3.0](#section-10)
+    - [Win - OIB - Defender Antivirus Updates - Ring 2 - UAT](#section-10)
 
-    - [Win - OIB - Device Security - D - Enhanced Phishing Protection - v3.0](#section-11)
+    - [Win - OIB - Defender Antivirus Updates - Ring 3 - Production](#section-11)
 
-    - [Win - OIB - Device Security - D - Local Security Policies - v3.0](#section-12)
+    - [Win - OIB - Device Security - D - Audit and Event Logging - v3.1](#section-12)
 
-    - [Win - OIB - Device Security - D - Login and Lock Screen - v3.0](#section-13)
+    - [Win - OIB - Device Security - D - Enhanced Phishing Protection - v3.0](#section-13)
 
-    - [Win - OIB - Device Security - D - Remote Desktop Services and RPC - v3.0](#section-14)
+    - [Win - OIB - Device Security - D - Local Security Policies - v3.0](#section-14)
 
-    - [Win - OIB - Device Security - D - Security Hardening - v3.0](#section-15)
+    - [Win - OIB - Device Security - D - Login and Lock Screen - v3.1](#section-15)
 
-    - [Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.0](#section-16)
+    - [Win - OIB - Device Security - D - Remote Desktop Services and RPC - v3.0](#section-16)
 
-    - [Win - OIB - Device Security - U - Power and Device Lock - v3.0](#section-17)
+    - [Win - OIB - Device Security - D - Security Hardening - v3.1](#section-17)
 
-    - [Win - OIB - Device Security - U - Windows Spotlight and Org Messages - v3.0](#section-18)
+    - [Win - OIB - Device Security - D - Timezone - v3.1](#section-18)
 
-    - [Win - OIB - Encryption - D - BitLocker (OS Disk) - v3.0](#section-19)
+    - [Win - OIB - Device Security - D - User Rights - v3.1](#section-19)
 
-    - [Win - OIB - Google Chrome - D - Security - v3.0](#section-20)
+    - [Win - OIB - Device Security - D - Windows Subsystem for Linux - v3.1](#section-20)
 
-    - [Win - OIB - Google Chrome - U - Experience and Extensions - v3.0](#section-21)
+    - [Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.1](#section-21)
 
-    - [Win - OIB - Google Chrome - U - Profiles, Sign-In and Sync - v3.0](#section-22)
+    - [Win - OIB - Device Security - U - Power and Device Lock - v3.0](#section-22)
 
-    - [Win - OIB - Internet Explorer (Legacy) - U - Security - v3.0](#section-23)
+    - [Win - OIB - Device Security - U - Windows Spotlight and Org Messages - v3.0](#section-23)
 
-    - [Win - OIB - Microsoft Accounts - U - Configuration - v3.0](#section-24)
+    - [Win - OIB - Encryption - D - BitLocker (OS Disk) - v3.0](#section-24)
 
-    - [Win - OIB - Microsoft Edge - D - Security - v3.0](#section-25)
+    - [Win - OIB - Google Chrome - D - Security - v3.0](#section-25)
 
-    - [Win - OIB - Microsoft Edge - D - Updates - v3.0](#section-26)
+    - [Win - OIB - Google Chrome - U - Experience and Extensions - v3.0](#section-26)
 
-    - [Win - OIB - Microsoft Edge - U - Extensions - v3.0](#section-27)
+    - [Win - OIB - Google Chrome - U - Profiles, Sign-In and Sync - v3.0](#section-27)
 
-    - [Win - OIB - Microsoft Edge - U - Password Management - v3.0](#section-28)
+    - [Win - OIB - Internet Explorer (Legacy) - D - Security - v3.1](#section-28)
 
-    - [Win - OIB - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0](#section-29)
+    - [Win - OIB - Microsoft Accounts - U - Configuration - v3.0](#section-29)
 
-    - [Win - OIB - Microsoft Edge - U - User Experience - v3.0](#section-30)
+    - [Win - OIB - Microsoft Edge - D - Security - v3.0](#section-30)
 
-    - [Win - OIB - Microsoft Office - D - Updates - v3.0](#section-31)
+    - [Win - OIB - Microsoft Edge - D - Updates - v3.0](#section-31)
 
-    - [Win - OIB - Microsoft Office - U - Config and Experience - v3.0](#section-32)
+    - [Win - OIB - Microsoft Edge - U - Extensions - v3.0](#section-32)
 
-    - [Win - OIB - Microsoft OneDrive - D - Configuration - v3.0](#section-33)
+    - [Win - OIB - Microsoft Edge - U - Extensions - v3.1](#section-33)
 
-    - [Win - OIB - Microsoft OneDrive - U - Configuration - v3.0](#section-34)
+    - [Win - OIB - Microsoft Edge - U - Password Management - v3.0](#section-34)
 
-    - [Win - OIB - Microsoft Store - D - Configuration - v3.0](#section-35)
+    - [Win - OIB - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0](#section-35)
 
-    - [Win - OIB - Microsoft Store - U - Configuration - v3.0](#section-36)
+    - [Win - OIB - Microsoft Edge - U - User Experience - v3.0](#section-36)
 
-    - [Win - OIB - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0](#section-37)
+    - [Win - OIB - Microsoft Edge - U - User Experience - v3.1](#section-37)
 
-    - [Win - OIB - Windows LAPS - D - LAPS Configuration - v3.0](#section-38)
+    - [Win - OIB - Microsoft Office - D - Updates - v3.0](#section-38)
 
-    - [Win - OIB - Windows Update for Business - D - Delivery Optimisation - v3.0](#section-39)
+    - [Win - OIB - Microsoft Office - U - Config and Experience - v3.0](#section-39)
 
-    - [Win - OIB - Windows Update for Business - D - Reports and Telemetry - v3.0](#section-40)
+    - [Win - OIB - Microsoft OneDrive - D - Configuration - v3.1](#section-40)
 
-    - [Win - OIB - Windows User Experience - D - Feature Configuration - v3.0](#section-41)
+    - [Win - OIB - Microsoft OneDrive - U - Configuration - v3.0](#section-41)
+
+    - [Win - OIB - Microsoft Store - D - Configuration - v3.1](#section-42)
+
+    - [Win - OIB - Microsoft Store - U - Configuration - v3.1](#section-43)
+
+    - [Win - OIB - Network - D - BITS Configuration - v3.1](#section-44)
+
+    - [Win - OIB - Windows Firewall - D - Firewall Configuration - v3.1](#section-45)
+
+    - [Win - OIB - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0](#section-46)
+
+    - [Win - OIB - Windows LAPS - D - LAPS Configuration - v3.1](#section-47)
+
+    - [Win - OIB - Windows Update for Business - D - Delivery Optimisation - v3.0](#section-48)
+
+    - [Win - OIB - Windows Update for Business - D - Reports and Telemetry - v3.0](#section-49)
+
+    - [Win - OIB - Windows Update for Business - D - Restart Warnings - v3.1](#section-50)
+
+    - [Win - OIB - Windows User Experience - D - Feature Configuration - v3.1](#section-51)
+
+    - [Win - OIB - Windows User Experience - U - Copilot - v3.1](#section-52)
 
 
 <h1 id="section-1">Device configuration</h1>
 <h2 id="section-2">Settings Catalog</h2>
-<h3 id="section-3">Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.0</h3>
+<h3 id="section-3">Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -218,7 +121,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.0</td>
+<td class='property-column2'>Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -246,7 +149,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 17:30:19</td>
+<td class='property-column2'>10 April 2024 20:58:29</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -254,7 +157,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 1. Basics - Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.0
+###### Table 1. Basics - Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.1
 
 
 <table class='table-settings'>
@@ -270,10 +173,6 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Not configured</td>
 </tr>
 <tr class='row-new-property'>
-<td class='property-column1' style='padding-left:10px !important;'>Block Adobe Reader from creating child processes</td>
-<td class='property-column2'>Audit</td>
-</tr>
-<tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Block execution of potentially obfuscated scripts</td>
 <td class='property-column2'>Audit</td>
 </tr>
@@ -282,15 +181,7 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Audit</td>
 </tr>
 <tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Block credential stealing from the Windows local security authority subsystem</td>
-<td class='property-column2'>Audit</td>
-</tr>
-<tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Block executable files from running unless they meet a prevalence, age, or trusted list criterion</td>
-<td class='property-column2'>Audit</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Block JavaScript or VBScript from launching downloaded executable content</td>
 <td class='property-column2'>Audit</td>
 </tr>
 <tr class=''>
@@ -302,15 +193,35 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Audit</td>
 </tr>
 <tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Block Adobe Reader from creating child processes</td>
+<td class='property-column2'>Audit</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Block credential stealing from the Windows local security authority subsystem</td>
+<td class='property-column2'>Audit</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Block JavaScript or VBScript from launching downloaded executable content</td>
+<td class='property-column2'>Audit</td>
+</tr>
+<tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Block untrusted and unsigned processes that run from USB</td>
 <td class='property-column2'>Audit</td>
 </tr>
 <tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Block process creations originating from PSExec and WMI commands</td>
+<td class='property-column1' style='padding-left:10px !important;'>Block persistence through WMI event subscription</td>
 <td class='property-column2'>Audit</td>
 </tr>
 <tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Block persistence through WMI event subscription</td>
+<td class='property-column1' style='padding-left:10px !important;'>[PREVIEW] Block use of copied or impersonated system tools</td>
+<td class='property-column2'>Audit</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Block abuse of exploited vulnerable signed drivers (Device)</td>
+<td class='property-column2'>Audit</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Block process creations originating from PSExec and WMI commands</td>
 <td class='property-column2'>Audit</td>
 </tr>
 <tr class=''>
@@ -322,6 +233,10 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Audit</td>
 </tr>
 <tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>[PREVIEW] Block rebooting machine in Safe Mode</td>
+<td class='property-column2'>Audit</td>
+</tr>
+<tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Use advanced protection against ransomware</td>
 <td class='property-column2'>Audit</td>
 </tr>
@@ -330,19 +245,15 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Audit</td>
 </tr>
 <tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Block abuse of exploited vulnerable signed drivers (Device)</td>
-<td class='property-column2'>Audit</td>
-</tr>
-<tr class=''>
 <td class='property-column1'>Enable Controlled Folder Access</td>
 <td class='property-column2'>Audit Mode</td>
 </tr>
 </table>
 
-###### Table 2. Settings - Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.0
+###### Table 2. Settings - Win - OIB - Attack Surface Reduction - D - ASR Rules (Audit Mode) - v3.1
 
 
-<h3 id="section-4">Win - OIB - Defender Antivirus - D - AV Configuration - v3.0</h3>
+<h3 id="section-4">Win - OIB - Credential Management - D - Passwordlesss - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -354,7 +265,161 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Defender Antivirus - D - AV Configuration - v3.0</td>
+<td class='property-column2'>Win - OIB - Credential Management - D - Passwordlesss - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:38:28</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:38:28</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 3. Basics - Win - OIB - Credential Management - D - Passwordlesss - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Administrative Templates</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Logon</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Assign a default credential provider</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Assign the following credential provider as the default credential provider: (Device)</td>
+<td class='property-column2'>{D6886603-9D2F-4EB2-B667-1971041FA96B}</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Authentication</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable Passwordless Experience</td>
+<td class='property-column2'>Enabled. The Passwordless experience will be enabled on Windows</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable Web Sign In</td>
+<td class='property-column2'>Enabled. Web Sign-in will be enabled for signing in to Windows</td>
+</tr>
+</table>
+
+###### Table 4. Settings - Win - OIB - Credential Management - D - Passwordlesss - v3.1
+
+
+<h3 id="section-5">Win - OIB - Defender Antivirus - D - Additional Configuration - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Defender Antivirus - D - Additional Configuration - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:38:15</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:38:15</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 5. Basics - Win - OIB - Defender Antivirus - D - Additional Configuration - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Defender</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Hide Exclusions From Local Admins</td>
+<td class='property-column2'>If you enable this setting, local admins will no longer be able to see the exclusion list in Windows Security App or via PowerShell.</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Hide Exclusions From Local Users</td>
+<td class='property-column2'>If you enable this setting, local users will no longer be able to see the exclusion list in Windows Security App or via PowerShell.</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Intel TDT Enabled</td>
+<td class='property-column2'>If you configure this setting to enabled, Intel TDT integration will turn on.</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Oobe Enable Rtp And Sig Update</td>
+<td class='property-column2'>If you enable this setting, real-time protection and Security Intelligence Updates are enabled during OOBE.</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Support Log Location</td>
+<td class='property-column2'>%ProgramData%\Microsoft\IntuneManagementExtension\Logs</td>
+</tr>
+</table>
+
+###### Table 6. Settings - Win - OIB - Defender Antivirus - D - Additional Configuration - v3.1
+
+
+<h3 id="section-6">Win - OIB - Defender Antivirus - D - AV Configuration - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Defender Antivirus - D - AV Configuration - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -382,7 +447,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 17:18:15</td>
+<td class='property-column2'>10 April 2024 20:46:49</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -390,7 +455,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 3. Basics - Win - OIB - Defender Antivirus - D - AV Configuration - v3.0
+###### Table 7. Basics - Win - OIB - Defender Antivirus - D - AV Configuration - v3.1
 
 
 <table class='table-settings'>
@@ -420,10 +485,6 @@ details.description:not([open]) summary::after {
 <tr class=''>
 <td class='property-column1'>Allow Full Scan Removable Drive Scanning</td>
 <td class='property-column2'>Allowed. Scans removable drives.</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>[Deprecated] Allow Intrusion Prevention System</td>
-<td class='property-column2'>Allowed.</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow scanning of all downloaded files and attachments</td>
@@ -518,19 +579,91 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Remove. Removes files from system.</td>
 </tr>
 <tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Remediation action for Moderate severity threats</td>
-<td class='property-column2'>Remove. Removes files from system.</td>
-</tr>
-<tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Remediation action for Low severity threats</td>
 <td class='property-column2'>Block. Blocks file execution.</td>
 </tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Remediation action for Moderate severity threats</td>
+<td class='property-column2'>Remove. Removes files from system.</td>
+</tr>
 </table>
 
-###### Table 4. Settings - Win - OIB - Defender Antivirus - D - AV Configuration - v3.0
+###### Table 8. Settings - Win - OIB - Defender Antivirus - D - AV Configuration - v3.1
 
 
-<h3 id="section-5">Win - OIB - Defender Antivirus - D - Security Experience - v3.0</h3>
+<h3 id="section-7">Win - OIB - Defender Antivirus - D - Default Exclusions - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Defender Antivirus - D - Default Exclusions - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Category</td>
+<td class='property-column2'>Antivirus</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Policy type</td>
+<td class='property-column2'>Microsoft Defender Antivirus exclusions</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:45:21</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:45:21</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 9. Basics - Win - OIB - Defender Antivirus - D - Default Exclusions - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Defender</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Excluded Paths</td>
+<td class='property-column2'><details class='description'><summary data-open='Minimize' data-close='%ProgramFiles%\Windows Defender Advanced...expand'></summary>%ProgramFiles%\Windows Defender Advanced Threat Protection\;%ProgramFiles%\Windows Defender\;%ProgramFiles(x86)%\Windows Defender\;%WinDir%\Security\Database\`*.chk;%WinDir%\Security\Database\`*.edb;%WinDir%\Security\Database\`*.jrs;%WinDir%\Security\Database\`*.log;%WinDir%\Security\Database\`*.sdb;%WinDir%\Security\Database\`*.xml;%WinDir%\Security\Database\`*.csv;%WinDir%\Security\Database\`*.cmtx;%WinDir%\SoftwareDistribution\Datastore\Datastore.edb;%WinDir%\SoftwareDistribution\Datastore\Logs\edb`*.jrs;%WinDir%\SoftwareDistribution\Datastore\Logs\edb.chk;%WinDir%\SoftwareDistribution\Datastore\Logs\tmp.edb;%WinDir%\SoftwareDistribution\Datastore\Logs\res`*.log;%WinDir%\SoftwareDistribution\Datastore\Logs\res`*.jrs;%ProgramFiles(x86)%\Microsoft Intune Management Extension\Content\;%WinDir%\IMECache\</details></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Excluded Processes</td>
+<td class='property-column2'><details class='description'><summary data-open='Minimize' data-close='%WinDir%\System32\ApplicationFrameHost.e...expand'></summary>%WinDir%\System32\ApplicationFrameHost.exe;%WinDir%\System32\SearchIndexer.exe;%WinDir%\System32\wlanext.exe;%WinDir%\System32\Lsalso.exe;%WinDir%\System32\AppVClient.exe;%ProgramFiles%\Windows Defender\MSASCuiL.exe;%ProgramFiles%\Windows Defender\MSASCui.exe;%ProgramFiles%\Windows Defender\MpCmdRun.exe;%ProgramFiles%\Windows Defender\MsMpEng.exe;%ProgramFiles%\Windows Defender\NisSrv.exe</details></td>
+</tr>
+</table>
+
+###### Table 10. Settings - Win - OIB - Defender Antivirus - D - Default Exclusions - v3.1
+
+
+<h3 id="section-8">Win - OIB - Defender Antivirus - D - Security Experience - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -578,7 +711,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 5. Basics - Win - OIB - Defender Antivirus - D - Security Experience - v3.0
+###### Table 11. Basics - Win - OIB - Defender Antivirus - D - Security Experience - v3.0
 
 
 <table class='table-settings'>
@@ -602,10 +735,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 6. Settings - Win - OIB - Defender Antivirus - D - Security Experience - v3.0
+###### Table 12. Settings - Win - OIB - Defender Antivirus - D - Security Experience - v3.0
 
 
-<h3 id="section-6">Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot</h3>
+<h3 id="section-9">Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -653,7 +786,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 7. Basics - Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot
+###### Table 13. Basics - Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot
 
 
 <table class='table-settings'>
@@ -678,10 +811,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 8. Settings - Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot
+###### Table 14. Settings - Win - OIB - Defender Antivirus Updates - Ring 1 - Pilot
 
 
-<h3 id="section-7">Win - OIB - Defender Antivirus Updates - Ring 2 - UAT</h3>
+<h3 id="section-10">Win - OIB - Defender Antivirus Updates - Ring 2 - UAT</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -729,7 +862,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 9. Basics - Win - OIB - Defender Antivirus Updates - Ring 2 - UAT
+###### Table 15. Basics - Win - OIB - Defender Antivirus Updates - Ring 2 - UAT
 
 
 <table class='table-settings'>
@@ -754,10 +887,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 10. Settings - Win - OIB - Defender Antivirus Updates - Ring 2 - UAT
+###### Table 16. Settings - Win - OIB - Defender Antivirus Updates - Ring 2 - UAT
 
 
-<h3 id="section-8">Win - OIB - Defender Antivirus Updates - Ring 3 - Production</h3>
+<h3 id="section-11">Win - OIB - Defender Antivirus Updates - Ring 3 - Production</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -805,7 +938,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 11. Basics - Win - OIB - Defender Antivirus Updates - Ring 3 - Production
+###### Table 17. Basics - Win - OIB - Defender Antivirus Updates - Ring 3 - Production
 
 
 <table class='table-settings'>
@@ -830,293 +963,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 12. Settings - Win - OIB - Defender Antivirus Updates - Ring 3 - Production
+###### Table 18. Settings - Win - OIB - Defender Antivirus Updates - Ring 3 - Production
 
 
-<h3 id="section-9">Win - OIB - Defender Firewall - D - Firewall Configuration - v3.0</h3>
-
-<table class='table-settings'>
-<tr class='table-header1'>
-<td>Name</td>
-<td>Value</td>
-</tr>
-<tr>
-<td colspan="2" class='category-level1'>Basics</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Defender Firewall - D - Firewall Configuration - v3.0</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Description</td>
-<td class='property-column2'></td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Profile type</td>
-<td class='property-column2'>Settings catalog</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Category</td>
-<td class='property-column2'>Firewall</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Policy type</td>
-<td class='property-column2'>Microsoft Defender Firewall</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Platform supported</td>
-<td class='property-column2'>Windows 10 and later</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:44</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 17:29:27</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Scope tags</td>
-<td class='property-column2'>Default</td>
-</tr>
-</table>
-
-###### Table 13. Basics - Win - OIB - Defender Firewall - D - Firewall Configuration - v3.0
-
-
-<table class='table-settings'>
-<tr class='table-header1'>
-<td>Name</td>
-<td>Value</td>
-</tr>
-<tr>
-<td colspan="2" class='category-level1'>Auditing</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Object Access Audit Filtering Platform Connection</td>
-<td class='property-column2'>Failure</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Object Access Audit Filtering Platform Packet Drop</td>
-<td class='property-column2'>Failure</td>
-</tr>
-<tr>
-<td colspan="2" class='category-level1'>Firewall</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Disable Stateful Ftp</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Enable Domain Network Firewall</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Global Ports Allow User Pref Merge</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Default Inbound Action for Domain Profile</td>
-<td class='property-column2'>Block</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Stealth Mode Ipsec Secured Packet Exemption</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Allow Local Ipsec Policy Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Auth Apps Allow User Pref Merge</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Dropped Packets</td>
-<td class='property-column2'>Disable Logging Of Dropped Packets</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Shielded</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Default Outbound Action</td>
-<td class='property-column2'>Allow</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Inbound Notifications</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Log File Path</td>
-<td class='property-column2'>%systemroot%\system32\LogFiles\Firewall\pfirewall.log</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Log Max File Size</td>
-<td class='property-column2'>16384</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Stealth Mode</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Unicast Responses To Multicast Broadcast</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Allow Local Policy Merge</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Ignored Rules</td>
-<td class='property-column2'>Disable Logging Of Ignored Rules</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Success Connections</td>
-<td class='property-column2'>Disable Logging Of Successful Connections</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Enable Private Network Firewall</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Stealth Mode Ipsec Secured Packet Exemption</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Inbound Notifications</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Shielded</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Allow Local Policy Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Default Outbound Action</td>
-<td class='property-column2'>Allow</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Ignored Rules</td>
-<td class='property-column2'>Disable Logging Of Ignored Rules</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Log Max File Size</td>
-<td class='property-column2'>16384</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Global Ports Allow User Pref Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Default Inbound Action for Private Profile</td>
-<td class='property-column2'>Block</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Unicast Responses To Multicast Broadcast</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Log File Path</td>
-<td class='property-column2'>%systemroot%\system32\LogFiles\Firewall\pfirewall.log</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Stealth Mode</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Dropped Packets</td>
-<td class='property-column2'>Disable Logging Of Dropped Packets</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Success Connections</td>
-<td class='property-column2'>Disable Logging Of Successful Connections</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Allow Local Ipsec Policy Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Auth Apps Allow User Pref Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Enable Public Network Firewall</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Log Max File Size</td>
-<td class='property-column2'>16384</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Dropped Packets</td>
-<td class='property-column2'>Disable Logging Of Dropped Packets</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Stealth Mode</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Stealth Mode Ipsec Secured Packet Exemption</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Shielded</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Allow Local Policy Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Default Outbound Action</td>
-<td class='property-column2'>Allow</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Inbound Notifications</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Auth Apps Allow User Pref Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Log File Path</td>
-<td class='property-column2'>%systemroot%\system32\LogFiles\Firewall\pfirewall.log</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Default Inbound Action for Public Profile</td>
-<td class='property-column2'>Block</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Disable Unicast Responses To Multicast Broadcast</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Global Ports Allow User Pref Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Ignored Rules</td>
-<td class='property-column2'>Disable Logging Of Ignored Rules</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable Log Success Connections</td>
-<td class='property-column2'>Disable Logging Of Successful Connections</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Allow Local Ipsec Policy Merge</td>
-<td class='property-column2'>False</td>
-</tr>
-</table>
-
-###### Table 14. Settings - Win - OIB - Defender Firewall - D - Firewall Configuration - v3.0
-
-
-<h3 id="section-10">Win - OIB - Device Security - D - Audit and Event Logging - v3.0</h3>
+<h3 id="section-12">Win - OIB - Device Security - D - Audit and Event Logging - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1128,7 +978,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Device Security - D - Audit and Event Logging - v3.0</td>
+<td class='property-column2'>Win - OIB - Device Security - D - Audit and Event Logging - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -1144,11 +994,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:21</td>
+<td class='property-column2'>11 April 2024 19:37:59</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 15:34:34</td>
+<td class='property-column2'>11 April 2024 19:37:59</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1156,7 +1006,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 15. Basics - Win - OIB - Device Security - D - Audit and Event Logging - v3.0
+###### Table 19. Basics - Win - OIB - Device Security - D - Audit and Event Logging - v3.1
 
 
 <table class='table-settings'>
@@ -1235,10 +1085,6 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Success+ Failure</td>
 </tr>
 <tr class=''>
-<td class='property-column1'>Account Logon Audit Other Account Logon Events</td>
-<td class='property-column2'>Success+ Failure</td>
-</tr>
-<tr class=''>
 <td class='property-column1'>Account Logon Logoff Audit Account Lockout</td>
 <td class='property-column2'>Failure</td>
 </tr>
@@ -1272,6 +1118,10 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Audit File Share Access</td>
+<td class='property-column2'>Success+Failure</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Audit Other Logon Logoff Events</td>
 <td class='property-column2'>Success+Failure</td>
 </tr>
 <tr class=''>
@@ -1340,10 +1190,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 16. Settings - Win - OIB - Device Security - D - Audit and Event Logging - v3.0
+###### Table 20. Settings - Win - OIB - Device Security - D - Audit and Event Logging - v3.1
 
 
-<h3 id="section-11">Win - OIB - Device Security - D - Enhanced Phishing Protection - v3.0</h3>
+<h3 id="section-13">Win - OIB - Device Security - D - Enhanced Phishing Protection - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1383,7 +1233,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 17. Basics - Win - OIB - Device Security - D - Enhanced Phishing Protection - v3.0
+###### Table 21. Basics - Win - OIB - Device Security - D - Enhanced Phishing Protection - v3.0
 
 
 <table class='table-settings'>
@@ -1415,10 +1265,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 18. Settings - Win - OIB - Device Security - D - Enhanced Phishing Protection - v3.0
+###### Table 22. Settings - Win - OIB - Device Security - D - Enhanced Phishing Protection - v3.0
 
 
-<h3 id="section-12">Win - OIB - Device Security - D - Local Security Policies - v3.0</h3>
+<h3 id="section-14">Win - OIB - Device Security - D - Local Security Policies - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1458,7 +1308,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 19. Basics - Win - OIB - Device Security - D - Local Security Policies - v3.0
+###### Table 23. Basics - Win - OIB - Device Security - D - Local Security Policies - v3.0
 
 
 <table class='table-settings'>
@@ -1563,10 +1413,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 20. Settings - Win - OIB - Device Security - D - Local Security Policies - v3.0
+###### Table 24. Settings - Win - OIB - Device Security - D - Local Security Policies - v3.0
 
 
-<h3 id="section-13">Win - OIB - Device Security - D - Login and Lock Screen - v3.0</h3>
+<h3 id="section-15">Win - OIB - Device Security - D - Login and Lock Screen - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1578,7 +1428,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Device Security - D - Login and Lock Screen - v3.0</td>
+<td class='property-column2'>Win - OIB - Device Security - D - Login and Lock Screen - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -1594,11 +1444,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:23</td>
+<td class='property-column2'>10 April 2024 20:38:02</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>21 August 2023 09:51:58</td>
+<td class='property-column2'>10 April 2024 20:38:02</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1606,7 +1456,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 21. Basics - Win - OIB - Device Security - D - Login and Lock Screen - v3.0
+###### Table 25. Basics - Win - OIB - Device Security - D - Login and Lock Screen - v3.1
 
 
 <table class='table-settings'>
@@ -1675,10 +1525,6 @@ details.description:not([open]) summary::after {
 <td class='property-column1'>Allow Aad Password Reset</td>
 <td class='property-column2'>Allow</td>
 </tr>
-<tr class=''>
-<td class='property-column1'>Preferred Aad Tenant Domain Name</td>
-<td class='property-column2'>primarydomainname.com</td>
-</tr>
 <tr>
 <td colspan="2" class='category-level1'>Privacy</td>
 </tr>
@@ -1688,10 +1534,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 22. Settings - Win - OIB - Device Security - D - Login and Lock Screen - v3.0
+###### Table 26. Settings - Win - OIB - Device Security - D - Login and Lock Screen - v3.1
 
 
-<h3 id="section-14">Win - OIB - Device Security - D - Remote Desktop Services and RPC - v3.0</h3>
+<h3 id="section-16">Win - OIB - Device Security - D - Remote Desktop Services and RPC - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1731,7 +1577,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 23. Basics - Win - OIB - Device Security - D - Remote Desktop Services and RPC - v3.0
+###### Table 27. Basics - Win - OIB - Device Security - D - Remote Desktop Services and RPC - v3.0
 
 
 <table class='table-settings'>
@@ -1804,10 +1650,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 24. Settings - Win - OIB - Device Security - D - Remote Desktop Services and RPC - v3.0
+###### Table 28. Settings - Win - OIB - Device Security - D - Remote Desktop Services and RPC - v3.0
 
 
-<h3 id="section-15">Win - OIB - Device Security - D - Security Hardening - v3.0</h3>
+<h3 id="section-17">Win - OIB - Device Security - D - Security Hardening - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1819,7 +1665,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Device Security - D - Security Hardening - v3.0</td>
+<td class='property-column2'>Win - OIB - Device Security - D - Security Hardening - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -1835,11 +1681,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:25</td>
+<td class='property-column2'>10 April 2024 20:37:50</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 15:36:07</td>
+<td class='property-column2'>10 April 2024 20:37:50</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1847,7 +1693,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 25. Basics - Win - OIB - Device Security - D - Security Hardening - v3.0
+###### Table 29. Basics - Win - OIB - Device Security - D - Security Hardening - v3.1
 
 
 <table class='table-settings'>
@@ -1910,7 +1756,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>MSS: (NoNameReleaseOnDemand) Allow the computer to ignore NetBIOS name release requests except from WINS servers</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>MSS: (ScreenSaverGracePeriod) The time in seconds before the screen saver grace period expires (0 recommended)</td>
@@ -1925,14 +1771,29 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Prohibit installation and configuration of Network Bridge on your DNS domain network</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Require domain users to elevate when setting a network's location</td>
 <td class='property-column2'>Enabled</td>
 </tr>
 <tr>
+<td colspan="2" class='category-level2'>Windows Connection Manager</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Prohibit connection to non-domain networks when connected to domain authenticated network</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr>
 <td colspan="2" class='category-level2'>Credentials Delegation</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Encryption Oracle Remediation</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Protection Level: (Device)</td>
+<td class='property-column2'>Force Updated Clients</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Remote host allows delegation of non-exportable credentials</td>
@@ -2207,10 +2068,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 26. Settings - Win - OIB - Device Security - D - Security Hardening - v3.0
+###### Table 30. Settings - Win - OIB - Device Security - D - Security Hardening - v3.1
 
 
-<h3 id="section-16">Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.0</h3>
+<h3 id="section-18">Win - OIB - Device Security - D - Timezone - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2222,11 +2083,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.0</td>
+<td class='property-column2'>Win - OIB - Device Security - D - Timezone - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
-<td class='property-column2'>NOTE: Applying this policy to Devices will cause a reboot between Device and User ESP phases.</td>
+<td class='property-column2'></td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Profile type</td>
@@ -2238,11 +2099,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:26</td>
+<td class='property-column2'>10 April 2024 20:37:35</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 15:37:31</td>
+<td class='property-column2'>10 April 2024 21:08:09</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2250,7 +2111,357 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 27. Basics - Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.0
+###### Table 31. Basics - Win - OIB - Device Security - D - Timezone - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Administrative Templates</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Time Providers</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Configure Windows NTP Client</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>CrossSiteSyncFlags (Device)</td>
+<td class='property-column2'>2</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>EventLogFlags (Device)</td>
+<td class='property-column2'>3</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>NtpServer (Device)</td>
+<td class='property-column2'>time.windows.com</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>ResolvePeerBackoffMaxTimes (Device)</td>
+<td class='property-column2'>7</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>ResolvePeerBackoffMinutes (Device)</td>
+<td class='property-column2'>15</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>SpecialPollInterval (Device)</td>
+<td class='property-column2'>1024</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Type (Device)</td>
+<td class='property-column2'>AllSync</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable Windows NTP Client</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>User Rights</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Change Time Zone (Windows Insiders only)</td>
+<td class='property-column2'>`*S-1-5-4</td>
+</tr>
+</table>
+
+###### Table 32. Settings - Win - OIB - Device Security - D - Timezone - v3.1
+
+
+<h3 id="section-19">Win - OIB - Device Security - D - User Rights - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Device Security - D - User Rights - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:37:21</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:37:21</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 33. Basics - Win - OIB - Device Security - D - User Rights - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>User Rights</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Access Credential Manager As Trusted Caller</td>
+<td class='property-column2'>(<![CDATA[]]>)</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Access From Network</td>
+<td class='property-column2'>`*S-1-5-32-544;`*S-1-5-32-555</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Act As Part Of The Operating System</td>
+<td class='property-column2'>(<![CDATA[]]>)</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow Local Log On</td>
+<td class='property-column2'>`*S-1-5-32-544;`*S-1-5-32-545</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Backup Files And Directories</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Change System Time</td>
+<td class='property-column2'>`*S-1-5-19;`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Create Global Objects</td>
+<td class='property-column2'>`*S-1-5-32-544;`*S-1-5-19;`*S-1-5-20;S-1-5-6</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Create Page File</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Create Permanent Shared Objects</td>
+<td class='property-column2'>(<![CDATA[]]>)</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Create Symbolic Links</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Create Token</td>
+<td class='property-column2'>(<![CDATA[]]>)</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Debug Programs</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Deny Access From Network</td>
+<td class='property-column2'>`*S-1-5-32-546;`*S-1-2-0</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Deny Local Log On</td>
+<td class='property-column2'>`*S-1-5-32-546</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Deny Remote Desktop Services Log On</td>
+<td class='property-column2'>`*S-1-5-32-546</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable Delegation</td>
+<td class='property-column2'>(<![CDATA[]]>)</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Generate Security Audits</td>
+<td class='property-column2'>`*S-1-5-19;`*S-1-5-20</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Impersonate Client</td>
+<td class='property-column2'>`*S-1-5-32-544;`*S-1-5-19;`*S-1-5-20;`*S-1-5-6</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Increase Scheduling Priority</td>
+<td class='property-column2'>`*S-1-5-32-544;`*S-1-5-90</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Load Unload Device Drivers</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Lock Memory</td>
+<td class='property-column2'>(<![CDATA[]]>)</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Manage Auditing And Security Log</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Manage Volume</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Modify Firmware Environment</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Modify Object Label</td>
+<td class='property-column2'>(<![CDATA[]]>)</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile Single Process</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Remote Shutdown</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Restore Files And Directories</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Take Ownership</td>
+<td class='property-column2'>`*S-1-5-32-544</td>
+</tr>
+</table>
+
+###### Table 34. Settings - Win - OIB - Device Security - D - User Rights - v3.1
+
+
+<h3 id="section-20">Win - OIB - Device Security - D - Windows Subsystem for Linux - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Device Security - D - Windows Subsystem for Linux - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:37:07</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:37:07</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 35. Basics - Win - OIB - Device Security - D - Windows Subsystem for Linux - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Windows Subsystem For Linux</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow the debug shell</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow the Inbox version of the Windows Subsystem For Linux</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow the Windows Subsystem For Linux</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow user setting firewall configuration</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow WSL1</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+</table>
+
+###### Table 36. Settings - Win - OIB - Device Security - D - Windows Subsystem for Linux - v3.1
+
+
+<h3 id="section-21">Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'>NOTE: Applying this policy to Devices will cause a reboot between Device and User ESP phases!</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:36:52</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 21:06:07</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 37. Basics - Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.1
 
 
 <table class='table-settings'>
@@ -2278,6 +2489,13 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Turns on VBS with Secure Boot and direct memory access (DMA). DMA requires hardware support.</td>
 </tr>
 <tr>
+<td colspan="2" class='category-level1'>Local Security Authority</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Configure Lsa Protected Process</td>
+<td class='property-column2'>Enabled without UEFI lock. LSA will run as protected process and this configuration is not UEFI locked.</td>
+</tr>
+<tr>
 <td colspan="2" class='category-level1'>Virtualization Based Technology</td>
 </tr>
 <tr class=''>
@@ -2290,10 +2508,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 28. Settings - Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.0
+###### Table 38. Settings - Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI - v3.1
 
 
-<h3 id="section-17">Win - OIB - Device Security - U - Power and Device Lock - v3.0</h3>
+<h3 id="section-22">Win - OIB - Device Security - U - Power and Device Lock - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2333,7 +2551,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 29. Basics - Win - OIB - Device Security - U - Power and Device Lock - v3.0
+###### Table 39. Basics - Win - OIB - Device Security - U - Power and Device Lock - v3.0
 
 
 <table class='table-settings'>
@@ -2422,10 +2640,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 30. Settings - Win - OIB - Device Security - U - Power and Device Lock - v3.0
+###### Table 40. Settings - Win - OIB - Device Security - U - Power and Device Lock - v3.0
 
 
-<h3 id="section-18">Win - OIB - Device Security - U - Windows Spotlight and Org Messages - v3.0</h3>
+<h3 id="section-23">Win - OIB - Device Security - U - Windows Spotlight and Org Messages - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2465,7 +2683,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 31. Basics - Win - OIB - Device Security - U - Windows Spotlight and Org Messages - v3.0
+###### Table 41. Basics - Win - OIB - Device Security - U - Windows Spotlight and Org Messages - v3.0
 
 
 <table class='table-settings'>
@@ -2526,10 +2744,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 32. Settings - Win - OIB - Device Security - U - Windows Spotlight and Org Messages - v3.0
+###### Table 42. Settings - Win - OIB - Device Security - U - Windows Spotlight and Org Messages - v3.0
 
 
-<h3 id="section-19">Win - OIB - Encryption - D - BitLocker (OS Disk) - v3.0</h3>
+<h3 id="section-24">Win - OIB - Encryption - D - BitLocker (OS Disk) - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2577,7 +2795,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 33. Basics - Win - OIB - Encryption - D - BitLocker (OS Disk) - v3.0
+###### Table 43. Basics - Win - OIB - Encryption - D - BitLocker (OS Disk) - v3.0
 
 
 <table class='table-settings'>
@@ -2699,10 +2917,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 34. Settings - Win - OIB - Encryption - D - BitLocker (OS Disk) - v3.0
+###### Table 44. Settings - Win - OIB - Encryption - D - BitLocker (OS Disk) - v3.0
 
 
-<h3 id="section-20">Win - OIB - Google Chrome - D - Security - v3.0</h3>
+<h3 id="section-25">Win - OIB - Google Chrome - D - Security - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2742,7 +2960,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 35. Basics - Win - OIB - Google Chrome - D - Security - v3.0
+###### Table 45. Basics - Win - OIB - Google Chrome - D - Security - v3.0
 
 
 <table class='table-settings'>
@@ -3003,10 +3221,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 36. Settings - Win - OIB - Google Chrome - D - Security - v3.0
+###### Table 46. Settings - Win - OIB - Google Chrome - D - Security - v3.0
 
 
-<h3 id="section-21">Win - OIB - Google Chrome - U - Experience and Extensions - v3.0</h3>
+<h3 id="section-26">Win - OIB - Google Chrome - U - Experience and Extensions - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3046,7 +3264,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 37. Basics - Win - OIB - Google Chrome - U - Experience and Extensions - v3.0
+###### Table 47. Basics - Win - OIB - Google Chrome - U - Experience and Extensions - v3.0
 
 
 <table class='table-settings'>
@@ -3105,10 +3323,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 38. Settings - Win - OIB - Google Chrome - U - Experience and Extensions - v3.0
+###### Table 48. Settings - Win - OIB - Google Chrome - U - Experience and Extensions - v3.0
 
 
-<h3 id="section-22">Win - OIB - Google Chrome - U - Profiles, Sign-In and Sync - v3.0</h3>
+<h3 id="section-27">Win - OIB - Google Chrome - U - Profiles, Sign-In and Sync - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3140,7 +3358,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 15:43:15</td>
+<td class='property-column2'>10 April 2024 21:02:47</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -3148,7 +3366,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 39. Basics - Win - OIB - Google Chrome - U - Profiles, Sign-In and Sync - v3.0
+###### Table 49. Basics - Win - OIB - Google Chrome - U - Profiles, Sign-In and Sync - v3.0
 
 
 <table class='table-settings'>
@@ -3196,18 +3414,14 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Restrict which Google accounts are allowed to be set as browser primary accounts in Google Chrome (User)</td>
-<td class='property-column2'>Enabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Restrict which Google accounts are allowed to be set as browser primary accounts in Google Chrome (User)</td>
-<td class='property-column2'>`*@MSDx963348.onmicrosoft.com</td>
+<td class='property-column2'>Disabled</td>
 </tr>
 </table>
 
-###### Table 40. Settings - Win - OIB - Google Chrome - U - Profiles, Sign-In and Sync - v3.0
+###### Table 50. Settings - Win - OIB - Google Chrome - U - Profiles, Sign-In and Sync - v3.0
 
 
-<h3 id="section-23">Win - OIB - Internet Explorer (Legacy) - U - Security - v3.0</h3>
+<h3 id="section-28">Win - OIB - Internet Explorer (Legacy) - D - Security - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3219,7 +3433,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Internet Explorer (Legacy) - U - Security - v3.0</td>
+<td class='property-column2'>Win - OIB - Internet Explorer (Legacy) - D - Security - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -3235,11 +3449,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:35</td>
+<td class='property-column2'>10 April 2024 21:01:43</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 15:38:58</td>
+<td class='property-column2'>10 April 2024 21:01:43</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -3247,7 +3461,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 41. Basics - Win - OIB - Internet Explorer (Legacy) - U - Security - v3.0
+###### Table 51. Basics - Win - OIB - Internet Explorer (Legacy) - D - Security - v3.1
 
 
 <table class='table-settings'>
@@ -3305,19 +3519,35 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Access data sources across domains</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Access data sources across domains</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow cut, copy or paste operations from the clipboard via script</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow paste operations via script</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow drag and drop or copy and paste files</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow drag and drop or copy and paste files</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow loading of XAML files</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>XAML Files</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow only approved domains to use the TDC ActiveX control</td>
@@ -3329,63 +3559,107 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow script-initiated windows without size or position constraints</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Allow scripting of Internet Explorer WebBrowser controls</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Allow scriptlets</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Allow updates to status bar via script</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Allow VBScript to run in Internet Explorer</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Automatic prompting for file downloads</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Don't run antimalware programs against ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Download signed ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Download unsigned ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Enable dragging of content from different domains across windows</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Enable dragging of content from different domains within a window</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Enable MIME Sniffing</td>
 <td class='property-column2'>Enabled</td>
 </tr>
 <tr class=''>
-<td class='property-column1' style='padding-left:10px !important;'>Enable MIME Sniffing</td>
-<td class='property-column2'>Enable</td>
+<td class='property-column1' style='padding-left:10px !important;'>Allow script-initiated windows without size or position constraints</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow scripting of Internet Explorer WebBrowser controls</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Internet Explorer web browser control</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow scriptlets</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Scriptlets</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow updates to status bar via script</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Status bar updates via script</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow VBScript to run in Internet Explorer</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow VBScript to run in Internet Explorer</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Automatic prompting for file downloads</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Automatic prompting for file downloads</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Don't run antimalware programs against ActiveX controls</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Don't run antimalware programs against ActiveX controls</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Download signed ActiveX controls</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Download signed ActiveX controls</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Download unsigned ActiveX controls</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Download unsigned ActiveX controls</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable dragging of content from different domains across windows</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable dragging of content from different domains across windows</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable dragging of content from different domains within a window</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable dragging of content from different domains within a window</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Include local path when user is uploading files to a server</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Include local directory path when uploading files to a server</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Initialize and script ActiveX controls not marked as safe</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Initialize and script ActiveX controls not marked as safe</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Java permissions</td>
@@ -3397,7 +3671,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Launching applications and files in an IFRAME</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Launching applications and files in an IFRAME</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Logon options</td>
@@ -3409,15 +3687,27 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Navigate windows and frames across different domains</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Navigate windows and frames across different domains</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Run .NET Framework-reliant components not signed with Authenticode</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Run .NET Framework-reliant components not signed with Authenticode</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Run .NET Framework-reliant components signed with Authenticode</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Run .NET Framework-reliant components signed with Authenticode</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Show security warning for potentially unsafe files</td>
@@ -3461,11 +3751,19 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Userdata persistence</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Userdata persistence</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Web sites in less privileged Web content zones can navigate into this zone</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Web sites in less privileged Web content zones can navigate into this zone</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr>
 <td colspan="2" class='category-level2'>Security Page</td>
@@ -3483,11 +3781,19 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Don't run antimalware programs against ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Don't run antimalware programs against ActiveX controls</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Initialize and script ActiveX controls not marked as safe</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Initialize and script ActiveX controls not marked as safe</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Java permissions</td>
@@ -3502,7 +3808,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Don't run antimalware programs against ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Don't run antimalware programs against ActiveX controls</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Java permissions</td>
@@ -3577,35 +3887,75 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Access data sources across domains</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Access data sources across domains</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow active scripting</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow active scripting</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow binary and script behaviors</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow Binary and Script Behaviors</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow cut, copy or paste operations from the clipboard via script</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow paste operations via script</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow drag and drop or copy and paste files</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow drag and drop or copy and paste files</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow file downloads</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow file downloads</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow loading of XAML files</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>XAML Files</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow META REFRESH</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow META REFRESH</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow only approved domains to use ActiveX controls without prompt</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Only allow approved domains to use ActiveX controls without prompt</td>
+<td class='property-column2'>Enable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow only approved domains to use the TDC ActiveX control</td>
@@ -3617,27 +3967,51 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow script-initiated windows without size or position constraints</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow script-initiated windows without size or position constraints</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow scripting of Internet Explorer WebBrowser controls</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Internet Explorer web browser control</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow scriptlets</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Scriptlets</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow updates to status bar via script</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Status bar updates via script</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow VBScript to run in Internet Explorer</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow VBScript to run in Internet Explorer</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Automatic prompting for file downloads</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Automatic prompting for file downloads</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Don't run antimalware programs against ActiveX controls</td>
@@ -3645,23 +4019,39 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Don't run antimalware programs against ActiveX controls</td>
-<td class='property-column2'>Enable</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Download signed ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Download signed ActiveX controls</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Download unsigned ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Download unsigned ActiveX controls</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Enable dragging of content from different domains across windows</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable dragging of content from different domains across windows</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Enable dragging of content from different domains within a window</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable dragging of content from different domains within a window</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Enable MIME Sniffing</td>
@@ -3673,15 +4063,35 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Include local path when user is uploading files to a server</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Include local directory path when uploading files to a server</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Initialize and script ActiveX controls not marked as safe</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Initialize and script ActiveX controls not marked as safe</td>
+<td class='property-column2'>Disable</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Java permissions</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Java permissions</td>
+<td class='property-column2'>Disable Java</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Launching applications and files in an IFRAME</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Launching applications and files in an IFRAME</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Logon options</td>
@@ -3693,31 +4103,59 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Navigate windows and frames across different domains</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Navigate windows and frames across different domains</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Run .NET Framework-reliant components not signed with Authenticode</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Run .NET Framework-reliant components not signed with Authenticode</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Run .NET Framework-reliant components signed with Authenticode</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Run .NET Framework-reliant components signed with Authenticode</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Run ActiveX controls and plugins</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Run ActiveX controls and plugins</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Script ActiveX controls marked safe for scripting</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Script ActiveX controls marked safe for scripting</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scripting of Java applets</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Scripting of Java applets</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Show security warning for potentially unsafe files</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Launching programs and unsafe files</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Turn on Cross-Site Scripting Filter</td>
@@ -3736,6 +4174,14 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Enable</td>
 </tr>
 <tr class=''>
+<td class='property-column1'>Turn on SmartScreen Filter scan</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Use SmartScreen Filter</td>
+<td class='property-column2'>Enable</td>
+</tr>
+<tr class=''>
 <td class='property-column1'>Use Pop-up Blocker</td>
 <td class='property-column2'>Enabled</td>
 </tr>
@@ -3745,22 +4191,38 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Userdata persistence</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Userdata persistence</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Web sites in less privileged Web content zones can navigate into this zone</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Web sites in less privileged Web content zones can navigate into this zone</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr>
 <td colspan="2" class='category-level2'>Trusted Sites Zone</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Don't run antimalware programs against ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Don't run antimalware programs against ActiveX controls</td>
+<td class='property-column2'>Enable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Initialize and script ActiveX controls not marked as safe</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Initialize and script ActiveX controls not marked as safe</td>
+<td class='property-column2'>Disable</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Java permissions</td>
@@ -3791,7 +4253,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Prevent per-user installation of ActiveX controls</td>
-<td class='property-column2'>Disabled</td>
+<td class='property-column2'>Enabled</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Security Zones: Do not allow users to add/delete sites</td>
@@ -3851,6 +4313,13 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Enabled</td>
 </tr>
 <tr>
+<td colspan="2" class='category-level2'>Mime Sniffing Safety Feature</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Internet Explorer Processes</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr>
 <td colspan="2" class='category-level2'>MK Protocol Security Restriction</td>
 </tr>
 <tr class=''>
@@ -3894,10 +4363,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 42. Settings - Win - OIB - Internet Explorer (Legacy) - U - Security - v3.0
+###### Table 52. Settings - Win - OIB - Internet Explorer (Legacy) - D - Security - v3.1
 
 
-<h3 id="section-24">Win - OIB - Microsoft Accounts - U - Configuration - v3.0</h3>
+<h3 id="section-29">Win - OIB - Microsoft Accounts - U - Configuration - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3937,7 +4406,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 43. Basics - Win - OIB - Microsoft Accounts - U - Configuration - v3.0
+###### Table 53. Basics - Win - OIB - Microsoft Accounts - U - Configuration - v3.0
 
 
 <table class='table-settings'>
@@ -3971,10 +4440,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 44. Settings - Win - OIB - Microsoft Accounts - U - Configuration - v3.0
+###### Table 54. Settings - Win - OIB - Microsoft Accounts - U - Configuration - v3.0
 
 
-<h3 id="section-25">Win - OIB - Microsoft Edge - D - Security - v3.0</h3>
+<h3 id="section-30">Win - OIB - Microsoft Edge - D - Security - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4014,7 +4483,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 45. Basics - Win - OIB - Microsoft Edge - D - Security - v3.0
+###### Table 55. Basics - Win - OIB - Microsoft Edge - D - Security - v3.0
 
 
 <table class='table-settings'>
@@ -4210,10 +4679,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 46. Settings - Win - OIB - Microsoft Edge - D - Security - v3.0
+###### Table 56. Settings - Win - OIB - Microsoft Edge - D - Security - v3.0
 
 
-<h3 id="section-26">Win - OIB - Microsoft Edge - D - Updates - v3.0</h3>
+<h3 id="section-31">Win - OIB - Microsoft Edge - D - Updates - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4253,7 +4722,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 47. Basics - Win - OIB - Microsoft Edge - D - Updates - v3.0
+###### Table 57. Basics - Win - OIB - Microsoft Edge - D - Updates - v3.0
 
 
 <table class='table-settings'>
@@ -4358,10 +4827,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 48. Settings - Win - OIB - Microsoft Edge - D - Updates - v3.0
+###### Table 58. Settings - Win - OIB - Microsoft Edge - D - Updates - v3.0
 
 
-<h3 id="section-27">Win - OIB - Microsoft Edge - U - Extensions - v3.0</h3>
+<h3 id="section-32">Win - OIB - Microsoft Edge - U - Extensions - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4389,11 +4858,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>26 October 2023 18:43:34</td>
+<td class='property-column2'>10 April 2024 21:30:30</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>26 October 2023 18:43:34</td>
+<td class='property-column2'>10 April 2024 21:30:30</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4401,7 +4870,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 49. Basics - Win - OIB - Microsoft Edge - U - Extensions - v3.0
+###### Table 59. Basics - Win - OIB - Microsoft Edge - U - Extensions - v3.0
 
 
 <table class='table-settings'>
@@ -4437,10 +4906,93 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 50. Settings - Win - OIB - Microsoft Edge - U - Extensions - v3.0
+###### Table 60. Settings - Win - OIB - Microsoft Edge - U - Extensions - v3.0
 
 
-<h3 id="section-28">Win - OIB - Microsoft Edge - U - Password Management - v3.0</h3>
+<h3 id="section-33">Win - OIB - Microsoft Edge - U - Extensions - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Microsoft Edge - U - Extensions - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>26 October 2023 18:43:34</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 21:15:31</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 61. Basics - Win - OIB - Microsoft Edge - U - Extensions - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Microsoft Edge</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Extensions</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow specific extensions to be installed (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Blocks external extensions from being installed (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Control which extensions are installed silently (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Extension/App IDs and update URLs to be silently installed (User)</td>
+<td class='property-column2'>nkbndigcebkoaejohleckhekfmcecfja;ofefcgjbeghpigppfmkologfjadafddi</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Control which extensions cannot be installed (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Extension IDs the user should be prevented from installing (or `* for all) (User)</td>
+<td class='property-column2'>`*</td>
+</tr>
+</table>
+
+###### Table 62. Settings - Win - OIB - Microsoft Edge - U - Extensions - v3.1
+
+
+<h3 id="section-34">Win - OIB - Microsoft Edge - U - Password Management - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4480,7 +5032,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 51. Basics - Win - OIB - Microsoft Edge - U - Password Management - v3.0
+###### Table 63. Basics - Win - OIB - Microsoft Edge - U - Password Management - v3.0
 
 
 <table class='table-settings'>
@@ -4516,10 +5068,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 52. Settings - Win - OIB - Microsoft Edge - U - Password Management - v3.0
+###### Table 64. Settings - Win - OIB - Microsoft Edge - U - Password Management - v3.0
 
 
-<h3 id="section-29">Win - OIB - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0</h3>
+<h3 id="section-35">Win - OIB - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4559,7 +5111,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 53. Basics - Win - OIB - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
+###### Table 65. Basics - Win - OIB - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
 
 
 <table class='table-settings'>
@@ -4611,10 +5163,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 54. Settings - Win - OIB - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
+###### Table 66. Settings - Win - OIB - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
 
 
-<h3 id="section-30">Win - OIB - Microsoft Edge - U - User Experience - v3.0</h3>
+<h3 id="section-36">Win - OIB - Microsoft Edge - U - User Experience - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4642,11 +5194,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:39</td>
+<td class='property-column2'>10 April 2024 21:30:34</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>26 October 2023 18:43:16</td>
+<td class='property-column2'>10 April 2024 21:30:34</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4654,7 +5206,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 55. Basics - Win - OIB - Microsoft Edge - U - User Experience - v3.0
+###### Table 67. Basics - Win - OIB - Microsoft Edge - U - User Experience - v3.0
 
 
 <table class='table-settings'>
@@ -4750,10 +5302,145 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 56. Settings - Win - OIB - Microsoft Edge - U - User Experience - v3.0
+###### Table 68. Settings - Win - OIB - Microsoft Edge - U - User Experience - v3.0
 
 
-<h3 id="section-31">Win - OIB - Microsoft Office - D - Updates - v3.0</h3>
+<h3 id="section-37">Win - OIB - Microsoft Edge - U - User Experience - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Microsoft Edge - U - User Experience - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>09 August 2023 16:01:39</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 21:15:43</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 69. Basics - Win - OIB - Microsoft Edge - U - User Experience - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Microsoft Edge</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow users to access the games menu (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable full-tab promotional content (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Microsoft Edge built-in PDF reader powered by Adobe Acrobat enabled (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Search in Sidebar enabled (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Show Hubs Sidebar (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Show Microsoft Rewards experiences (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Shows button on native PDF viewer in Microsoft Edge that allows users to sign up for Adobe Acrobat subscription (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Edge Workspaces settings</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable Workspaces (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Microsoft Edge - Default Settings (users can override)</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Performance</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable startup boost (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Sleeping Tabs settings</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Configure Sleeping Tabs (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Startup, home page and new tab page</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Action to take on startup (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Action to take on startup (User)</td>
+<td class='property-column2'>Restore the last session</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Configure the Microsoft Edge new tab page experience (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>New tab page experience (User)</td>
+<td class='property-column2'>Office 365 feed experience</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Set new tab page quick links (User)</td>
+<td class='property-column2'>Disabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Show Home button on toolbar (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+</table>
+
+###### Table 70. Settings - Win - OIB - Microsoft Edge - U - User Experience - v3.1
+
+
+<h3 id="section-38">Win - OIB - Microsoft Office - D - Updates - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4793,7 +5480,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 57. Basics - Win - OIB - Microsoft Office - D - Updates - v3.0
+###### Table 71. Basics - Win - OIB - Microsoft Office - D - Updates - v3.0
 
 
 <table class='table-settings'>
@@ -4833,10 +5520,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 58. Settings - Win - OIB - Microsoft Office - D - Updates - v3.0
+###### Table 72. Settings - Win - OIB - Microsoft Office - D - Updates - v3.0
 
 
-<h3 id="section-32">Win - OIB - Microsoft Office - U - Config and Experience - v3.0</h3>
+<h3 id="section-39">Win - OIB - Microsoft Office - U - Config and Experience - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4876,7 +5563,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 59. Basics - Win - OIB - Microsoft Office - U - Config and Experience - v3.0
+###### Table 73. Basics - Win - OIB - Microsoft Office - U - Config and Experience - v3.0
 
 
 <table class='table-settings'>
@@ -5037,10 +5724,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 60. Settings - Win - OIB - Microsoft Office - U - Config and Experience - v3.0
+###### Table 74. Settings - Win - OIB - Microsoft Office - U - Config and Experience - v3.0
 
 
-<h3 id="section-33">Win - OIB - Microsoft OneDrive - D - Configuration - v3.0</h3>
+<h3 id="section-40">Win - OIB - Microsoft OneDrive - D - Configuration - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5052,7 +5739,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Microsoft OneDrive - D - Configuration - v3.0</td>
+<td class='property-column2'>Win - OIB - Microsoft OneDrive - D - Configuration - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -5068,11 +5755,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:41</td>
+<td class='property-column2'>10 April 2024 20:36:40</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>19 August 2023 16:06:14</td>
+<td class='property-column2'>10 April 2024 20:36:40</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -5080,7 +5767,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 61. Basics - Win - OIB - Microsoft OneDrive - D - Configuration - v3.0
+###### Table 75. Basics - Win - OIB - Microsoft OneDrive - D - Configuration - v3.1
 
 
 <table class='table-settings'>
@@ -5097,7 +5784,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Tenant ID: (Device)</td>
-<td class='property-column2'>2d026a31-8c0a-4b36-8b34-07f42b6e2a87</td>
+<td class='property-column2'>5b7fe0df-4de4-412e-aeb4-9c18d77279d1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow users to contact Microsoft for feedback and support</td>
@@ -5124,6 +5811,14 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Enabled</td>
 </tr>
 <tr class=''>
+<td class='property-column1'>Set the sync app update ring</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Update ring: (Device)</td>
+<td class='property-column2'>Production</td>
+</tr>
+<tr class=''>
 <td class='property-column1'>Silently move Windows known folders to OneDrive</td>
 <td class='property-column2'>Enabled</td>
 </tr>
@@ -5145,7 +5840,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Tenant ID: (Device)</td>
-<td class='property-column2'>2d026a31-8c0a-4b36-8b34-07f42b6e2a87</td>
+<td class='property-column2'>5b7fe0df-4de4-412e-aeb4-9c18d77279d1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Silently sign in users to the OneDrive sync app with their Windows credentials</td>
@@ -5157,10 +5852,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 62. Settings - Win - OIB - Microsoft OneDrive - D - Configuration - v3.0
+###### Table 76. Settings - Win - OIB - Microsoft OneDrive - D - Configuration - v3.1
 
 
-<h3 id="section-34">Win - OIB - Microsoft OneDrive - U - Configuration - v3.0</h3>
+<h3 id="section-41">Win - OIB - Microsoft OneDrive - U - Configuration - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5200,7 +5895,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 63. Basics - Win - OIB - Microsoft OneDrive - U - Configuration - v3.0
+###### Table 77. Basics - Win - OIB - Microsoft OneDrive - U - Configuration - v3.0
 
 
 <table class='table-settings'>
@@ -5241,10 +5936,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 64. Settings - Win - OIB - Microsoft OneDrive - U - Configuration - v3.0
+###### Table 78. Settings - Win - OIB - Microsoft OneDrive - U - Configuration - v3.0
 
 
-<h3 id="section-35">Win - OIB - Microsoft Store - D - Configuration - v3.0</h3>
+<h3 id="section-42">Win - OIB - Microsoft Store - D - Configuration - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5256,7 +5951,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Microsoft Store - D - Configuration - v3.0</td>
+<td class='property-column2'>Win - OIB - Microsoft Store - D - Configuration - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -5272,11 +5967,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:42</td>
+<td class='property-column2'>10 April 2024 20:36:24</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>26 October 2023 18:37:37</td>
+<td class='property-column2'>11 April 2024 19:41:53</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -5284,7 +5979,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 65. Basics - Win - OIB - Microsoft Store - D - Configuration - v3.0
+###### Table 79. Basics - Win - OIB - Microsoft Store - D - Configuration - v3.1
 
 
 <table class='table-settings'>
@@ -5297,7 +5992,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow All Trusted Apps</td>
-<td class='property-column2'>Explicit allow unlock.</td>
+<td class='property-column2'>Explicit deny.</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow apps from the Microsoft app store to auto update</td>
@@ -5312,8 +6007,8 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Block</td>
 </tr>
 <tr class=''>
-<td class='property-column1'>Block Non Admin User Install</td>
-<td class='property-column2'>Block</td>
+<td class='property-column1'>MSI Allow User Control Over Install</td>
+<td class='property-column2'>Disabled</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>MSI Always Install With Elevated Privileges</td>
@@ -5321,10 +6016,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 66. Settings - Win - OIB - Microsoft Store - D - Configuration - v3.0
+###### Table 80. Settings - Win - OIB - Microsoft Store - D - Configuration - v3.1
 
 
-<h3 id="section-36">Win - OIB - Microsoft Store - U - Configuration - v3.0</h3>
+<h3 id="section-43">Win - OIB - Microsoft Store - U - Configuration - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5336,7 +6031,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Microsoft Store - U - Configuration - v3.0</td>
+<td class='property-column2'>Win - OIB - Microsoft Store - U - Configuration - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -5352,11 +6047,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:43</td>
+<td class='property-column2'>10 April 2024 20:35:53</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>26 October 2023 18:37:50</td>
+<td class='property-column2'>10 April 2024 20:35:53</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -5364,7 +6059,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 67. Basics - Win - OIB - Microsoft Store - U - Configuration - v3.0
+###### Table 81. Basics - Win - OIB - Microsoft Store - U - Configuration - v3.1
 
 
 <table class='table-settings'>
@@ -5376,18 +6071,21 @@ details.description:not([open]) summary::after {
 <td colspan="2" class='category-level1'>Administrative Templates</td>
 </tr>
 <tr>
+<td colspan="2" class='category-level2'>Start Menu and Taskbar</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Do not allow pinning Store app to the Taskbar (User)</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr>
 <td colspan="2" class='category-level2'>Store</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Turn off the Store application (User)</td>
-<td class='property-column2'>Enabled</td>
+<td class='property-column2'>Disabled</td>
 </tr>
 <tr>
 <td colspan="2" class='category-level1'>Microsoft App Store</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Allow apps from the Microsoft app store to auto update</td>
-<td class='property-column2'>Allowed.</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>MSI Always Install With Elevated Privileges (User)</td>
@@ -5395,14 +6093,279 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Require Private Store Only (User)</td>
-<td class='property-column2'>Only Private store is enabled.</td>
+<td class='property-column2'>Allow both public and Private store.</td>
 </tr>
 </table>
 
-###### Table 68. Settings - Win - OIB - Microsoft Store - U - Configuration - v3.0
+###### Table 82. Settings - Win - OIB - Microsoft Store - U - Configuration - v3.1
 
 
-<h3 id="section-37">Win - OIB - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0</h3>
+<h3 id="section-44">Win - OIB - Network - D - BITS Configuration - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Network - D - BITS Configuration - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:35:40</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:35:40</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 83. Basics - Win - OIB - Network - D - BITS Configuration - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Administrative Templates</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>Background Intelligent Transfer Service (BITS)</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Allow BITS Peercaching</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level2'>BranchCache</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Set BranchCache Distributed Cache mode</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Turn on BranchCache</td>
+<td class='property-column2'>Enabled</td>
+</tr>
+</table>
+
+###### Table 84. Settings - Win - OIB - Network - D - BITS Configuration - v3.1
+
+
+<h3 id="section-45">Win - OIB - Windows Firewall - D - Firewall Configuration - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Windows Firewall - D - Firewall Configuration - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Category</td>
+<td class='property-column2'>Firewall</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Policy type</td>
+<td class='property-column2'>Windows Firewall</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>09 August 2023 16:01:44</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:53:19</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 85. Basics - Win - OIB - Windows Firewall - D - Firewall Configuration - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Auditing</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Object Access Audit Filtering Platform Connection</td>
+<td class='property-column2'>Failure</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Object Access Audit Filtering Platform Packet Drop</td>
+<td class='property-column2'>Failure</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Firewall</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Disable Stateful Ftp</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable Domain Network Firewall</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Default Inbound Action for Domain Profile</td>
+<td class='property-column2'>Block</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Default Outbound Action</td>
+<td class='property-column2'>Allow</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Disable Inbound Notifications</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Log Max File Size</td>
+<td class='property-column2'>16384</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Disable Stealth Mode</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable Log Dropped Packets</td>
+<td class='property-column2'>Enable Logging Of Dropped Packets</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable Log Success Connections</td>
+<td class='property-column2'>Enable Logging Of Successful Connections</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Log File Path</td>
+<td class='property-column2'>%SystemRoot%\System32\logfiles\firewall\domainfw.log</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable Private Network Firewall</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Disable Inbound Notifications</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Default Outbound Action</td>
+<td class='property-column2'>Allow</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Log Max File Size</td>
+<td class='property-column2'>16384</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Default Inbound Action for Private Profile</td>
+<td class='property-column2'>Block</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable Log Dropped Packets</td>
+<td class='property-column2'>Enable Logging Of Dropped Packets</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable Log Success Connections</td>
+<td class='property-column2'>Enable Logging Of Successful Connections</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Log File Path</td>
+<td class='property-column2'>%SystemRoot%\System32\logfiles\firewall\privatefw.log</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Enable Public Network Firewall</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Log Max File Size</td>
+<td class='property-column2'>16384</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow Local Policy Merge</td>
+<td class='property-column2'>False</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Default Outbound Action</td>
+<td class='property-column2'>Allow</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Disable Inbound Notifications</td>
+<td class='property-column2'>True</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Default Inbound Action for Public Profile</td>
+<td class='property-column2'>Block</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable Log Ignored Rules</td>
+<td class='property-column2'>Disable Logging Of Ignored Rules</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable Log Dropped Packets</td>
+<td class='property-column2'>Enable Logging Of Dropped Packets</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Enable Log Success Connections</td>
+<td class='property-column2'>Enable Logging Of Successful Connections</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Log File Path</td>
+<td class='property-column2'>%SystemRoot%\System32\logfiles\firewall\publicfw.log</td>
+</tr>
+<tr class=''>
+<td class='property-column1' style='padding-left:10px !important;'>Allow Local Ipsec Policy Merge</td>
+<td class='property-column2'>False</td>
+</tr>
+</table>
+
+###### Table 86. Settings - Win - OIB - Windows Firewall - D - Firewall Configuration - v3.1
+
+
+<h3 id="section-46">Win - OIB - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5442,7 +6405,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 69. Basics - Win - OIB - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0
+###### Table 87. Basics - Win - OIB - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0
 
 
 <table class='table-settings'>
@@ -5463,10 +6426,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 70. Settings - Win - OIB - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0
+###### Table 88. Settings - Win - OIB - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0
 
 
-<h3 id="section-38">Win - OIB - Windows LAPS - D - LAPS Configuration - v3.0</h3>
+<h3 id="section-47">Win - OIB - Windows LAPS - D - LAPS Configuration - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5478,7 +6441,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Windows LAPS - D - LAPS Configuration - v3.0</td>
+<td class='property-column2'>Win - OIB - Windows LAPS - D - LAPS Configuration - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -5506,7 +6469,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>26 October 2023 22:07:36</td>
+<td class='property-column2'>10 April 2024 20:54:03</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -5514,7 +6477,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 71. Basics - Win - OIB - Windows LAPS - D - LAPS Configuration - v3.0
+###### Table 89. Basics - Win - OIB - Windows LAPS - D - LAPS Configuration - v3.1
 
 
 <table class='table-settings'>
@@ -5532,7 +6495,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Password Complexity</td>
-<td class='property-column2'>Large letters + small letters + numbers + special characters</td>
+<td class='property-column2'>Large letters + small letters + numbers + special characters (improved readability)</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Password Length</td>
@@ -5548,10 +6511,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 72. Settings - Win - OIB - Windows LAPS - D - LAPS Configuration - v3.0
+###### Table 90. Settings - Win - OIB - Windows LAPS - D - LAPS Configuration - v3.1
 
 
-<h3 id="section-39">Win - OIB - Windows Update for Business - D - Delivery Optimisation - v3.0</h3>
+<h3 id="section-48">Win - OIB - Windows Update for Business - D - Delivery Optimisation - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5591,7 +6554,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 73. Basics - Win - OIB - Windows Update for Business - D - Delivery Optimisation - v3.0
+###### Table 91. Basics - Win - OIB - Windows Update for Business - D - Delivery Optimisation - v3.0
 
 
 <table class='table-settings'>
@@ -5652,10 +6615,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 74. Settings - Win - OIB - Windows Update for Business - D - Delivery Optimisation - v3.0
+###### Table 92. Settings - Win - OIB - Windows Update for Business - D - Delivery Optimisation - v3.0
 
 
-<h3 id="section-40">Win - OIB - Windows Update for Business - D - Reports and Telemetry - v3.0</h3>
+<h3 id="section-49">Win - OIB - Windows Update for Business - D - Reports and Telemetry - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5695,7 +6658,7 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 75. Basics - Win - OIB - Windows Update for Business - D - Reports and Telemetry - v3.0
+###### Table 93. Basics - Win - OIB - Windows Update for Business - D - Reports and Telemetry - v3.0
 
 
 <table class='table-settings'>
@@ -5731,10 +6694,10 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 76. Settings - Win - OIB - Windows Update for Business - D - Reports and Telemetry - v3.0
+###### Table 94. Settings - Win - OIB - Windows Update for Business - D - Reports and Telemetry - v3.0
 
 
-<h3 id="section-41">Win - OIB - Windows User Experience - D - Feature Configuration - v3.0</h3>
+<h3 id="section-50">Win - OIB - Windows Update for Business - D - Restart Warnings - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5746,7 +6709,7 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - Windows User Experience - D - Feature Configuration - v3.0</td>
+<td class='property-column2'>Win - OIB - Windows Update for Business - D - Restart Warnings - v3.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -5762,11 +6725,11 @@ details.description:not([open]) summary::after {
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:43</td>
+<td class='property-column2'>11 April 2024 11:05:02</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>29 September 2023 08:57:43</td>
+<td class='property-column2'>11 April 2024 11:05:02</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -5774,7 +6737,79 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 77. Basics - Win - OIB - Windows User Experience - D - Feature Configuration - v3.0
+###### Table 95. Basics - Win - OIB - Windows Update for Business - D - Restart Warnings - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Windows Update For Business</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Auto Restart Notification Schedule</td>
+<td class='property-column2'>15 Minutes</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Auto Restart Required Notification Dismissal</td>
+<td class='property-column2'>User Dismissal.</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Schedule Imminent Restart Warning</td>
+<td class='property-column2'>60 Minutes</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Schedule Restart Warning</td>
+<td class='property-column2'>8 Hours</td>
+</tr>
+</table>
+
+###### Table 96. Settings - Win - OIB - Windows Update for Business - D - Restart Warnings - v3.1
+
+
+<h3 id="section-51">Win - OIB - Windows User Experience - D - Feature Configuration - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Windows User Experience - D - Feature Configuration - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:35:25</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:35:25</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 97. Basics - Win - OIB - Windows User Experience - D - Feature Configuration - v3.1
 
 
 <table class='table-settings'>
@@ -5811,10 +6846,6 @@ details.description:not([open]) summary::after {
 <td class='property-column2'>Block</td>
 </tr>
 <tr class=''>
-<td class='property-column1'>Configure Search On Taskbar Mode</td>
-<td class='property-column2'>Search box</td>
-</tr>
-<tr class=''>
 <td class='property-column1'>Disable Removable Drive Indexing</td>
 <td class='property-column2'>Enable.</td>
 </tr>
@@ -5827,7 +6858,67 @@ details.description:not([open]) summary::after {
 </tr>
 </table>
 
-###### Table 78. Settings - Win - OIB - Windows User Experience - D - Feature Configuration - v3.0
+###### Table 98. Settings - Win - OIB - Windows User Experience - D - Feature Configuration - v3.1
+
+
+<h3 id="section-52">Win - OIB - Windows User Experience - U - Copilot - v3.1</h3>
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Basics</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Name</td>
+<td class='property-column2'>Win - OIB - Windows User Experience - U - Copilot - v3.1</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Description</td>
+<td class='property-column2'></td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Profile type</td>
+<td class='property-column2'>Settings catalog</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Platform supported</td>
+<td class='property-column2'>Windows 10 and later</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Created</td>
+<td class='property-column2'>10 April 2024 20:35:10</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Last modified</td>
+<td class='property-column2'>10 April 2024 20:35:10</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Scope tags</td>
+<td class='property-column2'>Default</td>
+</tr>
+</table>
+
+###### Table 99. Basics - Win - OIB - Windows User Experience - U - Copilot - v3.1
+
+
+<table class='table-settings'>
+<tr class='table-header1'>
+<td>Name</td>
+<td>Value</td>
+</tr>
+<tr>
+<td colspan="2" class='category-level1'>Windows AI</td>
+</tr>
+<tr class=''>
+<td class='property-column1'>Turn Off Copilot in Windows (User)</td>
+<td class='property-column2'>Enable Copilot</td>
+</tr>
+</table>
+
+###### Table 100. Settings - Win - OIB - Windows User Experience - U - Copilot - v3.1
 
 
 
