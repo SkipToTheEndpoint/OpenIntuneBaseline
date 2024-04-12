@@ -60,7 +60,7 @@
                                                                                                                                       {
                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                           "settingValueTemplateReference":  null,
-                                                                                                                                          "value":  "5b7fe0df-4de4-412e-aeb4-9c18d77279d1"
+                                                                                                                                          "value":  "%OrganizationId%"
                                                                                                                                       }
                                                                                                                                   ]
                                                                                              }
@@ -325,7 +325,7 @@
                                                                                                  "simpleSettingValue":  {
                                                                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                             "settingValueTemplateReference":  null,
-                                                                                                                            "value":  "5b7fe0df-4de4-412e-aeb4-9c18d77279d1"
+                                                                                                                            "value":  "%OrganizationId%"
                                                                                                                         }
                                                                                              }
                                                                                          ]
