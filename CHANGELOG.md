@@ -1,6 +1,12 @@
 # Change Log
 
-## v3.1 - 2023-04-10
+# v3.1.1 - 2024-04-15
+### <u>Changed</u>
+#### <u>Settings Catalog</u>
+**Win - OIB - Internet Explorer (Legacy) - D - Security**
+* Resolved some policies that were mis-aligned with MS Baseline.
+
+## v3.1 - 2024-04-10
 
 ### <u>Added</u>
 #### <u>Settings Catalog</u>
