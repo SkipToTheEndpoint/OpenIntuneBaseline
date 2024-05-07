@@ -10,7 +10,7 @@
 
 ### <u>Added</u>
 #### <u>Settings Catalog</u>
-**Win - OIB - Credential Management - D - Passwordlesss - v3.1**
+**Win - OIB - Credential Management - D - Passwordless - v3.1**
 * Added device policy to enable passwordless & web sign-in experiences, as well as setting WHfB as the default credential provider. 
 <br> **NOTE:** This can have an impact on the use of things like Run as Administrator and LAPS, so if you're doing that or not using WHfB (you should be), don't enable this policy.
 
@@ -92,8 +92,8 @@ Added separate compliance policies to allow for much better granularity and cont
 * Added "Do not allow pinning Store app to the Taskbar (User)" setting configured to "Enabled".
 * Removed "Allow apps from the Microsoft app store to auto update" setting as this is configured in the Device-based policy.
 
-**Win - OIB - Windows User Experience - U - Feature Configuration**
-* Added "Enable dev drive" setting configured to "Disabled"
+**Win - OIB - Windows User Experience - D - Feature Configuration**
+* Added "Disable Consumer Account State Content" setting configured to "Enabled"
 
 #### <u>Endpoint Security</u>
 **Win - OIB - Defender Antivirus - D - AV Configuration**
