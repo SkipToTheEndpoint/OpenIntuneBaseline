@@ -43,7 +43,7 @@ Additional configurations were then layered using information from various MVP b
 ## Intended Use-Case
 The baseline has been designed for, and tested on a cloud-native Windows 11 device (Entra Joined, Intune Managed), though should also work on Windows 10. It is **not** designed for hybrid environments, and will likely not work as expected or intended on hybrid-joined devices.
 
-It is _**Microsoft's recommendation**_ that you move to cloud-native for new devices: https://aka.ms/CloudNativeDevices
+It is _**Microsoft's recommendation**_ that you move to cloud-native for new devices: https://aka.ms/CloudNativeEndpoints
 
 I would always recommend maintaining GPO for on-prem devices, and using Intune for cloud-native devices, with the exception of things like Endpoint Analytics, Windows Update for Business and Application Deployment. Applying Intune policy over the top of GPO can cause unexpected results, and should be avoided where possible. Similarly, GPOs may well leave registry keys behind that can cause unexpected results when applying Intune policy.
 
