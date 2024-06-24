@@ -160,27 +160,27 @@
                                                                                                                                       {
                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                           "settingValueTemplateReference":  null,
-                                                                                                                                          "value":  "pst"
+                                                                                                                                          "value":  "*.pst"
                                                                                                                                       },
                                                                                                                                       {
                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                           "settingValueTemplateReference":  null,
-                                                                                                                                          "value":  "exe"
+                                                                                                                                          "value":  "*.exe"
                                                                                                                                       },
                                                                                                                                       {
                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                           "settingValueTemplateReference":  null,
-                                                                                                                                          "value":  "msi"
+                                                                                                                                          "value":  "*.msi"
                                                                                                                                       },
                                                                                                                                       {
                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                           "settingValueTemplateReference":  null,
-                                                                                                                                          "value":  "appx"
+                                                                                                                                          "value":  "*.appx"
                                                                                                                                       },
                                                                                                                                       {
                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                           "settingValueTemplateReference":  null,
-                                                                                                                                          "value":  "lnk"
+                                                                                                                                          "value":  "*.lnk"
                                                                                                                                       }
                                                                                                                                   ]
                                                                                              }
