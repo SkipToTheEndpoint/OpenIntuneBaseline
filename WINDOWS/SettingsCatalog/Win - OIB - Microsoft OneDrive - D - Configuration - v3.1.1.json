@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-04-10T19:36:40.3903099Z",
-    "name":  "Win - OIB - Microsoft OneDrive - D - Configuration - v3.1",
+    "name":  "Win - OIB - Microsoft OneDrive - D - Configuration - v3.1.1",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
