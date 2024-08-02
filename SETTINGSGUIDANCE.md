@@ -24,6 +24,10 @@ The following settings are what I would reccommend for a standard, flat organisa
 | Windows Autopatch - Ring3 	| Dynamic - 80% 	|        9 days       	|     1 day    	|      2 days      	|
 | Windows Autopatch - Last  	| Assigned      	|       13 days       	|    0 days    	|       1 day      	|
 
+I'm also unhappy with the lack of reporting on M365 Apps updates Autopatch currently provides, so would personally disable Autopatch doing M365 Apps and instead configure Cloud Update (previously Servicing Profiles) via the [Microsoft 365 Apps Admin Center](https://config.office.com/) which provides incredible reporting and rollback capabilities. You can create "waves" which can act like WUfB update rings, and align these to your existing Autopatch groups.
+
+Full information on Cloud update can be found here: [Overview of cloud update in the Microsoft 365 Apps admin center](https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/cloud-update)
+
 ### Windows Update for Business (WUfB) Rings
 
 The baseline utilises a 3-ring update model of Pilot, UAT & Production. This is designed to allow for a staged rollout of updates to ensure any issues are caught before they reach the majority of users.
