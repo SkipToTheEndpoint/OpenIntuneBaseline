@@ -18,8 +18,11 @@
 </p>
 
 ---
-<sup>**IMPORTANT:-** This has been developed as a starting point or foundation and is not necessarily considered "complete". It is being made available to allow learning, development, and knowledge-sharing amongst communities.<br>
-No liability is assumed for the usage or application of the settings within this project in production tenants.</sup>
+
+> [!IMPORTANT]
+> This has been developed as a starting point or foundation and is not necessarily considered "complete". It is being made available to allow learning, development, and knowledge-sharing amongst communities.
+>
+> No liability is assumed for the usage or application of the settings within this project in production tenants.
 
 ---
 
@@ -52,9 +55,7 @@ I would always recommend maintaining GPO for on-prem devices, and using Intune f
 ## Baseline Security Posture
 Security frameworks tend to be seen as unmovable hard requirements rather than what they are, which is a set of **recommendations**. In fact, the CIS themselves preface their benchmarks with the following:
 
-> It is acceptable if 100% of the benchmark is not applied, as it is the responsibility and 
-decision of each organization to determine which settings are applicable to their unique 
-needs.
+> **It is acceptable if 100% of the benchmark is not applied, as it is the responsibility and decision of each organization to determine which settings are applicable to their unique needs.**
 
 It is impossible to create a true "one-size-fits-all" set of policies due to the massively differing nature of enterprise requirements. There is also a significant amount of "noise" in the security community, with many recommending settings that are not necessarily required or beneficial, such as enforcing default behaviour that a standard user cannot change, or settings that have been included in GPO baselines since the days of Windows 7. 
 This baseline is designed to be a starting point or guide, and all configurations applied to an environment regardless of source should be reviewed and adjusted to suit your own business requirements.
@@ -106,8 +107,6 @@ Almost all policies are Settings Catalog-backed and will show in Devices>Configu
 * Windows Hello for Business
 * Windows LAPS
 
-Guidance on settings can be found in the [Settings Guidance](/SETTINGSGUIDANCE.md) document.
-
 ## Limitations:
 Due to the wildly differing nature of environments, it is not possible to create a "baseline" for AppLocker or Windows Defender Application Control (WDAC). While the baseline ensures standard users cannot elevate to install applications, apps that do not require elevation or install to a user's AppData folder may not be blocked.
 
@@ -116,16 +115,21 @@ Due to the wildly differing nature of environments, it is not possible to create
 - **Windows Update for Business Reports** - With an appropriate Azure subscription, a Log Analytics Workspace can be created to monitor update compliance of devices. - [Additional information](https://learn.microsoft.com/en-us/windows/deployment/update/wufb-reports-overview) 
 - **M365 Apps Updates** - Enabling [Cloud Update](https://learn.microsoft.com/en-us/deployoffice/admincenter/cloud-update) through [config.office.com](https://config.office.com/officeSettings/serviceprofile) can ensure Office Apps for Business/Enterprise remain up-to-date on the Monthly Enterprise Channel. Settings in the "Office - Update Settings" policy can remain as Cloud Update takes priority over any other Office management. Ensure the [Inventory](https://config.office.com/officeSettings/inventory) is enabled.
 
+> [!NOTE]
+> Guidance on this can be found in the [Settings Guidance](/SETTINGSGUIDANCE.md) document.
+
 ---
 
 ## Importing the Baseline:
 The baseline was exported using the tool developed by Mikael Karlsson ([GitHub](https://github.com/Micke-K/IntuneManagement) and [Twitter](https://twitter.com/Micke_K_72)), and can be imported in the same way.
 Download or clone this repo, run the IntuneManagement tool and in the tool settings, change the "Root folder" under Import/Export to the appropriate folder of the baseline. Authenticate to a tenant with appropriate credentials, and use the Bulk>Import menu to import the whole baseline. Individual policy imports can be achieved using the "Import" option in the bottom right of the tool.
 
-You can choose to import as much or as little of the baseline as you wish, though you will need to change the "Root folder" to the appropriate folder for the policies you wish to import (e.g. Settings Catalog).
+You can choose to import as much or as little of the baseline as you wish, though you will need to change the "Root folder" to the appropriate folder for the platform (e.g. WINDOWS), or policy types (e.g. Settings Catalog) you wish to import.
 
 ## Post-Import Changes:
 As of v3.1 there are no post-import changes required as the IntuneManagement tool will automatically modify the Tenant GUIDs included in OneDrive policies based on the tenant.
 
 ## Additional Information:
-Please consult the [FAQ](/FAQ.md)
+
+> [!TIP]
+> For further information, please consult the [FAQ](/FAQ.md)
