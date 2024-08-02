@@ -24,6 +24,7 @@
 **Win - OIB - Device Security - D - Windows Subsystem for Linux**
 * Updated the policy to match the Microsoft recommended settings for WSL documented here: 
 <br>[Intune Settings for WSL | Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/intune#recommended-settings)
+<br> Thanks to [Peter van der Woude](https://x.com/pvanderwoude) for bringing my attention to the MS documentation.
 
 **Win - OIB - Device Security - U - Power and Device Lock**
 * Changed "Allow Hibernate" from "Enabled" to "Disabled". By having Hibernate enabled, "Require use of fast startup" being set to "Disabled" was not actually being enforced, leading to HiberBoot still working.
