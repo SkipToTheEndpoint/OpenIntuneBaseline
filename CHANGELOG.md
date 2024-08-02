@@ -1,10 +1,64 @@
 # Change Log
 
+# v3.2 - 2024-08-02
+### <u>Added</u>
+#### <u>Settings Catalog</u>
+**Win - OIB - Device Security - D - Config Refresh - v3.2**
+* Added configuration to enable Config Refresh and re-apply settings on a 30 minute cadence.
+<br> **NOTE:** Please read the article to understand the implications of applying this setting: 
+<br>[Intro to Config Refresh – a refreshingly new MDM feature](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/intro-to-config-refresh-a-refreshingly-new-mdm-feature/ba-p/4176921)
+
+**Win - OIB - Device Security - D - Location and Privacy - v3.2**
+* Added configuration to enable the location service while still allowing users to be in control of their privacy settings, but force allow the Settings App and the new Outlook client to access location data.
+
+**Win - OIB - Microsoft Accounts - D - Configuration - v3.2**
+* Replaced the user-based policy with a device-based policy with additional settings to restrict the use of MSA's.
+
+**Win - OIB - Windows Hello for Business - D - WHfB Configuration - v3.2**
+* The last non-Settings Catalog profile type, Account Protection (Preview) has finally been updated to the Settings Catalog format! The policy does have some changes when compared to the previous version and is also using Device scope settings rather than User, so please review the settings. The new template is also (currently) missing the "Allow biometric authentication" setting, so biometrics are enabled by default providing the device has biometric-capable hardware.
+
+### <u>Changed/Updated</u>
+#### <u>Settings Catalog</u>
+**Win - OIB - Device Security - D - Windows Subsystem for Linux**
+* Updated the policy to match the Microsoft recommended settings for WSL documented here: 
+<br>[Intune Settings for WSL | Microsoft Learn](https://learn.microsoft.com/en-us/windows/wsl/intune#recommended-settings)
+
+**Win - OIB - Device Security - U - Power and Device Lock**
+* Changed "Allow Hibernate" from "Enabled" to "Disabled". By having Hibernate enabled, "Require use of fast startup" being set to "Disabled" was not actually being enforced, leading to HiberBoot still working.
+
+****Win - OIB - Microsoft OneDrive - D - Configuration**
+* Added some additional file types to the block list for sync. Rationale for the additions are due to potential file corruption or security risks.
+<br>Added: Access (.accdb, .mdb), Scripts (.bat, .cmd, .vbs), Registry (.reg), Java (.jar), Disk Image (.img, .iso), and Virutal Hard Drive (.vhd, .vhdx, .vmdk).
+<br>**NOTE:** As always, these are purely recommendations and should be adjusted to suit your environment.
+<br>Thanks to [Jóhannes](https://x.com/jgkps) for the suggestion!
+
+**Win - OIB - Microsoft Store - U - Configuration**
+* Removed "Require Private Store Only" setting to match the Microsoft recommendation on restricting access to the Microsoft Store:
+<br>[Configure access to the Microsoft Store app - Configure Windows | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/store/?tabs=intune)
+
+#### <u>Endpoint Security</u>
+**Win - OIB - Defender Antivirus - D - AV Configuration**
+* Configured "Metered Connection Updates" to "Allowed" to ensure AV updates are still applied on metered connections.
+
+**Win - OIB - Defender Antivirus - D - Security Experience**
+* Added settings to ensure users are prompted via notifications for any actions taken by Defender Antivirus.
+<br>To enhance this policy further, consider enabling the Customized Toasts and in-app Customization settings to give users confidence that notifications are legitimate.
+
+### <u>Removed</u>
+**Win - OIB - Microsoft Accounts - U - Configuration**
+* Replaced by device-based policy, Win - OIB - Microsoft Accounts - D - Configuration - v3.2.
+
+**Win - OIB - Windows Hello for Business - U - WHfB Configuration**
+* Replaced by the newer Settings Catalog policy, Win - OIB - Windows Hello for Business - D - WHfB Configuration - v3.2.
+
 # v3.1.1 - 2024-04-15
 ### <u>Changed</u>
 #### <u>Settings Catalog</u>
 **Win - OIB - Internet Explorer (Legacy) - D - Security**
 * Resolved some policies that were mis-aligned with MS Baseline.
+
+**Win - OIB - Microsoft OneDrive - D - Configuration**
+* Fixes for #8 and #19.
 
 ## v3.1 - 2024-04-10
 
@@ -56,7 +110,7 @@ Added separate compliance policies to allow for much better granularity and cont
 **Win - OIB - Compliance - U - Password - v3.1**
 * No Grace Period/Mark as non-compliant immediately
 
-### <u>Changed</u>
+### <u>Changed/Updated</u>
 #### <u>Settings Catalog</u>
 **Win - OIB - Device Security - D - Audit and Event Logging**
 * Aligned settings to match CIS L1.
@@ -69,7 +123,8 @@ Added separate compliance policies to allow for much better granularity and cont
 
 **Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI**
 * Added "Configure Lsa Protected Process" setting to "Enabled without UEFI lock.". The reasoning for setting this and other settings to **without** UEFI lock is that it allows for easier troubleshooting and rollback if required, documented [here](https://learn.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#remove-the-lsa-protection-uefi-variable). It can be set to **with** UEFI lock once satisfied with the configuration.
-<br> **NOTE:** Fresh installations of Windows 11 22H2 or later have LSA protection enabled by default: [Configure added LSA protection | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#automatic-enablement)
+<br> **NOTE:** Fresh installations of Windows 11 22H2 or later have LSA protection enabled by default:
+<br>[Configure added LSA protection | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#automatic-enablement)
 
 **Win - OIB - Internet Explorer (Legacy) - D - Security**
 * Amended a number of settings to ensure alignment with the Intune Win11 23H2 baseline and changed from a user-based recommendation to a device-based. Why won't Internet Explorer just die already?
