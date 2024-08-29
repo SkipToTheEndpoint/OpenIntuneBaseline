@@ -4,7 +4,7 @@
   "creationSource": null,
   "description": "",
   "lastModifiedDateTime": "2024-08-29T12:47:21.4955625Z",
-  "name": "MacOS - OIB - Firewall - D - Gatekeeper - v1.1",
+  "name": "MacOS - OIB - Firewall - D - Gatekeeper - v1.0",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
