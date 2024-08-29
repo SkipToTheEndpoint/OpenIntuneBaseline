@@ -1,16 +1,16 @@
 ﻿{
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-  "createdDateTime": "2024-08-17T14:54:53.9814292Z",
+  "createdDateTime": "2024-08-27T14:33:06.9265378Z",
   "creationSource": null,
   "description": "",
-  "lastModifiedDateTime": "2024-08-19T14:32:58.1538595Z",
-  "name": "MacOS - OIB - Microsoft AutoUpdate - D - MAU Configuration - v1.0",
+  "lastModifiedDateTime": "2024-08-29T12:27:20.089236Z",
+  "name": "MacOS - OIB - Microsoft AutoUpdate - D - MAU Configuration - v1.1",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
   "settingCount": 12,
   "technologies": "mdm,appleRemoteManagement",
-  "id": "42af7e7e-8197-42d5-8661-041838c4008b",
+  "id": "e62e9f44-2843-4451-a7d5-7ad8813d1ffc",
   "templateReference": {
     "templateId": "",
     "templateFamily": "none",
@@ -161,7 +161,7 @@
         "settingInstanceTemplateReference": null,
         "choiceSettingValue": {
           "settingValueTemplateReference": null,
-          "value": "com.apple.managedclient.preferences_guardagainstappmodification_false",
+          "value": "com.apple.managedclient.preferences_guardagainstappmodification_true",
           "children": []
         }
       }
@@ -200,7 +200,7 @@
         "settingInstanceTemplateReference": null,
         "choiceSettingValue": {
           "settingValueTemplateReference": null,
-          "value": "com.apple.managedclient.preferences_channelname_0",
+          "value": "com.apple.managedclient.preferences_channelname_4",
           "children": []
         }
       }
@@ -213,7 +213,7 @@
         "settingInstanceTemplateReference": null,
         "choiceSettingValue": {
           "settingValueTemplateReference": null,
-          "value": "com.apple.managedclient.preferences_updateroptimization_0",
+          "value": "com.apple.managedclient.preferences_updateroptimization_1",
           "children": []
         }
       }

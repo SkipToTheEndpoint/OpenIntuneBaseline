@@ -1,16 +1,16 @@
 ﻿{
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-  "createdDateTime": "2024-08-22T18:43:46.9263481Z",
+  "createdDateTime": "2024-08-27T14:33:06.635648Z",
   "creationSource": null,
   "description": "",
-  "lastModifiedDateTime": "2024-08-22T18:43:46.9263481Z",
-  "name": "MacOS - OIB - Firewall - D - Gatekeeper - v1.0",
+  "lastModifiedDateTime": "2024-08-29T12:47:21.4955625Z",
+  "name": "MacOS - OIB - Firewall - D - Gatekeeper - v1.1",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
   "settingCount": 2,
   "technologies": "mdm,appleRemoteManagement",
-  "id": "bd13f08e-cdb4-401a-802f-d595e000c1da",
+  "id": "542eb496-ee04-431f-8f43-c723ad18bdef",
   "templateReference": {
     "templateId": "",
     "templateFamily": "none",
@@ -34,7 +34,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.security.firewall_blockallincoming_true",
+                  "value": "com.apple.security.firewall_blockallincoming_false",
                   "children": []
                 }
               },
@@ -89,7 +89,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.systempolicy.control_allowidentifieddevelopers_false",
+                  "value": "com.apple.systempolicy.control_allowidentifieddevelopers_true",
                   "children": []
                 }
               },

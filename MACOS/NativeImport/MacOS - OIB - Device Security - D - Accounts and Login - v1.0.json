@@ -1,16 +1,16 @@
 ﻿{
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-  "createdDateTime": "2024-08-17T16:14:09.1697475Z",
+  "createdDateTime": "2024-08-27T14:33:05.8459213Z",
   "creationSource": null,
   "description": "",
-  "lastModifiedDateTime": "2024-08-17T16:14:09.1697475Z",
-  "name": "MacOS - OIB - Device Security - D - Accounts and Login - v1.0",
+  "lastModifiedDateTime": "2024-08-29T12:50:48.0209403Z",
+  "name": "MacOS - OIB - Device Security - D - Accounts and Login - v1.1",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
   "settingCount": 3,
   "technologies": "mdm,appleRemoteManagement",
-  "id": "54374899-e5b5-4f7b-b20d-d2121deac3a5",
+  "id": "d7cdc5f6-dd8f-4ea7-9f8c-95aa7f035f3f",
   "templateReference": {
     "templateId": "",
     "templateFamily": "none",
@@ -79,7 +79,7 @@
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
-                  "value": "com.apple.loginwindow_hideadminusers_true",
+                  "value": "com.apple.loginwindow_hideadminusers_false",
                   "children": []
                 }
               }
