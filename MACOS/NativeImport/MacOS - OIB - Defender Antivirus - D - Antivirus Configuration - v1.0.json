@@ -1,16 +1,16 @@
 ﻿{
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-  "createdDateTime": "2024-08-22T18:53:05.2105824Z",
+  "createdDateTime": "2024-08-27T14:33:05.2998609Z",
   "creationSource": null,
   "description": "",
-  "lastModifiedDateTime": "2024-08-22T18:53:05.2105824Z",
-  "name": "MacOS - OIB - Defender Antivirus - D - Antivirus Configuration - v1.0",
+  "lastModifiedDateTime": "2024-08-29T12:42:48.7023946Z",
+  "name": "MacOS - OIB - Defender Antivirus - D - Antivirus Configuration - v1.1",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
   "settingCount": 19,
   "technologies": "mdm,appleRemoteManagement",
-  "id": "4eb28b0e-9e70-4b21-9b10-8058a8ea5b47",
+  "id": "07c64b03-5f7c-4cfc-b3d0-aae1bbbe0f7f",
   "templateReference": {
     "templateId": "",
     "templateFamily": "none",
@@ -346,7 +346,7 @@
         "settingInstanceTemplateReference": null,
         "choiceSettingValue": {
           "settingValueTemplateReference": null,
-          "value": "com.apple.managedclient.preferences_hidestatusmenuicon_true",
+          "value": "com.apple.managedclient.preferences_hidestatusmenuicon_false",
           "children": []
         }
       }

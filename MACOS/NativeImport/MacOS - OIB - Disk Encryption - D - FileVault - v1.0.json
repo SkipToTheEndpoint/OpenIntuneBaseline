@@ -1,16 +1,16 @@
 ﻿{
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-  "createdDateTime": "2024-08-17T14:45:17.6736148Z",
+  "createdDateTime": "2024-08-27T14:33:06.4056266Z",
   "creationSource": null,
   "description": "",
-  "lastModifiedDateTime": "2024-08-22T18:55:46.8576861Z",
-  "name": "MacOS - OIB - Disk Encryption - D - FileVault - v1.0",
+  "lastModifiedDateTime": "2024-08-29T12:13:58.8294917Z",
+  "name": "MacOS - OIB - Disk Encryption - D - FileVault - v1.1",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
   "settingCount": 3,
   "technologies": "mdm,appleRemoteManagement",
-  "id": "31fb9b3e-e1d0-4c8b-afdf-6d7a1ceb1b82",
+  "id": "3828f80f-4e13-471d-bfda-52446dc1379c",
   "templateReference": {
     "templateId": "",
     "templateFamily": "none",
@@ -30,16 +30,6 @@
             "children": [
               {
                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                "settingDefinitionId": "com.apple.mcx.filevault2_defer",
-                "settingInstanceTemplateReference": null,
-                "choiceSettingValue": {
-                  "settingValueTemplateReference": null,
-                  "value": "com.apple.mcx.filevault2_defer_true",
-                  "children": []
-                }
-              },
-              {
-                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                 "settingDefinitionId": "com.apple.mcx.filevault2_enable",
                 "settingInstanceTemplateReference": null,
                 "choiceSettingValue": {
@@ -55,6 +45,16 @@
                 "choiceSettingValue": {
                   "settingValueTemplateReference": null,
                   "value": "com.apple.mcx.filevault2_forceenableinsetupassistant_true",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.mcx.filevault2_recoverykeyrotationinmonths",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.mcx.filevault2_recoverykeyrotationinmonths_6",
                   "children": []
                 }
               }

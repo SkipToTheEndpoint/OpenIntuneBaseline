@@ -1,16 +1,16 @@
 ﻿{
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-  "createdDateTime": "2024-08-17T14:22:25.4998253Z",
+  "createdDateTime": "2024-08-27T14:33:09.3311679Z",
   "creationSource": null,
   "description": "",
-  "lastModifiedDateTime": "2024-08-19T16:57:34.8030639Z",
-  "name": "MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.0",
+  "lastModifiedDateTime": "2024-08-29T12:03:07.6652218Z",
+  "name": "MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.1",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
-  "settingCount": 14,
+  "settingCount": 15,
   "technologies": "mdm,appleRemoteManagement",
-  "id": "b223d8ae-ebc9-4d96-8bf7-82ccbd7999fb",
+  "id": "a205fcca-770e-4470-a2dd-f83e61eae51b",
   "templateReference": {
     "templateId": "",
     "templateFamily": "none",
@@ -206,6 +206,19 @@
     },
     {
       "id": "13",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "com.apple.managedclient.preferences_openatlogin",
+        "settingInstanceTemplateReference": null,
+        "choiceSettingValue": {
+          "settingValueTemplateReference": null,
+          "value": "com.apple.managedclient.preferences_openatlogin_true",
+          "children": []
+        }
+      }
+    },
+    {
+      "id": "14",
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
         "settingDefinitionId": "com.apple.managedclient.preferences_kfmoptinwithwizard",
