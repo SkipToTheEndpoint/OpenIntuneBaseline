@@ -1,1 +1,107 @@
-﻿{"@odata.context":"https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity","createdDateTime":"2024-08-19T14:21:27.3889216Z","creationSource":null,"description":"","lastModifiedDateTime":"2024-08-19T14:21:27.3889216Z","name":"MacOS - OIB - Updates - D - Update Configuration - v1.0","platforms":"macOS","priorityMetaData":null,"roleScopeTagIds":["0"],"settingCount":1,"technologies":"mdm,appleRemoteManagement","id":"29bb0a98-3475-4f5b-99fa-0ef20d6d5dac","templateReference":{"templateId":"","templateFamily":"none","templateDisplayName":null,"templateDisplayVersion":null},"settings":[{"id":"0","settingInstance":{"@odata.type":"#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance","settingDefinitionId":"com.apple.softwareupdate_com.apple.softwareupdate","settingInstanceTemplateReference":null,"groupSettingCollectionValue":[{"settingValueTemplateReference":null,"children":[{"@odata.type":"#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance","settingDefinitionId":"com.apple.softwareupdate_automaticcheckenabled","settingInstanceTemplateReference":null,"choiceSettingValue":{"settingValueTemplateReference":null,"value":"com.apple.softwareupdate_automaticcheckenabled_true","children":[]}},{"@odata.type":"#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance","settingDefinitionId":"com.apple.softwareupdate_automaticdownload","settingInstanceTemplateReference":null,"choiceSettingValue":{"settingValueTemplateReference":null,"value":"com.apple.softwareupdate_automaticdownload_true","children":[]}},{"@odata.type":"#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance","settingDefinitionId":"com.apple.softwareupdate_automaticallyinstallappupdates","settingInstanceTemplateReference":null,"choiceSettingValue":{"settingValueTemplateReference":null,"value":"com.apple.softwareupdate_automaticallyinstallappupdates_true","children":[]}},{"@odata.type":"#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance","settingDefinitionId":"com.apple.softwareupdate_automaticallyinstallmacosupdates","settingInstanceTemplateReference":null,"choiceSettingValue":{"settingValueTemplateReference":null,"value":"com.apple.softwareupdate_automaticallyinstallmacosupdates_true","children":[]}},{"@odata.type":"#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance","settingDefinitionId":"com.apple.softwareupdate_configdatainstall","settingInstanceTemplateReference":null,"choiceSettingValue":{"settingValueTemplateReference":null,"value":"com.apple.softwareupdate_configdatainstall_true","children":[]}},{"@odata.type":"#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance","settingDefinitionId":"com.apple.softwareupdate_criticalupdateinstall","settingInstanceTemplateReference":null,"choiceSettingValue":{"settingValueTemplateReference":null,"value":"com.apple.softwareupdate_criticalupdateinstall_true","children":[]}},{"@odata.type":"#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance","settingDefinitionId":"com.apple.softwareupdate_restrict-software-update-require-admin-to-install","settingInstanceTemplateReference":null,"choiceSettingValue":{"settingValueTemplateReference":null,"value":"com.apple.softwareupdate_restrict-software-update-require-admin-to-install_false","children":[]}}]}]}}]}
+﻿{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+  "createdDateTime": "2024-08-19T14:21:27.3889216Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2024-08-19T14:21:27.3889216Z",
+  "name": "MacOS - OIB - Updates - D - Update Configuration - v1.0",
+  "platforms": "macOS",
+  "priorityMetaData": null,
+  "roleScopeTagIds": ["0"],
+  "settingCount": 1,
+  "technologies": "mdm,appleRemoteManagement",
+  "id": "29bb0a98-3475-4f5b-99fa-0ef20d6d5dac",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.softwareupdate_com.apple.softwareupdate",
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "settingValueTemplateReference": null,
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.softwareupdate_automaticcheckenabled",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.softwareupdate_automaticcheckenabled_true",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.softwareupdate_automaticdownload",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.softwareupdate_automaticdownload_true",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.softwareupdate_automaticallyinstallappupdates",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.softwareupdate_automaticallyinstallappupdates_true",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.softwareupdate_automaticallyinstallmacosupdates",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.softwareupdate_automaticallyinstallmacosupdates_true",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.softwareupdate_configdatainstall",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.softwareupdate_configdatainstall_true",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.softwareupdate_criticalupdateinstall",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.softwareupdate_criticalupdateinstall_true",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.softwareupdate_restrict-software-update-require-admin-to-install",
+                "settingInstanceTemplateReference": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.softwareupdate_restrict-software-update-require-admin-to-install_false",
+                  "children": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

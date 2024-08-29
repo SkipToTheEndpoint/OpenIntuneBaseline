@@ -1,1 +1,85 @@
-﻿{"@odata.context":"https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity","createdDateTime":"2024-08-17T16:23:16.4655467Z","creationSource":null,"description":"","lastModifiedDateTime":"2024-08-17T16:23:16.4655467Z","name":"MacOS - OIB - Microsoft Edge - U - Extensions - v1.0","platforms":"macOS","priorityMetaData":null,"roleScopeTagIds":["0"],"settingCount":4,"technologies":"mdm,appleRemoteManagement","id":"bf7770c0-5e54-428b-b18e-c91b9bbb060c","templateReference":{"templateId":"","templateFamily":"none","templateDisplayName":null,"templateDisplayVersion":null},"settings":[{"id":"0","settingInstance":{"@odata.type":"#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance","settingDefinitionId":"com.apple.managedclient.preferences_extensioninstallallowlist","settingInstanceTemplateReference":null,"simpleSettingCollectionValue":[{"@odata.type":"#microsoft.graph.deviceManagementConfigurationStringSettingValue","settingValueTemplateReference":null,"value":"odfafepnkmbhccpbejgmiehpchacaeak"}]}},{"id":"1","settingInstance":{"@odata.type":"#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance","settingDefinitionId":"com.apple.managedclient.preferences_blockexternalextensions","settingInstanceTemplateReference":null,"choiceSettingValue":{"settingValueTemplateReference":null,"value":"com.apple.managedclient.preferences_blockexternalextensions_true","children":[]}}},{"id":"2","settingInstance":{"@odata.type":"#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance","settingDefinitionId":"com.apple.managedclient.preferences_extensioninstallforcelist","settingInstanceTemplateReference":null,"simpleSettingCollectionValue":[{"@odata.type":"#microsoft.graph.deviceManagementConfigurationStringSettingValue","settingValueTemplateReference":null,"value":"nkbndigcebkoaejohleckhekfmcecfja"},{"@odata.type":"#microsoft.graph.deviceManagementConfigurationStringSettingValue","settingValueTemplateReference":null,"value":"ofefcgjbeghpigppfmkologfjadafddi"}]}},{"id":"3","settingInstance":{"@odata.type":"#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance","settingDefinitionId":"com.apple.managedclient.preferences_extensioninstallblocklist","settingInstanceTemplateReference":null,"simpleSettingCollectionValue":[{"@odata.type":"#microsoft.graph.deviceManagementConfigurationStringSettingValue","settingValueTemplateReference":null,"value":"*"}]}}]}
+﻿{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+  "createdDateTime": "2024-08-17T16:23:16.4655467Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2024-08-17T16:23:16.4655467Z",
+  "name": "MacOS - OIB - Microsoft Edge - U - Extensions - v1.0",
+  "platforms": "macOS",
+  "priorityMetaData": null,
+  "roleScopeTagIds": ["0"],
+  "settingCount": 4,
+  "technologies": "mdm,appleRemoteManagement",
+  "id": "bf7770c0-5e54-428b-b18e-c91b9bbb060c",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.managedclient.preferences_extensioninstallallowlist",
+        "settingInstanceTemplateReference": null,
+        "simpleSettingCollectionValue": [
+          {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+            "settingValueTemplateReference": null,
+            "value": "odfafepnkmbhccpbejgmiehpchacaeak"
+          }
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "com.apple.managedclient.preferences_blockexternalextensions",
+        "settingInstanceTemplateReference": null,
+        "choiceSettingValue": {
+          "settingValueTemplateReference": null,
+          "value": "com.apple.managedclient.preferences_blockexternalextensions_true",
+          "children": []
+        }
+      }
+    },
+    {
+      "id": "2",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.managedclient.preferences_extensioninstallforcelist",
+        "settingInstanceTemplateReference": null,
+        "simpleSettingCollectionValue": [
+          {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+            "settingValueTemplateReference": null,
+            "value": "nkbndigcebkoaejohleckhekfmcecfja"
+          },
+          {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+            "settingValueTemplateReference": null,
+            "value": "ofefcgjbeghpigppfmkologfjadafddi"
+          }
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.managedclient.preferences_extensioninstallblocklist",
+        "settingInstanceTemplateReference": null,
+        "simpleSettingCollectionValue": [
+          {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+            "settingValueTemplateReference": null,
+            "value": "*"
+          }
+        ]
+      }
+    }
+  ]
+}
