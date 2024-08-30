@@ -2,7 +2,7 @@
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
   "createdDateTime": "2024-08-17T15:20:18.6876505Z",
   "creationSource": null,
-  "description": "",
+  "description": "NOTE: This policy requires deployment of the Defender application and a valid Defender for Endpoint P1/P2 or Defender for Business license:\n\nhttps://learn.microsoft.com/en-us/defender-endpoint/mac-install-with-intune",
   "lastModifiedDateTime": "2024-08-19T14:05:16.3186795Z",
   "name": "MacOS - OIB - Defender Antivirus - D - MDE Configuration - v1.0",
   "platforms": "macOS",

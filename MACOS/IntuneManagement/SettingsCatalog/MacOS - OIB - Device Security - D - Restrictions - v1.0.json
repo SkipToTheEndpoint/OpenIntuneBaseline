@@ -1,0 +1,666 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+    "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicy",
+    "@odata.id":  "deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)",
+    "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2024-08-17T16:03:25.3898128Z",
+    "creationSource":  null,
+    "description":  "",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2024-08-17T16:19:11.2338087Z",
+    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0",
+    "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
+    "platforms":  "macOS",
+    "priorityMetaData":  null,
+    "roleScopeTagIds@odata.type":  "#Collection(String)",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "settingCount":  2,
+    "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
+    "technologies":  "mdm,appleRemoteManagement",
+    "id":  "c0123855-1f6f-4240-9e21-e8e6da11cdaa",
+    "templateReference":  {
+                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+                              "templateId":  "",
+                              "templateFamily@odata.type":  "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+                              "templateFamily":  "none",
+                              "templateDisplayName":  null,
+                              "templateDisplayVersion":  null
+                          },
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/assignments",
+    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings",
+    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings/$ref",
+    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings",
+    "settings":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings(\u00270\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings(\u00270\u0027)",
+                         "id":  "0",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                 "settingDefinitionId":  "com.apple.systempreferences_com.apple.systempreferences",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                 "groupSettingCollectionValue":  [
+                                                                                     {
+                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                         "settingValueTemplateReference":  null,
+                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                         "children":  [
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.systempreferences_disabledpreferencepanes",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "simpleSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
+                                                                                                              "simpleSettingCollectionValue":  [
+                                                                                                                                                   {
+                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                       "settingValueTemplateReference":  null,
+                                                                                                                                                       "value":  "com.apple.AirDrop-Handoff-Settings.extension"
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                       "settingValueTemplateReference":  null,
+                                                                                                                                                       "value":  "com.apple.Family-Settings.extension"
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                       "settingValueTemplateReference":  null,
+                                                                                                                                                       "value":  "com.apple.Game-Center-Settings.extension"
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                       "settingValueTemplateReference":  null,
+                                                                                                                                                       "value":  "com.apple.Siri-Settings.extension"
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                       "settingValueTemplateReference":  null,
+                                                                                                                                                       "value":  "com.apple.Startup-Disk-Settings.extension"
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                       "settingValueTemplateReference":  null,
+                                                                                                                                                       "value":  "com.apple.Time-Machine-Settings.extension"
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                       "settingValueTemplateReference":  null,
+                                                                                                                                                       "value":  "com.apple.WalletSettingsExtension"
+                                                                                                                                                   },
+                                                                                                                                                   {
+                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                       "settingValueTemplateReference":  null,
+                                                                                                                                                       "value":  "com.apple.systempreferences.AppleIDSettings"
+                                                                                                                                                   }
+                                                                                                                                               ]
+                                                                                                          }
+                                                                                                      ]
+                                                                                     }
+                                                                                 ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings(\u00271\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings(\u00271\u0027)",
+                         "id":  "1",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                 "settingDefinitionId":  "com.apple.applicationaccess_com.apple.applicationaccess",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                 "groupSettingCollectionValue":  [
+                                                                                     {
+                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                         "settingValueTemplateReference":  null,
+                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                         "children":  [
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowaccountmodification",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowaccountmodification_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowactivitycontinuation",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowactivitycontinuation_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowaddinggamecenterfriends",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowaddinggamecenterfriends_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowairplayincomingrequests",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowairplayincomingrequests_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowairdrop",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowairdrop_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowapplepersonalizedadvertising",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowapplepersonalizedadvertising_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowassistant",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowassistant_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowautounlock",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowautounlock_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowbluetoothsharingmodification",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowbluetoothsharingmodification_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudaddressbook",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudaddressbook_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudbookmarks",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudbookmarks_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudcalendar",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudcalendar_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowclouddesktopanddocuments",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowclouddesktopanddocuments_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowclouddocumentsync",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowclouddocumentsync_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudfreeform",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudfreeform_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudkeychainsync",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudkeychainsync_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudmail",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudmail_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudnotes",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudnotes_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudphotolibrary",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudphotolibrary_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudprivaterelay",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudprivaterelay_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowcloudreminders",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudreminders_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowdevicenamemodification",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowdevicenamemodification_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowerasecontentandsettings",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowerasecontentandsettings_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowfilesharingmodification",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowfilesharingmodification_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowfindmydevice",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowfindmydevice_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowfindmyfriends",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowfindmyfriends_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowgamecenter",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowgamecenter_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowinternetsharingmodification",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowinternetsharingmodification_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowitunesfilesharing",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowitunesfilesharing_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowlocalusercreation",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowlocalusercreation_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowmultiplayergaming",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowmultiplayergaming_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowpasswordproximityrequests",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowpasswordproximityrequests_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowpasswordsharing",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowpasswordsharing_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowprintersharingmodification",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowprintersharingmodification_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_allowstartupdiskmodification",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowstartupdiskmodification_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.applicationaccess_safariallowautofill",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.applicationaccess_safariallowautofill_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          }
+                                                                                                      ]
+                                                                                     }
+                                                                                 ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings(\u00271\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/settings(\u00271\u0027)/settingDefinitions"
+                     }
+                 ],
+    "#microsoft.graph.assign":  {
+                                    "title":  "microsoft.graph.assign",
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/microsoft.graph.assign"
+                                },
+    "#microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget":  {
+                                                                       "title":  "microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget",
+                                                                       "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget"
+                                                                   },
+    "#microsoft.graph.createCopy":  {
+                                        "title":  "microsoft.graph.createCopy",
+                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/microsoft.graph.createCopy"
+                                    },
+    "#microsoft.graph.reorder":  {
+                                     "title":  "microsoft.graph.reorder",
+                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/microsoft.graph.reorder"
+                                 },
+    "#microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget":  {
+                                                                          "title":  "microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget",
+                                                                          "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget"
+                                                                      },
+    "#microsoft.graph.setEnrollmentTimeDeviceMembershipTarget":  {
+                                                                     "title":  "microsoft.graph.setEnrollmentTimeDeviceMembershipTarget",
+                                                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/microsoft.graph.setEnrollmentTimeDeviceMembershipTarget"
+                                                                 },
+    "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy":  {
+                                                                        "title":  "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+                                                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027c0123855-1f6f-4240-9e21-e8e6da11cdaa\u0027)/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+                                                                    }
+}
