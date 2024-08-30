@@ -1,22 +1,74 @@
 # OpenIntuneBaseline - MacOS
 
-## Work In Progress!
-> [!NOTE]
-> This is **not** "production-ready". Please use a test environment where possible, or extreme caution in a production tenant.
+<img src="https://raw.githubusercontent.com/ugurkocde/intunemacadmins/main/public/favicon.svg" width="100">
 
-## Importing
-Thank you for your interest in testing! For now, and unlike the Windows baseline, I'm providing the MacOS policies as native Intune JSON exports! 
+Developed in collaboration with [IntuneMacAdmins](https://www.intunemacadmins.com/)
 
-Simply grab the files from the MACOS/NativeImport folder, and import them directly by hitting Create > Import Policy in the Devices > MacOS > Configuration page! 
+## Intended Use-Case
+The baseline has been designed and tested on the following scenario:
 
-[Docs Link](https://learn.microsoft.com/en-us/mem/intune/configuration/settings-catalog?tabs=sc-search-filter%2Csc-reporting#import-and-export-a-profile)
+### Device:
+* MacOS 14.6 or above on Apple Silicon
+* Enrolled into Apple Business Manager 
+* ADE Deployment with the following configured:
+    * Management Settings:
+        * Enroll with User Affinity
+        * Setup Assistant with Modern Authentication
+        * Await Final Configuration -Yes
+        * Locked Configuration - Yes
+    * Setup Assistant:
+        * FileVault - Show
+        * Touch ID - Show
+* M365 Apps deployed via VPP
 
-## Issues/Feedback
-While policies are marked as "v1.0", consider this a beta release. I've noted some initial issues I've seen in testing in [KNOWNISSUES.md](KNOWNISSUES.md)
+### User:
+* Cloud-Only or Hybrid Identity with Entra ID as IdP
+* MFA configured via Conditional Access
 
-Feedback is **SO** important, so I have created a new MacOS Beta Feedback discussion channel here: https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/discussions/categories/macos
+### Licensing:
+* M365 Business Premium or M365 E5/A5, or M365 E3/A3 + MDE P1/P2 
+<br>**OR**:
+    * Entra ID P1 or P2
+    * Office 365 E3/E5, A3/A5 or F3
+    * Intune P1
+    * Defender for Business or Endpoint P1/P2
 
-Please provide feedback, issues, or suggestions there.
+> [!IMPORTANT]
+> Successful application of the baseline outside of this configuration cannot be guaranteed.
 
-## Resources
-Intune Mac Admins: https://www.intunemacadmins.com/
+---
+
+## Importing the Baseline:
+Please reference [Importing the Baseline](/README.md#importing_the_baseline) for information.
+
+### Post-Import Configuration
+There are some settings that require manual configuration or creation post-import. These are detailed in [SETTINGSGUIDANCE](/MACOS/SETTINGSGUIDANCE.md).
+
+---
+
+## Baseline Security Posture
+Primary information regarding adherence to security frameworks can be found in the main repo [README](/README.md#security-framework-adherence).
+
+### Included Settings
+* Entra Join and Authentication via Platform SSO Secure Enclave
+* Core device security restrictions
+* Device Encryption via FileVault
+* Microsoft Edge (Split into multiple policies for easier management)
+* Microsoft Office (Including OneDrive Known Folder Move)
+* Microsoft Defender for Endpoint
+* Update Configuration
+
+All policies are Settings Catalog and will show in Devices>Configuration Profiles.
+
+For a complete list of settings, please consult [SETTINGSOUTPUT](/MACOS/SETTINGSOUTPUT.md).
+
+---
+
+## Additional Information:
+
+> [!TIP]
+> Please visit [IntuneMacAdmins](https://www.intunemacadmins.com/) for additional information on MacOS management with Intune.
+
+---
+
+## [Change Log](/MACOS/CHANGELOG.md)
