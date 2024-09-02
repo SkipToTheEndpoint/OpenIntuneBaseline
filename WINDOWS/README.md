@@ -3,15 +3,42 @@
 ## Intended Use-Case
 The baseline has been designed for, and tested on the following:
 
+### Device:
 * Windows 11 Enterprise (though should also work on Windows 10 Enterprise)
-* Entra ID Joined
-* Intune-managed 
+* Enrolled into Autopilot
+* Autopilot configuration:
+    * Deployment Mode - User Driven
+    * Join Type - Microsoft Entra Joined
+    * User Account Type - Standard
+* Single-user device
 
-It has not been designed for hybrid environments, and will likely **not work as expected or intended** on hybrid-joined devices. Some settings may report errors or as not applicable if the device is running Pro/Business rather than Enterprise.
+### User:
+* Cloud-Only or Hybrid Identity with Entra ID as IdP
+* MFA configured via Conditional Access
+
+### Licensing:
+* M365 Business Premium or M365 E5/A5, or M365 E3/A3 + MDE P1/P2 
+<br>**OR**:
+    * Entra ID P1 or P2
+    * Office 365 E3/E5, A3/A5 or F3
+    * Intune P1
+    * Defender for Business or Endpoint P1/P2
+
+> [!NOTE]
+> Some settings may report errors or as "Not Applicable" if the device is running Pro/Business rather than Enterprise.
+
+> [!CAUTION]
+> While many policies should work fine on a Multi-user (Shared) device, there are additional considerations required for these that are not covered by this baseline.
+
+### Addressing Hybrid Join
+The Windows OIB has **not** been designed for hybrid scenarios, and will likely **not work as expected or intended** on hybrid-joined devices. 
 
 It is _**Microsoft's recommendation**_ that you move to cloud-native for new devices: https://aka.ms/CloudNativeEndpoints
 
 I would personally recommend maintaining GPO for on-prem devices, and using Intune for cloud-native devices, with the exception of things like Endpoint Analytics, Windows Update for Business and Application Deployment. Applying Intune policy over the top of GPO can cause unexpected results, and should be avoided where possible. Similarly, GPOs may well leave registry keys behind that can cause unexpected results when applying Intune policy.
+
+> [!IMPORTANT]
+> Successful application of the baseline outside of this configuration cannot be guaranteed.
 
 ---
 
@@ -21,7 +48,7 @@ Please reference [Importing the Baseline](/README.md#importing_the_baseline) for
 ---
 
 ## Baseline Security Posture
-Primary information regarding adherence to security frameworks can be found in the main repo [README.MD](/README.md#security-framework-adherence), however there are some notable deviations from security Windowss guidance frameworks. These are detailed below:
+Primary information regarding adherence to security frameworks can be found in the main repo [README](/README.md#security-framework-adherence), however there are some notable deviations from security Windowss guidance frameworks. These are detailed below:
 
 | Policy | Setting Name | Framework Recommendation | Baseline Setting | Rationale |
 |---|---|---|---|---|
@@ -29,15 +56,17 @@ Primary information regarding adherence to security frameworks can be found in t
 |  | Accounts Enable Administrator Account Status | Disabled | Enabled | Allows usage of Windows LAPS without additional configuration or creating a new local user account. |
 |  | User Account Control Behavior Of The Elevation Prompt For Standard Users | Automatically deny elevation requests | Prompt for credentials on secure desktop | Maintains standard helpdesk remote support processes capabilities. |
 
+### Comparison against other Security Baselines
+Please see [BASELINECOMPARISON](/WINDOWS/BASELINECOMPARISON.md) for more information.
+
 ### Security Recommendations
 The results of the Defender for Endpoint Security Recommendations page on a baseline-configured device can be viewed below:
 
-[export-tvm-security-recommendations.csv](/export-tvm-security-recommendations.csv)
+[export-tvm-security-recommendations.csv](/WINDOWS/export-tvm-security-recommendations.csv)
 
 Please note that **all** security tools, including Microsoft's own seem to have problems with the fact that CSP's put settings in different registry key locations. This is not an issue with the baseline, and is something that needs to be addressed by the security tool vendors. See the FAQ for more information:
 
 [Security tool _y_ says setting _x_ is not configured but Intune says it's applied correctly!](/FAQ.md#security-tool-y-says-setting-x-is-not-configured-but-intune-says-its-applied-correctly)
-
 
 ### Included Settings
 * Core device security hardening
@@ -60,7 +89,7 @@ Almost all policies are Settings Catalog-backed and will show in Devices>Configu
 
 For a complete list of settings, please consult [SETTINGSOUTPUT](/WINDOWS/SETTINGSOUTPUT.md).
 
-### Limitations:
+### Known Limitations:
 Due to the wildly differing nature of environments, it is not possible to create a "baseline" for AppLocker or Windows Defender Application Control (WDAC). While the baseline ensures standard users cannot elevate to install applications, apps that do not require elevation or install to a user's AppData folder may not be blocked.
 
 ---

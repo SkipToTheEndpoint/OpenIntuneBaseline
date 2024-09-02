@@ -6,10 +6,10 @@
     "createdDateTime@odata.type":  "#DateTimeOffset",
     "createdDateTime":  "2024-07-31T11:57:24.9445605Z",
     "creationSource":  null,
-    "description":  "",
+    "description":  "NOTE: The \"Turn off the Store application\" setting does not work on Windows Pro/Business SKU\u0027s:\nhttps://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-admx-windowsstore?WT.mc_id=Portal-fx#removewindowsstore_2",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2024-07-31T11:57:48.7282915Z",
-    "name":  "Win - OIB - Microsoft Store - U - Configuration - v3.2",
+    "lastModifiedDateTime":  "2024-08-29T13:51:38.2465216Z",
+    "name":  "Win - OIB - Microsoft Store - U - Configuration - v3.3",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
@@ -32,9 +32,6 @@
     "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u00279a25c85c-8a8e-43af-a956-2d2ef8aa2068\u0027)/assignments",
     "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00279a25c85c-8a8e-43af-a956-2d2ef8aa2068\u0027)/assignments/$ref",
     "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00279a25c85c-8a8e-43af-a956-2d2ef8aa2068\u0027)/assignments",
-    "assignments":  [
-
-                    ],
     "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u00279a25c85c-8a8e-43af-a956-2d2ef8aa2068\u0027)/settings",
     "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00279a25c85c-8a8e-43af-a956-2d2ef8aa2068\u0027)/settings/$ref",
     "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00279a25c85c-8a8e-43af-a956-2d2ef8aa2068\u0027)/settings",
