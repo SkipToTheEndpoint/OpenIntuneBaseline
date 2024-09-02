@@ -3,6 +3,7 @@
 # 2024-09-02
 ## Release
 **[OIB MacOS v1.0](/MACOS/README.md)**
+**[OIB Windows 365 v1.0](/WINDOWS365/README.md)**
 
 # 2024-08-29
 ## Added
