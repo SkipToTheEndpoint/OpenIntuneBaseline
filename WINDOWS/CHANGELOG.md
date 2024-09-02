@@ -1,6 +1,55 @@
 # OIB Windows Change Log
 
-# v3.2 - 2024-08-02
+# Windows v3.3 - 2024-09-02
+## Added
+### Endpoint Security
+**Win - OIB - Attack Surface Reduction - D - ASR Rules (L2) - v3.3**
+* Resolves [#13](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/discussions/13)
+* New ASR policy which includes a number of rules that I have had good success with in Block mode.
+<br>I don't necessarily want to make Level 1/Level 2 a thing here because I actually care about device usability, but I'm going to refer to this one as such.
+
+> [!WARNING]
+> Just because I've had success with these rules, doesn't mean you will!
+> 
+> If you've been running in Audit mode for a while, there's an amazing blog by [Nathan McNulty](https://x.com/NathanMcNulty), [Defender for Endpoint - Implementing ASR Rules](https://blog.nathanmcnulty.com/defender-for-endpoint-implementing-asr-rules/) which has some great Advanced Hunting queries to help validating if these will have an impact.
+> 
+> If you haven't: **Please** run the Audit mode policy for a decent amount of time before applying anything!
+>
+> Additional Microsoft guidance: [Operationalize attack surface reduction rules - Microsoft Defender for Endpoint | Microsoft Learn](https://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize)
+
+
+## Changed/Updated
+### Settings Catalog
+**Win - OIB - Device Security - D - Security Hardening**
+* Fixes [#33](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/discussions/33).
+* Removed the ["Allow Device Discovery"](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-Experience?WT.mc_id=Portal-Microsoft_Intune_Workflows#allowdevicediscovery) setting which disables the Win+P and Win+K shortcuts, but doesn't actually stop the user from projecting to a device.
+    * Thanks to the few people who reported this issue, honestly I'm not sure why I had it in there in the first place...
+
+### Endpoint Security
+**Win - OIB - Defender Antivirus - D - AV Configuration**
+* Fixes [#32](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/discussions/32).
+* Changed the ["Signature Update Interval"](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-Defender?WT.mc_id=Portal-fx#signatureupdateinterval) from 4 hours to 1 hour. 
+    * Thanks for bringing to my attention some great work from [Ru Campbell](https://x.com/rucam365) [and Viktor Hedberg](https://x.com/headburgh)'s book, [Mastering Microsoft 365 Defender](https://www.amazon.co.uk/Mastering-Microsoft-365-Defender-Implement-ebook/dp/B0BYZLJFCR?ref_=ast_author_dp), and [Jeffery Appel](https://x.com/jeffreyappel7)'s [blog series](https://jeffreyappel.nl/microsoft-defender-for-endpoint-series-define-the-av-baseline-part4a/) on baselining MDE.
+
+### Policy Descriptions
+Aded some additional information to the following policy descriptions to help clarify any issues or hardware/software pre-reqs. Versions have been bumped but no actual policy changes have been made.
+
+* **Win - OIB - Credential Management - D - Passwordless**
+* **Win - OIB - Defender Antivirus - D - Security Experience**
+* **Win - OIB - Device Security - U - Device Guard, Credential Guard and HVCI**
+* **Win - OIB - Microsoft Store - U - Configuration**
+
+
+## Removed
+**Win - OIB - Defender Antivirus - D - Default Exclusions**
+
+Something I'd been curious about for a while was around some (now updated) wording on "built-in exclusions" on the following docs page: [Microsoft Defender Antivirus exclusions on Windows Server - Microsoft Defender for Endpoint | Microsoft Learn](https://learn.microsoft.com/en-us/defender-endpoint/configure-server-exclusions-microsoft-defender-antivirus)
+<br> I have subsequently had confirmed by Microsoft that the built-in exclusions do indeed already apply by default to Windows *Client* OS's too, and as such I do not feel the need to have a separate policy for.
+<br>I had separately added entries for the IME Content and IME Cache folders, but any exclusion is creating a security hole that could be exploited, so I'm getting rid of the whole thing.
+
+---
+
+# Windows v3.2 - 2024-08-02
 ## Added
 ### Settings Catalog
 **Win - OIB - Device Security - D - Config Refresh - v3.2**
@@ -18,6 +67,7 @@
 
 **Win - OIB - Windows Hello for Business - D - WHfB Configuration - v3.2**
 * The last non-Settings Catalog profile type, Account Protection (Preview) has finally been updated to the Settings Catalog format! The policy does have some changes when compared to the previous version and is also using Device scope settings rather than User, so please review the settings. The new template is also (currently) missing the "Allow biometric authentication" setting, so biometrics are enabled by default providing the device has biometric-capable hardware.
+
 
 ## Changed/Updated
 ### Settings Catalog
@@ -40,7 +90,6 @@
 * Removed "Require Private Store Only" setting to match the Microsoft recommendation on restricting access to the Microsoft Store:
 <br>[Configure access to the Microsoft Store app - Configure Windows | Microsoft Learn](https://learn.microsoft.com/en-us/windows/configuration/store/?tabs=intune)
 
-
 ### Endpoint Security
 **Win - OIB - Defender Antivirus - D - AV Configuration**
 * Configured "Metered Connection Updates" to "Allowed" to ensure AV updates are still applied on metered connections.
@@ -48,7 +97,6 @@
 **Win - OIB - Defender Antivirus - D - Security Experience**
 * Added settings to ensure users are prompted via notifications for any actions taken by Defender Antivirus.
 <br>To enhance this policy further, consider enabling the Customized Toasts and in-app Customization settings to give users confidence that notifications are legitimate.
-
 
 ## Removed
 **Win - OIB - Microsoft Accounts - U - Configuration**
@@ -59,7 +107,7 @@
 
 ---
 
-# v3.1.1 - 2024-04-15
+# Windows v3.1.1 - 2024-04-15
 
 ## Changed/Updated
 ### Settings Catalog
@@ -71,7 +119,7 @@
 
 ---
 
-# v3.1 - 2024-04-10
+# Windows v3.1 - 2024-04-10
 
 ## Added
 ### Settings Catalog
@@ -194,6 +242,6 @@ Added separate compliance policies to allow for much better granularity and cont
 
 ---
 
-# v3.0 and Earlier
+# Windows v3.0 and Earlier
 
 I'm sorry, but for various reasons I didn't keep a changelog before this point. I'll try to keep one from now on. 
