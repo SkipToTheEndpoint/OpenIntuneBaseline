@@ -1,0 +1,262 @@
+﻿{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+  "createdDateTime": "2024-08-27T14:39:59.5862343Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime": "2024-08-29T11:56:21.9927Z",
+  "name": "MacOS - OIB - Microsoft OneDrive - D - Service and Access - v1.0",
+  "platforms": "macOS",
+  "priorityMetaData": null,
+  "roleScopeTagIds": ["0"],
+  "settingCount": 3,
+  "technologies": "mdm,appleRemoteManagement",
+  "id": "4c768107-efda-4149-8697-00fe409efbb0",
+  "templateReference": {
+    "templateId": "",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "settings": [
+    {
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.servicemanagement_com.apple.servicemanagement",
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "settingValueTemplateReference": null,
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.servicemanagement_rules",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                  {
+                    "settingValueTemplateReference": null,
+                    "children": [
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_comment",
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                          "settingValueTemplateReference": null,
+                          "value": "OneDrive (Standalone)"
+                        }
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                        "settingInstanceTemplateReference": null,
+                        "choiceSettingValue": {
+                          "settingValueTemplateReference": null,
+                          "value": "com.apple.servicemanagement_rules_item_ruletype_3",
+                          "children": []
+                        }
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                          "settingValueTemplateReference": null,
+                          "value": "com.microsoft.OneDrive"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "settingValueTemplateReference": null,
+                    "children": [
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_comment",
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                          "settingValueTemplateReference": null,
+                          "value": "OneDrive Launcher"
+                        }
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                        "settingInstanceTemplateReference": null,
+                        "choiceSettingValue": {
+                          "settingValueTemplateReference": null,
+                          "value": "com.apple.servicemanagement_rules_item_ruletype_0",
+                          "children": []
+                        }
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                        "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                          "settingValueTemplateReference": null,
+                          "value": "com.microsoft.OneDriveLauncher"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "1",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "settingValueTemplateReference": null,
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                  {
+                    "settingValueTemplateReference": null,
+                    "children": [
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                        "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles",
+                        "settingInstanceTemplateReference": null,
+                        "groupSettingCollectionValue": [
+                          {
+                            "settingValueTemplateReference": null,
+                            "children": [
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_allowed",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                  "settingValueTemplateReference": null,
+                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_allowed_true",
+                                  "children": []
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                  "settingValueTemplateReference": null,
+                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
+                                  "children": []
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "identifier \"com.microsoft.OneDrive\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "com.microsoft.OneDrive"
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                  "settingValueTemplateReference": null,
+                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
+                                  "children": []
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                  "settingValueTemplateReference": null,
+                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode_false",
+                                  "children": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "2",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "com.apple.system-extension-policy_com.apple.system-extension-policy",
+        "settingInstanceTemplateReference": null,
+        "groupSettingCollectionValue": [
+          {
+            "settingValueTemplateReference": null,
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                  {
+                    "settingValueTemplateReference": null,
+                    "children": [
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                        "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions_generickey",
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingCollectionValue": [
+                          {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                            "settingValueTemplateReference": null,
+                            "value": "com.microsoft.OneDrive.FinderSync"
+                          }
+                        ]
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                        "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions_generickey_keytobereplaced",
+                        "settingInstanceTemplateReference": null,
+                        "simpleSettingValue": {
+                          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                          "settingValueTemplateReference": null,
+                          "value": "UBF8T346G9"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+    "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicy",
+    "@odata.id":  "deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)",
+    "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2024-08-30T10:16:37.2662981Z",
+    "creationSource":  null,
+    "description":  "",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2024-08-30T10:16:37.2662981Z",
+    "name":  "MacOS - OIB - Firewall - D - Gatekeeper - v1.0",
+    "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
+    "platforms":  "macOS",
+    "priorityMetaData":  null,
+    "roleScopeTagIds@odata.type":  "#Collection(String)",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "settingCount":  2,
+    "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
+    "technologies":  "mdm,appleRemoteManagement",
+    "id":  "a608896c-de15-4f5e-ae7a-0e23fb53b1bc",
+    "templateReference":  {
+                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+                              "templateId":  "",
+                              "templateFamily@odata.type":  "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+                              "templateFamily":  "none",
+                              "templateDisplayName":  null,
+                              "templateDisplayVersion":  null
+                          },
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/assignments",
+    "assignments":  [
+
+                    ],
+    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings",
+    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings/$ref",
+    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings",
+    "settings":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings(\u00270\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings(\u00270\u0027)",
+                         "id":  "0",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                 "settingDefinitionId":  "com.apple.security.firewall_com.apple.security.firewall",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                 "groupSettingCollectionValue":  [
+                                                                                     {
+                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                         "settingValueTemplateReference":  null,
+                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                         "children":  [
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.security.firewall_blockallincoming",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.security.firewall_blockallincoming_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.security.firewall_enablefirewall",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.security.firewall_enablefirewall_true",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.security.firewall_enablelogging",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.security.firewall_enablelogging_true",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.security.firewall_enablestealthmode",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.security.firewall_enablestealthmode_true",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          }
+                                                                                                      ]
+                                                                                     }
+                                                                                 ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings(\u00271\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings(\u00271\u0027)",
+                         "id":  "1",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                 "settingDefinitionId":  "com.apple.systempolicy.control_com.apple.systempolicy.control",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                 "groupSettingCollectionValue":  [
+                                                                                     {
+                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                         "settingValueTemplateReference":  null,
+                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                         "children":  [
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.systempolicy.control_allowidentifieddevelopers",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.systempolicy.control_allowidentifieddevelopers_true",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.systempolicy.control_enableassessment",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.systempolicy.control_enableassessment_true",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          },
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.systempolicy.control_enablexprotectmalwareupload",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "choiceSettingValue":  {
+                                                                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                         "settingValueTemplateReference":  null,
+                                                                                                                                         "value":  "com.apple.systempolicy.control_enablexprotectmalwareupload_false",
+                                                                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                         "children":  [
+
+                                                                                                                                                      ]
+                                                                                                                                     }
+                                                                                                          }
+                                                                                                      ]
+                                                                                     }
+                                                                                 ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings(\u00271\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/settings(\u00271\u0027)/settingDefinitions"
+                     }
+                 ],
+    "#microsoft.graph.assign":  {
+                                    "title":  "microsoft.graph.assign",
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/microsoft.graph.assign"
+                                },
+    "#microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget":  {
+                                                                       "title":  "microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget",
+                                                                       "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget"
+                                                                   },
+    "#microsoft.graph.createCopy":  {
+                                        "title":  "microsoft.graph.createCopy",
+                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/microsoft.graph.createCopy"
+                                    },
+    "#microsoft.graph.reorder":  {
+                                     "title":  "microsoft.graph.reorder",
+                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/microsoft.graph.reorder"
+                                 },
+    "#microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget":  {
+                                                                          "title":  "microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget",
+                                                                          "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget"
+                                                                      },
+    "#microsoft.graph.setEnrollmentTimeDeviceMembershipTarget":  {
+                                                                     "title":  "microsoft.graph.setEnrollmentTimeDeviceMembershipTarget",
+                                                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/microsoft.graph.setEnrollmentTimeDeviceMembershipTarget"
+                                                                 },
+    "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy":  {
+                                                                        "title":  "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+                                                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a608896c-de15-4f5e-ae7a-0e23fb53b1bc\u0027)/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+                                                                    }
+}

@@ -1,0 +1,374 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+    "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicy",
+    "@odata.id":  "deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)",
+    "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)",
+    "createdDateTime@odata.type":  "#DateTimeOffset",
+    "createdDateTime":  "2024-08-30T10:16:55.946467Z",
+    "creationSource":  null,
+    "description":  "",
+    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
+    "lastModifiedDateTime":  "2024-08-30T10:16:55.946467Z",
+    "name":  "MacOS - OIB - Microsoft OneDrive - D - Service and Access - v1.0",
+    "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
+    "platforms":  "macOS",
+    "priorityMetaData":  null,
+    "roleScopeTagIds@odata.type":  "#Collection(String)",
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "settingCount":  3,
+    "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
+    "technologies":  "mdm,appleRemoteManagement",
+    "id":  "e1e4577b-d528-4761-bfdc-1bb0e1978468",
+    "templateReference":  {
+                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+                              "templateId":  "",
+                              "templateFamily@odata.type":  "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+                              "templateFamily":  "none",
+                              "templateDisplayName":  null,
+                              "templateDisplayVersion":  null
+                          },
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/assignments",
+    "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/assignments/$ref",
+    "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/assignments",
+    "assignments":  [
+
+                    ],
+    "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings",
+    "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings/$ref",
+    "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings",
+    "settings":  [
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00270\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00270\u0027)",
+                         "id":  "0",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                 "settingDefinitionId":  "com.apple.servicemanagement_com.apple.servicemanagement",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                 "groupSettingCollectionValue":  [
+                                                                                     {
+                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                         "settingValueTemplateReference":  null,
+                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                         "children":  [
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.servicemanagement_rules",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                                                                              "groupSettingCollectionValue":  [
+                                                                                                                                                  {
+                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                      "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                      "children":  [
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.servicemanagement_rules_item_comment",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "simpleSettingValue":  {
+                                                                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                                                                      "value":  "OneDrive (Standalone)"
+                                                                                                                                                                                                  }
+                                                                                                                                                                       },
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.servicemanagement_rules_item_ruletype",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "choiceSettingValue":  {
+                                                                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                                                                      "value":  "com.apple.servicemanagement_rules_item_ruletype_3",
+                                                                                                                                                                                                      "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                                                                      "children":  [
+
+                                                                                                                                                                                                                   ]
+                                                                                                                                                                                                  }
+                                                                                                                                                                       },
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.servicemanagement_rules_item_rulevalue",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "simpleSettingValue":  {
+                                                                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                                                                      "value":  "com.microsoft.OneDrive"
+                                                                                                                                                                                                  }
+                                                                                                                                                                       }
+                                                                                                                                                                   ]
+                                                                                                                                                  },
+                                                                                                                                                  {
+                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                      "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                      "children":  [
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.servicemanagement_rules_item_comment",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "simpleSettingValue":  {
+                                                                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                                                                      "value":  "OneDrive Launcher"
+                                                                                                                                                                                                  }
+                                                                                                                                                                       },
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.servicemanagement_rules_item_ruletype",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "choiceSettingValue":  {
+                                                                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                                                                      "value":  "com.apple.servicemanagement_rules_item_ruletype_0",
+                                                                                                                                                                                                      "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                                                                      "children":  [
+
+                                                                                                                                                                                                                   ]
+                                                                                                                                                                                                  }
+                                                                                                                                                                       },
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.servicemanagement_rules_item_rulevalue",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "simpleSettingValue":  {
+                                                                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                                                                      "value":  "com.microsoft.OneDriveLauncher"
+                                                                                                                                                                                                  }
+                                                                                                                                                                       }
+                                                                                                                                                                   ]
+                                                                                                                                                  }
+                                                                                                                                              ]
+                                                                                                          }
+                                                                                                      ]
+                                                                                     }
+                                                                                 ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00271\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00271\u0027)",
+                         "id":  "1",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                 "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                 "groupSettingCollectionValue":  [
+                                                                                     {
+                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                         "settingValueTemplateReference":  null,
+                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                         "children":  [
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_services",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                                                                              "groupSettingCollectionValue":  [
+                                                                                                                                                  {
+                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                      "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                      "children":  [
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                                                                                                                                           "groupSettingCollectionValue":  [
+                                                                                                                                                                                                               {
+                                                                                                                                                                                                                   "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                                                                                                                                                   "settingValueTemplateReference":  null,
+                                                                                                                                                                                                                   "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                                                                                   "children":  [
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                                                                                                                                                        "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_allowed",
+                                                                                                                                                                                                                                        "settingInstanceTemplateReference":  null,
+                                                                                                                                                                                                                                        "choiceSettingValue":  {
+                                                                                                                                                                                                                                                                   "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                                                                                                                                                   "settingValueTemplateReference":  null,
+                                                                                                                                                                                                                                                                   "value":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_allowed_true",
+                                                                                                                                                                                                                                                                   "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                                                                                                                                   "children":  [
+
+                                                                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                                                                                                                                                        "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
+                                                                                                                                                                                                                                        "settingInstanceTemplateReference":  null,
+                                                                                                                                                                                                                                        "choiceSettingValue":  {
+                                                                                                                                                                                                                                                                   "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                                                                                                                                                   "settingValueTemplateReference":  null,
+                                                                                                                                                                                                                                                                   "value":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
+                                                                                                                                                                                                                                                                   "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                                                                                                                                   "children":  [
+
+                                                                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                                                                                                                                                        "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement",
+                                                                                                                                                                                                                                        "settingInstanceTemplateReference":  null,
+                                                                                                                                                                                                                                        "simpleSettingValue":  {
+                                                                                                                                                                                                                                                                   "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                                                                                                                                   "settingValueTemplateReference":  null,
+                                                                                                                                                                                                                                                                   "value":  "identifier \"com.microsoft.OneDrive\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                                                                                                                                                        "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
+                                                                                                                                                                                                                                        "settingInstanceTemplateReference":  null,
+                                                                                                                                                                                                                                        "simpleSettingValue":  {
+                                                                                                                                                                                                                                                                   "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                                                                                                                                   "settingValueTemplateReference":  null,
+                                                                                                                                                                                                                                                                   "value":  "com.microsoft.OneDrive"
+                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                                                                                                                                                        "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
+                                                                                                                                                                                                                                        "settingInstanceTemplateReference":  null,
+                                                                                                                                                                                                                                        "choiceSettingValue":  {
+                                                                                                                                                                                                                                                                   "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                                                                                                                                                   "settingValueTemplateReference":  null,
+                                                                                                                                                                                                                                                                   "value":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
+                                                                                                                                                                                                                                                                   "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                                                                                                                                   "children":  [
+
+                                                                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                        "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                                                                                                                                                                                        "settingDefinitionId":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode",
+                                                                                                                                                                                                                                        "settingInstanceTemplateReference":  null,
+                                                                                                                                                                                                                                        "choiceSettingValue":  {
+                                                                                                                                                                                                                                                                   "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                                                                                                                                                                                                                   "settingValueTemplateReference":  null,
+                                                                                                                                                                                                                                                                   "value":  "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode_false",
+                                                                                                                                                                                                                                                                   "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                                                                                                                                   "children":  [
+
+                                                                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                                                                               }
+                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                ]
+                                                                                                                                                                                                               }
+                                                                                                                                                                                                           ]
+                                                                                                                                                                       }
+                                                                                                                                                                   ]
+                                                                                                                                                  }
+                                                                                                                                              ]
+                                                                                                          }
+                                                                                                      ]
+                                                                                     }
+                                                                                 ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00271\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00271\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00272\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00272\u0027)",
+                         "id":  "2",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                 "settingDefinitionId":  "com.apple.system-extension-policy_com.apple.system-extension-policy",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                 "groupSettingCollectionValue":  [
+                                                                                     {
+                                                                                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                         "settingValueTemplateReference":  null,
+                                                                                         "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                         "children":  [
+                                                                                                          {
+                                                                                                              "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                                                                              "settingDefinitionId":  "com.apple.system-extension-policy_allowedsystemextensions",
+                                                                                                              "settingInstanceTemplateReference":  null,
+                                                                                                              "groupSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                                                                                                              "groupSettingCollectionValue":  [
+                                                                                                                                                  {
+                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                      "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                                                                                                      "children":  [
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.system-extension-policy_allowedsystemextensions_generickey",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "simpleSettingCollectionValue@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
+                                                                                                                                                                           "simpleSettingCollectionValue":  [
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                    "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                                                                                    "settingValueTemplateReference":  null,
+                                                                                                                                                                                                                    "value":  "com.microsoft.OneDrive.FinderSync"
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            ]
+                                                                                                                                                                       },
+                                                                                                                                                                       {
+                                                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                                                                                                                           "settingDefinitionId":  "com.apple.system-extension-policy_allowedsystemextensions_generickey_keytobereplaced",
+                                                                                                                                                                           "settingInstanceTemplateReference":  null,
+                                                                                                                                                                           "simpleSettingValue":  {
+                                                                                                                                                                                                      "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                                                                                      "settingValueTemplateReference":  null,
+                                                                                                                                                                                                      "value":  "UBF8T346G9"
+                                                                                                                                                                                                  }
+                                                                                                                                                                       }
+                                                                                                                                                                   ]
+                                                                                                                                                  }
+                                                                                                                                              ]
+                                                                                                          }
+                                                                                                      ]
+                                                                                     }
+                                                                                 ]
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00272\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/settings(\u00272\u0027)/settingDefinitions"
+                     }
+                 ],
+    "#microsoft.graph.assign":  {
+                                    "title":  "microsoft.graph.assign",
+                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/microsoft.graph.assign"
+                                },
+    "#microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget":  {
+                                                                       "title":  "microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget",
+                                                                       "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget"
+                                                                   },
+    "#microsoft.graph.createCopy":  {
+                                        "title":  "microsoft.graph.createCopy",
+                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/microsoft.graph.createCopy"
+                                    },
+    "#microsoft.graph.reorder":  {
+                                     "title":  "microsoft.graph.reorder",
+                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/microsoft.graph.reorder"
+                                 },
+    "#microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget":  {
+                                                                          "title":  "microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget",
+                                                                          "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget"
+                                                                      },
+    "#microsoft.graph.setEnrollmentTimeDeviceMembershipTarget":  {
+                                                                     "title":  "microsoft.graph.setEnrollmentTimeDeviceMembershipTarget",
+                                                                     "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/microsoft.graph.setEnrollmentTimeDeviceMembershipTarget"
+                                                                 },
+    "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy":  {
+                                                                        "title":  "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+                                                                        "target":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027e1e4577b-d528-4761-bfdc-1bb0e1978468\u0027)/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+                                                                    }
+}
