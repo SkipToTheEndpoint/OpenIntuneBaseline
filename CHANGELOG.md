@@ -1,5 +1,9 @@
 # OIB Project Changelog
 
+# 2024-09-02
+## Release
+**[OIB MacOS v1.0](/MACOS/README.md)**
+
 # 2024-08-29
 ## Added
 **Repo Changelog**
