@@ -18,6 +18,13 @@ The [IntuneMacAdmins](https://intunemacadmins.com) team for OIB MacOS support.
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/ugurkocde">
+                    <img src="https://avatars.githubusercontent.com/u/43906965?v=4" width="100;" alt="ugurkocde"/>
+                    <br />
+                    <sub><b>Ugur Koc | Microsoft MVP</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/kieran-turnbull">
                     <img src="https://avatars.githubusercontent.com/u/12057476?v=4" width="100;" alt="kieran-turnbull"/>
                     <br />
