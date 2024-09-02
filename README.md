@@ -81,7 +81,8 @@ The current OIB versions are:
 | OS 	| Current Release 	| Change Log   |
 |---	|---	|---	
 | [Windows](/WINDOWS/README.md) 	| [v3.2](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/v3.2) 	| [Windows Change Log](/WINDOWS/CHANGELOG.md) 	|
-| [MacOS](/MACOS/README.md) 	| [v1.0 Beta](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/MacOSBeta) 	| [MacOS Change Log](/MACOS/CHANGELOG.md) 	|
+| [Windows 365](/WINDOWS365/README.md) 	| [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0) 	| [Windows 365 Change Log](/WINDOWS365/CHANGELOG.md) 	|
+| [MacOS](/MACOS/README.md) 	| [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0) 	| [MacOS Change Log](/MACOS/CHANGELOG.md) 	|
 
 Please consult the README.md in each OS folder for more information.
 
