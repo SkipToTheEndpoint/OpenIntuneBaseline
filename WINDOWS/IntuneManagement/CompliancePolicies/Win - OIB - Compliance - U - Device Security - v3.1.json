@@ -38,7 +38,7 @@
     "kernelDmaProtectionEnabled":  false,
     "virtualizationBasedSecurityEnabled":  false,
     "firmwareProtectionEnabled":  false,
-    "storageRequireEncryption":  false,
+    "storageRequireEncryption":  true,
     "activeFirewallRequired":  true,
     "defenderEnabled":  false,
     "defenderVersion":  null,
