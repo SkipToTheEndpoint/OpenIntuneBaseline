@@ -6,10 +6,10 @@
     "createdDateTime@odata.type":  "#DateTimeOffset",
     "createdDateTime":  "2024-07-29T14:33:50.6781804Z",
     "creationSource":  null,
-    "description":  "",
+    "description":  "NOTE: The \"Tamper Protection\" setting requires an active Defender for Endpoint P1/P2 or Defender for Business license.\n\nhttps://learn.microsoft.com/en-us/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2024-07-29T14:38:26.5686889Z",
-    "name":  "Win - OIB - Defender Antivirus - D - Security Experience - v3.2",
+    "lastModifiedDateTime":  "2024-08-29T13:49:51.165076Z",
+    "name":  "Win - OIB - Defender Antivirus - D - Security Experience - v3.3",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
@@ -32,9 +32,6 @@
     "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u00272085390b-9191-4a1d-aec0-9d5ac21bd8a6\u0027)/assignments",
     "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272085390b-9191-4a1d-aec0-9d5ac21bd8a6\u0027)/assignments/$ref",
     "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272085390b-9191-4a1d-aec0-9d5ac21bd8a6\u0027)/assignments",
-    "assignments":  [
-
-                    ],
     "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u00272085390b-9191-4a1d-aec0-9d5ac21bd8a6\u0027)/settings",
     "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272085390b-9191-4a1d-aec0-9d5ac21bd8a6\u0027)/settings/$ref",
     "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272085390b-9191-4a1d-aec0-9d5ac21bd8a6\u0027)/settings",
