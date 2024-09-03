@@ -1,10 +1,20 @@
 # OIB Project Changelog
 
+# 2024-09-03
+## Updated
+[**OIB Wiki**](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki)
+
+A number of supporting docs have been moved to Wiki pages and removed from the repos to support a better documentation layout.
+
+---
+
 # 2024-09-02
-## Release
-**[OIB MacOS v1.0](/MACOS/README.md)**
-**[OIB Windows 365 v1.0](/WINDOWS365/README.md)**
-**[OIB Windows v3.3](/WINDOWS/README.md)**
+## Releases
+* [OIB MacOS v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0)
+* [OIB Windows 365 v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0)
+* [OIB Windows v3.3](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.3)
+
+---
 
 # 2024-08-29
 ## Added
