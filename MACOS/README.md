@@ -39,15 +39,15 @@ The baseline has been designed and tested on the following scenario:
 ---
 
 ## Importing the Baseline:
-Please reference [Importing the Baseline](/README.md#importing_the_baseline) for information.
+Please reference [Importing the Baseline](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki#importing-the-baseline) for information.
 
 ### Post-Import Configuration
-There are some settings that require manual configuration or creation post-import. These are detailed in [SETTINGSGUIDANCE](/MACOS/SETTINGSGUIDANCE.md).
+There are some settings that require manual configuration or creation post-import. These are detailed in [SETTINGSGUIDANCE](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/macos-settingsguidance).
 
 ---
 
 ## Baseline Security Posture
-Primary information regarding adherence to security frameworks can be found in the main repo [README](/README.md#security-framework-adherence).
+Primary information regarding adherence to security frameworks can be found in the main wiki [README](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki#security-framework-adherence).
 
 ### Included Settings
 * Entra Join and Authentication via Platform SSO Secure Enclave
@@ -60,7 +60,7 @@ Primary information regarding adherence to security frameworks can be found in t
 
 All policies are Settings Catalog and will show in Devices>Configuration Profiles.
 
-For a complete list of settings, please consult [SETTINGSOUTPUT](/MACOS/SETTINGSOUTPUT.md).
+For a complete list of settings, please consult [SETTINGSOUTPUT](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/blob/main/MACOS/SETTINGSOUTPUT.md).
 
 ---
 
@@ -71,4 +71,4 @@ For a complete list of settings, please consult [SETTINGSOUTPUT](/MACOS/SETTINGS
 
 ---
 
-## [Change Log](/MACOS/CHANGELOG.md)
+## [Change Log](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/blob/main/MACOS/CHANGELOG.md)

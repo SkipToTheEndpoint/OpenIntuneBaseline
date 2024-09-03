@@ -43,12 +43,12 @@ I would personally recommend maintaining GPO for on-prem devices, and using Intu
 ---
 
 ## Importing the Baseline:
-Please reference [Importing the Baseline](/README.md#importing_the_baseline) for information.
+Please reference [Importing the Baseline](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki#importing-the-baseline) for information.
 
 ---
 
 ## Baseline Security Posture
-Primary information regarding adherence to security frameworks can be found in the main repo [README](/README.md#security-framework-adherence), however there are some notable deviations from security Windowss guidance frameworks. These are detailed below:
+Primary information regarding adherence to security frameworks can be found in the [Wiki](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki#security-framework-adherence), however there are some notable deviations from security Windowss guidance frameworks. These are detailed below:
 
 | Policy | Setting Name | Framework Recommendation | Baseline Setting | Rationale |
 |---|---|---|---|---|
@@ -57,7 +57,7 @@ Primary information regarding adherence to security frameworks can be found in t
 |  | User Account Control Behavior Of The Elevation Prompt For Standard Users | Automatically deny elevation requests | Prompt for credentials on secure desktop | Maintains standard helpdesk remote support processes capabilities. |
 
 ### Comparison against other Security Baselines
-Please see [BASELINECOMPARISON](/WINDOWS/BASELINECOMPARISON.md) for more information.
+Please see [Baseline Comparison](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-comparison) wiki page for more information.
 
 ### Security Recommendations
 The results of the Defender for Endpoint Security Recommendations page on a baseline-configured device can be viewed below:
@@ -66,7 +66,7 @@ The results of the Defender for Endpoint Security Recommendations page on a base
 
 Please note that **all** security tools, including Microsoft's own seem to have problems with the fact that CSP's put settings in different registry key locations. This is not an issue with the baseline, and is something that needs to be addressed by the security tool vendors. See the FAQ for more information:
 
-[Security tool _y_ says setting _x_ is not configured but Intune says it's applied correctly!](/FAQ.md#security-tool-y-says-setting-x-is-not-configured-but-intune-says-its-applied-correctly)
+[Security tool _y_ says setting _x_ is not configured but Intune says it's applied correctly!](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/faq#security-tool-y-says-setting-x-is-not-configured-but-intune-says-its-applied-correctly)
 
 ### Included Settings
 * Core device security hardening
@@ -94,17 +94,22 @@ Due to the wildly differing nature of environments, it is not possible to create
 
 ---
 
+## Known Issues
+Please see the [Known Issues](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-knownissues) wiki page for more information.
+
+---
+
 ## Supporting Configuration:
 - **Windows Autopatch** - If your licensing supports it, I would **strongly** recommend implementing Autopatch for management of your Windows Quality, Driver and Feature updates. - [Autopatch Overview](https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/overview/windows-autopatch-overview)
 - **Windows Update for Business Reports** - With an appropriate Azure subscription, a Log Analytics Workspace can be created to monitor update compliance of devices. - [Additional information](https://learn.microsoft.com/en-us/windows/deployment/update/wufb-reports-overview) 
 - **M365 Apps Updates** - Enabling [Cloud Update](https://learn.microsoft.com/en-us/deployoffice/admincenter/cloud-update) through [config.office.com](https://config.office.com/officeSettings/serviceprofile) can ensure Office Apps for Business/Enterprise remain up-to-date on the Monthly Enterprise Channel. Settings in the "Office - Update Settings" policy can remain as Cloud Update takes priority over any other Office management. Ensure the [Inventory](https://config.office.com/officeSettings/inventory) is enabled.
 
 > [!NOTE]
-> Guidance on this can be found in the [Settings Guidance](/WINDOWS/SETTINGSGUIDANCE.md) document.
+> Guidance on this can be found in the [Settings Guidance](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-settingsguidance) wiki page.
 
 ---
 
 ## Additional Information:
 
 > [!TIP]
-> For further information, please consult the [FAQ](/FAQ.md)
+> For further information, please consult the [FAQ](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/faq)

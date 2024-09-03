@@ -78,13 +78,13 @@ Version numbers will primarily follow the format of `Major.Minor`, occasionally 
 Each OS will have its own folder, with OS-specific files (readme, changelog, baseline JSON's, supporting information etc.) contained within.
 
 The current OIB versions are:
-| OS 	| Current Release 	| Change Log   |
-|---	|---	|---	
-| [Windows](/WINDOWS/README.md) 	| [v3.3](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.3) 	| [Windows Change Log](/WINDOWS/CHANGELOG.md) 	|
-| [Windows 365](/WINDOWS365/README.md) 	| [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0) 	| [Windows 365 Change Log](/WINDOWS365/CHANGELOG.md) 	|
-| [MacOS](/MACOS/README.md) 	| [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0) 	| [MacOS Change Log](/MACOS/CHANGELOG.md) 	|
+| OS | Current Release | Change Log | Wiki Page |
+|:---:|:---:|:---:|:---:|
+| [Windows](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS) | [v3.3](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.3) | [Link](/WINDOWS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-readme) |
+| [Windows 365](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS365) | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0) | [Link](/WINDOWS365/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win365-readme) |
+| [MacOS](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/MACOS) | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0) | [Link](/MACOS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/macos-readme) |
 
-Please consult the README.md in each OS folder for more information.
+Please consult the wiki pages and README.md in each OS folder for more information.
 
 ---
 

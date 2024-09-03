@@ -7,7 +7,7 @@ The baseline has been designed for, and tested on the following:
 * Windows 11 Enterprise 23H2 Gallery Image
 * W365 Provisioning Policy configuration:
     * License Type - Enterprise
-    * Join Type - Microsoft Entra Joine
+    * Join Type - Microsoft Entra Joined
     * Network - Microsoft Hosted Network
     * Use Microsoft Entra single sign-on - Yes
 
@@ -28,24 +28,24 @@ The baseline has been designed for, and tested on the following:
 Access to the W365 host has been tested using the Windows App via a client also running the Windows OIB.
 
 > [!NOTE]
-> The Windows 365 OIB is designed to work as **an addition** to the [Windows OIB](/WINDOWS/README.md). It is recommended to assign the W365 host all Windows OIB policies with the exception of:
+> The Windows 365 OIB is designed to work as **an addition** to the [Windows OIB](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS). It is recommended to assign the W365 host all Windows OIB policies with the exception of:
 > * BitLocker
 > * Device Health Compliance Policy
 >
 > The above can be achieved using group assignments or Intune filters.
 
 > [!WARNING]
-> The Windows 365 OIB is designed specifcally to protect corporate data if accessed via a non-corporate device.
+> The Windows 365 OIB is not designed to protect corporate data if accessed via a **non-corporate** device.
 
 ---
 
 ## Importing the Baseline:
-Please reference [Importing the Baseline](/README.md#importing_the_baseline) for information.
+Please reference [Importing the Baseline](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki#importing-the-baseline) for information.
 
 ---
 
 ## Baseline Security Posture
-Primary information regarding adherence to security frameworks can be found in the main repo [README](/README.md#security-framework-adherence).
+Primary information regarding adherence to security frameworks can be found in the main [README](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki#security-framework-adherence).
 
 The Windows 365 OIB has been created with the following Microsoft documentation as guidance:
 * https://learn.microsoft.com/en-us/windows-365/enterprise/configure-single-sign-on
@@ -60,6 +60,6 @@ The Windows 365 OIB has been created with the following Microsoft documentation 
 
 All policies are Settings Catalog and will show in Devices>Configuration Profiles.
 
-For a complete list of settings, please consult [SETTINGSOUTPUT](/WINDOWS365/SETTINGSOUTPUT.md).
+For a complete list of settings, please consult [SETTINGSOUTPUT](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/blob/main/WINDOWS365/SETTINGSOUTPUT.md).
 
 ---
