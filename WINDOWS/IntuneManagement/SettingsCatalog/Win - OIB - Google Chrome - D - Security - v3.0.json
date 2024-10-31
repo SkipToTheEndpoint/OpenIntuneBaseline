@@ -254,6 +254,16 @@
                                                                                                                                           "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                           "settingValueTemplateReference":  null,
                                                                                                                                           "value":  "chrome://tracing"
+                                                                                                                                      },
+                                                                                                                                      {
+                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                          "settingValueTemplateReference":  null,
+                                                                                                                                          "value":  "file:///c:/"
+                                                                                                                                      },
+                                                                                                                                      {
+                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                                                                                          "settingValueTemplateReference":  null,
+                                                                                                                                          "value":  "file:///d:/"
                                                                                                                                       }
                                                                                                                                   ]
                                                                                              }
