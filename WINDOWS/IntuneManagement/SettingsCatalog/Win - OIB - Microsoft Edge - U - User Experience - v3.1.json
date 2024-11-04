@@ -8,7 +8,7 @@
   "creationSource": null,
   "description": "",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
-  "lastModifiedDateTime": "2024-11-04T19:15:05.4960431Z",
+  "lastModifiedDateTime": "2024-11-04T19:50:34.2185987Z",
   "name": "Win - OIB - Microsoft Edge - U - User Experience - v3.1",
   "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
   "platforms": "windows10",
@@ -17,7 +17,7 @@
   "roleScopeTagIds": [
     "0"
   ],
-  "settingCount": 15,
+  "settingCount": 16,
   "technologies@odata.type": "#microsoft.graph.deviceManagementConfigurationTechnologies",
   "technologies": "mdm",
   "id": "cfd455ab-470d-4112-b7a7-71500d0fdc10",
@@ -203,14 +203,27 @@
       "id": "8",
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~startup_newtabpagehidedefaulttopsites",
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~startup_newtabpageallowedbackgroundtypes",
         "settingInstanceTemplateReference": null,
         "choiceSettingValue": {
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
           "settingValueTemplateReference": null,
-          "value": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~startup_newtabpagehidedefaulttopsites_0",
+          "value": "user_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~startup_newtabpageallowedbackgroundtypes_1",
           "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
-          "children": []
+          "children": [
+            {
+              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+              "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~startup_newtabpageallowedbackgroundtypes_newtabpageallowedbackgroundtypes",
+              "settingInstanceTemplateReference": null,
+              "choiceSettingValue": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                "settingValueTemplateReference": null,
+                "value": "user_vendor_msft_policy_config_microsoft_edgev86~policy~microsoft_edge~startup_newtabpageallowedbackgroundtypes_newtabpageallowedbackgroundtypes_3",
+                "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                "children": []
+              }
+            }
+          ]
         }
       },
       "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('8')/settingDefinitions/$ref",
@@ -223,12 +236,12 @@
       "id": "9",
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended~performance_recommended_startupboostenabled_recommended",
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~startup_newtabpagehidedefaulttopsites",
         "settingInstanceTemplateReference": null,
         "choiceSettingValue": {
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
           "settingValueTemplateReference": null,
-          "value": "user_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended~performance_recommended_startupboostenabled_recommended_0",
+          "value": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge~startup_newtabpagehidedefaulttopsites_0",
           "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
           "children": []
         }
@@ -243,12 +256,12 @@
       "id": "10",
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended~sleepingtabs_recommended_sleepingtabsenabled_recommended",
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended~performance_recommended_startupboostenabled_recommended",
         "settingInstanceTemplateReference": null,
         "choiceSettingValue": {
           "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
           "settingValueTemplateReference": null,
-          "value": "user_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended~sleepingtabs_recommended_sleepingtabsenabled_recommended_1",
+          "value": "user_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended~performance_recommended_startupboostenabled_recommended_0",
           "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
           "children": []
         }
@@ -261,6 +274,26 @@
       "@odata.id": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('11')",
       "@odata.editLink": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('11')",
       "id": "11",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended~sleepingtabs_recommended_sleepingtabsenabled_recommended",
+        "settingInstanceTemplateReference": null,
+        "choiceSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "user_vendor_msft_policy_config_microsoft_edgev88~policy~microsoft_edge_recommended~sleepingtabs_recommended_sleepingtabsenabled_recommended_1",
+          "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+          "children": []
+        }
+      },
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('11')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('11')/settingDefinitions"
+    },
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "@odata.id": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('12')",
+      "@odata.editLink": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('12')",
+      "id": "12",
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
         "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_restoreonstartup_recommended",
@@ -286,14 +319,14 @@
           ]
         }
       },
-      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('11')/settingDefinitions/$ref",
-      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('11')/settingDefinitions"
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('12')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('12')/settingDefinitions"
     },
     {
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
-      "@odata.id": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('12')",
-      "@odata.editLink": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('12')",
-      "id": "12",
+      "@odata.id": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('13')",
+      "@odata.editLink": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('13')",
+      "id": "13",
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
         "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev79diff~policy~microsoft_edge_recommended~startup_recommended_newtabpagesetfeedtype_recommended",
@@ -319,14 +352,14 @@
           ]
         }
       },
-      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('12')/settingDefinitions/$ref",
-      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('12')/settingDefinitions"
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('13')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('13')/settingDefinitions"
     },
     {
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
-      "@odata.id": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('13')",
-      "@odata.editLink": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('13')",
-      "id": "13",
+      "@odata.id": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('14')",
+      "@odata.editLink": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('14')",
+      "id": "14",
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
         "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev79diff~policy~microsoft_edge_recommended~startup_recommended_newtabpagemanagedquicklinks_recommended",
@@ -339,14 +372,14 @@
           "children": []
         }
       },
-      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('13')/settingDefinitions/$ref",
-      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('13')/settingDefinitions"
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('14')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('14')/settingDefinitions"
     },
     {
       "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
-      "@odata.id": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('14')",
-      "@odata.editLink": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('14')",
-      "id": "14",
+      "@odata.id": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('15')",
+      "@odata.editLink": "deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('15')",
+      "id": "15",
       "settingInstance": {
         "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
         "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_recommended~startup_recommended_showhomebutton_recommended",
@@ -359,8 +392,8 @@
           "children": []
         }
       },
-      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('14')/settingDefinitions/$ref",
-      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('14')/settingDefinitions"
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('15')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('cfd455ab-470d-4112-b7a7-71500d0fdc10')/settings('15')/settingDefinitions"
     }
   ],
   "#microsoft.graph.assign": {
