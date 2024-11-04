@@ -387,7 +387,7 @@
                 {
                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                   "settingValueTemplateReference": null,
-                  "value": "file:///c:/"
+                  "value": "file://tsclient/"
                 },
                 {
                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
