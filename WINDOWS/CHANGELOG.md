@@ -112,9 +112,6 @@ I've gone back and forth on this one as there are no security recommendations fo
 **Win - OIB - SC - Microsoft Store - D - Configuration**
 * Added setting "Block Non Admin User Install" set to "Block".
 
-**Win - OIB - SC - Microsoft Store - D - Configuration**
-* Added setting "Block Non Admin User Install" set to "Block".
-
 ## Endpoint Security
 **Win - OIB - ES - Defender Antivirus Updates - Ring `*`**
 * All policies have been given the 3.4 version number. No actual policy changes have been made.
