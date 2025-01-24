@@ -59,6 +59,9 @@ Primary information regarding adherence to security frameworks can be found in t
 ### Comparison against other Security Baselines
 Please see [Baseline Comparison](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-comparison) wiki page for more information.
 
+As of v3.4, I have documented the rationale for not implementing specific settings against the CIS Intune Benchmark.
+[OIB v3.4 vs CIS Intune v3.0.1](OIBvsCIS-Rationale.csv)
+
 ### Security Recommendations
 The results of the Defender for Endpoint Security Recommendations page on a baseline-configured device can be viewed below:
 
