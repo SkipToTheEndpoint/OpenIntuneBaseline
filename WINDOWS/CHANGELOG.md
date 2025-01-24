@@ -56,6 +56,7 @@ I've gone back and forth on this one as there are no security recommendations fo
 
 **Win - OIB - SC - Device Security - D - Security Hardening**
 * Added the following settings to close some non-impactful gaps against the CIS Benchmark:
+
     **Administrative Templates > Network > Windows Connection Manager**
     * Minimize the number of simultaneous connections to the Internet or a Windows Domain - `Enabled: 3 = Prevent Wi-Fi when on Ethernet`
     
@@ -74,6 +75,7 @@ I've gone back and forth on this one as there are no security recommendations fo
 
 **Win - OIB - SC - Device Security - D - Timezone**
 * Changed the User Rights settings to match the defaults of LOCAL SERVICE (`S-1-5-19`), Administrators (`S-1-5-32-544`) and Users (`S-1-5-32-545`). Fixes [#66](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/66)
+
     Thanks for everyone's input in [Discussion #49](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/discussions/49)!
 > [!IMPORTANT]
 > Despite this change, there is a current MS-recognised issue in 24H2 where the Time Zone settings are missing to standard users: https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2#date---time-in-window-settings-might-not-permit-users-to-change-time-zone
@@ -121,6 +123,7 @@ I've gone back and forth on this one as there are no security recommendations fo
 ## Deprecated
 ## Settings Catalog
 **Google Chrome**
+
 Maintaining a level of parity between Edge and Chrome is difficult, and the OIB Chrome policies were (on purpose) very "Anti Chrome".
 My focus will be to ensure the best set of policies for Edge moving forward, and dropping the Chrome policies.
 
