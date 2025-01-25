@@ -1,5 +1,14 @@
 # OIB Project Changelog
 
+# 2025-01-24
+## Added
+* Added new comparison and settings rationale against the CIS Intune Benchmark - [OIB v3.4 vs CIS Intune v3.0.1](/WINDOWS/OIBvsCIS-Rationale.csv)
+
+## Releases
+* [OIB Windows v3.4]{https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.3)
+
+---
+
 # 2024-09-03
 ## Updated
 [**OIB Wiki**](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki)

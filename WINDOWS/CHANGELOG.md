@@ -125,7 +125,7 @@ Maintaining a level of parity between Edge and Chrome is difficult, and the OIB 
 My focus will be to ensure the best set of policies for Edge moving forward, and dropping the Chrome policies.
 
 It is my opinion that Edge should be the primary and only browser available in an enterprise environment, and continued efforts by Microsoft to improve the security and managability of Edge for Business backs this up.
-My recommendation is to use the [Edge Management Service to "Block other Browsers"](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service-customizations#block-other-browsers) which creates and deploys an AppLocker policy to b 
+My recommendation is to use the [Edge Management Service to "Block other Browsers"](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service-customizations#block-other-browsers) which creates and deploys an AppLocker policy to block the installation or execution of other browsers on corporate devices.
 
 
 ## Removed
