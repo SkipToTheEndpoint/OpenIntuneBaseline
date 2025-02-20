@@ -6,10 +6,10 @@
     "createdDateTime@odata.type":  "#DateTimeOffset",
     "createdDateTime":  "2023-08-09T15:01:45.1480862Z",
     "creationSource":  null,
-    "description":  "",
+    "description":  "NOTE: Requires setup of Cloud Kerberos Trust to function.\nhttps://learn.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/deploy/hybrid-cloud-kerberos-trust",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2024-12-05T20:13:20.1368734Z",
-    "name":  "Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.0",
+    "lastModifiedDateTime":  "2025-02-17T13:00:16.0093322Z",
+    "name":  "Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
@@ -17,7 +17,7 @@
     "roleScopeTagIds":  [
                             "0"
                         ],
-    "settingCount":  1,
+    "settingCount":  2,
     "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
     "technologies":  "mdm",
     "id":  "7025b793-24c7-4416-bc84-55fb9cd94c92",
@@ -41,6 +41,28 @@
                          "@odata.id":  "deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00270\u0027)",
                          "@odata.editLink":  "deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00270\u0027)",
                          "id":  "0",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_kerberos_cloudkerberosticketretrievalenabled",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "settingValueTemplateReference":  null,
+                                                                            "value":  "device_vendor_msft_policy_config_kerberos_cloudkerberosticketretrievalenabled_1",
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00271\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00271\u0027)",
+                         "id":  "1",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_passportforwork_{tenantid}",
@@ -70,8 +92,8 @@
                                                                                      }
                                                                                  ]
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00270\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00270\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00271\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00277025b793-24c7-4416-bc84-55fb9cd94c92\u0027)/settings(\u00271\u0027)/settingDefinitions"
                      }
                  ],
     "#microsoft.graph.assign":  {
