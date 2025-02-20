@@ -1,5 +1,52 @@
 # OIB Windows Change Log
 
+# Windows v3.5 - 2025-02-20 - 24H2 Baseline Edition (Mostly)
+## Added
+### Settings Catalog
+**Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5**
+* Added configuration that will be being added to the CIS Benchmark, as well as some additional, non-impacting restrictions to the [Desktop App Installer](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-desktopappinstaller) (winget):
+   * Enable App Installer Experimental Features - `Disabled`
+   * Enable App Installer Hash Override - `Disabled`
+   * Enable App Installer Local Manifest Files - `Disabled`
+   * Enable App Installer ms-appinstaller protocol - `Disabled`
+   * Enable App Installer Settings - `Disabled`
+> [!NOTE]
+> If you disable the App Installer completely by setting either "Enable App Installer" or "Enable App Installer Microsoft Store Source" to "Disabled", it **will** break delivery of Store apps from Intune!
+> So don't do that :)
+
+
+## Changed/Updated
+### Settings Catalog
+**Win - OIB - SC - Defender Antivirus - D - Additional Configuration**
+* Added the following settings from the 24H2 Baseline:
+    * [Enable Convert Warn To Block](https://learn.microsoft.com/en-gb/windows/client-management/mdm/defender-csp#configurationenableconvertwarntoblock) - `Warn verdicts are converted to block`
+    * [Passive Remediation](https://learn.microsoft.com/en-gb/windows/client-management/mdm/defender-csp#configurationpassiveremediation) - `1: Passive Remediation Sense AutoRemediation`
+    * [Quick Scan Include Exclusions](https://learn.microsoft.com/en-gb/windows/client-management/mdm/defender-csp#configurationquickscanincludeexclusions) - `1: All files and directories that are excluded from real-time protection using contextual exclusions are scanned during a quick scan.`
+
+**Win - OIB - SC - Device Security - D - Security Hardening**
+* Added the following settings from the 24H2 Baseline:
+    * [PK Init Hash Algorithm Configuration](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-kerberos#pkinithashalgorithmconfiguration) - `Enabled`
+        * PK Init Hash Algorithm SHA1 - `Not Supported`
+    * [Enable Sudo](https://learn.microsoft.com/en-us/windows/sudo/) - `Sudo is disabled`
+
+**Win - OIB - SC - Device Security - D - User Rights**
+* Removed `S-1-2-0` (Local) from "Deny Remote Desktop Services Log On" as this breaks Windows 365 access. Resolves [#69](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/69)
+
+**Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI**
+* Added the following setting from the 24H2 Baseline:
+    * [Machine Identity Isolation](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-DeviceGuard?WT.mc_id=Portal-fx#machineidentityisolation) - `0: (Disabled) Machine password is only LSASS-bound and stored in $MACHINE.ACC registry key.`
+
+**Win - OIB - SC - Microsoft Office - U - Config and Experience**
+* Added a recently added setting to make files clicked in Teams open in the desktop apps rather than in SPO:
+    * File links open preference default selection as Desktop App (User) - `Enabled`
+* Added a setting to remove some options from the save locations available. The tooltip is confusing but `137` restricts OneDrive Personal, SharePoint OnPrem and (most importantly) Third-party Services (e.g Box, Dropbox, Egnyte, ShareFile) from the "Add a place" in the Save As menu.
+    * Hide Microsoft cloud-based file locations in the Backstage view (User) - `137`
+
+**Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5**
+* Added "Cloud Kerberos Ticket Retrieval Enabled" set to `Enabled`.
+
+---
+
 # Windows v3.4 - 2025-01-24
 > [!IMPORTANT]
 > A UI change in November '24 has made _**all**_ policy types visible in the Configuration blade. This has caused a lot of confusion when trying to identify policies configured via Endpoint Security.

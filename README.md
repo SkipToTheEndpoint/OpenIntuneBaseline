@@ -14,9 +14,6 @@
   </a>
 </p>
 <p align="center">
-  <a href="https://discord.gg/msems">
-    <img alt="Discord" src="https://img.shields.io/discord/1008077287813550090?label=Join%20the%20MS%20EMS%20Community&logo=discord&style=flat-square" target="_blank" />
-  </a>
   <a href="https://discord.gg/winadmins">
     <img alt="Discord" src="https://img.shields.io/discord/618712310185197588?label=Join%20WinAdmins&logo=discord&style=flat-square" target="_blank" />
   </a>
@@ -93,7 +90,7 @@ Each OS will have its own folder, with OS-specific files (readme, changelog, bas
 The current OIB versions are:
 | OS | Current Release | Change Log | Wiki Page |
 |:---:|:---:|:---:|:---:|
-| [Windows](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS) | [v3.4](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.4) | [Link](/WINDOWS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-readme) |
+| [Windows](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS) | [v3.5](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v3.5) | [Link](/WINDOWS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-readme) |
 | [Windows 365](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS365) | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0) | [Link](/WINDOWS365/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win365-readme) |
 | [MacOS](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/MACOS) | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0) | [Link](/MACOS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/macos-readme) |
 
