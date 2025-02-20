@@ -5,11 +5,11 @@
 ### Settings Catalog
 **Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5**
 * Added configuration that will be being added to the CIS Benchmark, as well as some additional, non-impacting restrictions to the [Desktop App Installer](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-desktopappinstaller) (winget):
-* Enable App Installer Experimental Features - `Disabled`
-* Enable App Installer Hash Override - `Disabled`
-* Enable App Installer Local Manifest Files - `Disabled`
-* Enable App Installer ms-appinstaller protocol - `Disabled`
-* Enable App Installer Settings - `Disabled`
+   * Enable App Installer Experimental Features - `Disabled`
+   * Enable App Installer Hash Override - `Disabled`
+   * Enable App Installer Local Manifest Files - `Disabled`
+   * Enable App Installer ms-appinstaller protocol - `Disabled`
+   * Enable App Installer Settings - `Disabled`
 > [!NOTE]
 > If you disable the App Installer completely by setting either "Enable App Installer" or "Enable App Installer Microsoft Store Source" to "Disabled", it **will** break delivery of Store apps from Intune!
 > So don't do that :)
