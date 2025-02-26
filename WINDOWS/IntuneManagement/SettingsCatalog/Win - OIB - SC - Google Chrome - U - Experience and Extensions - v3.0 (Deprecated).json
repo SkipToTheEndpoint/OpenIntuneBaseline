@@ -6,7 +6,7 @@
     "createdDateTime@odata.type":  "#DateTimeOffset",
     "createdDateTime":  "2023-08-09T15:01:32.1307904Z",
     "creationSource":  null,
-    "description":  "",
+    "description":  "Maintaining a level of parity between Edge and Chrome is difficult, and the OIB Chrome policies were (on purpose) very 'Anti Chrome'. My focus will be to ensure the best set of policies for Edge moving forward, and dropping the Chrome policies. It is my opinion that Edge should be the primary and only browser available in an enterprise environment, and continued efforts by Microsoft to improve the security and managability of Edge for Business backs this up. My recommendation is to use the Edge Management Service to Block other Browsers(https://learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service-customizations#block-other-browsers) which creates and deploys an AppLocker policy to block the installation or execution of other browsers on corporate devices.",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-12-05T20:09:34.8991696Z",
     "name":  "Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)",
