@@ -1,720 +1,730 @@
 ﻿{
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-  "createdDateTime": "2024-12-02T08:54:09.5544652Z",
-  "creationSource": null,
-  "description": "NOTE: This policy requires deployment of the Defender application and a valid Defender for Endpoint P1/P2 or Defender for Business license:\n\nhttps://learn.microsoft.com/en-us/defender-endpoint/mac-install-with-intune",
-  "lastModifiedDateTime": "2025-03-18T13:18:34.4920201Z",
-  "name": "MacOS - OIB - Defender Antivirus - D - MDE Configuration - v1.0",
-  "platforms": "macOS",
-  "priorityMetaData": null,
-  "roleScopeTagIds": ["0"],
-  "settingCount": 6,
-  "technologies": "mdm,appleRemoteManagement",
-  "id": "f9a520f4-f948-48b5-ba81-2a24eb9f3cdc",
-  "templateReference": {
-      "templateId": "",
-      "templateFamily": "none",
-      "templateDisplayName": null,
-      "templateDisplayVersion": null
-  },
-  "settings": [
-      {
-          "id": "0",
-          "settingInstance": {
-              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-              "settingDefinitionId": "com.apple.servicemanagement_com.apple.servicemanagement",
-              "settingInstanceTemplateReference": null,
-              "groupSettingCollectionValue": [
-                  {
-                      "settingValueTemplateReference": null,
-                      "children": [
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                              "settingDefinitionId": "com.apple.servicemanagement_rules",
-                              "settingInstanceTemplateReference": null,
-                              "groupSettingCollectionValue": [
-                                  {
-                                      "settingValueTemplateReference": null,
-                                      "children": [
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.servicemanagement_rules_item_ruletype_3",
-                                                  "children": []
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                              "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
-                                              "settingInstanceTemplateReference": null,
-                                              "simpleSettingValue": {
-                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.microsoft.fresno"
-                                              }
-                                          }
-                                      ]
-                                  },
-                                  {
-                                      "settingValueTemplateReference": null,
-                                      "children": [
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.servicemanagement_rules_item_ruletype_3",
-                                                  "children": []
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                              "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
-                                              "settingInstanceTemplateReference": null,
-                                              "simpleSettingValue": {
-                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.microsoft.dlp"
-                                              }
-                                          }
-                                      ]
-                                  }
-                              ]
-                          }
-                      ]
-                  }
-              ]
-          }
-      },
-      {
-          "id": "1",
-          "settingInstance": {
-              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-              "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem",
-              "settingInstanceTemplateReference": null,
-              "groupSettingCollectionValue": [
-                  {
-                      "settingValueTemplateReference": null,
-                      "children": [
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                              "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app",
-                              "settingInstanceTemplateReference": null,
-                              "groupSettingCollectionValue": [
-                                  {
-                                      "settingValueTemplateReference": null,
-                                      "children": [
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                              "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app_application id",
-                                              "settingInstanceTemplateReference": null,
-                                              "simpleSettingValue": {
-                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "WDAV00"
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                              "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app_lcid",
-                                              "settingInstanceTemplateReference": null,
-                                              "simpleSettingValue": {
-                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
-                                                  "settingValueTemplateReference": null,
-                                                  "value": 1033
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app_manifestserver",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app_manifestserver_0",
-                                                  "children": []
-                                              }
-                                          }
-                                      ]
-                                  }
-                              ]
-                          }
-                      ]
-                  }
-              ]
-          }
-      },
-      {
-          "id": "2",
-          "settingInstance": {
-              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",
-              "settingInstanceTemplateReference": null,
-              "groupSettingCollectionValue": [
-                  {
-                      "settingValueTemplateReference": null,
-                      "children": [
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services",
-                              "settingInstanceTemplateReference": null,
-                              "groupSettingCollectionValue": [
-                                  {
-                                      "settingValueTemplateReference": null,
-                                      "children": [
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility",
-                                              "settingInstanceTemplateReference": null,
-                                              "groupSettingCollectionValue": [
-                                                  {
-                                                      "settingValueTemplateReference": null,
-                                                      "children": [
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_authorization",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_authorization_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_coderequirement",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "identifier \"com.microsoft.dlp.daemon\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifier",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.microsoft.dlp.daemon"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifiertype",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifiertype_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_staticcode",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_staticcode_false",
-                                                                  "children": []
-                                                              }
-                                                          }
-                                                      ]
-                                                  }
-                                              ]
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways",
-                                              "settingInstanceTemplateReference": null,
-                                              "groupSettingCollectionValue": [
-                                                  {
-                                                      "settingValueTemplateReference": null,
-                                                      "children": [
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_authorization",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_authorization_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_coderequirement",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "identifier \"com.microsoft.dlp.daemon\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_identifier",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.microsoft.dlp.daemon"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_identifiertype",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_identifiertype_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_staticcode",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_staticcode_false",
-                                                                  "children": []
-                                                              }
-                                                          }
-                                                      ]
-                                                  }
-                                              ]
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles",
-                                              "settingInstanceTemplateReference": null,
-                                              "groupSettingCollectionValue": [
-                                                  {
-                                                      "settingValueTemplateReference": null,
-                                                      "children": [
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "identifier \"com.microsoft.wdav\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.microsoft.wdav"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode_false",
-                                                                  "children": []
-                                                              }
-                                                          }
-                                                      ]
-                                                  },
-                                                  {
-                                                      "settingValueTemplateReference": null,
-                                                      "children": [
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "identifier \"com.microsoft.wdav.epsext\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.microsoft.wdav.epsext"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode_false",
-                                                                  "children": []
-                                                              }
-                                                          }
-                                                      ]
-                                                  },
-                                                  {
-                                                      "settingValueTemplateReference": null,
-                                                      "children": [
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "identifier \"com.microsoft.dlp.daemon\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "simpleSettingValue": {
-                                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.microsoft.dlp.daemon"
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
-                                                                  "children": []
-                                                              }
-                                                          },
-                                                          {
-                                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                              "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode",
-                                                              "settingInstanceTemplateReference": null,
-                                                              "choiceSettingValue": {
-                                                                  "settingValueTemplateReference": null,
-                                                                  "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode_false",
-                                                                  "children": []
-                                                              }
-                                                          }
-                                                      ]
-                                                  }
-                                              ]
-                                          }
-                                      ]
-                                  }
-                              ]
-                          }
-                      ]
-                  }
-              ]
-          }
-      },
-      {
-          "id": "3",
-          "settingInstance": {
-              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-              "settingDefinitionId": "com.apple.system-extension-policy_com.apple.system-extension-policy",
-              "settingInstanceTemplateReference": null,
-              "groupSettingCollectionValue": [
-                  {
-                      "settingValueTemplateReference": null,
-                      "children": [
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                              "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions",
-                              "settingInstanceTemplateReference": null,
-                              "groupSettingCollectionValue": [
-                                  {
-                                      "settingValueTemplateReference": null,
-                                      "children": [
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
-                                              "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions_generickey",
-                                              "settingInstanceTemplateReference": null,
-                                              "simpleSettingCollectionValue": [
-                                                  {
-                                                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                      "settingValueTemplateReference": null,
-                                                      "value": "com.microsoft.wdav.epsext"
-                                                  },
-                                                  {
-                                                      "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                      "settingValueTemplateReference": null,
-                                                      "value": "com.microsoft.wdav.netext"
-                                                  }
-                                              ]
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                              "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions_generickey_keytobereplaced",
-                                              "settingInstanceTemplateReference": null,
-                                              "simpleSettingValue": {
-                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "UBF8T346G9"
-                                              }
-                                          }
-                                      ]
-                                  }
-                              ]
-                          }
-                      ]
-                  }
-              ]
-          }
-      },
-      {
-          "id": "4",
-          "settingInstance": {
-              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-              "settingDefinitionId": "com.apple.notificationsettings_com.apple.notificationsettings",
-              "settingInstanceTemplateReference": null,
-              "groupSettingCollectionValue": [
-                  {
-                      "settingValueTemplateReference": null,
-                      "children": [
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings",
-                              "settingInstanceTemplateReference": null,
-                              "groupSettingCollectionValue": [
-                                  {
-                                      "settingValueTemplateReference": null,
-                                      "children": [
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_alerttype",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.notificationsettings_notificationsettings_item_alerttype_1",
-                                                  "children": []
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_badgesenabled",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.notificationsettings_notificationsettings_item_badgesenabled_true",
-                                                  "children": []
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_bundleidentifier",
-                                              "settingInstanceTemplateReference": null,
-                                              "simpleSettingValue": {
-                                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.microsoft.wdav.tray"
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_criticalalertenabled",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.notificationsettings_notificationsettings_item_criticalalertenabled_false",
-                                                  "children": []
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_notificationsenabled",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.notificationsettings_notificationsettings_item_notificationsenabled_true",
-                                                  "children": []
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_showinlockscreen",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.notificationsettings_notificationsettings_item_showinlockscreen_false",
-                                                  "children": []
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_showinnotificationcenter",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.notificationsettings_notificationsettings_item_showinnotificationcenter_true",
-                                                  "children": []
-                                              }
-                                          },
-                                          {
-                                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                              "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_soundsenabled",
-                                              "settingInstanceTemplateReference": null,
-                                              "choiceSettingValue": {
-                                                  "settingValueTemplateReference": null,
-                                                  "value": "com.apple.notificationsettings_notificationsettings_item_soundsenabled_true",
-                                                  "children": []
-                                              }
-                                          }
-                                      ]
-                                  }
-                              ]
-                          }
-                      ]
-                  }
-              ]
-          }
-      },
-      {
-          "id": "5",
-          "settingInstance": {
-              "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
-              "settingDefinitionId": "com.apple.webcontent-filter_com.apple.webcontent-filter",
-              "settingInstanceTemplateReference": null,
-              "groupSettingCollectionValue": [
-                  {
-                      "settingValueTemplateReference": null,
-                      "children": [
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                              "settingDefinitionId": "com.apple.webcontent-filter_filterdataproviderbundleidentifier",
-                              "settingInstanceTemplateReference": null,
-                              "simpleSettingValue": {
-                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                  "settingValueTemplateReference": null,
-                                  "value": "com.microsoft.wdav.netext"
-                              }
-                          },
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                              "settingDefinitionId": "com.apple.webcontent-filter_filterdataproviderdesignatedrequirement",
-                              "settingInstanceTemplateReference": null,
-                              "simpleSettingValue": {
-                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                  "settingValueTemplateReference": null,
-                                  "value": "identifier \"com.microsoft.wdav.netext\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
-                              }
-                          },
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                              "settingDefinitionId": "com.apple.webcontent-filter_filtergrade",
-                              "settingInstanceTemplateReference": null,
-                              "choiceSettingValue": {
-                                  "settingValueTemplateReference": null,
-                                  "value": "com.apple.webcontent-filter_filtergrade_1",
-                                  "children": []
-                              }
-                          },
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                              "settingDefinitionId": "com.apple.webcontent-filter_filterpackets",
-                              "settingInstanceTemplateReference": null,
-                              "choiceSettingValue": {
-                                  "settingValueTemplateReference": null,
-                                  "value": "com.apple.webcontent-filter_filterpackets_false",
-                                  "children": []
-                              }
-                          },
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                              "settingDefinitionId": "com.apple.webcontent-filter_filtersockets",
-                              "settingInstanceTemplateReference": null,
-                              "choiceSettingValue": {
-                                  "settingValueTemplateReference": null,
-                                  "value": "com.apple.webcontent-filter_filtersockets_true",
-                                  "children": []
-                              }
-                          },
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                              "settingDefinitionId": "com.apple.webcontent-filter_pluginbundleid",
-                              "settingInstanceTemplateReference": null,
-                              "simpleSettingValue": {
-                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                  "settingValueTemplateReference": null,
-                                  "value": "com.microsoft.wdav"
-                              }
-                          },
-                          {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                              "settingDefinitionId": "com.apple.webcontent-filter_userdefinedname",
-                              "settingInstanceTemplateReference": null,
-                              "simpleSettingValue": {
-                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                  "settingValueTemplateReference": null,
-                                  "value": "Microsoft Defender Content Filter"
-                              }
-                          }
-                      ]
-                  }
-              ]
-          }
-      }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
+    "createdDateTime": "2024-12-02T08:54:09.5544652Z",
+    "creationSource": null,
+    "description": "NOTE: This policy requires deployment of the Defender application and a valid Defender for Endpoint P1/P2 or Defender for Business license:\n\nhttps://learn.microsoft.com/en-us/defender-endpoint/mac-install-with-intune",
+    "lastModifiedDateTime": "2025-03-18T13:18:34.4920201Z",
+    "name": "MacOS - OIB - Defender Antivirus - D - MDE Configuration - v1.0",
+    "platforms": "macOS",
+    "priorityMetaData": null,
+    "roleScopeTagIds": ["0"],
+    "settingCount": 6,
+    "technologies": "mdm,appleRemoteManagement",
+    "id": "f9a520f4-f948-48b5-ba81-2a24eb9f3cdc",
+    "templateReference": {
+        "templateId": "",
+        "templateFamily": "none",
+        "templateDisplayName": null,
+        "templateDisplayVersion": null
+    },
+    "settings": [
+        {
+            "id": "0",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.servicemanagement_com.apple.servicemanagement",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                    {
+                        "settingValueTemplateReference": null,
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                "settingDefinitionId": "com.apple.servicemanagement_rules",
+                                "settingInstanceTemplateReference": null,
+                                "groupSettingCollectionValue": [
+                                    {
+                                        "settingValueTemplateReference": null,
+                                        "children": [
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.servicemanagement_rules_item_ruletype_3",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                                                "settingInstanceTemplateReference": null,
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.microsoft.fresno"
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "settingValueTemplateReference": null,
+                                        "children": [
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.servicemanagement_rules_item_ruletype",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.servicemanagement_rules_item_ruletype_3",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "com.apple.servicemanagement_rules_item_rulevalue",
+                                                "settingInstanceTemplateReference": null,
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.microsoft.dlp"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                    {
+                        "settingValueTemplateReference": null,
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app",
+                                "settingInstanceTemplateReference": null,
+                                "groupSettingCollectionValue": [
+                                    {
+                                        "settingValueTemplateReference": null,
+                                        "children": [
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app_application id",
+                                                "settingInstanceTemplateReference": null,
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "WDAV00"
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app_lcid",
+                                                "settingInstanceTemplateReference": null,
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
+                                                    "settingValueTemplateReference": null,
+                                                    "value": 1033
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app_manifestserver",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.managedclient.preferences_applicationssystem_applications_microsoft defender.app_manifestserver_0",
+                                                    "children": []
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "2",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_com.apple.tcc.configuration-profile-policy",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                    {
+                        "settingValueTemplateReference": null,
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services",
+                                "settingInstanceTemplateReference": null,
+                                "groupSettingCollectionValue": [
+                                    {
+                                        "settingValueTemplateReference": null,
+                                        "children": [
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility",
+                                                "settingInstanceTemplateReference": null,
+                                                "groupSettingCollectionValue": [
+                                                    {
+                                                        "settingValueTemplateReference": null,
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_authorization",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_authorization_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_coderequirement",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "identifier \"com.microsoft.dlp.daemon\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifier",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.microsoft.dlp.daemon"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifiertype",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_identifiertype_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_staticcode",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_accessibility_item_staticcode_false",
+                                                                    "children": []
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways",
+                                                "settingInstanceTemplateReference": null,
+                                                "groupSettingCollectionValue": [
+                                                    {
+                                                        "settingValueTemplateReference": null,
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_authorization",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_authorization_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_coderequirement",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "identifier \"com.microsoft.dlp.daemon\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_identifier",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.microsoft.dlp.daemon"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_identifiertype",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_identifiertype_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_staticcode",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_bluetoothalways_item_staticcode_false",
+                                                                    "children": []
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles",
+                                                "settingInstanceTemplateReference": null,
+                                                "groupSettingCollectionValue": [
+                                                    {
+                                                        "settingValueTemplateReference": null,
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "identifier \"com.microsoft.wdav\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.microsoft.wdav"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode_false",
+                                                                    "children": []
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "settingValueTemplateReference": null,
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "identifier \"com.microsoft.wdav.epsext\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.microsoft.wdav.epsext"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode_false",
+                                                                    "children": []
+                                                                }
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "settingValueTemplateReference": null,
+                                                        "children": [
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_authorization_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_coderequirement",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "identifier \"com.microsoft.dlp.daemon\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifier",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "simpleSettingValue": {
+                                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.microsoft.dlp.daemon"
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_identifiertype_0",
+                                                                    "children": []
+                                                                }
+                                                            },
+                                                            {
+                                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                                "settingDefinitionId": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode",
+                                                                "settingInstanceTemplateReference": null,
+                                                                "choiceSettingValue": {
+                                                                    "settingValueTemplateReference": null,
+                                                                    "value": "com.apple.tcc.configuration-profile-policy_services_systempolicyallfiles_item_staticcode_false",
+                                                                    "children": []
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "3",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.system-extension-policy_com.apple.system-extension-policy",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                    {
+                        "settingValueTemplateReference": null,
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions",
+                                "settingInstanceTemplateReference": null,
+                                "groupSettingCollectionValue": [
+                                    {
+                                        "settingValueTemplateReference": null,
+                                        "children": [
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                                "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions_generickey",
+                                                "settingInstanceTemplateReference": null,
+                                                "simpleSettingCollectionValue": [
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                        "settingValueTemplateReference": null,
+                                                        "value": "com.microsoft.wdav.epsext"
+                                                    },
+                                                    {
+                                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                        "settingValueTemplateReference": null,
+                                                        "value": "com.microsoft.wdav.netext"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "com.apple.system-extension-policy_allowedsystemextensions_generickey_keytobereplaced",
+                                                "settingInstanceTemplateReference": null,
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "UBF8T346G9"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "4",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.notificationsettings_com.apple.notificationsettings",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                    {
+                        "settingValueTemplateReference": null,
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings",
+                                "settingInstanceTemplateReference": null,
+                                "groupSettingCollectionValue": [
+                                    {
+                                        "settingValueTemplateReference": null,
+                                        "children": [
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_alerttype",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.notificationsettings_notificationsettings_item_alerttype_1",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_badgesenabled",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.notificationsettings_notificationsettings_item_badgesenabled_true",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_bundleidentifier",
+                                                "settingInstanceTemplateReference": null,
+                                                "simpleSettingValue": {
+                                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.microsoft.wdav.tray"
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_criticalalertenabled",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.notificationsettings_notificationsettings_item_criticalalertenabled_false",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_notificationsenabled",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.notificationsettings_notificationsettings_item_notificationsenabled_true",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_showinlockscreen",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.notificationsettings_notificationsettings_item_showinlockscreen_false",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_showinnotificationcenter",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.notificationsettings_notificationsettings_item_showinnotificationcenter_true",
+                                                    "children": []
+                                                }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "com.apple.notificationsettings_notificationsettings_item_soundsenabled",
+                                                "settingInstanceTemplateReference": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "com.apple.notificationsettings_notificationsettings_item_soundsenabled_true",
+                                                    "children": []
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "5",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.webcontent-filter_com.apple.webcontent-filter",
+                "settingInstanceTemplateReference": null,
+                "groupSettingCollectionValue": [
+                    {
+                        "settingValueTemplateReference": null,
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId": "com.apple.webcontent-filter_filterdataproviderbundleidentifier",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingValue": {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "com.microsoft.wdav.netext"
+                                }
+                            },
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId": "com.apple.webcontent-filter_filterdataproviderdesignatedrequirement",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingValue": {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "identifier \"com.microsoft.wdav.netext\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9"
+                                }
+                            },
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.webcontent-filter_filtergrade",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                    "settingValueTemplateReference": null,
+                                    "value": "com.apple.webcontent-filter_filtergrade_1",
+                                    "children": []
+                                }
+                            },
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.webcontent-filter_filterpackets",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                    "settingValueTemplateReference": null,
+                                    "value": "com.apple.webcontent-filter_filterpackets_false",
+                                    "children": []
+                                }
+                            },
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.webcontent-filter_filtersockets",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                    "settingValueTemplateReference": null,
+                                    "value": "com.apple.webcontent-filter_filtersockets_true",
+                                    "children": []
+                                }
+                            },
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.webcontent-filter_filtertype",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                    "settingValueTemplateReference": null,
+                                    "value": "com.apple.webcontent-filter_filtertype_1",
+                                    "children": []
+                                }
+                            },
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId": "com.apple.webcontent-filter_pluginbundleid",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingValue": {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "com.microsoft.wdav"
+                                }
+                            },
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+                                "settingDefinitionId": "com.apple.webcontent-filter_userdefinedname",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingValue": {
+                                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                    "settingValueTemplateReference": null,
+                                    "value": "Microsoft Defender Content Filter"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
 }
