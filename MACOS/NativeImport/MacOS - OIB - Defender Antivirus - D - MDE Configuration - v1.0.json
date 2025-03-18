@@ -692,16 +692,6 @@
                               }
                           },
                           {
-                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
-                            "settingDefinitionId": "com.apple.webcontent-filter_organization",
-                            "settingInstanceTemplateReference": null,
-                            "simpleSettingValue": {
-                              "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                              "settingValueTemplateReference": null,
-                              "value": "JAMF Software"
-                            }
-                          },
-                          {
                               "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
                               "settingDefinitionId": "com.apple.webcontent-filter_pluginbundleid",
                               "settingInstanceTemplateReference": null,
