@@ -1,5 +1,104 @@
 # OIB Windows Change Log
 
+# Windows v3.6 - 2025-05-13 - Post-MMS Edition
+## Added
+### Settings Catalog
+**Win - OIB - SC - Microsoft Office - D - Device Security - v3.6**
+**Win - OIB - SC - Microsoft Office - U - User Security - v3.6**
+By popular demand, I've added a new set of policies to help secure Microsoft Office on Windows devices. These policies are based on the most recent [Microsoft 365 Apps Security Baseline v2412](https://learn.microsoft.com/en-us/microsoft-365-apps/security/security-baseline) and are designed to enhance the security posture of Office applications.
+
+I have split the policies into two separate profiles: one for Device Security and one for User Security. This allows for more granular control over the security settings applied to Office applications if required.
+
+> [!IMPORTANT]
+> These policies are only applicable to Microsoft 365 Apps for Enterprise (included with M365 E*/A*/G*), **not** Microsoft 365 Apps for Business (included with M365 Business Premium).
+> This behaviour is [documented here](https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/overview-cloud-policy#:~:text=You%20can%20create%20a%20policy%20configuration%20for%20Microsoft%20365%20Apps%20for%20business%2C%20but%20only%20policy%20settings%20related%20to%20privacy%20controls%20are%20supported)
+
+>[!WARNING]
+> The M365 Apps Security Baseline disables a number of features that may impact user experience, such the use macros, add-ins. Please review the settings and test in a controlled environment before deploying widely!
+
+**Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6**
+* Exact duplicate of the existing Local Security Policies profile with one difference to support the new LAPS settings while maintaining a good security posture.
+    * Accounts Enable Administrator Account Status - `Disable`
+
+### Endpoint Security
+**Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6**
+* Added the following settings to benefit from the new 24H2 LAPS configuration:
+    * Backup Directory - Backup the password to Azure AD only
+    * Password Age (Days) - 7
+    * Password Complexity - Passphrase (short words with unique prefixes)
+        * Passphrase Length - 4
+    * Password Length - 21
+    * Post-Authentication Actions - Reset the password, logoff the managed account, and terminate any remaining processes
+    * Post-Authentication Reset Delay (Hours) - 1
+    * Automatic Account Management Enabled - The target account will be automatically managed
+        * Automatic Account Management Enable Account - The target account will be automatically managed
+        * Automatic Account Management Randomize Name - The name of the target account will not use a random numeric suffix
+        * Automatic Account Management Target - Manage a new custom administrator account
+
+
+## Changed/Updated
+### Settings Catalog
+**Win - OIB - SC - Defender Antivirus - D - Additional Configuration**
+* Added newly added setting from the 24H2 Security Baseline:
+    * Enable Dynamic Signature Dropped Event Reporting - `Dynamic Security intelligence update events will be reported.`
+
+**Win - OIB - SC - Device Security - D - Security Hardening**
+* Added additional settings now available from the 24H2 Security Baseline:
+
+    **Lanman Server**
+    * Audit Client Does Not Support Encryption - `Enabled`
+    * Audit Client Does Not Support Signing - `Enabled`
+    * Audit Insecure Guest Logon - `Enabled`
+    * Auth Rate Limiter Delay In Ms - `2000`
+    * Enable Auth Rate Limiter  - `Enabled`
+    * Enable Mailslots - `Disabled`
+    * Max Smb2 Dialect - `SMB 3.0.0`
+    * Min Smb2 Dialect - `SMB 3.1.1`
+    
+    **Lanman Workstation**
+    * Audit Server Does Not Support Encryption - `Enabled`
+    * Audit Server Does Not Support Signing - `Enabled`
+    * Audit Insecure Guest Logon - `Enabled`
+    * Enable Mailslots - `Disabled`
+    * Max Smb2 Dialect - `SMB 3.0.0`
+    * Min Smb2 Dialect - `SMB 3.1.1`
+    * Require Encryption - `Disabled`
+
+**Win - OIB - SC - Microsoft Edge - D - Security**
+* Added the following settings from the Microsoft Edge baseline and CIS Edge Benchmark:
+    *Allow download restrictions - `Block Malicious Downloads` (Reduced from "Block malicious downloads and dangerous file types")
+    * Automatically open downloaded MHT or MHTML files from the web in Internet Explorer mode - `Disabled`
+    * Dynamic Code Settings - `Enabled`
+        *Dynamic Code Settings (Device) - `Default Dynamic Code Settings`
+    * Enable Application Bound Encryption - `Enabled`
+    * Enable browser legacy extension point blocking - `Enabled`
+    * Enable site isolation for every site - `Enabled`
+    * Enhance the security state in Microsoft Edge - `Enabled`
+        * Enhance the security state in Microsoft Edge (Device) - `Balanced Mode`
+    * Show the Reload in Internet Explorer mode button in the toolbar - `Disabled`
+    * Specifies whether to allow insecure websites to make requests to more-private network endpoints - `Disabled`
+
+* Added the following setting to turn on the new [Scareware Protection](https://blogs.windows.com/msedgedev/2025/01/27/stand-up-to-scareware-with-scareware-blocker/) feature.
+    * Configure Edge Scareware Blocker Protection - `Enabled`
+
+**Win - OIB - SC - Microsoft Edge - D - Updates**
+* Added "Set the time period for update notifications" configured to `259200000` which is the time in milliseconds (72 hours) before Edge forces a restart to apply a pending update.
+
+**Win - OIB - SC - Microsoft Edge - U - User Experience**
+* Removed "Enable full-tab promotional content" as it was deprecated.
+* Added "Enable Gamer Mode" set to `Disabled`
+
+**Win - OIB - SC - Microsoft Office - U - Config and Experience**
+* Removed deprecated version of "Allow users to receive and respond to in-product surveys from Microsoft".
+
+**Win - OIB - SC - Windows User Experience - U - Copilot**
+* Changed "Turn Off Copilot in Windows" from "Enable Copilot" to "Disable Copilot".
+> [!NOTE]
+> This only impacts the old experience. I recommend also deploying the "Microsoft Copilot" app (9NHT9RB2F4HD) as a required uninstall.
+> https://learn.microsoft.com/en-gb/windows/client-management/manage-windows-copilot#policy-information-for-previous-copilot-in-windows-preview-experience
+
+---
+
 # Windows v3.5 - 2025-02-20 - 24H2 Baseline Edition (Mostly)
 ## Added
 ### Settings Catalog
