@@ -8,8 +8,8 @@
     "creationSource":  null,
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2024-12-05T20:11:55.8860314Z",
-    "name":  "Win - OIB - SC - Microsoft Edge - U - User Experience - v3.4",
+    "lastModifiedDateTime":  "2025-05-08T15:47:57.7620286Z",
+    "name":  "Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
@@ -109,12 +109,12 @@
                          "id":  "3",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_promotionaltabsenabled",
+                                                 "settingDefinitionId":  "user_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge~edgegames_gamermodeenabled",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_microsoft_edge~policy~microsoft_edge_promotionaltabsenabled_0",
+                                                                            "value":  "user_vendor_msft_policy_config_microsoft_edgev117~policy~microsoft_edge~edgegames_gamermodeenabled_0",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
