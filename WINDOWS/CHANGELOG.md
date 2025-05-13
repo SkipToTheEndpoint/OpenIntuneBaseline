@@ -10,7 +10,7 @@ By popular demand, I've added a new set of policies to help secure Microsoft Off
 I have split the policies into two separate profiles: one for Device Security and one for User Security. This allows for more granular control over the security settings applied to Office applications if required.
 
 > [!IMPORTANT]
-> These policies are only applicable to Microsoft 365 Apps for Enterprise (included with M365 E*/A*/G*), **not** Microsoft 365 Apps for Business (included with M365 Business Premium).
+> These policies are only applicable to Microsoft 365 Apps for Enterprise (included with M365 E*/A*/F*), **not** Microsoft 365 Apps for Business (included with M365 Business Premium).
 > This behaviour is [documented here](https://learn.microsoft.com/en-us/microsoft-365-apps/admin-center/overview-cloud-policy#:~:text=You%20can%20create%20a%20policy%20configuration%20for%20Microsoft%20365%20Apps%20for%20business%2C%20but%20only%20policy%20settings%20related%20to%20privacy%20controls%20are%20supported)
 
 >[!WARNING]
