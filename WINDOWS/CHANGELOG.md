@@ -52,16 +52,16 @@ I have split the policies into two separate profiles: one for Device Security an
     * Auth Rate Limiter Delay In Ms - `2000`
     * Enable Auth Rate Limiter  - `Enabled`
     * Enable Mailslots - `Disabled`
-    * Max Smb2 Dialect - `SMB 3.0.0`
-    * Min Smb2 Dialect - `SMB 3.1.1`
+    * Min Smb2 Dialect - `SMB 3.0.0`
+    * Max Smb2 Dialect - `SMB 3.1.1`
     
     **Lanman Workstation**
     * Audit Server Does Not Support Encryption - `Enabled`
     * Audit Server Does Not Support Signing - `Enabled`
     * Audit Insecure Guest Logon - `Enabled`
     * Enable Mailslots - `Disabled`
-    * Max Smb2 Dialect - `SMB 3.0.0`
-    * Min Smb2 Dialect - `SMB 3.1.1`
+    * Min Smb2 Dialect - `SMB 3.0.0`
+    * Max Smb2 Dialect - `SMB 3.1.1`
     * Require Encryption - `Disabled`
 
 **Win - OIB - SC - Device Security - U - Power and Device Lock**
