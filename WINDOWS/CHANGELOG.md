@@ -64,6 +64,13 @@ I have split the policies into two separate profiles: one for Device Security an
     * Min Smb2 Dialect - `SMB 3.1.1`
     * Require Encryption - `Disabled`
 
+**Win - OIB - SC - Device Security - U - Power and Device Lock**
+* Removed following settings as they have been removed from the CIS recommendations:
+    * Allow standby states (S1-S3) when sleeping (on battery)
+    * Allow standby states (S1-S3) when sleeping (plugged in)
+    * Allow Hibernate
+    * Require use of fast startup
+
 **Win - OIB - SC - Microsoft Edge - D - Security**
 * Added the following settings from the Microsoft Edge baseline and CIS Edge Benchmark:
     * Allow download restrictions - `Block Malicious Downloads` (Reduced from "Block malicious downloads and dangerous file types")
