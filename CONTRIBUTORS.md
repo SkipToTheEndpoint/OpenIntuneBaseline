@@ -39,6 +39,13 @@ The [IntuneMacAdmins](https://intunemacadmins.com) team for OIB MacOS support.
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/sfaxluke">
+                    <img src="https://avatars.githubusercontent.com/u/87503131?v=4" width="100;" alt="sfaxluke"/>
+                    <br />
+                    <sub><b>Luke Steward</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/ee61re">
                     <img src="https://avatars.githubusercontent.com/u/1190365?v=4" width="100;" alt="ee61re"/>
                     <br />
