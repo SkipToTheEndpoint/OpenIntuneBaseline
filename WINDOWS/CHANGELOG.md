@@ -66,7 +66,7 @@ I have split the policies into two separate profiles: one for Device Security an
 
 **Win - OIB - SC - Microsoft Edge - D - Security**
 * Added the following settings from the Microsoft Edge baseline and CIS Edge Benchmark:
-    *Allow download restrictions - `Block Malicious Downloads` (Reduced from "Block malicious downloads and dangerous file types")
+    * Allow download restrictions - `Block Malicious Downloads` (Reduced from "Block malicious downloads and dangerous file types")
     * Automatically open downloaded MHT or MHTML files from the web in Internet Explorer mode - `Disabled`
     * Dynamic Code Settings - `Enabled`
         *Dynamic Code Settings (Device) - `Default Dynamic Code Settings`
