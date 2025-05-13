@@ -54,7 +54,7 @@
 
     - [Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6](#section-23)
 
-    - [Win - OIB - SC - Device Security - D - Location and Privacy - v3.6](#section-24)
+    - [Win - OIB - SC - Device Security - D - Location and Privacy - v3.2](#section-24)
 
     - [Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1](#section-25)
 
@@ -74,7 +74,7 @@
 
     - [Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5](#section-33)
 
-    - [Win - OIB - SC - Device Security - U - Power and Device Lock - v3.2](#section-34)
+    - [Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6](#section-34)
 
     - [Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4](#section-35)
 
@@ -2554,7 +2554,7 @@
 ###### Table 42. Settings - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
 
 
-<h3 id="section-24">Win - OIB - SC - Device Security - D - Location and Privacy - v3.6</h3>
+<h3 id="section-24">Win - OIB - SC - Device Security - D - Location and Privacy - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2566,7 +2566,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Device Security - D - Location and Privacy - v3.6</td>
+<td class='property-column2'>Win - OIB - SC - Device Security - D - Location and Privacy - v3.2</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -2582,11 +2582,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>18 July 2024 13:17:02</td>
+<td class='property-column2'>13 May 2025 11:53:01</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>24 April 2025 13:05:40</td>
+<td class='property-column2'>13 May 2025 11:53:01</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2594,7 +2594,7 @@
 </tr>
 </table>
 
-###### Table 43. Basics - Win - OIB - SC - Device Security - D - Location and Privacy - v3.6
+###### Table 43. Basics - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
 
 
 <table class='table-settings'>
@@ -2611,7 +2611,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Let Apps Access Location Force Allow These Apps</td>
-<td class='property-column2'>windows.immersivecontrolpanel_cw5n1h2txyewy;Microsoft.OutlookForWindows_8wekyb3d8bbwe;MSTeams_8wekyb3d8bbwe;Microsoft.CompanyPortal_8wekyb3d8bbwe</td>
+<td class='property-column2'>windows.immersivecontrolpanel_cw5n1h2txyewy;Microsoft.OutlookForWindows_8wekyb3d8bbwe</td>
 </tr>
 <tr>
 <td colspan="2" class='category-level1'>System</td>
@@ -2622,7 +2622,7 @@
 </tr>
 </table>
 
-###### Table 44. Settings - Win - OIB - SC - Device Security - D - Location and Privacy - v3.6
+###### Table 44. Settings - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
 
 
 <h3 id="section-25">Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1</h3>
@@ -4002,7 +4002,7 @@
 ###### Table 62. Settings - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5
 
 
-<h3 id="section-34">Win - OIB - SC - Device Security - U - Power and Device Lock - v3.2</h3>
+<h3 id="section-34">Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4014,7 +4014,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Device Security - U - Power and Device Lock - v3.2</td>
+<td class='property-column2'>Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -4034,7 +4034,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:50:54</td>
+<td class='property-column2'>13 May 2025 11:45:27</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4042,7 +4042,7 @@
 </tr>
 </table>
 
-###### Table 63. Basics - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.2
+###### Table 63. Basics - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
 
 
 <table class='table-settings'>
@@ -4055,14 +4055,6 @@
 </tr>
 <tr>
 <td colspan="2" class='category-level2'>Sleep Settings</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Allow standby states (S1-S3) when sleeping (on battery)</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Allow standby states (S1-S3) when sleeping (plugged in)</td>
-<td class='property-column2'>Disabled</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Require a password when a computer wakes (on battery)</td>
@@ -4108,18 +4100,7 @@
 <td class='property-column2'>600</td>
 </tr>
 <tr>
-<td colspan="2" class='category-level2'>Shutdown</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Require use of fast startup</td>
-<td class='property-column2'>Disabled</td>
-</tr>
-<tr>
 <td colspan="2" class='category-level1'>Power</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Allow Hibernate</td>
-<td class='property-column2'>Block</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Unattended Sleep Timeout On Battery</td>
@@ -4131,7 +4112,7 @@
 </tr>
 </table>
 
-###### Table 64. Settings - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.2
+###### Table 64. Settings - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
 
 
 <h3 id="section-35">Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4</h3>
@@ -6733,7 +6714,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
-<td class='property-column2'></td>
+<td class='property-column2'>NOTE: These policies are only applicable to Microsoft 365 Apps for Enterprise (included with M365 E`*/A`*/F`*), not Microsoft 365 Apps for Business (included with M365 Business Premium).</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Profile type</td>
@@ -6749,7 +6730,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>07 May 2025 00:29:32</td>
+<td class='property-column2'>13 May 2025 11:17:59</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -7940,7 +7921,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
-<td class='property-column2'></td>
+<td class='property-column2'>NOTE: These policies are only applicable to Microsoft 365 Apps for Enterprise (included with M365 E`*/A`*/F`*), not Microsoft 365 Apps for Business (included with M365 Business Premium).</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Profile type</td>
@@ -7956,7 +7937,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>07 May 2025 00:29:07</td>
+<td class='property-column2'>13 May 2025 11:18:10</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
