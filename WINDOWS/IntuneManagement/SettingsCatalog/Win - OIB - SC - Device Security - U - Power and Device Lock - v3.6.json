@@ -8,8 +8,8 @@
     "creationSource":  null,
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2024-12-05T19:50:54.6275563Z",
-    "name":  "Win - OIB - SC - Device Security - U - Power and Device Lock - v3.2",
+    "lastModifiedDateTime":  "2025-05-13T10:45:27.9789687Z",
+    "name":  "Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
@@ -17,7 +17,7 @@
     "roleScopeTagIds":  [
                             "0"
                         ],
-    "settingCount":  12,
+    "settingCount":  8,
     "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
     "technologies":  "mdm",
     "id":  "52358169-92ea-4efa-9abf-2af196d28ca3",
@@ -43,12 +43,12 @@
                          "id":  "0",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_power_allowstandbystateswhensleepingonbattery",
+                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_power_requirepasswordwhencomputerwakesonbattery",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_policy_config_power_allowstandbystateswhensleepingonbattery_0",
+                                                                            "value":  "device_vendor_msft_policy_config_power_requirepasswordwhencomputerwakesonbattery_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -65,12 +65,12 @@
                          "id":  "1",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_power_allowstandbywhensleepingpluggedin",
+                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_power_requirepasswordwhencomputerwakespluggedin",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_policy_config_power_allowstandbywhensleepingpluggedin_0",
+                                                                            "value":  "device_vendor_msft_policy_config_power_requirepasswordwhencomputerwakespluggedin_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -85,50 +85,6 @@
                          "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00272\u0027)",
                          "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00272\u0027)",
                          "id":  "2",
-                         "settingInstance":  {
-                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_power_requirepasswordwhencomputerwakesonbattery",
-                                                 "settingInstanceTemplateReference":  null,
-                                                 "choiceSettingValue":  {
-                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
-                                                                            "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_policy_config_power_requirepasswordwhencomputerwakesonbattery_1",
-                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
-                                                                            "children":  [
-
-                                                                                         ]
-                                                                        }
-                                             },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00272\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00272\u0027)/settingDefinitions"
-                     },
-                     {
-                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00273\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00273\u0027)",
-                         "id":  "3",
-                         "settingInstance":  {
-                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_power_requirepasswordwhencomputerwakespluggedin",
-                                                 "settingInstanceTemplateReference":  null,
-                                                 "choiceSettingValue":  {
-                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
-                                                                            "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_policy_config_power_requirepasswordwhencomputerwakespluggedin_1",
-                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
-                                                                            "children":  [
-
-                                                                                         ]
-                                                                        }
-                                             },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00273\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00273\u0027)/settingDefinitions"
-                     },
-                     {
-                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00274\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00274\u0027)",
-                         "id":  "4",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_policy_config_power_standbytimeoutonbattery",
@@ -152,14 +108,14 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00274\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00274\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00272\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00272\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00275\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00275\u0027)",
-                         "id":  "5",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00273\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00273\u0027)",
+                         "id":  "3",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_policy_config_power_standbytimeoutpluggedin",
@@ -183,14 +139,14 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00275\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00275\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00273\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00273\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00276\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00276\u0027)",
-                         "id":  "6",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00274\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00274\u0027)",
+                         "id":  "4",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_policy_config_power_displayofftimeoutonbattery",
@@ -214,14 +170,14 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00276\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00276\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00274\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00274\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00277\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00277\u0027)",
-                         "id":  "7",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00275\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00275\u0027)",
+                         "id":  "5",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_policy_config_power_displayofftimeoutpluggedin",
@@ -245,58 +201,14 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00277\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00277\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00275\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00275\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00278\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00278\u0027)",
-                         "id":  "8",
-                         "settingInstance":  {
-                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_admx_wininit_hiberboot",
-                                                 "settingInstanceTemplateReference":  null,
-                                                 "choiceSettingValue":  {
-                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
-                                                                            "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_policy_config_admx_wininit_hiberboot_0",
-                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
-                                                                            "children":  [
-
-                                                                                         ]
-                                                                        }
-                                             },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00278\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00278\u0027)/settingDefinitions"
-                     },
-                     {
-                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00279\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00279\u0027)",
-                         "id":  "9",
-                         "settingInstance":  {
-                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_policy_config_power_allowhibernate",
-                                                 "settingInstanceTemplateReference":  null,
-                                                 "choiceSettingValue":  {
-                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
-                                                                            "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_policy_config_power_allowhibernate_0",
-                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
-                                                                            "children":  [
-
-                                                                                         ]
-                                                                        }
-                                             },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00279\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00279\u0027)/settingDefinitions"
-                     },
-                     {
-                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u002710\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u002710\u0027)",
-                         "id":  "10",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00276\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00276\u0027)",
+                         "id":  "6",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_policy_config_power_unattendedsleeptimeoutonbattery",
@@ -307,14 +219,14 @@
                                                                             "value":  600
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u002710\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u002710\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00276\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00276\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u002711\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u002711\u0027)",
-                         "id":  "11",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00277\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00277\u0027)",
+                         "id":  "7",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_policy_config_power_unattendedsleeptimeoutpluggedin",
@@ -325,8 +237,8 @@
                                                                             "value":  900
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u002711\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u002711\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00277\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u002752358169-92ea-4efa-9abf-2af196d28ca3\u0027)/settings(\u00277\u0027)/settingDefinitions"
                      }
                  ],
     "#microsoft.graph.assign":  {

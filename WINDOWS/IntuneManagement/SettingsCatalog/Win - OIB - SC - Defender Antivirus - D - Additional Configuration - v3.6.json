@@ -8,8 +8,8 @@
     "creationSource":  null,
     "description":  "NOTE: Some of these settings require the device to be onboarded to Defender for Endpoint.",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2025-02-14T11:28:16.6378663Z",
-    "name":  "Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.5",
+    "lastModifiedDateTime":  "2025-05-08T14:15:08.1055621Z",
+    "name":  "Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.6",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
@@ -17,7 +17,7 @@
     "roleScopeTagIds":  [
                             "0"
                         ],
-    "settingCount":  9,
+    "settingCount":  10,
     "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
     "technologies":  "mdm",
     "id":  "2b3a8e2b-3daa-472c-8b1c-809fc76d4a1d",
@@ -65,12 +65,12 @@
                          "id":  "1",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_enablefilehashcomputation",
+                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_reporting_enabledynamicsignaturedroppedeventreporting",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_defender_configuration_enablefilehashcomputation_1",
+                                                                            "value":  "device_vendor_msft_defender_configuration_reporting_enabledynamicsignaturedroppedeventreporting_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -87,12 +87,12 @@
                          "id":  "2",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_hideexclusionsfromlocaladmins",
+                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_enablefilehashcomputation",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_defender_configuration_hideexclusionsfromlocaladmins_1",
+                                                                            "value":  "device_vendor_msft_defender_configuration_enablefilehashcomputation_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -109,12 +109,12 @@
                          "id":  "3",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_hideexclusionsfromlocalusers",
+                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_hideexclusionsfromlocaladmins",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_defender_configuration_hideexclusionsfromlocalusers_1",
+                                                                            "value":  "device_vendor_msft_defender_configuration_hideexclusionsfromlocaladmins_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -131,12 +131,12 @@
                          "id":  "4",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_inteltdtenabled",
+                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_hideexclusionsfromlocalusers",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_defender_configuration_inteltdtenabled_1",
+                                                                            "value":  "device_vendor_msft_defender_configuration_hideexclusionsfromlocalusers_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -153,12 +153,12 @@
                          "id":  "5",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_oobeenablertpandsigupdate",
+                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_inteltdtenabled",
                                                  "settingInstanceTemplateReference":  null,
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "device_vendor_msft_defender_configuration_oobeenablertpandsigupdate_1",
+                                                                            "value":  "device_vendor_msft_defender_configuration_inteltdtenabled_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
@@ -173,6 +173,28 @@
                          "@odata.id":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00276\u0027)",
                          "@odata.editLink":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00276\u0027)",
                          "id":  "6",
+                         "settingInstance":  {
+                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                 "settingDefinitionId":  "device_vendor_msft_defender_configuration_oobeenablertpandsigupdate",
+                                                 "settingInstanceTemplateReference":  null,
+                                                 "choiceSettingValue":  {
+                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                                                            "settingValueTemplateReference":  null,
+                                                                            "value":  "device_vendor_msft_defender_configuration_oobeenablertpandsigupdate_1",
+                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                                                            "children":  [
+
+                                                                                         ]
+                                                                        }
+                                             },
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00276\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00276\u0027)/settingDefinitions"
+                     },
+                     {
+                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00277\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00277\u0027)",
+                         "id":  "7",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingCollectionInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_defender_configuration_passiveremediation",
@@ -190,14 +212,14 @@
                                                                                       }
                                                                                   ]
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00276\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00276\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00277\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00277\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00277\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00277\u0027)",
-                         "id":  "7",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00278\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00278\u0027)",
+                         "id":  "8",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_defender_configuration_quickscanincludeexclusions",
@@ -212,14 +234,14 @@
                                                                                          ]
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00277\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00277\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00278\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00278\u0027)/settingDefinitions"
                      },
                      {
                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00278\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00278\u0027)",
-                         "id":  "8",
+                         "@odata.id":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00279\u0027)",
+                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00279\u0027)",
+                         "id":  "9",
                          "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
                                                  "settingDefinitionId":  "device_vendor_msft_defender_configuration_supportloglocation",
@@ -230,8 +252,8 @@
                                                                             "value":  "%ProgramData%\\Microsoft\\IntuneManagementExtension\\Logs"
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00278\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00278\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00279\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00272b3a8e2b-3daa-472c-8b1c-809fc76d4a1d\u0027)/settings(\u00279\u0027)/settingDefinitions"
                      }
                  ],
     "#microsoft.graph.assign":  {

@@ -8,8 +8,8 @@
     "creationSource":  null,
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2024-12-05T20:16:10.5115991Z",
-    "name":  "Win - OIB - SC - Windows User Experience - U - Copilot - v3.1",
+    "lastModifiedDateTime":  "2025-04-18T11:09:03.6844085Z",
+    "name":  "Win - OIB - SC - Windows User Experience - U - Copilot - v3.6",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "windows10",
     "priorityMetaData":  null,
@@ -32,6 +32,9 @@
     "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/assignments",
     "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/assignments/$ref",
     "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/assignments",
+    "assignments":  [
+
+                    ],
     "settings@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings",
     "settings@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings/$ref",
     "settings@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u0027a48b98ee-84b8-4010-9a4c-65741327dbf7\u0027)/settings",
@@ -48,7 +51,7 @@
                                                  "choiceSettingValue":  {
                                                                             "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                             "settingValueTemplateReference":  null,
-                                                                            "value":  "user_vendor_msft_policy_config_windowsai_turnoffwindowscopilot_0",
+                                                                            "value":  "user_vendor_msft_policy_config_windowsai_turnoffwindowscopilot_1",
                                                                             "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                             "children":  [
 
