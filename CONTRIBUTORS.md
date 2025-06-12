@@ -53,6 +53,15 @@ The [IntuneMacAdmins](https://intunemacadmins.com) team for OIB MacOS support.
                 </a>
             </td>
 		</tr>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/indecline">
+                    <img src="https://avatars.githubusercontent.com/u/46539880?v=4" width="100;" alt="indecline"/>
+                    <br />
+                    <sub><b>indecline</b></sub>
+                </a>
+            </td>
+		</tr>
 	<tbody>
 </table>
 <!-- readme: contributors -end -->
