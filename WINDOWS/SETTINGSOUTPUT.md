@@ -1,4 +1,4 @@
-﻿# Intune documentation
+# Intune documentation
 
 *OS:* Windows
 
@@ -42,93 +42,91 @@
 
     - [Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.6](#section-17)
 
-    - [Win - OIB - SC - Device Security - D - Administrator Protection - v3.5](#section-18)
+    - [Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.1](#section-18)
 
-    - [Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.1](#section-19)
+    - [Win - OIB - SC - Device Security - D - Config Refresh - v3.2](#section-19)
 
-    - [Win - OIB - SC - Device Security - D - Config Refresh - v3.2](#section-20)
+    - [Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0](#section-20)
 
-    - [Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0](#section-21)
+    - [Win - OIB - SC - Device Security - D - Local Security Policies - v3.0](#section-21)
 
-    - [Win - OIB - SC - Device Security - D - Local Security Policies - v3.0](#section-22)
+    - [Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6](#section-22)
 
-    - [Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6](#section-23)
+    - [Win - OIB - SC - Device Security - D - Location and Privacy - v3.2](#section-23)
 
-    - [Win - OIB - SC - Device Security - D - Location and Privacy - v3.2](#section-24)
+    - [Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1](#section-24)
 
-    - [Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1](#section-25)
+    - [Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0](#section-25)
 
-    - [Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0](#section-26)
+    - [Win - OIB - SC - Device Security - D - Script File Associations - v3.4](#section-26)
 
-    - [Win - OIB - SC - Device Security - D - Script File Associations - v3.4](#section-27)
+    - [Win - OIB - SC - Device Security - D - Security Hardening - v3.6](#section-27)
 
-    - [Win - OIB - SC - Device Security - D - Security Hardening - v3.6](#section-28)
+    - [Win - OIB - SC - Device Security - D - Timezone - v3.4](#section-28)
 
-    - [Win - OIB - SC - Device Security - D - Timezone - v3.4](#section-29)
+    - [Win - OIB - SC - Device Security - D - User Rights - v3.5](#section-29)
 
-    - [Win - OIB - SC - Device Security - D - User Rights - v3.5](#section-30)
+    - [Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5](#section-30)
 
-    - [Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5](#section-31)
+    - [Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2](#section-31)
 
-    - [Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2](#section-32)
+    - [Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5](#section-32)
 
-    - [Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5](#section-33)
+    - [Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6](#section-33)
 
-    - [Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6](#section-34)
+    - [Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4](#section-34)
 
-    - [Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4](#section-35)
+    - [Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0](#section-35)
 
-    - [Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0](#section-36)
+    - [Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)](#section-36)
 
-    - [Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)](#section-37)
+    - [Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)](#section-37)
 
-    - [Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)](#section-38)
+    - [Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)](#section-38)
 
-    - [Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)](#section-39)
+    - [Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1](#section-39)
 
-    - [Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1](#section-40)
+    - [Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2](#section-40)
 
-    - [Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2](#section-41)
+    - [Win - OIB - SC - Microsoft Edge - D - Security - v3.6](#section-41)
 
-    - [Win - OIB - SC - Microsoft Edge - D - Security - v3.6](#section-42)
+    - [Win - OIB - SC - Microsoft Edge - D - Updates - v3.6](#section-42)
 
-    - [Win - OIB - SC - Microsoft Edge - D - Updates - v3.6](#section-43)
+    - [Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1](#section-43)
 
-    - [Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1](#section-44)
+    - [Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0](#section-44)
 
-    - [Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0](#section-45)
+    - [Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0](#section-45)
 
-    - [Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0](#section-46)
+    - [Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6](#section-46)
 
-    - [Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6](#section-47)
+    - [Win - OIB - SC - Microsoft Office - D - Security - v3.6](#section-47)
 
-    - [Win - OIB - SC - Microsoft Office - D - Security - v3.6](#section-48)
+    - [Win - OIB - SC - Microsoft Office - D - Updates - v3.0](#section-48)
 
-    - [Win - OIB - SC - Microsoft Office - D - Updates - v3.0](#section-49)
+    - [Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6](#section-49)
 
-    - [Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6](#section-50)
+    - [Win - OIB - SC - Microsoft Office - U - Security - v3.6](#section-50)
 
-    - [Win - OIB - SC - Microsoft Office - U - Security - v3.6](#section-51)
+    - [Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2](#section-51)
 
-    - [Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2](#section-52)
+    - [Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0](#section-52)
 
-    - [Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0](#section-53)
+    - [Win - OIB - SC - Microsoft Store - D - Configuration - v3.4](#section-53)
 
-    - [Win - OIB - SC - Microsoft Store - D - Configuration - v3.4](#section-54)
+    - [Win - OIB - SC - Microsoft Store - U - Configuration - v3.3](#section-54)
 
-    - [Win - OIB - SC - Microsoft Store - U - Configuration - v3.3](#section-55)
+    - [Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5](#section-55)
 
-    - [Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5](#section-56)
+    - [Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0](#section-56)
 
-    - [Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0](#section-57)
+    - [Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0](#section-57)
 
-    - [Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0](#section-58)
+    - [Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1](#section-58)
 
-    - [Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1](#section-59)
+    - [Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1](#section-59)
 
-    - [Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1](#section-60)
-
-    - [Win - OIB - SC - Windows User Experience - U - Copilot - v3.6](#section-61)
+    - [Win - OIB - SC - Windows User Experience - U - Copilot - v3.6](#section-60)
 
 
 <h1 id="section-1">Device configuration</h1>
@@ -169,11 +167,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:18</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:18 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:36:18</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:36:18 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -313,11 +311,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>22 August 2024 18:56:38</td>
+<td class='property-column2'>Thursday, August 22, 2024 6:56:38 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:36:30</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:36:30 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -457,11 +455,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>21 August 2024 12:15:30</td>
+<td class='property-column2'>Wednesday, August 21, 2024 12:15:30 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:34:28</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:34:28 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -645,11 +643,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>29 July 2024 15:33:50</td>
+<td class='property-column2'>Monday, July 29, 2024 3:33:50 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>28 February 2025 12:41:56</td>
+<td class='property-column2'>Friday, February 28, 2025 12:41:56 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -728,11 +726,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>19 August 2023 17:17:32</td>
+<td class='property-column2'>Saturday, August 19, 2023 5:17:32 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>24 January 2025 13:16:50</td>
+<td class='property-column2'>Friday, January 24, 2025 1:16:50 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -804,11 +802,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>19 August 2023 17:19:59</td>
+<td class='property-column2'>Saturday, August 19, 2023 5:19:59 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>24 January 2025 13:17:46</td>
+<td class='property-column2'>Friday, January 24, 2025 1:17:46 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -880,11 +878,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>19 August 2023 17:21:03</td>
+<td class='property-column2'>Saturday, August 19, 2023 5:21:03 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>24 January 2025 13:17:54</td>
+<td class='property-column2'>Friday, January 24, 2025 1:17:54 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -956,11 +954,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:29</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:29 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:35:29</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:35:29 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1129,11 +1127,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>24 September 2024 10:22:15</td>
+<td class='property-column2'>Tuesday, September 24, 2024 10:22:15 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:35:45</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:35:45 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1209,11 +1207,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:44</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:44 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:36:05</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:36:05 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1400,11 +1398,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>22 July 2024 14:29:02</td>
+<td class='property-column2'>Monday, July 22, 2024 2:29:02 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:36:54</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:36:54 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1492,11 +1490,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>03 April 2025 10:25:59</td>
+<td class='property-column2'>Thursday, April 3, 2025 10:25:59 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>03 April 2025 10:37:05</td>
+<td class='property-column2'>Thursday, April 3, 2025 10:37:05 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1577,11 +1575,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:36</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:36 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>12 May 2025 14:28:22</td>
+<td class='property-column2'>Monday, May 12, 2025 2:28:22 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1678,11 +1676,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:38:28</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:38:28 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:46:28</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:46:28 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1756,11 +1754,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:38:15</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:38:15 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>08 May 2025 15:15:08</td>
+<td class='property-column2'>Thursday, May 8, 2025 3:15:08 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1824,71 +1822,7 @@
 ###### Table 30. Settings - Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.6
 
 
-<h3 id="section-18">Win - OIB - SC - Device Security - D - Administrator Protection - v3.5</h3>
-
-<table class='table-settings'>
-<tr class='table-header1'>
-<td>Name</td>
-<td>Value</td>
-</tr>
-<tr>
-<td colspan="2" class='category-level1'>Basics</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Device Security - D - Administrator Protection - v3.5</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Description</td>
-<td class='property-column2'></td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Profile type</td>
-<td class='property-column2'>Settings catalog</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Platform supported</td>
-<td class='property-column2'>Windows 10 and later</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Created</td>
-<td class='property-column2'>01 October 2024 16:27:29</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Last modified</td>
-<td class='property-column2'>24 January 2025 12:22:11</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>Scope tags</td>
-<td class='property-column2'>Default</td>
-</tr>
-</table>
-
-###### Table 31. Basics - Win - OIB - SC - Device Security - D - Administrator Protection - v3.5
-
-
-<table class='table-settings'>
-<tr class='table-header1'>
-<td>Name</td>
-<td>Value</td>
-</tr>
-<tr>
-<td colspan="2" class='category-level1'>Local Policies Security Options</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>User Account Control Behavior Of The Elevation Prompt For Administrator Protection (Windows Insiders only)</td>
-<td class='property-column2'>Prompt for credentials on the secure desktop</td>
-</tr>
-<tr class=''>
-<td class='property-column1'>User Account Control Type Of Admin Approval Mode (Windows Insiders only)</td>
-<td class='property-column2'>Admin Approval Mode with Administrator protection</td>
-</tr>
-</table>
-
-###### Table 32. Settings - Win - OIB - SC - Device Security - D - Administrator Protection - v3.5
-
-
-<h3 id="section-19">Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.1</h3>
+<h3 id="section-18">Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1916,11 +1850,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>11 April 2024 19:37:59</td>
+<td class='property-column2'>Thursday, April 11, 2024 7:37:59 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:41:00</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:41:00 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -1928,7 +1862,7 @@
 </tr>
 </table>
 
-###### Table 33. Basics - Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.1
+###### Table 31. Basics - Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.1
 
 
 <table class='table-settings'>
@@ -2112,10 +2046,10 @@
 </tr>
 </table>
 
-###### Table 34. Settings - Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.1
+###### Table 32. Settings - Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.1
 
 
-<h3 id="section-20">Win - OIB - SC - Device Security - D - Config Refresh - v3.2</h3>
+<h3 id="section-19">Win - OIB - SC - Device Security - D - Config Refresh - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2143,11 +2077,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>08 May 2024 19:34:30</td>
+<td class='property-column2'>Wednesday, May 8, 2024 7:34:30 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:41:08</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:41:08 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2155,7 +2089,7 @@
 </tr>
 </table>
 
-###### Table 35. Basics - Win - OIB - SC - Device Security - D - Config Refresh - v3.2
+###### Table 33. Basics - Win - OIB - SC - Device Security - D - Config Refresh - v3.2
 
 
 <table class='table-settings'>
@@ -2180,10 +2114,10 @@
 </tr>
 </table>
 
-###### Table 36. Settings - Win - OIB - SC - Device Security - D - Config Refresh - v3.2
+###### Table 34. Settings - Win - OIB - SC - Device Security - D - Config Refresh - v3.2
 
 
-<h3 id="section-21">Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0</h3>
+<h3 id="section-20">Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2211,11 +2145,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:21</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:21 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:41:14</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:41:14 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2223,7 +2157,7 @@
 </tr>
 </table>
 
-###### Table 37. Basics - Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0
+###### Table 35. Basics - Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0
 
 
 <table class='table-settings'>
@@ -2255,10 +2189,10 @@
 </tr>
 </table>
 
-###### Table 38. Settings - Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0
+###### Table 36. Settings - Win - OIB - SC - Device Security - D - Enhanced Phishing Protection - v3.0
 
 
-<h3 id="section-22">Win - OIB - SC - Device Security - D - Local Security Policies - v3.0</h3>
+<h3 id="section-21">Win - OIB - SC - Device Security - D - Local Security Policies - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2286,11 +2220,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:22</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:22 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:42:06</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:42:06 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2298,7 +2232,7 @@
 </tr>
 </table>
 
-###### Table 39. Basics - Win - OIB - SC - Device Security - D - Local Security Policies - v3.0
+###### Table 37. Basics - Win - OIB - SC - Device Security - D - Local Security Policies - v3.0
 
 
 <table class='table-settings'>
@@ -2403,10 +2337,10 @@
 </tr>
 </table>
 
-###### Table 40. Settings - Win - OIB - SC - Device Security - D - Local Security Policies - v3.0
+###### Table 38. Settings - Win - OIB - SC - Device Security - D - Local Security Policies - v3.0
 
 
-<h3 id="section-23">Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6</h3>
+<h3 id="section-22">Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2434,11 +2368,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>01 April 2025 15:02:22</td>
+<td class='property-column2'>Tuesday, April 1, 2025 3:02:22 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>12 May 2025 14:28:34</td>
+<td class='property-column2'>Monday, May 12, 2025 2:28:34 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2446,7 +2380,7 @@
 </tr>
 </table>
 
-###### Table 41. Basics - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
+###### Table 39. Basics - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
 
 
 <table class='table-settings'>
@@ -2551,10 +2485,10 @@
 </tr>
 </table>
 
-###### Table 42. Settings - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
+###### Table 40. Settings - Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6
 
 
-<h3 id="section-24">Win - OIB - SC - Device Security - D - Location and Privacy - v3.2</h3>
+<h3 id="section-23">Win - OIB - SC - Device Security - D - Location and Privacy - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2582,11 +2516,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>13 May 2025 11:53:01</td>
+<td class='property-column2'>Tuesday, May 13, 2025 11:53:01 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>13 May 2025 11:53:01</td>
+<td class='property-column2'>Tuesday, May 13, 2025 11:53:01 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2594,7 +2528,7 @@
 </tr>
 </table>
 
-###### Table 43. Basics - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
+###### Table 41. Basics - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
 
 
 <table class='table-settings'>
@@ -2622,10 +2556,10 @@
 </tr>
 </table>
 
-###### Table 44. Settings - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
+###### Table 42. Settings - Win - OIB - SC - Device Security - D - Location and Privacy - v3.2
 
 
-<h3 id="section-25">Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1</h3>
+<h3 id="section-24">Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2653,11 +2587,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:38:02</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:38:02 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:42:22</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:42:22 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2665,7 +2599,7 @@
 </tr>
 </table>
 
-###### Table 45. Basics - Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1
+###### Table 43. Basics - Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1
 
 
 <table class='table-settings'>
@@ -2743,10 +2677,10 @@
 </tr>
 </table>
 
-###### Table 46. Settings - Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1
+###### Table 44. Settings - Win - OIB - SC - Device Security - D - Login and Lock Screen - v3.1
 
 
-<h3 id="section-26">Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0</h3>
+<h3 id="section-25">Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2774,11 +2708,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:24</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:24 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:42:29</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:42:29 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2786,7 +2720,7 @@
 </tr>
 </table>
 
-###### Table 47. Basics - Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0
+###### Table 45. Basics - Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0
 
 
 <table class='table-settings'>
@@ -2859,10 +2793,10 @@
 </tr>
 </table>
 
-###### Table 48. Settings - Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0
+###### Table 46. Settings - Win - OIB - SC - Device Security - D - Remote Desktop Services and RPC - v3.0
 
 
-<h3 id="section-27">Win - OIB - SC - Device Security - D - Script File Associations - v3.4</h3>
+<h3 id="section-26">Win - OIB - SC - Device Security - D - Script File Associations - v3.4</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2890,11 +2824,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>06 November 2024 02:08:11</td>
+<td class='property-column2'>Wednesday, November 6, 2024 2:08:11 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:42:37</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:42:37 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2902,7 +2836,7 @@
 </tr>
 </table>
 
-###### Table 49. Basics - Win - OIB - SC - Device Security - D - Script File Associations - v3.4
+###### Table 47. Basics - Win - OIB - SC - Device Security - D - Script File Associations - v3.4
 
 
 <table class='table-settings'>
@@ -2919,10 +2853,10 @@
 </tr>
 </table>
 
-###### Table 50. Settings - Win - OIB - SC - Device Security - D - Script File Associations - v3.4
+###### Table 48. Settings - Win - OIB - SC - Device Security - D - Script File Associations - v3.4
 
 
-<h3 id="section-28">Win - OIB - SC - Device Security - D - Security Hardening - v3.6</h3>
+<h3 id="section-27">Win - OIB - SC - Device Security - D - Security Hardening - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2950,11 +2884,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>20 October 2024 20:56:16</td>
+<td class='property-column2'>Sunday, October 20, 2024 8:56:16 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>24 April 2025 12:50:04</td>
+<td class='property-column2'>Thursday, April 24, 2025 12:50:04 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2962,7 +2896,7 @@
 </tr>
 </table>
 
-###### Table 51. Basics - Win - OIB - SC - Device Security - D - Security Hardening - v3.6
+###### Table 49. Basics - Win - OIB - SC - Device Security - D - Security Hardening - v3.6
 
 
 <table class='table-settings'>
@@ -3484,10 +3418,10 @@
 </tr>
 </table>
 
-###### Table 52. Settings - Win - OIB - SC - Device Security - D - Security Hardening - v3.6
+###### Table 50. Settings - Win - OIB - SC - Device Security - D - Security Hardening - v3.6
 
 
-<h3 id="section-29">Win - OIB - SC - Device Security - D - Timezone - v3.4</h3>
+<h3 id="section-28">Win - OIB - SC - Device Security - D - Timezone - v3.4</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3515,11 +3449,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:37:35</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:37:35 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>22 January 2025 12:11:38</td>
+<td class='property-column2'>Wednesday, January 22, 2025 12:11:38 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -3527,7 +3461,7 @@
 </tr>
 </table>
 
-###### Table 53. Basics - Win - OIB - SC - Device Security - D - Timezone - v3.4
+###### Table 51. Basics - Win - OIB - SC - Device Security - D - Timezone - v3.4
 
 
 <table class='table-settings'>
@@ -3586,10 +3520,10 @@
 </tr>
 </table>
 
-###### Table 54. Settings - Win - OIB - SC - Device Security - D - Timezone - v3.4
+###### Table 52. Settings - Win - OIB - SC - Device Security - D - Timezone - v3.4
 
 
-<h3 id="section-30">Win - OIB - SC - Device Security - D - User Rights - v3.5</h3>
+<h3 id="section-29">Win - OIB - SC - Device Security - D - User Rights - v3.5</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3617,11 +3551,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:37:21</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:37:21 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>14 February 2025 18:11:36</td>
+<td class='property-column2'>Friday, February 14, 2025 6:11:36 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -3629,7 +3563,7 @@
 </tr>
 </table>
 
-###### Table 55. Basics - Win - OIB - SC - Device Security - D - User Rights - v3.5
+###### Table 53. Basics - Win - OIB - SC - Device Security - D - User Rights - v3.5
 
 
 <table class='table-settings'>
@@ -3730,10 +3664,10 @@
 </tr>
 </table>
 
-###### Table 56. Settings - Win - OIB - SC - Device Security - D - User Rights - v3.5
+###### Table 54. Settings - Win - OIB - SC - Device Security - D - User Rights - v3.5
 
 
-<h3 id="section-31">Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5</h3>
+<h3 id="section-30">Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3761,11 +3695,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>14 February 2025 11:25:53</td>
+<td class='property-column2'>Friday, February 14, 2025 11:25:53 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>14 February 2025 11:51:46</td>
+<td class='property-column2'>Friday, February 14, 2025 11:51:46 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -3773,7 +3707,7 @@
 </tr>
 </table>
 
-###### Table 57. Basics - Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5
+###### Table 55. Basics - Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5
 
 
 <table class='table-settings'>
@@ -3809,10 +3743,10 @@
 </tr>
 </table>
 
-###### Table 58. Settings - Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5
+###### Table 56. Settings - Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5
 
 
-<h3 id="section-32">Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2</h3>
+<h3 id="section-31">Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3840,11 +3774,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:37:07</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:37:07 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:49:47</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:49:47 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -3852,7 +3786,7 @@
 </tr>
 </table>
 
-###### Table 59. Basics - Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2
+###### Table 57. Basics - Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2
 
 
 <table class='table-settings'>
@@ -3905,10 +3839,10 @@
 </tr>
 </table>
 
-###### Table 60. Settings - Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2
+###### Table 58. Settings - Win - OIB - SC - Device Security - D - Windows Subsystem for Linux - v3.2
 
 
-<h3 id="section-33">Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5</h3>
+<h3 id="section-32">Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -3936,11 +3870,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:36:52</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:36:52 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>14 February 2025 11:21:18</td>
+<td class='property-column2'>Friday, February 14, 2025 11:21:18 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -3948,7 +3882,7 @@
 </tr>
 </table>
 
-###### Table 61. Basics - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5
+###### Table 59. Basics - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5
 
 
 <table class='table-settings'>
@@ -3999,10 +3933,10 @@
 </tr>
 </table>
 
-###### Table 62. Settings - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5
+###### Table 60. Settings - Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI - v3.5
 
 
-<h3 id="section-34">Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6</h3>
+<h3 id="section-33">Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4030,11 +3964,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>18 July 2024 13:00:44</td>
+<td class='property-column2'>Thursday, July 18, 2024 1:00:44 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>13 May 2025 11:45:27</td>
+<td class='property-column2'>Tuesday, May 13, 2025 11:45:27 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4042,7 +3976,7 @@
 </tr>
 </table>
 
-###### Table 63. Basics - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
+###### Table 61. Basics - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
 
 
 <table class='table-settings'>
@@ -4112,10 +4046,10 @@
 </tr>
 </table>
 
-###### Table 64. Settings - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
+###### Table 62. Settings - Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6
 
 
-<h3 id="section-35">Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4</h3>
+<h3 id="section-34">Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4143,11 +4077,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>16 September 2024 19:16:30</td>
+<td class='property-column2'>Monday, September 16, 2024 7:16:30 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 19:51:01</td>
+<td class='property-column2'>Thursday, December 5, 2024 7:51:01 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4155,7 +4089,7 @@
 </tr>
 </table>
 
-###### Table 65. Basics - Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4
+###### Table 63. Basics - Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4
 
 
 <table class='table-settings'>
@@ -4192,10 +4126,10 @@
 </tr>
 </table>
 
-###### Table 66. Settings - Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4
+###### Table 64. Settings - Win - OIB - SC - Device Security - U - Windows Sandbox - v3.4
 
 
-<h3 id="section-36">Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0</h3>
+<h3 id="section-35">Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4223,11 +4157,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:27</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:27 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>30 April 2025 10:11:17</td>
+<td class='property-column2'>Wednesday, April 30, 2025 10:11:17 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4235,7 +4169,7 @@
 </tr>
 </table>
 
-###### Table 67. Basics - Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0
+###### Table 65. Basics - Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0
 
 
 <table class='table-settings'>
@@ -4296,10 +4230,10 @@
 </tr>
 </table>
 
-###### Table 68. Settings - Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0
+###### Table 66. Settings - Win - OIB - SC - Device Security - U - Windows Spotlight and Org Messages - v3.0
 
 
-<h3 id="section-37">Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)</h3>
+<h3 id="section-36">Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4327,11 +4261,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:31</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:31 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:09:18</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:09:18 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4339,7 +4273,7 @@
 </tr>
 </table>
 
-###### Table 69. Basics - Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)
+###### Table 67. Basics - Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)
 
 
 <table class='table-settings'>
@@ -4600,10 +4534,10 @@
 </tr>
 </table>
 
-###### Table 70. Settings - Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)
+###### Table 68. Settings - Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)
 
 
-<h3 id="section-38">Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)</h3>
+<h3 id="section-37">Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4631,11 +4565,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:32</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:32 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:09:34</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:09:34 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4643,7 +4577,7 @@
 </tr>
 </table>
 
-###### Table 71. Basics - Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)
+###### Table 69. Basics - Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)
 
 
 <table class='table-settings'>
@@ -4702,10 +4636,10 @@
 </tr>
 </table>
 
-###### Table 72. Settings - Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)
+###### Table 70. Settings - Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)
 
 
-<h3 id="section-39">Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)</h3>
+<h3 id="section-38">Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4733,11 +4667,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:32</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:32 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:09:49</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:09:49 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4745,7 +4679,7 @@
 </tr>
 </table>
 
-###### Table 73. Basics - Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)
+###### Table 71. Basics - Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)
 
 
 <table class='table-settings'>
@@ -4797,10 +4731,10 @@
 </tr>
 </table>
 
-###### Table 74. Settings - Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)
+###### Table 72. Settings - Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)
 
 
-<h3 id="section-40">Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1</h3>
+<h3 id="section-39">Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -4828,11 +4762,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 21:01:43</td>
+<td class='property-column2'>Wednesday, April 10, 2024 9:01:43 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:10:18</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:10:18 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -4840,7 +4774,7 @@
 </tr>
 </table>
 
-###### Table 75. Basics - Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1
+###### Table 73. Basics - Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1
 
 
 <table class='table-settings'>
@@ -5753,10 +5687,10 @@
 </tr>
 </table>
 
-###### Table 76. Settings - Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1
+###### Table 74. Settings - Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1
 
 
-<h3 id="section-41">Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2</h3>
+<h3 id="section-40">Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5784,11 +5718,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>16 July 2024 12:16:46</td>
+<td class='property-column2'>Tuesday, July 16, 2024 12:16:46 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:10:28</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:10:28 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -5796,7 +5730,7 @@
 </tr>
 </table>
 
-###### Table 77. Basics - Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2
+###### Table 75. Basics - Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2
 
 
 <table class='table-settings'>
@@ -5841,10 +5775,10 @@
 </tr>
 </table>
 
-###### Table 78. Settings - Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2
+###### Table 76. Settings - Win - OIB - SC - Microsoft Accounts - D - Configuration - v3.2
 
 
-<h3 id="section-42">Win - OIB - SC - Microsoft Edge - D - Security - v3.6</h3>
+<h3 id="section-41">Win - OIB - SC - Microsoft Edge - D - Security - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -5872,11 +5806,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>22 November 2024 11:38:21</td>
+<td class='property-column2'>Friday, November 22, 2024 11:38:21 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>08 May 2025 17:22:21</td>
+<td class='property-column2'>Thursday, May 8, 2025 5:22:21 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -5884,7 +5818,7 @@
 </tr>
 </table>
 
-###### Table 79. Basics - Win - OIB - SC - Microsoft Edge - D - Security - v3.6
+###### Table 77. Basics - Win - OIB - SC - Microsoft Edge - D - Security - v3.6
 
 
 <table class='table-settings'>
@@ -6141,10 +6075,10 @@
 </tr>
 </table>
 
-###### Table 80. Settings - Win - OIB - SC - Microsoft Edge - D - Security - v3.6
+###### Table 78. Settings - Win - OIB - SC - Microsoft Edge - D - Security - v3.6
 
 
-<h3 id="section-43">Win - OIB - SC - Microsoft Edge - D - Updates - v3.6</h3>
+<h3 id="section-42">Win - OIB - SC - Microsoft Edge - D - Updates - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6172,11 +6106,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:38</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:38 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>03 April 2025 10:21:44</td>
+<td class='property-column2'>Thursday, April 3, 2025 10:21:44 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -6184,7 +6118,7 @@
 </tr>
 </table>
 
-###### Table 81. Basics - Win - OIB - SC - Microsoft Edge - D - Updates - v3.6
+###### Table 79. Basics - Win - OIB - SC - Microsoft Edge - D - Updates - v3.6
 
 
 <table class='table-settings'>
@@ -6300,10 +6234,10 @@
 </tr>
 </table>
 
-###### Table 82. Settings - Win - OIB - SC - Microsoft Edge - D - Updates - v3.6
+###### Table 80. Settings - Win - OIB - SC - Microsoft Edge - D - Updates - v3.6
 
 
-<h3 id="section-44">Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1</h3>
+<h3 id="section-43">Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6331,11 +6265,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>26 October 2023 18:43:34</td>
+<td class='property-column2'>Thursday, October 26, 2023 6:43:34 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:11:14</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:11:14 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -6343,7 +6277,7 @@
 </tr>
 </table>
 
-###### Table 83. Basics - Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1
+###### Table 81. Basics - Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1
 
 
 <table class='table-settings'>
@@ -6383,10 +6317,10 @@
 </tr>
 </table>
 
-###### Table 84. Settings - Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1
+###### Table 82. Settings - Win - OIB - SC - Microsoft Edge - U - Extensions - v3.1
 
 
-<h3 id="section-45">Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0</h3>
+<h3 id="section-44">Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6414,11 +6348,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:37</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:37 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:11:30</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:11:30 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -6426,7 +6360,7 @@
 </tr>
 </table>
 
-###### Table 85. Basics - Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0
+###### Table 83. Basics - Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0
 
 
 <table class='table-settings'>
@@ -6462,10 +6396,10 @@
 </tr>
 </table>
 
-###### Table 86. Settings - Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0
+###### Table 84. Settings - Win - OIB - SC - Microsoft Edge - U - Password Management - v3.0
 
 
-<h3 id="section-46">Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0</h3>
+<h3 id="section-45">Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6493,11 +6427,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:39</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:39 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:11:45</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:11:45 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -6505,7 +6439,7 @@
 </tr>
 </table>
 
-###### Table 87. Basics - Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
+###### Table 85. Basics - Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
 
 
 <table class='table-settings'>
@@ -6557,10 +6491,10 @@
 </tr>
 </table>
 
-###### Table 88. Settings - Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
+###### Table 86. Settings - Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0
 
 
-<h3 id="section-47">Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6</h3>
+<h3 id="section-46">Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6588,11 +6522,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>22 November 2024 10:44:18</td>
+<td class='property-column2'>Friday, November 22, 2024 10:44:18 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>08 May 2025 16:47:57</td>
+<td class='property-column2'>Thursday, May 8, 2025 4:47:57 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -6600,7 +6534,7 @@
 </tr>
 </table>
 
-###### Table 89. Basics - Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6
+###### Table 87. Basics - Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6
 
 
 <table class='table-settings'>
@@ -6695,10 +6629,10 @@
 </tr>
 </table>
 
-###### Table 90. Settings - Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6
+###### Table 88. Settings - Win - OIB - SC - Microsoft Edge - U - User Experience - v3.6
 
 
-<h3 id="section-48">Win - OIB - SC - Microsoft Office - D - Security - v3.6</h3>
+<h3 id="section-47">Win - OIB - SC - Microsoft Office - D - Security - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -6726,11 +6660,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>31 January 2025 10:42:30</td>
+<td class='property-column2'>Friday, January 31, 2025 10:42:30 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>13 May 2025 11:17:59</td>
+<td class='property-column2'>Tuesday, May 13, 2025 11:17:59 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -6738,7 +6672,7 @@
 </tr>
 </table>
 
-###### Table 91. Basics - Win - OIB - SC - Microsoft Office - D - Security - v3.6
+###### Table 89. Basics - Win - OIB - SC - Microsoft Office - D - Security - v3.6
 
 
 <table class='table-settings'>
@@ -7599,10 +7533,10 @@
 </tr>
 </table>
 
-###### Table 92. Settings - Win - OIB - SC - Microsoft Office - D - Security - v3.6
+###### Table 90. Settings - Win - OIB - SC - Microsoft Office - D - Security - v3.6
 
 
-<h3 id="section-49">Win - OIB - SC - Microsoft Office - D - Updates - v3.0</h3>
+<h3 id="section-48">Win - OIB - SC - Microsoft Office - D - Updates - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -7630,11 +7564,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:40</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:40 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:12:05</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:12:05 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -7642,7 +7576,7 @@
 </tr>
 </table>
 
-###### Table 93. Basics - Win - OIB - SC - Microsoft Office - D - Updates - v3.0
+###### Table 91. Basics - Win - OIB - SC - Microsoft Office - D - Updates - v3.0
 
 
 <table class='table-settings'>
@@ -7682,10 +7616,10 @@
 </tr>
 </table>
 
-###### Table 94. Settings - Win - OIB - SC - Microsoft Office - D - Updates - v3.0
+###### Table 92. Settings - Win - OIB - SC - Microsoft Office - D - Updates - v3.0
 
 
-<h3 id="section-50">Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6</h3>
+<h3 id="section-49">Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -7713,11 +7647,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>30 January 2025 12:18:11</td>
+<td class='property-column2'>Thursday, January 30, 2025 12:18:11 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>24 April 2025 10:28:39</td>
+<td class='property-column2'>Thursday, April 24, 2025 10:28:39 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -7725,7 +7659,7 @@
 </tr>
 </table>
 
-###### Table 95. Basics - Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6
+###### Table 93. Basics - Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6
 
 
 <table class='table-settings'>
@@ -7902,10 +7836,10 @@
 </tr>
 </table>
 
-###### Table 96. Settings - Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6
+###### Table 94. Settings - Win - OIB - SC - Microsoft Office - U - Config and Experience - v3.6
 
 
-<h3 id="section-51">Win - OIB - SC - Microsoft Office - U - Security - v3.6</h3>
+<h3 id="section-50">Win - OIB - SC - Microsoft Office - U - Security - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -7933,11 +7867,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>31 January 2025 10:49:57</td>
+<td class='property-column2'>Friday, January 31, 2025 10:49:57 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>13 May 2025 11:18:10</td>
+<td class='property-column2'>Tuesday, May 13, 2025 11:18:10 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -7945,7 +7879,7 @@
 </tr>
 </table>
 
-###### Table 97. Basics - Win - OIB - SC - Microsoft Office - U - Security - v3.6
+###### Table 95. Basics - Win - OIB - SC - Microsoft Office - U - Security - v3.6
 
 
 <table class='table-settings'>
@@ -8965,10 +8899,10 @@
 </tr>
 </table>
 
-###### Table 98. Settings - Win - OIB - SC - Microsoft Office - U - Security - v3.6
+###### Table 96. Settings - Win - OIB - SC - Microsoft Office - U - Security - v3.6
 
 
-<h3 id="section-52">Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2</h3>
+<h3 id="section-51">Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -8996,11 +8930,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>01 August 2024 14:53:56</td>
+<td class='property-column2'>Thursday, August 1, 2024 2:53:56 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:12:33</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:12:33 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9008,7 +8942,7 @@
 </tr>
 </table>
 
-###### Table 99. Basics - Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2
+###### Table 97. Basics - Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2
 
 
 <table class='table-settings'>
@@ -9093,10 +9027,10 @@
 </tr>
 </table>
 
-###### Table 100. Settings - Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2
+###### Table 98. Settings - Win - OIB - SC - Microsoft OneDrive - D - Configuration - v3.2
 
 
-<h3 id="section-53">Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0</h3>
+<h3 id="section-52">Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9124,11 +9058,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:42</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:42 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:12:44</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:12:44 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9136,7 +9070,7 @@
 </tr>
 </table>
 
-###### Table 101. Basics - Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0
+###### Table 99. Basics - Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0
 
 
 <table class='table-settings'>
@@ -9177,10 +9111,10 @@
 </tr>
 </table>
 
-###### Table 102. Settings - Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0
+###### Table 100. Settings - Win - OIB - SC - Microsoft OneDrive - U - Configuration - v3.0
 
 
-<h3 id="section-54">Win - OIB - SC - Microsoft Store - D - Configuration - v3.4</h3>
+<h3 id="section-53">Win - OIB - SC - Microsoft Store - D - Configuration - v3.4</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9208,11 +9142,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:36:24</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:36:24 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>28 January 2025 17:20:15</td>
+<td class='property-column2'>Tuesday, January 28, 2025 5:20:15 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9220,7 +9154,7 @@
 </tr>
 </table>
 
-###### Table 103. Basics - Win - OIB - SC - Microsoft Store - D - Configuration - v3.4
+###### Table 101. Basics - Win - OIB - SC - Microsoft Store - D - Configuration - v3.4
 
 
 <table class='table-settings'>
@@ -9261,10 +9195,10 @@
 </tr>
 </table>
 
-###### Table 104. Settings - Win - OIB - SC - Microsoft Store - D - Configuration - v3.4
+###### Table 102. Settings - Win - OIB - SC - Microsoft Store - D - Configuration - v3.4
 
 
-<h3 id="section-55">Win - OIB - SC - Microsoft Store - U - Configuration - v3.3</h3>
+<h3 id="section-54">Win - OIB - SC - Microsoft Store - U - Configuration - v3.3</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9292,11 +9226,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>31 July 2024 12:57:24</td>
+<td class='property-column2'>Wednesday, July 31, 2024 12:57:24 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:13:02</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:13:02 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9304,7 +9238,7 @@
 </tr>
 </table>
 
-###### Table 105. Basics - Win - OIB - SC - Microsoft Store - U - Configuration - v3.3
+###### Table 103. Basics - Win - OIB - SC - Microsoft Store - U - Configuration - v3.3
 
 
 <table class='table-settings'>
@@ -9338,10 +9272,10 @@
 </tr>
 </table>
 
-###### Table 106. Settings - Win - OIB - SC - Microsoft Store - U - Configuration - v3.3
+###### Table 104. Settings - Win - OIB - SC - Microsoft Store - U - Configuration - v3.3
 
 
-<h3 id="section-56">Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5</h3>
+<h3 id="section-55">Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9369,11 +9303,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:45</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:45 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>17 February 2025 13:00:16</td>
+<td class='property-column2'>Monday, February 17, 2025 1:00:16 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9381,7 +9315,7 @@
 </tr>
 </table>
 
-###### Table 107. Basics - Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5
+###### Table 105. Basics - Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5
 
 
 <table class='table-settings'>
@@ -9409,10 +9343,10 @@
 </tr>
 </table>
 
-###### Table 108. Settings - Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5
+###### Table 106. Settings - Win - OIB - SC - Windows Hello for Business - D - Cloud Kerberos Trust - v3.5
 
 
-<h3 id="section-57">Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0</h3>
+<h3 id="section-56">Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9440,11 +9374,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:45</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:45 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:13:32</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:13:32 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9452,7 +9386,7 @@
 </tr>
 </table>
 
-###### Table 109. Basics - Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0
+###### Table 107. Basics - Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0
 
 
 <table class='table-settings'>
@@ -9513,10 +9447,10 @@
 </tr>
 </table>
 
-###### Table 110. Settings - Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0
+###### Table 108. Settings - Win - OIB - SC - Windows Update for Business - D - Delivery Optimisation - v3.0
 
 
-<h3 id="section-58">Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0</h3>
+<h3 id="section-57">Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9544,11 +9478,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>09 August 2023 16:01:46</td>
+<td class='property-column2'>Wednesday, August 9, 2023 4:01:46 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:15:27</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:15:27 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9556,7 +9490,7 @@
 </tr>
 </table>
 
-###### Table 111. Basics - Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0
+###### Table 109. Basics - Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0
 
 
 <table class='table-settings'>
@@ -9592,10 +9526,10 @@
 </tr>
 </table>
 
-###### Table 112. Settings - Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0
+###### Table 110. Settings - Win - OIB - SC - Windows Update for Business - D - Reports and Telemetry - v3.0
 
 
-<h3 id="section-59">Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1</h3>
+<h3 id="section-58">Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9623,11 +9557,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>11 April 2024 11:05:02</td>
+<td class='property-column2'>Thursday, April 11, 2024 11:05:02 AM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:15:44</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:15:44 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9635,7 +9569,7 @@
 </tr>
 </table>
 
-###### Table 113. Basics - Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1
+###### Table 111. Basics - Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1
 
 
 <table class='table-settings'>
@@ -9664,10 +9598,10 @@
 </tr>
 </table>
 
-###### Table 114. Settings - Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1
+###### Table 112. Settings - Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1
 
 
-<h3 id="section-60">Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1</h3>
+<h3 id="section-59">Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9695,11 +9629,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:35:25</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:35:25 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>05 December 2024 20:15:58</td>
+<td class='property-column2'>Thursday, December 5, 2024 8:15:58 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9707,7 +9641,7 @@
 </tr>
 </table>
 
-###### Table 115. Basics - Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1
+###### Table 113. Basics - Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1
 
 
 <table class='table-settings'>
@@ -9756,10 +9690,10 @@
 </tr>
 </table>
 
-###### Table 116. Settings - Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1
+###### Table 114. Settings - Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.1
 
 
-<h3 id="section-61">Win - OIB - SC - Windows User Experience - U - Copilot - v3.6</h3>
+<h3 id="section-60">Win - OIB - SC - Windows User Experience - U - Copilot - v3.6</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -9787,11 +9721,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>10 April 2024 20:35:10</td>
+<td class='property-column2'>Wednesday, April 10, 2024 8:35:10 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>18 April 2025 12:09:03</td>
+<td class='property-column2'>Friday, April 18, 2025 12:09:03 PM</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -9799,7 +9733,7 @@
 </tr>
 </table>
 
-###### Table 117. Basics - Win - OIB - SC - Windows User Experience - U - Copilot - v3.6
+###### Table 115. Basics - Win - OIB - SC - Windows User Experience - U - Copilot - v3.6
 
 
 <table class='table-settings'>
@@ -9816,7 +9750,4 @@
 </tr>
 </table>
 
-###### Table 118. Settings - Win - OIB - SC - Windows User Experience - U - Copilot - v3.6
-
-
-
+###### Table 116. Settings - Win - OIB - SC - Windows User Experience - U - Copilot - v3.6
