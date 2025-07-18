@@ -4,7 +4,7 @@
    
     .NOTES
         Author: James Robinson | SkipToTheEndpoint | https://skiptotheendpoint.co.uk
-        Version: v1
+        Version: v1.1
         Release Date: 2024-08-31
 
         Intune Info:
@@ -25,10 +25,10 @@ $Script:LogsFolder = "$env:ProgramData\Microsoft\IntuneManagementExtension\Logs"
 $ErrorActionPreference = [System.Management.Automation.ActionPreference]::SilentlyContinue
 $Host.UI.RawUI.WindowTitle = '$ScriptName'
 
-$LocationValue = "Allow"
-$AutoTZValue = "3"
-$LFSVCValue = "1"
-$SensorValue = "1"
+$LocationValue = "Allow" # Allow - Forces the "Let apps access your location" toggle in Settings > Privacy & Security to "On".
+$AutoTZValue = "3" # 3 - Enables the automatic time zone setting.
+$LFSVCValue = "1" # 1 - Enables location services.
+$SensorValue = "1" # 1 - Enables the Windows Location Platform for the SENSOR_CATEGORY_LOCATION device sensor set: https://learn.microsoft.com/en-us/windows/win32/sensorsapi/sensor-category-location.
 
 #### Functions ####
 function Start-Logging {
