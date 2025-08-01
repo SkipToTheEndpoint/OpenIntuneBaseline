@@ -32,6 +32,13 @@ function Start-Logging {
     Write-Host "Current script timestamp: $(Get-Date -f yyyy-MM-dd_HH-mm)"
 }
 
+function Stop-Logging {
+    param ( [int]$ExitCode = 0 )
+    Write-Host "Script complete timestamp: $(Get-Date -f yyyy-MM-dd_HH-mm)"
+    Stop-Transcript
+    Exit $ExitCode
+}
+
 #### Script ####
 Start-Logging
 
@@ -53,10 +60,9 @@ try {
 
     # Stop Logging and Exit
     Write-Host "Script complete."
-    Stop-Transcript
-    Exit 0
+    Stop-Logging    
 }
 catch {
     Write-Error "$($_.Exception.Message)"
-    Exit 1
+    Stop-Logging -ExitCode 1
 }

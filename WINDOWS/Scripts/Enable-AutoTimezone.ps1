@@ -36,6 +36,13 @@ function Start-Logging {
     Write-Host "Current script timestamp: $(Get-Date -f yyyy-MM-dd_HH-mm)"
 }
 
+function Stop-Logging {
+    param ( [int]$ExitCode = 0 )
+    Write-Host "Script complete timestamp: $(Get-Date -f yyyy-MM-dd_HH-mm)"
+    Stop-Transcript
+    Exit $ExitCode
+}
+
 function Set-RegistryValue {
     param (
         [string]$Path,
@@ -78,9 +85,9 @@ try {
 
     # Set sensor value
     Set-RegistryValue -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}" -Name "SensorPermissionState" -Value $SensorValue
-    Exit 0
+    Stop-Logging
 }
 catch {
     Write-Error "$($_.Exception.Message)"
-    Exit 1
+    Stop-Logging -ExitCode 1
 }
