@@ -1,7 +1,7 @@
 <#
     .SYNOPSIS
         Enables the location setting and turns on the "Set the timezone automatically" switch in Time & Language > Date & Time.
-   
+
     .NOTES
         Author: James Robinson | SkipToTheEndpoint | https://skiptotheendpoint.co.uk
         Version: v1.1
@@ -36,6 +36,13 @@ function Start-Logging {
     Write-Host "Current script timestamp: $(Get-Date -f yyyy-MM-dd_HH-mm)"
 }
 
+function Stop-LoggingExit {
+    param ( [int]$ExitCode = 0 )
+    Write-Host "Script complete timestamp: $(Get-Date -f yyyy-MM-dd_HH-mm)"
+    Stop-Transcript
+    Exit $ExitCode
+}
+
 function Set-RegistryValue {
     param (
         [string]$Path,
@@ -47,11 +54,11 @@ function Set-RegistryValue {
         if ($currentValue -ne $Value) {
             Write-Host "Setting $Name to $Value at $Path"
             Set-ItemProperty -Path $Path -Name $Name -Value $Value
-        } 
+        }
         else {
             Write-Host "$Name is already set to $Value at $Path"
         }
-    } 
+    }
     catch {
         Write-Error "$($_.Exception.Message)"
     }
@@ -78,9 +85,10 @@ try {
 
     # Set sensor value
     Set-RegistryValue -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}" -Name "SensorPermissionState" -Value $SensorValue
-    Exit 0
 }
 catch {
     Write-Error "$($_.Exception.Message)"
-    Exit 1
+    Stop-LoggingExit -ErrorAction 1
 }
+
+Stop-LoggingExit

@@ -1,7 +1,7 @@
 <#
     .SYNOPSIS
         Script to trigger updates following an Autopilot deployment.
-   
+
     .NOTES
         Author: James Robinson | SkipToTheEndpoint | https://skiptotheendpoint.co.uk
         Version: v1
@@ -32,6 +32,13 @@ function Start-Logging {
     Write-Host "Current script timestamp: $(Get-Date -f yyyy-MM-dd_HH-mm)"
 }
 
+function Stop-LoggingExit {
+    param ( [int]$ExitCode = 0 )
+    Write-Host "Script complete timestamp: $(Get-Date -f yyyy-MM-dd_HH-mm)"
+    Stop-Transcript
+    Exit $ExitCode
+}
+
 #### Script ####
 Start-Logging
 
@@ -50,13 +57,10 @@ try {
     Write-Host "Triggering Windows Update Check..."
     Start-Process USOClient.exe -ArgumentList "StartInteractiveScan" -NoNewWindow -Wait
     Start-Sleep 10
-
-    # Stop Logging and Exit
-    Write-Host "Script complete."
-    Stop-Transcript
-    Exit 0
 }
 catch {
     Write-Error "$($_.Exception.Message)"
-    Exit 1
+    Stop-LoggingExit -ExitCode 1
 }
+
+Stop-LoggingExit
