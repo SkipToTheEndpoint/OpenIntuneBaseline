@@ -81,9 +81,12 @@
 > There are some implications if you need to disable these settings, however overall this change provides a better security posture.
 
 🔄️**Win - OIB - SC - Device Security - D - Security Hardening**
-* Added the following setting from the 25H2 Security Baseline:
+* Added the following new setting from the 25H2 Security Baseline:
     * Disable Internet Explorer 11 as a standalone browser - `Enabled`
         * Notify that Internet Explorer 11 browser is disabled - `Never`
+* Added the following Smart Screen-related setting from the CIS Intune Benchmark:
+    * Enable Smart Screen In Shell - `Enabled`
+    * Prevent Override For Files In Shell - `Enabled`
 * Removed the following settings as they have been marked as obsolete and have also been removed from the 25H2 Security Baseline:
     * WDigest Authentication
 * The following settings have been removed from this profile and are now found in the new `Win - OIB - SC - Device Security - D - Printing - v3.7` profile:
@@ -110,7 +113,6 @@
 * Updating the following setting to resolve issue [91](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/91):
     * Increase Scheduling Priority - `*S-1-5-32-544, *S-1-5-90-0`
 
-
 🔄️**Win - OIB - SC - Microsoft Edge - D - Security**
 * Removed the following settings as they have been marked as obsolete. Resolves [101](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/101):
     * Allow the Search bar at Windows startup (obsolete)
@@ -123,9 +125,16 @@
     * Enable CryptoWallet feature (obsolete)
 
 ## Removed 🚮
-* **Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)**
-* **Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)**
-* **Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)**
+🚮**Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1**
+
+At some point, Microsoft seems to have changed the documentation for these policies to now state that they are only applicable to Windows 10, and not Windows 11 ([example](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-Update?WT.mc_id=Portal-fx#autorestartnotificationschedule)).
+I have raised this with the Product Group to get clarification as this feels like a negative regression in functionality, but for now, I've removed the profile.
+
+🚮**Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)**
+
+🚮**Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)**
+
+🚮**Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)**
 
 After deprecating them in v3.4, I've now removed the Google Chrome profiles from the repo completely.
 
