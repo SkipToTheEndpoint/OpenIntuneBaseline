@@ -1,6 +1,6 @@
 # OIB Windows Change Log
 
-# Windows v3.7 - 2025-10-xx - 25H2 Edition
+# Windows v3.7 - 2025-10-15 - 25H2 Edition
 ## Added 🆕
 ### Settings Catalog
 🆕**Win - OIB - SC - Device Security - D - Administrator Protection - v3.7**
@@ -10,17 +10,6 @@
 
 > [!IMPORTANT]
 > As of writing this, the feature is still flagged as Windows Insider only, but I'm hoping it will be enabled soon and I didn't want that to happen mid-way through a release cycle :)
-
-🆕**Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7**
-* Added configuration to support new [Windows Backup for Organizations (WBfO)](https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-backup-for-organizations-is-now-available/4441655) feature with some minor restrictions.
-    * Enable Windows Backup - `Enabled`
-    * Do not sync passwords - `Enabled`
-        * Allow users to turn "passwords" syncing on. (Device) - `False`
-    * Enable Windows Restore - `Enabled`
-
-> [!NOTE]
-> This feature needs enabling by navigating to: Devices > Windows > Enrollment > Windows Backup and Restore.
-> For more information, see [Windows Backup and Restore - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-gb/intune/intune-service/enrollment/windows-backup-restore)
 
 🆕**Win - OIB - SC - Device Security - D - Printing - v3.7**
 * The following settings have been moved out of the Security Hardening profile into their own profile to make them easier to find and manage:
@@ -44,6 +33,17 @@
         * Protocols to allow for incoming RPC connections: (Device) - `RPC over TCP`
     * Configure RPC over TCP port - `Enabled`
         * RPC over TCP port: (Device) - `0`
+
+🆕**Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7**
+* Added configuration to support new [Windows Backup for Organizations (WBfO)](https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-backup-for-organizations-is-now-available/4441655) feature with some minor restrictions.
+    * Enable Windows Backup - `Enabled`
+    * Do not sync passwords - `Enabled`
+        * Allow users to turn "passwords" syncing on. (Device) - `False`
+    * Enable Windows Restore - `Enabled`
+
+> [!NOTE]
+> This feature needs enabling by navigating to: Devices > Windows > Enrollment > Windows Backup and Restore.
+> For more information, see [Windows Backup and Restore - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-gb/intune/intune-service/enrollment/windows-backup-restore)
 
 ### Endpoint Security
 🆕**Win - OIB - ES - Local Group Membership - D - Local Administrators - v3.7**
@@ -70,15 +70,6 @@
 🔄️**Win - OIB - SC - Device Security - D - Audit and Event Logging**
 * Added the following setting from the 25H2 Security Baseline:
     * Include command line in process creation events - `Enabled`
-
-🔄️**Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI**
-* Changed the following settings from "Without UEFI Lock" to "With UEFI Lock". This now matches both MS and CIS recommendations:
-    * Credential Guard
-    * Configure Lsa Protected Process
-    * Hypervisor Enforced Code Integrity
-
-> [!IMPORTANT]
-> There are some implications if you need to disable these settings, however overall this change provides a better security posture.
 
 🔄️**Win - OIB - SC - Device Security - D - Security Hardening**
 * Added the following new setting from the 25H2 Security Baseline:
@@ -112,6 +103,15 @@
     * Deny Remote Desktop Services Log On - `*S-1-5-113,*S-1-5-32-546`
 * Updating the following setting to resolve issue [91](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/91):
     * Increase Scheduling Priority - `*S-1-5-32-544, *S-1-5-90-0`
+
+🔄️**Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI**
+* Changed the following settings from "Without UEFI Lock" to "With UEFI Lock". This now matches both MS and CIS recommendations:
+    * Credential Guard
+    * Configure Lsa Protected Process
+    * Hypervisor Enforced Code Integrity
+
+> [!IMPORTANT]
+> There are some implications if you need to disable these settings, however overall this change provides a better security posture.
 
 🔄️**Win - OIB - SC - Microsoft Edge - D - Security**
 * Removed the following settings as they have been marked as obsolete. Resolves [101](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/101):
