@@ -1,10 +1,151 @@
 # OIB Windows Change Log
 
+# Windows v3.7 - 2025-10-15 - 25H2 Edition
+## Added 🆕
+### Settings Catalog
+🆕**Win - OIB - SC - Device Security - D - Administrator Protection - v3.7**
+* Added configuration to enable the new [Administrator Protection](https://techcommunity.microsoft.com/blog/windows-itpro-blog/administrator-protection-on-windows-11/4303482) feature:
+    * User Account Control Behavior Of The Elevation Prompt For Administrator Protection - `Prompt for credentials on the secure desktop`
+    * User Account Control Type Of Admin Approval Mode - `Admin Approval Mode with Administrator protection`
+
+> [!IMPORTANT]
+> As of writing this, the feature is still flagged as Windows Insider only, but I'm hoping it will be enabled soon and I didn't want that to happen mid-way through a release cycle :)
+
+🆕**Win - OIB - SC - Device Security - D - Printing - v3.7**
+* The following settings have been moved out of the Security Hardening profile into their own profile to make them easier to find and manage:
+    * Allow Print Spooler to accept client connections - `Disabled`
+    * Point and Print Restrictions - `Enabled`
+        * Users can only point and print to machines in their forest: (Device) - `False`
+        * Users can only point and print to these servers: (Device) - `True`
+        * When installing drivers for a new connection: (Device) - `Show warning and elevation prompt`
+        * When updating drivers for an existing connection: (Device)- `Show warning and elevation prompt`
+    * Limits print driver installation to Administrators - `Enabled`
+
+* The following settings have been added to match the Microsoft Security Baseline and CIS Intune Benchmark:
+    * Allow Print Spooler to accept client connections - `Disabled`
+    * Configure Redirection Guard - `Enabled`
+        * Redirection Guard Options: (Device) - `Redirection Guard Enabled`
+    * Configure RPC connection settings
+        * Protocol to use for outgoing RPC connections: (Device) - `RPC over TCP`
+        * Use authentication for outgoing RPC connections: (Device) - `Default`
+    * Configure RPC listener settings - `Enabled`
+        * Authentication protocol to use for incoming RPC connections: (Device) - `Negotiate`
+        * Protocols to allow for incoming RPC connections: (Device) - `RPC over TCP`
+    * Configure RPC over TCP port - `Enabled`
+        * RPC over TCP port: (Device) - `0`
+
+🆕**Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7**
+* Added configuration to support new [Windows Backup for Organizations (WBfO)](https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-backup-for-organizations-is-now-available/4441655) feature with some minor restrictions.
+    * Enable Windows Backup - `Enabled`
+    * Do not sync passwords - `Enabled`
+        * Allow users to turn "passwords" syncing on. (Device) - `False`
+    * Enable Windows Restore - `Enabled`
+
+> [!NOTE]
+> This feature needs enabling by navigating to: Devices > Windows > Enrollment > Windows Backup and Restore.
+> For more information, see [Windows Backup and Restore - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-gb/intune/intune-service/enrollment/windows-backup-restore)
+
+### Endpoint Security
+🆕**Win - OIB - ES - Local Group Membership - D - Local Administrators - v3.7**
+* New profile to manage local group membership of the built-in Administrators group, replacing any existing members and only allowing the WLapsAdmin account.
+    * Local Group - `Administrators`
+    * Group and User Action - `Replace`
+    * User selection type - `Manual`
+    * Selected user(s) - `WLapsAdmin`
+
+> [!NOTE]
+> Autopilot is not a security boundary, and blocking launching a command prompt from within OOBE can negatively impact the troubleshooting capabilities of IT Admins. This means that a savvy or malicious user can create an additional Admin account prior to running through Autopilot. To combat this, it's good practice to ensure that only accounts you explicitly want in the local Administrators group are present.
+
+## Changed/Updated 🔄️
+### Settings Catalog
+🔄️**Win - OIB - ES - Attack Surface Reduction - D - ASR Rules (L2)**
+* Changed "Block use of copied or impersonated system tools" from `Audit` to `Block`
+* Changed "Block Office applications from injecting code into other processes" from `Audit` to `Block`
+* Changed "Block credential stealing from the Windows local security authority subsystem" from `Audit` to `Block`
+
+🔄️**Win - OIB - ES - Encryption - D - BitLocker (OS Disk)**
+* Updated the following setting to align with CIS recommendations. Resolves [80](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/80)
+    * Choose how BitLocker-protected operating system drives can be recovered - Do not allow 256-bit recovery key
+
+🔄️**Win - OIB - SC - Device Security - D - Audit and Event Logging**
+* Added the following setting from the 25H2 Security Baseline:
+    * Include command line in process creation events - `Enabled`
+
+🔄️**Win - OIB - SC - Device Security - D - Security Hardening**
+* Added the following new setting from the 25H2 Security Baseline:
+    * Disable Internet Explorer 11 as a standalone browser - `Enabled`
+        * Notify that Internet Explorer 11 browser is disabled - `Never`
+* Added the following Smart Screen-related setting from the CIS Intune Benchmark:
+    * Enable Smart Screen In Shell - `Enabled`
+    * Prevent Override For Files In Shell - `Enabled`
+* Removed the following settings as they have been marked as obsolete and have also been removed from the 25H2 Security Baseline:
+    * WDigest Authentication
+* The following settings have been removed from this profile and are now found in the new `Win - OIB - SC - Device Security - D - Printing - v3.7` profile:
+    * Allow Print Spooler to accept client connections - `Disabled`
+    * Point and Print Restrictions - `Enabled`
+        * Users can only point and print to these servers - `True`
+        * When installing drivers for a new connection - `Show warning and elevation prompt`
+        * When updating drivers for an existing connection - `Show warning and elevation prompt`
+    * Limits print driver installation to Administrators - `Enabled`
+
+🔄️**Win - OIB - SC - Device Security - D - User Rights**
+* Added the following entry to align with OS defaults and [recommendations from the 25H2 Security Baseline](https://techcommunity.microsoft.com/blog/microsoft-security-baselines/windows-11-version-25h2-security-baseline/4456231#:~:text=User%20Rights%20Assignment%20Update%3A%20Impersonate%20a%20client%20after%20authentication):
+    * Impersonate client - `S-1-5-99-216390572-1995538116-3857911515-2404958512-2623887229`
+> [!NOTE]
+> This is the SID for the "RESTRICTED SERVICES\PrintSpoolerService" account. **Huge** thanks to @ajf8729 for managing to decipher this as Microsoft didn't want to document or localise it!
+
+* Added the following settings from v4.0.0 of the CIS Intune Benchmark:
+    * Deny Log On As Batch Job - `*S-1-5-32-546`
+    * Deny Log On As Service - `*S-1-5-32-546`
+    * Shut Down The System - `*S-1-5-32-544,*S-1-5-32-545`
+* Changed the following settings to align with v4.0.0 of the CIS Intune Benchmark:
+    * Deny Access From Network - `*S-1-5-113,*S-1-5-32-546`
+    * Deny Remote Desktop Services Log On - `*S-1-5-113,*S-1-5-32-546`
+* Updating the following setting to resolve issue [91](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/91):
+    * Increase Scheduling Priority - `*S-1-5-32-544, *S-1-5-90-0`
+
+🔄️**Win - OIB - SC - Device Security - U - Device Guard, Credential Guard and HVCI**
+* Changed the following settings from "Without UEFI Lock" to "With UEFI Lock". This now matches both MS and CIS recommendations:
+    * Credential Guard
+    * Configure Lsa Protected Process
+    * Hypervisor Enforced Code Integrity
+
+> [!IMPORTANT]
+> There are some implications if you need to disable these settings, however overall this change provides a better security posture.
+
+🔄️**Win - OIB - SC - Microsoft Edge - D - Security**
+* Removed the following settings as they have been marked as obsolete. Resolves [101](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/101):
+    * Allow the Search bar at Windows startup (obsolete)
+    * Minimum TLS version enabled (obsolete)
+    * Specifies whether to allow websites to make requests to any network endpoint in an insecure manner (obsolete)
+
+🔄️**Win - OIB - SC - Microsoft Edge - U - User Experience**
+* Removed the following settings as they have been marked as obsolete. Resolves [101](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/101):
+    * Configure the Microsoft Edge new tab page experience (obsolete)
+    * Enable CryptoWallet feature (obsolete)
+
+## Removed 🚮
+🚮**Win - OIB - SC - Windows Update for Business - D - Restart Warnings - v3.1**
+
+At some point, Microsoft seems to have changed the documentation for these policies to now state that they are only applicable to Windows 10, and not Windows 11 ([example](https://learn.microsoft.com/en-gb/windows/client-management/mdm/policy-csp-Update?WT.mc_id=Portal-fx#autorestartnotificationschedule)).
+I have raised this with the Product Group to get clarification as this feels like a negative regression in functionality, but for now, I've removed the profile.
+
+🚮**Win - OIB - SC - Google Chrome - D - Security - v3.0 (Deprecated)**
+
+🚮**Win - OIB - SC - Google Chrome - U - Experience and Extensions - v3.0 (Deprecated)**
+
+🚮**Win - OIB - SC - Google Chrome - U - Profiles, Sign-In and Sync - v3.0 (Deprecated)**
+
+After deprecating them in v3.4, I've now removed the Google Chrome profiles from the repo completely.
+
+---
+
 # Windows v3.6 - 2025-05-13 - Post-MMS Edition
 ## Added
 ### Settings Catalog
 **Win - OIB - SC - Microsoft Office - D - Device Security - v3.6**
 **Win - OIB - SC - Microsoft Office - U - User Security - v3.6**
+
 By popular demand, I've added a new set of policies to help secure Microsoft Office on Windows devices. These policies are based on the most recent [Microsoft 365 Apps Security Baseline v2412](https://learn.microsoft.com/en-us/microsoft-365-apps/security/security-baseline) and are designed to enhance the security posture of Office applications.
 
 I have split the policies into two separate profiles: one for Device Security and one for User Security. This allows for more granular control over the security settings applied to Office applications if required.
