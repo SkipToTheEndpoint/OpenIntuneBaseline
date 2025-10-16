@@ -8717,7 +8717,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Tenant ID: (Device)</td>
-<td class='property-column2'>2d026a31-8c0a-4b36-8b34-07f42b6e2a87</td>
+<td class='property-column2'>%OrganizationID%</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Allow users to contact Microsoft for feedback and support</td>
@@ -8737,7 +8737,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Keywords: (Device)</td>
-<td class='property-column2'>`*.accdb;`*.appx;`*.bat;`*.cmd;`*.exe;`*.img;`*.iso;`*.jar;`*.lnk;`*.mdb;`*.msi;`*.pst;`*.reg;`*.vbs;`*.vhd;`*.vhdx;`*.vmdk</td>
+<td class='property-column2'>*.accdb;*.appx;*.bat;*.cmd;*.exe,*.img;*.iso;*.jar;*.lnk;*.mdb;*.msi;*.pst;*.reg;*.vbs;*.vhd;*.vhdx;*.vmdk</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Prevent users from redirecting their Windows known folders to their PC</td>
@@ -8773,7 +8773,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:10px !important;'>Tenant ID: (Device)</td>
-<td class='property-column2'>2d026a31-8c0a-4b36-8b34-07f42b6e2a87</td>
+<td class='property-column2'>%OrganizationID%</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Silently sign in users to the OneDrive sync app with their Windows credentials</td>
@@ -8857,7 +8857,7 @@
 </tr>
 <tr class='row-new-property'>
 <td class='property-column1' style='padding-left:15px !important;'>Name</td>
-<td class='property-column2'>2d026a31-8c0a-4b36-8b34-07f42b6e2a87</td>
+<td class='property-column2'>%OrganizationID%</td>
 </tr>
 <tr class=''>
 <td class='property-column1' style='padding-left:15px !important;'>Value</td>
