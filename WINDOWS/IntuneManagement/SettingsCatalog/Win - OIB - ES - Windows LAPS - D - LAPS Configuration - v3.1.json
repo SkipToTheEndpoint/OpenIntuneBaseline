@@ -20,7 +20,7 @@
     "settingCount":  5,
     "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
     "technologies":  "mdm",
-    "id":  "ccde33f8-d5c4-411c-9bbe-371e9894d1f9",
+    "id":  "b0fa4e4d-a312-4533-ab54-e340cb0656d5",
     "templateReference":  {
                               "@odata.type":  "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
                               "templateId":  "adc46e5a-f4aa-4ff6-aeff-4f27bc525796_1",
