@@ -8,7 +8,7 @@
   "creationSource": null,
   "description": "DO NOT ASSIGN THIS POLICY WITHOUT VALIDATING VIA AUDIT MODE FIRST!\nhttps://learn.microsoft.com/en-us/defender-endpoint/attack-surface-reduction-rules-deployment-operationalize",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
-  "lastModifiedDateTime": "2025-09-09T15:51:29.4648244Z",
+  "lastModifiedDateTime": "2025-09-09T15:51:30.4648244Z",
   "name": "Win - OIB - ES - Attack Surface Reduction - D - ASR Rules (L2) - v3.7",
   "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
   "platforms": "windows10",
