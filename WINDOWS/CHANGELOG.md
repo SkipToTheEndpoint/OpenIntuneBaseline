@@ -34,6 +34,22 @@
     * Configure RPC over TCP port - `Enabled`
         * RPC over TCP port: (Device) - `0`
 
+🆕**Win - OIB - SC - Windows Apps - D - In-Box App Removal - v3.7**
+* Added configuration to remove some in-box apps that are not required in an enterprise environment:
+    * Feedback Hub
+    * Microsoft Copilot
+    * Microsoft News
+    * Microsoft Solitaire Collection
+    * MSN Weather
+    * Quick Assist
+    * Xbox Gaming App
+    * Xbox Identity Provider
+    * Xbox Speech To Text Overlay
+    * Xbox TCUI
+
+> [!IMPORTANT]
+> This policy only works on Windows 11 **Enterprise** devices
+
 🆕**Win - OIB - SC - Windows User Experience - D - Settings Sync - v3.7**
 * Added configuration to support new [Windows Backup for Organizations (WBfO)](https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-backup-for-organizations-is-now-available/4441655) feature with some minor restrictions.
     * Enable Windows Backup - `Enabled`
