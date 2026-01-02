@@ -1,0 +1,161 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations(assignments())/$entity",
+  "@odata.type": "#microsoft.graph.groupPolicyConfiguration",
+  "@odata.id": "deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')",
+  "@odata.editLink": "deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')",
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2025-10-20T11:47:17.4720104Z",
+  "displayName": "Win - GHS - ADMX - Winget-Autoupdate - D - v1.1",
+  "description": "",
+  "roleScopeTagIds@odata.type": "#Collection(String)",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "policyConfigurationIngestionType@odata.type": "#microsoft.graph.groupPolicyConfigurationIngestionType",
+  "policyConfigurationIngestionType": "custom",
+  "id": "9c7b379d-3906-4c9b-b382-237ab4eea706",
+  "lastModifiedDateTime@odata.type": "#DateTimeOffset",
+  "lastModifiedDateTime": "2025-10-20T11:47:18.1751192Z",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')/assignments",
+  "assignments@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')/assignments/$ref",
+  "assignments@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')/assignments",
+  "assignments": [],
+  "definitionValues@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')/definitionValues/$ref",
+  "definitionValues@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')/definitionValues",
+  "#microsoft.graph.assign": {
+    "title": "microsoft.graph.assign",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')/microsoft.graph.assign"
+  },
+  "#microsoft.graph.updateDefinitionValues": {
+    "title": "microsoft.graph.updateDefinitionValues",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfigurations('9c7b379d-3906-4c9b-b382-237ab4eea706')/microsoft.graph.updateDefinitionValues"
+  },
+  "definitionValues": [
+    {
+      "#Definition_displayName": "User context execution",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": true,
+      "#Definition_classType": "machine",
+      "#Definition_Id": "22df1a2d-0f08-4c78-92bd-169adc0f93db",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('22df1a2d-0f08-4c78-92bd-169adc0f93db')"
+    },
+    {
+      "#Definition_displayName": "Updates at Time",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": true,
+      "#Definition_classType": "machine",
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "value": "09:00:00",
+          "presentation@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('d69a4608-9ccd-43e4-8a14-1fa593c32ac5')/presentations('b271587f-e57e-4486-b102-32796b18d021')",
+          "#Presentation_Id": "b271587f-e57e-4486-b102-32796b18d021",
+          "#Presentation_Label": ""
+        }
+      ],
+      "#Definition_Id": "d69a4608-9ccd-43e4-8a14-1fa593c32ac5",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('d69a4608-9ccd-43e4-8a14-1fa593c32ac5')"
+    },
+    {
+      "#Definition_displayName": "Notification Level",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": true,
+      "#Definition_classType": "machine",
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "value": "ErrorsOnly",
+          "presentation@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('29a4a09f-1aa6-4eca-a257-28f203507b8e')/presentations('f88541f0-48bc-4d82-b1f2-de1deb1bddb1')",
+          "#Presentation_Id": "f88541f0-48bc-4d82-b1f2-de1deb1bddb1",
+          "#Presentation_Label": ""
+        }
+      ],
+      "#Definition_Id": "29a4a09f-1aa6-4eca-a257-28f203507b8e",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('29a4a09f-1aa6-4eca-a257-28f203507b8e')"
+    },
+    {
+      "#Definition_displayName": "Updates Interval",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": true,
+      "#Definition_classType": "machine",
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "value": "BiDaily",
+          "presentation@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('89ed1c86-d24f-44c3-bc4d-82571c443616')/presentations('13e2c4d5-76bc-45b0-a143-4443bdbd1f4e')",
+          "#Presentation_Id": "13e2c4d5-76bc-45b0-a143-4443bdbd1f4e",
+          "#Presentation_Label": ""
+        }
+      ],
+      "#Definition_Id": "89ed1c86-d24f-44c3-bc4d-82571c443616",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('89ed1c86-d24f-44c3-bc4d-82571c443616')"
+    },
+    {
+      "#Definition_displayName": "Log: Size of the log file in bytes before rotating",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": true,
+      "#Definition_classType": "machine",
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "value": "3",
+          "presentation@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('ab38bd36-0779-4005-9f21-8b38eaeed887')/presentations('4dca24ad-f3ad-431b-afb5-6cd5610132a9')",
+          "#Presentation_Id": "4dca24ad-f3ad-431b-afb5-6cd5610132a9",
+          "#Presentation_Label": "Size of the log file:"
+        }
+      ],
+      "#Definition_Id": "ab38bd36-0779-4005-9f21-8b38eaeed887",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('ab38bd36-0779-4005-9f21-8b38eaeed887')"
+    },
+    {
+      "#Definition_displayName": "Random delay for scheduled task triggers",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": true,
+      "#Definition_classType": "machine",
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "value": "02:00",
+          "presentation@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('1e1496a0-e3f7-4656-bf7e-985370b9cfac')/presentations('34f23184-a2de-4454-a992-a95140f07697')",
+          "#Presentation_Id": "34f23184-a2de-4454-a992-a95140f07697",
+          "#Presentation_Label": "Random delay HH:mm"
+        }
+      ],
+      "#Definition_Id": "1e1496a0-e3f7-4656-bf7e-985370b9cfac",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('1e1496a0-e3f7-4656-bf7e-985370b9cfac')"
+    },
+    {
+      "#Definition_displayName": "Log: Number of allowed log files",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": true,
+      "#Definition_classType": "machine",
+      "presentationValues": [
+        {
+          "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+          "value": "3",
+          "presentation@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('441a9911-4fb3-4715-8d73-b81f4bc10246')/presentations('0d67fb36-d17e-431e-a481-f5f76cf74774')",
+          "#Presentation_Id": "0d67fb36-d17e-431e-a481-f5f76cf74774",
+          "#Presentation_Label": "Allowed log files:"
+        }
+      ],
+      "#Definition_Id": "441a9911-4fb3-4715-8d73-b81f4bc10246",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('441a9911-4fb3-4715-8d73-b81f4bc10246')"
+    },
+    {
+      "#Definition_displayName": "Updates at Logon",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": false,
+      "#Definition_classType": "machine",
+      "#Definition_Id": "a2d25c63-7696-4b44-8302-c77121b01e73",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('a2d25c63-7696-4b44-8302-c77121b01e73')"
+    },
+    {
+      "#Definition_displayName": "Activate WAU GPO Management [DEPRECATED]",
+      "#Definition_categoryPath": "\\Winget-AutoUpdate",
+      "enabled": true,
+      "#Definition_classType": "machine",
+      "#Definition_Id": "1fe8b68c-0803-4f25-8223-d9d9b1dbf600",
+      "definition@odata.bind": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyDefinitions('1fe8b68c-0803-4f25-8223-d9d9b1dbf600')"
+    }
+  ]
+}

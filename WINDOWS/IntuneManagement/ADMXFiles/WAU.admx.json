@@ -1,55 +1,51 @@
 {
-    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyUploadedDefinitionFiles/$entity",
-    "@odata.type":  "#microsoft.graph.groupPolicyUploadedDefinitionFile",
-    "@odata.id":  "deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)",
-    "@odata.editLink":  "deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)",
-    "displayName":  null,
-    "description":  null,
-    "languageCodes@odata.type":  "#Collection(String)",
-    "languageCodes":  [
-
-                      ],
-    "targetPrefix":  "WAU53fdb08b-8494-4c5f-8c1b-4553594e6ea2",
-    "targetNamespace":  "Romanitho.Policies.WAU",
-    "policyType@odata.type":  "#microsoft.graph.groupPolicyType",
-    "policyType":  "admxIngested",
-    "revision":  "4.9",
-    "fileName":  "WAU.admx",
-    "id":  "53fdb08b-8494-4c5f-8c1b-4553594e6ea2",
-    "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
-    "lastModifiedDateTime":  "2025-05-28T11:53:01.5767941Z",
-    "status@odata.type":  "#microsoft.graph.groupPolicyUploadedDefinitionFileStatus",
-    "status":  "available",
-    "content":  null,
-    "uploadDateTime@odata.type":  "#DateTimeOffset",
-    "uploadDateTime":  "2025-05-28T11:53:01.024623Z",
-    "defaultLanguageCode":  "en-US",
-    "groupPolicyUploadedLanguageFiles@odata.type":  "#Collection(microsoft.graph.groupPolicyUploadedLanguageFile)",
-    "groupPolicyUploadedLanguageFiles":  [
-
-                                         ],
-    "definitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/definitions/$ref",
-    "definitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/definitions",
-    "groupPolicyOperations@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/groupPolicyOperations/$ref",
-    "groupPolicyOperations@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/groupPolicyOperations",
-    "#microsoft.graph.remove":  {
-                                    "title":  "microsoft.graph.remove",
-                                    "target":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/microsoft.graph.remove"
-                                },
-    "#microsoft.graph.addLanguageFiles":  {
-                                              "title":  "microsoft.graph.addLanguageFiles",
-                                              "target":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/microsoft.graph.addLanguageFiles"
-                                          },
-    "#microsoft.graph.removeLanguageFiles":  {
-                                                 "title":  "microsoft.graph.removeLanguageFiles",
-                                                 "target":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/microsoft.graph.removeLanguageFiles"
-                                             },
-    "#microsoft.graph.updateLanguageFiles":  {
-                                                 "title":  "microsoft.graph.updateLanguageFiles",
-                                                 "target":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/microsoft.graph.updateLanguageFiles"
-                                             },
-    "#microsoft.graph.uploadNewVersion":  {
-                                              "title":  "microsoft.graph.uploadNewVersion",
-                                              "target":  "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles(\u002753fdb08b-8494-4c5f-8c1b-4553594e6ea2\u0027)/microsoft.graph.uploadNewVersion"
-                                          }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/groupPolicyUploadedDefinitionFiles/$entity",
+  "@odata.type": "#microsoft.graph.groupPolicyUploadedDefinitionFile",
+  "@odata.id": "deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')",
+  "@odata.editLink": "deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')",
+  "displayName": null,
+  "description": null,
+  "languageCodes@odata.type": "#Collection(String)",
+  "languageCodes": [],
+  "targetPrefix": "WAUca7afb89-4cd7-4a9e-af43-f03e94b1e940",
+  "targetNamespace": "Romanitho.Policies.WAU",
+  "policyType@odata.type": "#microsoft.graph.groupPolicyType",
+  "policyType": "admxIngested",
+  "revision": "5.2",
+  "fileName": "WAU.admx",
+  "id": "ca7afb89-4cd7-4a9e-af43-f03e94b1e940",
+  "lastModifiedDateTime@odata.type": "#DateTimeOffset",
+  "lastModifiedDateTime": "2025-10-20T11:41:11.7019058Z",
+  "status@odata.type": "#microsoft.graph.groupPolicyUploadedDefinitionFileStatus",
+  "status": "available",
+  "content": null,
+  "uploadDateTime@odata.type": "#DateTimeOffset",
+  "uploadDateTime": "2025-10-20T11:41:08.4848615Z",
+  "defaultLanguageCode": "en-US",
+  "groupPolicyUploadedLanguageFiles@odata.type": "#Collection(microsoft.graph.groupPolicyUploadedLanguageFile)",
+  "groupPolicyUploadedLanguageFiles": [],
+  "definitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/definitions/$ref",
+  "definitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/definitions",
+  "groupPolicyOperations@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/groupPolicyOperations/$ref",
+  "groupPolicyOperations@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/groupPolicyOperations",
+  "#microsoft.graph.remove": {
+    "title": "microsoft.graph.remove",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/microsoft.graph.remove"
+  },
+  "#microsoft.graph.addLanguageFiles": {
+    "title": "microsoft.graph.addLanguageFiles",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/microsoft.graph.addLanguageFiles"
+  },
+  "#microsoft.graph.removeLanguageFiles": {
+    "title": "microsoft.graph.removeLanguageFiles",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/microsoft.graph.removeLanguageFiles"
+  },
+  "#microsoft.graph.updateLanguageFiles": {
+    "title": "microsoft.graph.updateLanguageFiles",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/microsoft.graph.updateLanguageFiles"
+  },
+  "#microsoft.graph.uploadNewVersion": {
+    "title": "microsoft.graph.uploadNewVersion",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/groupPolicyUploadedDefinitionFiles('ca7afb89-4cd7-4a9e-af43-f03e94b1e940')/microsoft.graph.uploadNewVersion"
+  }
 }
