@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-08-17T16:19:11.2338087Z",
-    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0.4",
+    "name":  "MacOS - OIB - Device Security - D - Restrictions - v1.0.5",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "macOS",
     "priorityMetaData":  null,
@@ -87,11 +87,6 @@
                                                                                                                                                        "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                                                                                                                                                        "settingValueTemplateReference":  null,
                                                                                                                                                        "value":  "com.apple.WalletSettingsExtension"
-                                                                                                                                                   },
-                                                                                                                                                   {
-                                                                                                                                                       "@odata.type":  "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
-                                                                                                                                                       "settingValueTemplateReference":  null,
-                                                                                                                                                       "value":  "com.apple.systempreferences.AppleIDSettings"
                                                                                                                                                    }
                                                                                                                                                ]
                                                                                                           }
@@ -125,7 +120,7 @@
                                                                                                               "choiceSettingValue":  {
                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                                          "settingValueTemplateReference":  null,
-                                                                                                                                         "value":  "com.apple.applicationaccess_allowaccountmodification_false",
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowaccountmodification_true",
                                                                                                                                          "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                                          "children":  [
 
@@ -335,7 +330,7 @@
                                                                                                               "choiceSettingValue":  {
                                                                                                                                          "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
                                                                                                                                          "settingValueTemplateReference":  null,
-                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudkeychainsync_false",
+                                                                                                                                         "value":  "com.apple.applicationaccess_allowcloudkeychainsync_true",
                                                                                                                                          "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
                                                                                                                                          "children":  [
 
