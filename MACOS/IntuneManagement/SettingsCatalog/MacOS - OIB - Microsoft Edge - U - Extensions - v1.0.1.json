@@ -1,0 +1,162 @@
+{
+        "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
+        "@odata.id": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')",
+        "@odata.editLink": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')",
+        "createdDateTime@odata.type": "#DateTimeOffset",
+        "createdDateTime": "2024-08-17T16:23:16.4655467Z",
+        "creationSource": null,
+        "description": "",
+        "lastModifiedDateTime@odata.type": "#DateTimeOffset",
+        "lastModifiedDateTime": "2024-08-17T16:23:16.4655467Z",
+        "name": "MacOS - OIB - Microsoft Edge - U - Extensions - v1.0.1",
+        "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
+        "platforms": "macOS",
+        "priorityMetaData": null,
+        "roleScopeTagIds@odata.type": "#Collection(String)",
+        "roleScopeTagIds": [
+                "0"
+        ],
+        "settingCount": 4,
+        "technologies@odata.type": "#microsoft.graph.deviceManagementConfigurationTechnologies",
+        "technologies": "mdm,appleRemoteManagement",
+        "id": "bf7770c0-5e54-428b-b18e-c91b9bbb060c",
+        "templateReference": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+                "templateId": "",
+                "templateFamily@odata.type": "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+                "templateFamily": "none",
+                "templateDisplayName": null,
+                "templateDisplayVersion": null
+        },
+        "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/assignments",
+        "assignments@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/assignments/$ref",
+        "assignments@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/assignments",
+        "assignments": [],
+        "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings",
+        "settings@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings/$ref",
+        "settings@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings",
+        "settings": [
+                {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+                        "@odata.id": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('0')",
+                        "@odata.editLink": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('0')",
+                        "id": "0",
+                        "settingInstance": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                "settingDefinitionId": "com.apple.managedclient.preferences_extensioninstallallowlist",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
+                                "simpleSettingCollectionValue": [
+                                        {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                "settingValueTemplateReference": null,
+                                                "value": "odfafepnkmbhccpbejgmiehpchacaeak"
+                                        }
+                                ]
+                        },
+                        "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('0')/settingDefinitions/$ref",
+                        "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('0')/settingDefinitions"
+                },
+                {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+                        "@odata.id": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('1')",
+                        "@odata.editLink": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('1')",
+                        "id": "1",
+                        "settingInstance": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.managedclient.preferences_blockexternalextensions",
+                                "settingInstanceTemplateReference": null,
+                                "choiceSettingValue": {
+                                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                        "settingValueTemplateReference": null,
+                                        "value": "com.apple.managedclient.preferences_blockexternalextensions_true",
+                                        "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                        "children": []
+                                }
+                        },
+                        "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('1')/settingDefinitions/$ref",
+                        "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('1')/settingDefinitions"
+                },
+                {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+                        "@odata.id": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('2')",
+                        "@odata.editLink": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('2')",
+                        "id": "2",
+                        "settingInstance": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                "settingDefinitionId": "com.apple.managedclient.preferences_extensioninstallforcelist",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
+                                "simpleSettingCollectionValue": [
+                                        {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                "settingValueTemplateReference": null,
+                                                "value": "nkbndigcebkoaejohleckhekfmcecfja"
+                                        },
+                                        {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                "settingValueTemplateReference": null,
+                                                "value": "ofefcgjbeghpigppfmkologfjadafddi"
+                                        },
+                                        {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                "settingValueTemplateReference": null,
+                                                "value": "lfochlioelphaglamdcakfjemolpichk"
+                                        }
+                                ]
+                        },
+                        "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('2')/settingDefinitions/$ref",
+                        "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('2')/settingDefinitions"
+                },
+                {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+                        "@odata.id": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('3')",
+                        "@odata.editLink": "deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('3')",
+                        "id": "3",
+                        "settingInstance": {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionInstance",
+                                "settingDefinitionId": "com.apple.managedclient.preferences_extensioninstallblocklist",
+                                "settingInstanceTemplateReference": null,
+                                "simpleSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSimpleSettingValue)",
+                                "simpleSettingCollectionValue": [
+                                        {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                                                "settingValueTemplateReference": null,
+                                                "value": "*"
+                                        }
+                                ]
+                        },
+                        "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('3')/settingDefinitions/$ref",
+                        "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/settings('3')/settingDefinitions"
+                }
+        ],
+        "#microsoft.graph.assign": {
+                "title": "microsoft.graph.assign",
+                "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/microsoft.graph.assign"
+        },
+        "#microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget": {
+                "title": "microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget",
+                "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget"
+        },
+        "#microsoft.graph.createCopy": {
+                "title": "microsoft.graph.createCopy",
+                "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/microsoft.graph.createCopy"
+        },
+        "#microsoft.graph.reorder": {
+                "title": "microsoft.graph.reorder",
+                "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/microsoft.graph.reorder"
+        },
+        "#microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget": {
+                "title": "microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget",
+                "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget"
+        },
+        "#microsoft.graph.setEnrollmentTimeDeviceMembershipTarget": {
+                "title": "microsoft.graph.setEnrollmentTimeDeviceMembershipTarget",
+                "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/microsoft.graph.setEnrollmentTimeDeviceMembershipTarget"
+        },
+        "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy": {
+                "title": "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+                "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('bf7770c0-5e54-428b-b18e-c91b9bbb060c')/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+        }
+}
