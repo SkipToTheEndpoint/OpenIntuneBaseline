@@ -25,6 +25,13 @@ The [IntuneMacAdmins](https://intunemacadmins.com) team for OIB MacOS support.
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/indecline">
+                    <img src="https://avatars.githubusercontent.com/u/46539880?v=4" width="100;" alt="indecline"/>
+                    <br />
+                    <sub><b>indecline</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/kieran-turnbull">
                     <img src="https://avatars.githubusercontent.com/u/12057476?v=4" width="100;" alt="kieran-turnbull"/>
                     <br />
@@ -45,20 +52,13 @@ The [IntuneMacAdmins](https://intunemacadmins.com) team for OIB MacOS support.
                     <sub><b>Luke Steward</b></sub>
                 </a>
             </td>
+		</tr>
+		<tr>
             <td align="center">
                 <a href="https://github.com/ee61re">
                     <img src="https://avatars.githubusercontent.com/u/1190365?v=4" width="100;" alt="ee61re"/>
                     <br />
                     <sub><b>Rob Ellis</b></sub>
-                </a>
-            </td>
-		</tr>
-		<tr>
-            <td align="center">
-                <a href="https://github.com/indecline">
-                    <img src="https://avatars.githubusercontent.com/u/46539880?v=4" width="100;" alt="indecline"/>
-                    <br />
-                    <sub><b>indecline</b></sub>
                 </a>
             </td>
 		</tr>
