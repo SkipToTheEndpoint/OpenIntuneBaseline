@@ -1,0 +1,125 @@
+{
+    "@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps(categories(),assignments())/$entity",
+    "@odata.type":  "#microsoft.graph.win32LobApp",
+    "id":  "c53dabed-ad77-4eff-9498-f454febd652f",
+    "displayName":  "Computer Name Rename",
+    "description":  "Renames Windows devices using a site prefix and the last characters of the device serial number.",
+    "publisher":  "GHS (UK) LTD",
+    "createdDateTime":  "2026-04-23T17:58:43.3383265Z",
+    "lastModifiedDateTime":  "2026-04-23T17:58:43.3383265Z",
+    "isFeatured":  false,
+    "privacyInformationUrl":  "",
+    "informationUrl":  null,
+    "owner":  "GHS (UK) LTD",
+    "developer":  "GHS (UK) LTD",
+    "notes":  "",
+    "uploadState":  1,
+    "publishingState":  "published",
+    "isAssigned":  false,
+    "roleScopeTagIds":  [
+                            "0"
+                        ],
+    "dependentAppCount":  0,
+    "supersedingAppCount":  0,
+    "supersededAppCount":  0,
+    "committedContentVersion":  "1",
+    "fileName":  "ComputerRename_v1.0.intunewin",
+    "size":  4160,
+    "installCommandLine":  "%WINDIR%\\SysNative\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\ComputerRename.ps1 -Prefix \"AAA\" -SerialTailLength 12",
+    "uninstallCommandLine":  "%WINDIR%\\SysNative\\WindowsPowerShell\\v1.0\\powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\\ComputerRename_Uninstall.ps1",
+    "applicableArchitectures":  "x86,x64",
+    "allowedArchitectures":  null,
+    "minimumFreeDiskSpaceInMB":  10,
+    "minimumMemoryInMB":  1024,
+    "minimumNumberOfProcessors":  null,
+    "minimumCpuSpeedInMHz":  null,
+    "msiInformation":  null,
+    "setupFilePath":  "ComputerRename.ps1",
+    "minimumSupportedWindowsRelease":  "1607",
+    "displayVersion":  "1.0",
+    "allowAvailableUninstall":  false,
+    "activeInstallScript":  null,
+    "activeUninstallScript":  null,
+    "largeIcon":  {
+                      "type":  "image/png",
+                      "value":  "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"
+                  },
+    "minimumSupportedOperatingSystem":  {
+                                            "v8_0":  false,
+                                            "v8_1":  false,
+                                            "v10_0":  false,
+                                            "v10_1607":  true,
+                                            "v10_1703":  false,
+                                            "v10_1709":  false,
+                                            "v10_1803":  false,
+                                            "v10_1809":  false,
+                                            "v10_1903":  false,
+                                            "v10_1909":  false,
+                                            "v10_2004":  false,
+                                            "v10_2H20":  false,
+                                            "v10_21H1":  false
+                                        },
+    "detectionRules":  [
+                           {
+                               "@odata.type":  "#microsoft.graph.win32LobAppPowerShellScriptDetection",
+                               "enforceSignatureCheck":  false,
+                               "runAs32Bit":  false,
+                               "scriptContent":  "W0NtZGxldEJpbmRpbmcoKV0NCnBhcmFtKA0KICAgIFtQYXJhbWV0ZXIoTWFuZGF0b3J5ID0gJGZhbHNlKV0NCiAgICBbVmFsaWRhdGVOb3ROdWxsT3JFbXB0eSgpXQ0KICAgIFtzdHJpbmddJFByZWZpeCA9ICJBQUEiLA0KDQogICAgW1BhcmFtZXRlcihNYW5kYXRvcnkgPSAkZmFsc2UpXQ0KICAgIFtWYWxpZGF0ZVJhbmdlKDQsIDEyKV0NCiAgICBbaW50XSRTZXJpYWxUYWlsTGVuZ3RoID0gMTINCikNCg0KZnVuY3Rpb24gR2V0LVNlcmlhbE51bWJlciB7DQogICAgdHJ5IHsNCiAgICAgICAgJGJpb3MgPSBHZXQtQ2ltSW5zdGFuY2UgLUNsYXNzTmFtZSBXaW4zMl9CSU9TIC1FcnJvckFjdGlvbiBTdG9wDQogICAgICAgICRzbiA9ICgkYmlvcy5TZXJpYWxOdW1iZXIpLlRyaW0oKQ0KICAgICAgICBpZiAoW3N0cmluZ106OklzTnVsbE9yV2hpdGVTcGFjZSgkc24pKSB7IHJldHVybiAkbnVsbCB9DQogICAgICAgIHJldHVybiAkc24NCiAgICB9DQogICAgY2F0Y2ggew0KICAgICAgICByZXR1cm4gJG51bGwNCiAgICB9DQp9DQoNCmZ1bmN0aW9uIEZvcm1hdC1Db21wdXRlck5hbWUgew0KICAgIHBhcmFtKA0KICAgICAgICBbUGFyYW1ldGVyKE1hbmRhdG9yeSldDQogICAgICAgIFtzdHJpbmddJE5hbWUNCiAgICApDQoNCiAgICAkbiA9ICROYW1lLlRvVXBwZXJJbnZhcmlhbnQoKQ0KICAgICRuID0gKCRuIC1yZXBsYWNlICdbXkEtWjAtOS1dJywgJycpDQogICAgJG4gPSAkbi5UcmltKCctJykNCg0KICAgIGlmICgkbi5MZW5ndGggLWd0IDE1KSB7DQogICAgICAgICRuID0gJG4uU3Vic3RyaW5nKDAsIDE1KS5UcmltKCctJykNCiAgICB9DQoNCiAgICBpZiAoJG4gLW1hdGNoICdeXGQrJCcpIHsNCiAgICAgICAgJG4gPSAiUEMtJG4iDQogICAgICAgIGlmICgkbi5MZW5ndGggLWd0IDE1KSB7DQogICAgICAgICAgICAkbiA9ICRuLlN1YnN0cmluZygwLCAxNSkuVHJpbSgnLScpDQogICAgICAgIH0NCiAgICB9DQoNCiAgICBpZiAoW3N0cmluZ106OklzTnVsbE9yV2hpdGVTcGFjZSgkbikpIHsNCiAgICAgICAgdGhyb3cgIkdlbmVyYXRlZCBjb21wdXRlciBuYW1lIGlzIGVtcHR5IGFmdGVyIHNhbml0aXNpbmcuIg0KICAgIH0NCg0KICAgIHJldHVybiAkbg0KfQ0KDQpmdW5jdGlvbiBHZXQtRGVzaXJlZENvbXB1dGVyTmFtZSB7DQogICAgcGFyYW0oDQogICAgICAgIFtzdHJpbmddJFByZWZpeCwNCiAgICAgICAgW2ludF0kU2VyaWFsVGFpbExlbmd0aA0KICAgICkNCg0KICAgICRzZXJpYWwgPSBHZXQtU2VyaWFsTnVtYmVyDQogICAgaWYgKFtzdHJpbmddOjpJc051bGxPcldoaXRlU3BhY2UoJHNlcmlhbCkpIHsNCiAgICAgICAgdGhyb3cgIlVuYWJsZSB0byByZWFkIGRldmljZSBzZXJpYWwgbnVtYmVyLiINCiAgICB9DQoNCiAgICAkc2VyaWFsQ2xlYW4gPSAoJHNlcmlhbCAtcmVwbGFjZSAnXHMnLCAnJykuVG9VcHBlckludmFyaWFudCgpDQogICAgaWYgKCRzZXJpYWxDbGVhbi5MZW5ndGggLWx0ICRTZXJpYWxUYWlsTGVuZ3RoKSB7DQogICAgICAgICR0YWlsID0gJHNlcmlhbENsZWFuDQogICAgfQ0KICAgIGVsc2Ugew0KICAgICAgICAkdGFpbCA9ICRzZXJpYWxDbGVhbi5TdWJzdHJpbmcoJHNlcmlhbENsZWFuLkxlbmd0aCAtICRTZXJpYWxUYWlsTGVuZ3RoLCAkU2VyaWFsVGFpbExlbmd0aCkNCiAgICB9DQoNCiAgICAkcmF3TmFtZSA9ICIkUHJlZml4LSR0YWlsIg0KDQogICAgJG1heExlbiA9IDE1DQogICAgaWYgKCRyYXdOYW1lLkxlbmd0aCAtZ3QgJG1heExlbikgew0KICAgICAgICAkYWxsb3dlZFRhaWxMZW4gPSBbTWF0aF06Ok1heCg0LCAkbWF4TGVuIC0gKCRQcmVmaXguTGVuZ3RoICsgMSkpDQogICAgICAgIGlmICgkdGFpbC5MZW5ndGggLWd0ICRhbGxvd2VkVGFpbExlbikgew0KICAgICAgICAgICAgJHRhaWwgPSAkdGFpbC5TdWJzdHJpbmcoJHRhaWwuTGVuZ3RoIC0gJGFsbG93ZWRUYWlsTGVuLCAkYWxsb3dlZFRhaWxMZW4pDQogICAgICAgIH0NCiAgICAgICAgJHJhd05hbWUgPSAiJFByZWZpeC0kdGFpbCINCiAgICB9DQoNCiAgICByZXR1cm4gKEZvcm1hdC1Db21wdXRlck5hbWUgLU5hbWUgJHJhd05hbWUpDQp9DQoNCnRyeSB7DQogICAgJGRlc2lyZWQgPSBHZXQtRGVzaXJlZENvbXB1dGVyTmFtZSAtUHJlZml4ICRQcmVmaXggLVNlcmlhbFRhaWxMZW5ndGggJFNlcmlhbFRhaWxMZW5ndGgNCiAgICAkY3VycmVudCA9ICRlbnY6Q09NUFVURVJOQU1FDQoNCiAgICBpZiAoJGN1cnJlbnQgLWVxICRkZXNpcmVkKSB7DQogICAgICAgIFdyaXRlLU91dHB1dCAiRGV0ZWN0ZWQ6IGRldmljZSBuYW1lIG1hdGNoZXMgZGVzaXJlZCBuYW1lICgkZGVzaXJlZCkuIg0KICAgICAgICBleGl0IDANCiAgICB9DQogICAgZWxzZSB7DQogICAgICAgIFdyaXRlLU91dHB1dCAiTm90IGRldGVjdGVkOiBjdXJyZW50IG5hbWUgKCRjdXJyZW50KSBkb2VzIG5vdCBtYXRjaCBkZXNpcmVkIG5hbWUgKCRkZXNpcmVkKS4iDQogICAgICAgIGV4aXQgMQ0KICAgIH0NCn0NCmNhdGNoIHsNCiAgICBXcml0ZS1PdXRwdXQgIk5vdCBkZXRlY3RlZDogZXJyb3IgZGV0ZXJtaW5pbmcgZGVzaXJlZCBuYW1lLiAkKCRfLkV4Y2VwdGlvbi5NZXNzYWdlKSINCiAgICBleGl0IDENCn0="
+                           }
+                       ],
+    "requirementRules":  [
+
+                         ],
+    "rules":  [
+                  {
+                      "@odata.type":  "#microsoft.graph.win32LobAppPowerShellScriptRule",
+                      "ruleType":  "detection",
+                      "displayName":  null,
+                      "enforceSignatureCheck":  false,
+                      "runAs32Bit":  false,
+                      "runAsAccount":  null,
+                      "scriptContent":  "W0NtZGxldEJpbmRpbmcoKV0NCnBhcmFtKA0KICAgIFtQYXJhbWV0ZXIoTWFuZGF0b3J5ID0gJGZhbHNlKV0NCiAgICBbVmFsaWRhdGVOb3ROdWxsT3JFbXB0eSgpXQ0KICAgIFtzdHJpbmddJFByZWZpeCA9ICJBQUEiLA0KDQogICAgW1BhcmFtZXRlcihNYW5kYXRvcnkgPSAkZmFsc2UpXQ0KICAgIFtWYWxpZGF0ZVJhbmdlKDQsIDEyKV0NCiAgICBbaW50XSRTZXJpYWxUYWlsTGVuZ3RoID0gMTINCikNCg0KZnVuY3Rpb24gR2V0LVNlcmlhbE51bWJlciB7DQogICAgdHJ5IHsNCiAgICAgICAgJGJpb3MgPSBHZXQtQ2ltSW5zdGFuY2UgLUNsYXNzTmFtZSBXaW4zMl9CSU9TIC1FcnJvckFjdGlvbiBTdG9wDQogICAgICAgICRzbiA9ICgkYmlvcy5TZXJpYWxOdW1iZXIpLlRyaW0oKQ0KICAgICAgICBpZiAoW3N0cmluZ106OklzTnVsbE9yV2hpdGVTcGFjZSgkc24pKSB7IHJldHVybiAkbnVsbCB9DQogICAgICAgIHJldHVybiAkc24NCiAgICB9DQogICAgY2F0Y2ggew0KICAgICAgICByZXR1cm4gJG51bGwNCiAgICB9DQp9DQoNCmZ1bmN0aW9uIEZvcm1hdC1Db21wdXRlck5hbWUgew0KICAgIHBhcmFtKA0KICAgICAgICBbUGFyYW1ldGVyKE1hbmRhdG9yeSldDQogICAgICAgIFtzdHJpbmddJE5hbWUNCiAgICApDQoNCiAgICAkbiA9ICROYW1lLlRvVXBwZXJJbnZhcmlhbnQoKQ0KICAgICRuID0gKCRuIC1yZXBsYWNlICdbXkEtWjAtOS1dJywgJycpDQogICAgJG4gPSAkbi5UcmltKCctJykNCg0KICAgIGlmICgkbi5MZW5ndGggLWd0IDE1KSB7DQogICAgICAgICRuID0gJG4uU3Vic3RyaW5nKDAsIDE1KS5UcmltKCctJykNCiAgICB9DQoNCiAgICBpZiAoJG4gLW1hdGNoICdeXGQrJCcpIHsNCiAgICAgICAgJG4gPSAiUEMtJG4iDQogICAgICAgIGlmICgkbi5MZW5ndGggLWd0IDE1KSB7DQogICAgICAgICAgICAkbiA9ICRuLlN1YnN0cmluZygwLCAxNSkuVHJpbSgnLScpDQogICAgICAgIH0NCiAgICB9DQoNCiAgICBpZiAoW3N0cmluZ106OklzTnVsbE9yV2hpdGVTcGFjZSgkbikpIHsNCiAgICAgICAgdGhyb3cgIkdlbmVyYXRlZCBjb21wdXRlciBuYW1lIGlzIGVtcHR5IGFmdGVyIHNhbml0aXNpbmcuIg0KICAgIH0NCg0KICAgIHJldHVybiAkbg0KfQ0KDQpmdW5jdGlvbiBHZXQtRGVzaXJlZENvbXB1dGVyTmFtZSB7DQogICAgcGFyYW0oDQogICAgICAgIFtzdHJpbmddJFByZWZpeCwNCiAgICAgICAgW2ludF0kU2VyaWFsVGFpbExlbmd0aA0KICAgICkNCg0KICAgICRzZXJpYWwgPSBHZXQtU2VyaWFsTnVtYmVyDQogICAgaWYgKFtzdHJpbmddOjpJc051bGxPcldoaXRlU3BhY2UoJHNlcmlhbCkpIHsNCiAgICAgICAgdGhyb3cgIlVuYWJsZSB0byByZWFkIGRldmljZSBzZXJpYWwgbnVtYmVyLiINCiAgICB9DQoNCiAgICAkc2VyaWFsQ2xlYW4gPSAoJHNlcmlhbCAtcmVwbGFjZSAnXHMnLCAnJykuVG9VcHBlckludmFyaWFudCgpDQogICAgaWYgKCRzZXJpYWxDbGVhbi5MZW5ndGggLWx0ICRTZXJpYWxUYWlsTGVuZ3RoKSB7DQogICAgICAgICR0YWlsID0gJHNlcmlhbENsZWFuDQogICAgfQ0KICAgIGVsc2Ugew0KICAgICAgICAkdGFpbCA9ICRzZXJpYWxDbGVhbi5TdWJzdHJpbmcoJHNlcmlhbENsZWFuLkxlbmd0aCAtICRTZXJpYWxUYWlsTGVuZ3RoLCAkU2VyaWFsVGFpbExlbmd0aCkNCiAgICB9DQoNCiAgICAkcmF3TmFtZSA9ICIkUHJlZml4LSR0YWlsIg0KDQogICAgJG1heExlbiA9IDE1DQogICAgaWYgKCRyYXdOYW1lLkxlbmd0aCAtZ3QgJG1heExlbikgew0KICAgICAgICAkYWxsb3dlZFRhaWxMZW4gPSBbTWF0aF06Ok1heCg0LCAkbWF4TGVuIC0gKCRQcmVmaXguTGVuZ3RoICsgMSkpDQogICAgICAgIGlmICgkdGFpbC5MZW5ndGggLWd0ICRhbGxvd2VkVGFpbExlbikgew0KICAgICAgICAgICAgJHRhaWwgPSAkdGFpbC5TdWJzdHJpbmcoJHRhaWwuTGVuZ3RoIC0gJGFsbG93ZWRUYWlsTGVuLCAkYWxsb3dlZFRhaWxMZW4pDQogICAgICAgIH0NCiAgICAgICAgJHJhd05hbWUgPSAiJFByZWZpeC0kdGFpbCINCiAgICB9DQoNCiAgICByZXR1cm4gKEZvcm1hdC1Db21wdXRlck5hbWUgLU5hbWUgJHJhd05hbWUpDQp9DQoNCnRyeSB7DQogICAgJGRlc2lyZWQgPSBHZXQtRGVzaXJlZENvbXB1dGVyTmFtZSAtUHJlZml4ICRQcmVmaXggLVNlcmlhbFRhaWxMZW5ndGggJFNlcmlhbFRhaWxMZW5ndGgNCiAgICAkY3VycmVudCA9ICRlbnY6Q09NUFVURVJOQU1FDQoNCiAgICBpZiAoJGN1cnJlbnQgLWVxICRkZXNpcmVkKSB7DQogICAgICAgIFdyaXRlLU91dHB1dCAiRGV0ZWN0ZWQ6IGRldmljZSBuYW1lIG1hdGNoZXMgZGVzaXJlZCBuYW1lICgkZGVzaXJlZCkuIg0KICAgICAgICBleGl0IDANCiAgICB9DQogICAgZWxzZSB7DQogICAgICAgIFdyaXRlLU91dHB1dCAiTm90IGRldGVjdGVkOiBjdXJyZW50IG5hbWUgKCRjdXJyZW50KSBkb2VzIG5vdCBtYXRjaCBkZXNpcmVkIG5hbWUgKCRkZXNpcmVkKS4iDQogICAgICAgIGV4aXQgMQ0KICAgIH0NCn0NCmNhdGNoIHsNCiAgICBXcml0ZS1PdXRwdXQgIk5vdCBkZXRlY3RlZDogZXJyb3IgZGV0ZXJtaW5pbmcgZGVzaXJlZCBuYW1lLiAkKCRfLkV4Y2VwdGlvbi5NZXNzYWdlKSINCiAgICBleGl0IDENCn0=",
+                      "operationType":  "notConfigured",
+                      "operator":  "notConfigured",
+                      "comparisonValue":  null
+                  }
+              ],
+    "installExperience":  {
+                              "runAsAccount":  "system",
+                              "maxRunTimeInMinutes":  10,
+                              "deviceRestartBehavior":  "allow"
+                          },
+    "returnCodes":  [
+                        {
+                            "returnCode":  0,
+                            "type":  "success"
+                        },
+                        {
+                            "returnCode":  1707,
+                            "type":  "success"
+                        },
+                        {
+                            "returnCode":  3010,
+                            "type":  "softReboot"
+                        },
+                        {
+                            "returnCode":  1641,
+                            "type":  "hardReboot"
+                        },
+                        {
+                            "returnCode":  1618,
+                            "type":  "retry"
+                        }
+                    ],
+    "categories":  [
+                       {
+                           "id":  "981deed8-6857-4e78-a50e-c3f61d312737",
+                           "displayName":  "Computer Management",
+                           "lastModifiedDateTime":  "0001-01-01T00:00:00Z"
+                       }
+                   ],
+    "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceAppManagement/mobileApps(\u0027c53dabed-ad77-4eff-9498-f454febd652f\u0027)/microsoft.graph.win32LobApp/assignments",
+    "assignments":  [
+
+                    ]
+}

@@ -1,4 +1,4 @@
-﻿{
+{
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
   "createdDateTime": "2024-08-27T14:33:09.3311679Z",
   "creationSource": null,
