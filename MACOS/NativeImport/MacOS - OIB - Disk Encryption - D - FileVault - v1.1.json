@@ -4,7 +4,7 @@
   "creationSource": null,
   "description": "",
   "lastModifiedDateTime": "2024-08-29T12:13:58.8294917Z",
-  "name": "MacOS - OIB - Disk Encryption - D - FileVault - v1.0",
+  "name": "MacOS - OIB - Disk Encryption - D - FileVault - v1.1",
   "platforms": "macOS",
   "priorityMetaData": null,
   "roleScopeTagIds": ["0"],
@@ -28,6 +28,17 @@
           {
             "settingValueTemplateReference": null,
             "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "com.apple.mcx.filevault2_defer",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "settingValueTemplateReference": null,
+                  "value": "com.apple.mcx.filevault2_defer_true",
+                  "children": []
+                }
+              },
               {
                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
                 "settingDefinitionId": "com.apple.mcx.filevault2_enable",
