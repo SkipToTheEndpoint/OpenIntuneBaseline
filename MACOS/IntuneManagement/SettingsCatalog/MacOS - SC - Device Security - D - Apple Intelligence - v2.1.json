@@ -1,0 +1,374 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(settings(),assignments())/$entity",
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
+  "@odata.id": "deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')",
+  "@odata.editLink": "deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')",
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2026-05-31T18:26:12.2979203Z",
+  "creationSource": null,
+  "description": "",
+  "lastModifiedDateTime@odata.type": "#DateTimeOffset",
+  "lastModifiedDateTime": "2026-06-05T21:23:12.8822084Z",
+  "name": "MacOS - SC - Device Security - D - Apple Intelligence - v2.1",
+  "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
+  "platforms": "macOS",
+  "priorityMetaData": null,
+  "roleScopeTagIds@odata.type": "#Collection(String)",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settingCount": 3,
+  "technologies@odata.type": "#microsoft.graph.deviceManagementConfigurationTechnologies",
+  "technologies": "mdm,appleRemoteManagement",
+  "id": "4a5a372d-8492-42b7-b478-f61f8b479218",
+  "templateReference": {
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "",
+    "templateFamily@odata.type": "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null
+  },
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings",
+  "settings@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings/$ref",
+  "settings@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings",
+  "settings": [
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "@odata.id": "deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('0')",
+      "@odata.editLink": "deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('0')",
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "externalintelligencesettings_externalintelligencesettings",
+        "settingInstanceTemplateReference": null,
+        "auditRuleInformation": null,
+        "groupSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+        "groupSettingCollectionValue": [
+          {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+            "settingValueTemplateReference": null,
+            "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "externalintelligencesettings_allowsignin",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "externalintelligencesettings_allowsignin_false",
+                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "externalintelligencesettings_enabled",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "externalintelligencesettings_enabled_false",
+                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                  "children": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('0')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('0')/settingDefinitions"
+    },
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "@odata.id": "deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('1')",
+      "@odata.editLink": "deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('1')",
+      "id": "1",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "intelligencesettings_intelligencesettings",
+        "settingInstanceTemplateReference": null,
+        "auditRuleInformation": null,
+        "groupSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+        "groupSettingCollectionValue": [
+          {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+            "settingValueTemplateReference": null,
+            "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "intelligencesettings_allowappleintelligencereport",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "intelligencesettings_allowappleintelligencereport_false",
+                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "intelligencesettings_allowgenmoji",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "intelligencesettings_allowgenmoji_false",
+                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "intelligencesettings_allowimageplayground",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "intelligencesettings_allowimageplayground_false",
+                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "intelligencesettings_allowwritingtools",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "intelligencesettings_allowwritingtools_false",
+                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                  "children": []
+                }
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "intelligencesettings_apps",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "groupSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                "groupSettingCollectionValue": [
+                  {
+                    "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                    "settingValueTemplateReference": null,
+                    "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                    "children": [
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                        "settingDefinitionId": "intelligencesettings_apps_mail",
+                        "settingInstanceTemplateReference": null,
+                        "auditRuleInformation": null,
+                        "groupSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                        "groupSettingCollectionValue": [
+                          {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                            "settingValueTemplateReference": null,
+                            "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                            "children": [
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "intelligencesettings_apps_mail_allowsmartreplies",
+                                "settingInstanceTemplateReference": null,
+                                "auditRuleInformation": null,
+                                "choiceSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "intelligencesettings_apps_mail_allowsmartreplies_false",
+                                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                  "children": []
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "intelligencesettings_apps_mail_allowsummary",
+                                "settingInstanceTemplateReference": null,
+                                "auditRuleInformation": null,
+                                "choiceSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "intelligencesettings_apps_mail_allowsummary_false",
+                                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                  "children": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                        "settingDefinitionId": "intelligencesettings_apps_notes",
+                        "settingInstanceTemplateReference": null,
+                        "auditRuleInformation": null,
+                        "groupSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                        "groupSettingCollectionValue": [
+                          {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                            "settingValueTemplateReference": null,
+                            "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                            "children": [
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "intelligencesettings_apps_notes_allowtranscription",
+                                "settingInstanceTemplateReference": null,
+                                "auditRuleInformation": null,
+                                "choiceSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "intelligencesettings_apps_notes_allowtranscription_false",
+                                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                  "children": []
+                                }
+                              },
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "intelligencesettings_apps_notes_allowtranscriptionsummary",
+                                "settingInstanceTemplateReference": null,
+                                "auditRuleInformation": null,
+                                "choiceSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "intelligencesettings_apps_notes_allowtranscriptionsummary_false",
+                                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                  "children": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                        "settingDefinitionId": "intelligencesettings_apps_safari",
+                        "settingInstanceTemplateReference": null,
+                        "auditRuleInformation": null,
+                        "groupSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+                        "groupSettingCollectionValue": [
+                          {
+                            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+                            "settingValueTemplateReference": null,
+                            "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                            "children": [
+                              {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "intelligencesettings_apps_safari_allowsummary",
+                                "settingInstanceTemplateReference": null,
+                                "auditRuleInformation": null,
+                                "choiceSettingValue": {
+                                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                                  "settingValueTemplateReference": null,
+                                  "value": "intelligencesettings_apps_safari_allowsummary_false",
+                                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                                  "children": []
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "intelligencesettings_forceondeviceonlydictation",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "intelligencesettings_forceondeviceonlydictation_true",
+                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                  "children": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('1')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('1')/settingDefinitions"
+    },
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "@odata.id": "deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('2')",
+      "@odata.editLink": "deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('2')",
+      "id": "2",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+        "settingDefinitionId": "sirisettings_sirisettings",
+        "settingInstanceTemplateReference": null,
+        "auditRuleInformation": null,
+        "groupSettingCollectionValue@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationGroupSettingValue)",
+        "groupSettingCollectionValue": [
+          {
+            "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingValue",
+            "settingValueTemplateReference": null,
+            "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+            "children": [
+              {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                "settingDefinitionId": "sirisettings_enabled",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "choiceSettingValue": {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "sirisettings_enabled_false",
+                  "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+                  "children": []
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('2')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/settings('2')/settingDefinitions"
+    }
+  ],
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/assignments",
+  "assignments@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/assignments/$ref",
+  "assignments@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/assignments",
+  "assignments": [],
+  "#microsoft.graph.assign": {
+    "title": "microsoft.graph.assign",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/microsoft.graph.assign"
+  },
+  "#microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget": {
+    "title": "microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget"
+  },
+  "#microsoft.graph.createCopy": {
+    "title": "microsoft.graph.createCopy",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/microsoft.graph.createCopy"
+  },
+  "#microsoft.graph.reorder": {
+    "title": "microsoft.graph.reorder",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/microsoft.graph.reorder"
+  },
+  "#microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget": {
+    "title": "microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget"
+  },
+  "#microsoft.graph.setEnrollmentTimeDeviceMembershipTarget": {
+    "title": "microsoft.graph.setEnrollmentTimeDeviceMembershipTarget",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/microsoft.graph.setEnrollmentTimeDeviceMembershipTarget"
+  },
+  "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy": {
+    "title": "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('4a5a372d-8492-42b7-b478-f61f8b479218')/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+  }
+}

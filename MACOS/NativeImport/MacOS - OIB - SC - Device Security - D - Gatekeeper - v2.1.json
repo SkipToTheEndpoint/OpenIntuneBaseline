@@ -1,18 +1,18 @@
 ﻿{
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-    "createdDateTime": "2025-12-10T12:14:21.5341532Z",
+    "createdDateTime": "2026-06-05T21:10:40.9895361Z",
     "creationSource": null,
     "description": "",
-    "lastModifiedDateTime": "2026-01-28T12:04:21.4676579Z",
-    "name": "MacOS - OIB - SC - Device Security - D - Gatekeeper - v2.0",
+    "lastModifiedDateTime": "2026-06-05T21:15:13.2458176Z",
+    "name": "MacOS - OIB - SC - Device Security - D - Gatekeeper - v2.1",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
         "0"
     ],
-    "settingCount": 2,
+    "settingCount": 3,
     "technologies": "mdm,appleRemoteManagement",
-    "id": "00b004d4-337a-441b-940f-e29f2a44fe1b",
+    "id": "a9e53995-2a60-48c9-9f56-968a4c09816d",
     "templateReference": {
         "templateId": "",
         "templateFamily": "none",
@@ -22,6 +22,33 @@
     "settings": [
         {
             "id": "0",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.appstore_com.apple.appstore",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "groupSettingCollectionValue": [
+                    {
+                        "settingValueTemplateReference": null,
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.appstore_restrict-store-softwareupdate-only",
+                                "settingInstanceTemplateReference": null,
+                                "auditRuleInformation": null,
+                                "choiceSettingValue": {
+                                    "settingValueTemplateReference": null,
+                                    "value": "com.apple.appstore_restrict-store-softwareupdate-only_true",
+                                    "children": []
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1",
             "settingInstance": {
                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                 "settingDefinitionId": "com.apple.systempolicy.control_com.apple.systempolicy.control",
@@ -60,7 +87,7 @@
                                 "auditRuleInformation": null,
                                 "choiceSettingValue": {
                                     "settingValueTemplateReference": null,
-                                    "value": "com.apple.systempolicy.control_enablexprotectmalwareupload_true",
+                                    "value": "com.apple.systempolicy.control_enablexprotectmalwareupload_false",
                                     "children": []
                                 }
                             }
@@ -70,7 +97,7 @@
             }
         },
         {
-            "id": "1",
+            "id": "2",
             "settingInstance": {
                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                 "settingDefinitionId": "com.apple.systempolicy.managed_com.apple.systempolicy.managed",
