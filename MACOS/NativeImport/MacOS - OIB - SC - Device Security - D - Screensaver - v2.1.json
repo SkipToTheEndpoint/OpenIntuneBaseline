@@ -1,10 +1,10 @@
 ﻿{
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-    "createdDateTime": "2026-01-28T12:10:18.9636133Z",
+    "createdDateTime": "2026-06-05T21:09:34.818483Z",
     "creationSource": null,
     "description": "",
-    "lastModifiedDateTime": "2026-01-28T12:13:21.7071589Z",
-    "name": "MacOS - OIB - SC - Device Security - D - Screensaver - v2.0",
+    "lastModifiedDateTime": "2026-06-05T21:10:26.9095322Z",
+    "name": "MacOS - OIB - SC - Device Security - D - Screensaver - v2.1",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -12,7 +12,7 @@
     ],
     "settingCount": 1,
     "technologies": "mdm,appleRemoteManagement",
-    "id": "1aae0c23-5fa9-4697-8eb6-fa02ca48b40f",
+    "id": "35ca7c41-c2bd-4b49-968a-fc0b75084a80",
     "templateReference": {
         "templateId": "",
         "templateFamily": "none",
@@ -50,7 +50,7 @@
                                 "simpleSettingValue": {
                                     "@odata.type": "#microsoft.graph.deviceManagementConfigurationIntegerSettingValue",
                                     "settingValueTemplateReference": null,
-                                    "value": 60
+                                    "value": 0
                                 }
                             },
                             {

@@ -1,10 +1,10 @@
 ﻿{
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-    "createdDateTime": "2025-12-10T12:18:24.6694919Z",
+    "createdDateTime": "2026-06-05T21:08:39.7837794Z",
     "creationSource": null,
     "description": "",
-    "lastModifiedDateTime": "2025-12-25T15:08:45.3477288Z",
-    "name": "MacOS - OIB - SC - Updates - D - Update Configuration - v2.0",
+    "lastModifiedDateTime": "2026-06-05T21:09:16.3063966Z",
+    "name": "MacOS - OIB - SC - Updates - D - Update Configuration - v2.1",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
@@ -12,7 +12,7 @@
     ],
     "settingCount": 2,
     "technologies": "mdm,appleRemoteManagement",
-    "id": "19852da3-fea3-47c2-b407-751e5a346933",
+    "id": "041777c5-eae1-49bf-8714-1af8ffb3c93b",
     "templateReference": {
         "templateId": "",
         "templateFamily": "none",
@@ -139,17 +139,6 @@
                                 ]
                             },
                             {
-                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                "settingDefinitionId": "softwareupdate_notifications",
-                                "settingInstanceTemplateReference": null,
-                                "auditRuleInformation": null,
-                                "choiceSettingValue": {
-                                    "settingValueTemplateReference": null,
-                                    "value": "softwareupdate_notifications_true",
-                                    "children": []
-                                }
-                            },
-                            {
                                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                                 "settingDefinitionId": "softwareupdate_rapidsecurityresponse",
                                 "settingInstanceTemplateReference": null,
@@ -168,10 +157,32 @@
                                                     "value": "softwareupdate_rapidsecurityresponse_enable_true",
                                                     "children": []
                                                 }
+                                            },
+                                            {
+                                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                                "settingDefinitionId": "softwareupdate_rapidsecurityresponse_enablerollback",
+                                                "settingInstanceTemplateReference": null,
+                                                "auditRuleInformation": null,
+                                                "choiceSettingValue": {
+                                                    "settingValueTemplateReference": null,
+                                                    "value": "softwareupdate_rapidsecurityresponse_enablerollback_false",
+                                                    "children": []
+                                                }
                                             }
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "softwareupdate_notifications",
+                                "settingInstanceTemplateReference": null,
+                                "auditRuleInformation": null,
+                                "choiceSettingValue": {
+                                    "settingValueTemplateReference": null,
+                                    "value": "softwareupdate_notifications_true",
+                                    "children": []
+                                }
                             }
                         ]
                     }

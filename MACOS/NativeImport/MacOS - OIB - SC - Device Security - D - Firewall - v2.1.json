@@ -1,18 +1,18 @@
 ﻿{
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies/$entity",
-    "createdDateTime": "2024-08-30T10:16:37.2662981Z",
+    "createdDateTime": "2026-06-05T21:32:16.1960801Z",
     "creationSource": null,
     "description": "",
-    "lastModifiedDateTime": "2026-01-28T12:04:00.5583966Z",
-    "name": "MacOS - OIB - SC - Device Security - D - Firewall - v2.0",
+    "lastModifiedDateTime": "2026-06-05T21:32:58.2901694Z",
+    "name": "MacOS - OIB - SC - Device Security - D - Firewall - v2.1",
     "platforms": "macOS",
     "priorityMetaData": null,
     "roleScopeTagIds": [
         "0"
     ],
-    "settingCount": 1,
+    "settingCount": 2,
     "technologies": "mdm,appleRemoteManagement",
-    "id": "a608896c-de15-4f5e-ae7a-0e23fb53b1bc",
+    "id": "8b7bb633-9213-4794-bd0e-4c73511466d5",
     "templateReference": {
         "templateId": "",
         "templateFamily": "none",
@@ -22,6 +22,33 @@
     "settings": [
         {
             "id": "0",
+            "settingInstance": {
+                "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
+                "settingDefinitionId": "com.apple.assetcache.managed_com.apple.assetcache.managed",
+                "settingInstanceTemplateReference": null,
+                "auditRuleInformation": null,
+                "groupSettingCollectionValue": [
+                    {
+                        "settingValueTemplateReference": null,
+                        "children": [
+                            {
+                                "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+                                "settingDefinitionId": "com.apple.assetcache.managed_autoactivation",
+                                "settingInstanceTemplateReference": null,
+                                "auditRuleInformation": null,
+                                "choiceSettingValue": {
+                                    "settingValueTemplateReference": null,
+                                    "value": "com.apple.assetcache.managed_autoactivation_true",
+                                    "children": []
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "id": "1",
             "settingInstance": {
                 "@odata.type": "#microsoft.graph.deviceManagementConfigurationGroupSettingCollectionInstance",
                 "settingDefinitionId": "com.apple.security.firewall_com.apple.security.firewall",
