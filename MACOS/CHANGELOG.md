@@ -1,5 +1,19 @@
 # OIB MacOS Change Log
 
+# MacOS v1.1 - 2026-07-14
+
+## Added
+### Scripts
+**Enable-OneDriveOpenAtLogin** (suggested policy name: `MacOS - OIB - Microsoft OneDrive - U - Open at Login - v1.1`)
+* New user-context shell script (in the new `MACOS/Scripts` folder) that enables the OneDrive login item via OneDrive's `/createloginitem` command (OneDrive 26.027+), replacing the removed "Open at login" setting below. The script is idempotent: it no-ops until OneDrive >= 26.027 is installed, performs the enable exactly once, then a per-user marker keeps every later run a no-op. It works together with the Managed Login Items in "MacOS - OIB - Microsoft OneDrive - D - Service and Access", which allow and lock the login item but cannot enable it. See `MACOS/Scripts/README.md` for deployment settings. Adapted from [microsoft/intune-my-macs PR #39](https://github.com/microsoft/intune-my-macs/pull/39).
+
+## Changed/Updated
+### Settings Catalog
+**MacOS - OIB - Microsoft OneDrive - U - Known Folder Move** (v1.0 → v1.1)
+* Removed the setting "Open at login". The underlying `OpenAtLogin` managed preference is deprecated and has been a no-op since OneDrive sync app 24.113, so the policy was silently doing nothing for this setting. A Managed Login Items payload can't replace it either, as it can only allow/lock a login item, not enable one. OneDrive start-at-login is now handled by the new `Enable-OneDriveOpenAtLogin` script above.
+
+---
+
 # MacOS v1.0 Release - 2024-09-02
 As per PR [#35](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/pull/35) by @ugurkocde
 

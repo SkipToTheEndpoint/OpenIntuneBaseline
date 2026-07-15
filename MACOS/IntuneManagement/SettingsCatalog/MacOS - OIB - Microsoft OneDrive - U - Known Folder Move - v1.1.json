@@ -9,7 +9,7 @@
     "description":  "",
     "lastModifiedDateTime@odata.type":  "#DateTimeOffset",
     "lastModifiedDateTime":  "2024-08-30T10:17:13.6247849Z",
-    "name":  "MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.0",
+    "name":  "MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.1",
     "platforms@odata.type":  "#microsoft.graph.deviceManagementConfigurationPlatforms",
     "platforms":  "macOS",
     "priorityMetaData":  null,
@@ -17,7 +17,7 @@
     "roleScopeTagIds":  [
                             "0"
                         ],
-    "settingCount":  15,
+    "settingCount":  14,
     "technologies@odata.type":  "#microsoft.graph.deviceManagementConfigurationTechnologies",
     "technologies":  "mdm,appleRemoteManagement",
     "id":  "1ca2dd46-7a65-4006-aee0-9d1ab134f7d9",
@@ -341,28 +341,6 @@
                          "@odata.editLink":  "deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002713\u0027)",
                          "id":  "13",
                          "settingInstance":  {
-                                                 "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
-                                                 "settingDefinitionId":  "com.apple.managedclient.preferences_openatlogin",
-                                                 "settingInstanceTemplateReference":  null,
-                                                 "choiceSettingValue":  {
-                                                                            "@odata.type":  "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
-                                                                            "settingValueTemplateReference":  null,
-                                                                            "value":  "com.apple.managedclient.preferences_openatlogin_true",
-                                                                            "children@odata.type":  "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
-                                                                            "children":  [
-
-                                                                                         ]
-                                                                        }
-                                             },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002713\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002713\u0027)/settingDefinitions"
-                     },
-                     {
-                         "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSetting",
-                         "@odata.id":  "deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002714\u0027)",
-                         "@odata.editLink":  "deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002714\u0027)",
-                         "id":  "14",
-                         "settingInstance":  {
                                                  "@odata.type":  "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
                                                  "settingDefinitionId":  "com.apple.managedclient.preferences_kfmoptinwithwizard",
                                                  "settingInstanceTemplateReference":  null,
@@ -372,8 +350,8 @@
                                                                             "value":  "%OrganizationId%"
                                                                         }
                                              },
-                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002714\u0027)/settingDefinitions/$ref",
-                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002714\u0027)/settingDefinitions"
+                         "settingDefinitions@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002713\u0027)/settingDefinitions/$ref",
+                         "settingDefinitions@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies(\u00271ca2dd46-7a65-4006-aee0-9d1ab134f7d9\u0027)/settings(\u002713\u0027)/settingDefinitions"
                      }
                  ],
     "#microsoft.graph.assign":  {
