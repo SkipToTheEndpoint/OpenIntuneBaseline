@@ -1,0 +1,173 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+  "@odata.editLink": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')",
+  "@odata.id": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')",
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
+  "assignments@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/assignments/$ref",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/assignments",
+  "assignments@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/assignments",
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2026-06-26T09:29:14.9205075Z",
+  "lastModifiedDateTime@odata.type": "#DateTimeOffset",
+  "lastModifiedDateTime": "2026-06-26T09:29:14.9205075Z",
+  "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
+  "platforms": "windows10",
+  "roleScopeTagIds@odata.type": "#Collection(String)",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settings@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings/$ref",
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings",
+  "settings@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings",
+  "settings": [
+    {
+      "@odata.editLink": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('0')",
+      "@odata.id": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('0')",
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('0')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('0')/settingDefinitions",
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "auditRuleInformation": null,
+        "choiceSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+          "children": [],
+          "settingValueTemplateReference": null,
+          "value": "user_vendor_msft_policy_config_microsoft_edgev119~policy~microsoft_edge~manageability_edgemanagementuserpolicyoverridescloudmachinepolicy_1"
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev119~policy~microsoft_edge~manageability_edgemanagementuserpolicyoverridescloudmachinepolicy",
+        "settingInstanceTemplateReference": null
+      }
+    },
+    {
+      "@odata.editLink": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('1')",
+      "@odata.id": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('1')",
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('1')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('1')/settingDefinitions",
+      "id": "1",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "auditRuleInformation": null,
+        "choiceSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+          "children": [],
+          "settingValueTemplateReference": null,
+          "value": "user_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge~manageability_edgemanagementenabled_1"
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge~manageability_edgemanagementenabled",
+        "settingInstanceTemplateReference": null
+      }
+    },
+    {
+      "@odata.editLink": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('2')",
+      "@odata.id": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('2')",
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('2')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('2')/settingDefinitions",
+      "id": "2",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "auditRuleInformation": null,
+        "choiceSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+          "children": [],
+          "settingValueTemplateReference": null,
+          "value": "user_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge~manageability_edgemanagementextensionsfeedbackenabled_1"
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev115~policy~microsoft_edge~manageability_edgemanagementextensionsfeedbackenabled",
+        "settingInstanceTemplateReference": null
+      }
+    },
+    {
+      "@odata.editLink": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('3')",
+      "@odata.id": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('3')",
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('3')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('3')/settingDefinitions",
+      "id": "3",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "auditRuleInformation": null,
+        "choiceSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+          "children": [],
+          "settingValueTemplateReference": null,
+          "value": "user_vendor_msft_policy_config_microsoft_edgev119~policy~microsoft_edge~manageability_edgemanagementpolicyoverridesplatformpolicy_1"
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev119~policy~microsoft_edge~manageability_edgemanagementpolicyoverridesplatformpolicy",
+        "settingInstanceTemplateReference": null
+      }
+    },
+    {
+      "@odata.editLink": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('4')",
+      "@odata.id": "deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('4')",
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('4')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/settings('4')/settingDefinitions",
+      "id": "4",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "auditRuleInformation": null,
+        "choiceSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+          "children": [],
+          "settingValueTemplateReference": null,
+          "value": "user_vendor_msft_policy_config_microsoft_edgev89~policy~microsoft_edge~manageability_mamenabled_1"
+        },
+        "settingDefinitionId": "user_vendor_msft_policy_config_microsoft_edgev89~policy~microsoft_edge~manageability_mamenabled",
+        "settingInstanceTemplateReference": null
+      }
+    }
+  ],
+  "technologies@odata.type": "#microsoft.graph.deviceManagementConfigurationTechnologies",
+  "technologies": "mdm",
+  "creationSource": null,
+  "description": "OIBID:88EEB6C0-A110-4473-BF63-79FB1649CD8B",
+  "id": "72635594-99c3-4822-a408-0de17e3f97eb",
+  "name": "Win - OIB - SC - Microsoft Edge - U - Management - v4.0",
+  "priorityMetaData": null,
+  "settingCount": 5,
+  "templateReference": {
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateFamily@odata.type": "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null,
+    "templateId": ""
+  },
+  "#microsoft.graph.assign": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/microsoft.graph.assign",
+    "title": "microsoft.graph.assign"
+  },
+  "#microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget",
+    "title": "microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget"
+  },
+  "#microsoft.graph.createCopy": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/microsoft.graph.createCopy",
+    "title": "microsoft.graph.createCopy"
+  },
+  "#microsoft.graph.reorder": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/microsoft.graph.reorder",
+    "title": "microsoft.graph.reorder"
+  },
+  "#microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget",
+    "title": "microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget"
+  },
+  "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+    "title": "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+  },
+  "#microsoft.graph.setEnrollmentTimeDeviceMembershipTarget": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('72635594-99c3-4822-a408-0de17e3f97eb')/microsoft.graph.setEnrollmentTimeDeviceMembershipTarget",
+    "title": "microsoft.graph.setEnrollmentTimeDeviceMembershipTarget"
+  }
+}
