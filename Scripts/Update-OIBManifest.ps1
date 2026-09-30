@@ -5,6 +5,7 @@
 
 .DESCRIPTION
     Validate mode  (default): Read-only check. Exits with code 1 if any inconsistencies are found.
+    WhatIf mode:              Dry-run of Update. Shows what would change without writing any files.
     Update mode:              Stamps new OIBIDs into policy JSON description fields, rotates GUIDs
                               when a policy version is bumped, and keeps PolicyManifest.json in sync.
 
@@ -14,7 +15,7 @@
     is prepended to the previousVersions array.
 
 .PARAMETER Mode
-    'Validate' (default) or 'Update'.
+    'Validate' (default), 'WhatIf', or 'Update'.
 
 .PARAMETER Platform
     'Android', 'BYOD', 'iOS', 'MacOS', 'Windows', 'Windows365', or 'All' (default).
@@ -34,7 +35,7 @@
 #>
 [CmdletBinding()]
 param(
-    [ValidateSet('Validate', 'Update')]
+    [ValidateSet('Validate', 'WhatIf', 'Update')]
     [string]$Mode = 'Validate',
 
     [ValidateSet('Android', 'BYOD', 'iOS', 'MacOS', 'Windows', 'Windows365', 'All')]
@@ -202,9 +203,9 @@ function Invoke-Validate ([string]$PlatformFolder, [string]$PlatformName) {
         }
     }
 
-    # Orphaned manifest entries (no matching file)
+    # Orphaned manifest entries (no matching file); deprecated tombstones are intentionally file-less
     foreach ($e in $manifest.policies) {
-        if (-not $matchedNames.ContainsKey($e.name)) {
+        if (-not $matchedNames.ContainsKey($e.name) -and $e.status -ne 'deprecated') {
             $issues.Add("Manifest entry has no matching file: $($e.name)")
         }
     }
@@ -215,7 +216,7 @@ function Invoke-Validate ([string]$PlatformFolder, [string]$PlatformName) {
 # ---------------------------------------------------------------------------
 # Update
 # ---------------------------------------------------------------------------
-function Invoke-Update ([string]$PlatformFolder, [string]$PlatformName, [string]$OibVersionOverride) {
+function Invoke-Update ([string]$PlatformFolder, [string]$PlatformName, [string]$OibVersionOverride, [switch]$DryRun) {
     $manifestPath = Join-Path $RepoRoot $PlatformFolder 'PolicyManifest.json'
     $changes      = [System.Collections.Generic.List[string]]::new()
 
@@ -265,7 +266,7 @@ function Invoke-Update ([string]$PlatformFolder, [string]$PlatformName, [string]
             # --- NEW policy ---
             $guid          = (New-Guid).ToString().ToUpper()
             $j.description = Set-OibIdInDescription $j.description $guid
-            Write-JsonFile $p.File.FullName $j
+            if (-not $DryRun) { Write-JsonFile $p.File.FullName $j }
 
             $newEntry = [PSCustomObject]@{
                 oibId               = $guid
@@ -275,7 +276,7 @@ function Invoke-Update ([string]$PlatformFolder, [string]$PlatformName, [string]
                 scope               = Get-ScopeFromName $p.PolicyName
                 addedIn             = $currentOibVersion
                 status              = 'active'
-                supersededBy        = ''
+                supersededBy        = @()
                 skuRequirements     = ''
                 licenseRequirements = ''
                 tags                = @()
@@ -293,7 +294,7 @@ function Invoke-Update ([string]$PlatformFolder, [string]$PlatformName, [string]
 
             $guid          = (New-Guid).ToString().ToUpper()
             $j.description = Set-OibIdInDescription $j.description $guid
-            Write-JsonFile $p.File.FullName $j
+            if (-not $DryRun) { Write-JsonFile $p.File.FullName $j }
 
             $entry.oibId            = $guid
             $entry.name             = $p.PolicyName
@@ -305,15 +306,17 @@ function Invoke-Update ([string]$PlatformFolder, [string]$PlatformName, [string]
             $fileId = Get-OibIdFromDescription $j.description
             if ($fileId -ne $entry.oibId) {
                 $j.description = Set-OibIdInDescription $j.description $entry.oibId
-                Write-JsonFile $p.File.FullName $j
+                if (-not $DryRun) { Write-JsonFile $p.File.FullName $j }
                 $changes.Add("FIXED    $($p.PolicyName) [restored $($entry.oibId)]")
             }
         }
     }
 
     $manifest.policies = $policyList.ToArray()
-    $enc = [System.Text.UTF8Encoding]::new($false)
-    [System.IO.File]::WriteAllText($manifestPath, ($manifest | ConvertTo-Json -Depth 10), $enc)
+    if (-not $DryRun) {
+        $enc = [System.Text.UTF8Encoding]::new($false)
+        [System.IO.File]::WriteAllText($manifestPath, ($manifest | ConvertTo-Json -Depth 10), $enc)
+    }
 
     return $changes
 }
@@ -347,7 +350,8 @@ foreach ($plat in $platforms) {
             }
         }
     } else {
-        $changes = @(Invoke-Update $folder $plat $OibVersion)
+        $isDryRun = ($Mode -eq 'WhatIf')
+        $changes = @(Invoke-Update $folder $plat $OibVersion -DryRun:$isDryRun)
         if ($changes.Count -gt 0) {
             $changes | ForEach-Object { $allChanges.Add("[$plat] $_"); Write-Host "  $_" }
         } else {
@@ -364,6 +368,12 @@ if ($Mode -eq 'Validate') {
         Write-Host "`nValidation FAILED - $($allIssues.Count) issue(s) found:" -ForegroundColor Red
         $allIssues | ForEach-Object { Write-Host "  $_" -ForegroundColor Red }
         exit 1
+    }
+} elseif ($Mode -eq 'WhatIf') {
+    if ($allChanges.Count -eq 0) {
+        Write-Host "`nNo changes would be made."
+    } else {
+        Write-Host "`n$($allChanges.Count) change(s) would be made (no files written)." -ForegroundColor Cyan
     }
 } else {
     Write-Host "`n$($allChanges.Count) total change(s) made."
