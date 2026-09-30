@@ -1,0 +1,54 @@
+OIB/CIS Deviations,,,
+OIB Version:,v4.0,,
+CIS Version:,v5.0.0,,
+,,,
+CIS Reference,Setting Name,OIB Rationale for Non-Implementation,Notes
+4.4.5,Ensure 'WDigest Authentication' is set to 'Disabled',Legacy policy. Enforces default. Mitigated by other more modern LSASS security controls.,
+4.5.9,Ensure 'MSS: (SafeDllSearchMode) Enable Safe DLL search mode (recommended)' is set to 'Enabled',Enforces default behaviour.,
+4.5.12,Ensure 'MSS: (WarningLevel) Percentage threshold for the security event log at which the system will generate a warning' is set to 'Enabled: 90% or less',Auditing configured to rotate logs.,Win - OIB - SC - Device Security - D - Audit and Event Logging
+4.6.4.1,Ensure 'Turn off multicast name resolution' is set to 'Enabled',Breaks DNS-SD used in Delivery Optimization.,
+4.6.9.2,Ensure 'Prohibit use of Internet Connection Sharing on your DNS domain network' is set to 'Enabled',Alternative mitigation in place.,Win - OIB - SC - Device Security - D - Security Hardening
+4.6.11.1,"Ensure 'Hardened UNC Paths' is set to 'Enabled, with Require Mutual Authentication, Require Integrity, and “Require Privacy” set for all NETLOGON and SYSVOL shares'",Entra Joined devices to not contact NETLOGON or SYSVOL shares. Implementation requires share FQDN's which are environment-specific.,
+4.10.19.1,Ensure 'Continue experiences on this device' is set to 'Disabled',Alternative mitigation in place.,
+4.10.26.1,Ensure 'Block user from showing account details on sign-in' is set to 'Enabled',Significantly impacts WHfB experience.,
+4.10.26.2,Ensure 'Do not display network selection UI' is set to 'Enabled',Potentially impacts user experience. Dubious security value. Requires physical device access.,
+4.10.26.3,Ensure 'Do not enumerate connected users on domain-joined computers' is set to 'Enabled',Not relevant for Entra joined devices.,
+4.10.26.4,Ensure 'Enumerate local users on domain-joined computers' is set to 'Disabled',Not relevant for Entra joined devices.,
+4.10.26.6,Ensure 'Turn off picture password sign-in' is set to 'Enabled',"Functionality not available by default, superceded by Windows Hello.",
+4.10.26.7,Ensure 'Turn on convenience PIN sign-in' is set to 'Disabled',"Functionality not available by default, superceded by Windows Hello.",
+4.10.44.1.2,Ensure 'Enable Windows NTP Server' is set to 'Disabled',Functionality not available by default. Standard users cannot enable NTP server capabilities.,
+4.11.5.1,Ensure 'Do not preserve zone information in file attachments (User)' is set to 'Disabled',Enforces default behaviour.,
+4.11.5.2,Ensure 'Notify antivirus programs when opening attachments (User)' is set to 'Enabled',Responsibility of AV/EDR Product.,
+4.11.8.1,Ensure 'Do not display the password reveal button' is set to 'Enabled',Removed in v3.7 following updated NIST & CIS Guidance.,https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/146
+4.11.8.3,Ensure 'Prevent the use of security questions for local accounts' is set to 'Enabled',The only local account available is managed via LAPS.,
+4.11.18.4,Ensure 'Turn off shell protocol protected mode' is set to 'Disabled',Enforces default behaviour.,
+4.11.30.1,Ensure 'Prevent users from sharing files within their profile. (User)' is set to 'Enabled',Functionality no longer exists.,
+4.11.35.4.11.1,Ensure 'Do not delete temp folders upon exit' is set to 'Disabled',Enforces default behaviour.,
+4.11.41.1,Ensure 'Turn off the offer to update to the latest version of Windows' is set to 'Enabled',Managed via Autopatch/WUfB rings.,
+4.11.49.1,Ensure 'Enable MPR notifications for the system' is set to 'Disabled',Enforces default behaviour.,
+4.11.49.2,Ensure 'Sign-in and lock last interactive user automatically after a restart' is set to 'Disabled',Net positive on user experience and benefits patch compliance without user interruption. Only enabled when BitLocker is on and not suspended.,Win - OIB - SC - Windows User Experience - D - Automatic Restart Sign-On - v3.8
+33.4,Ensure 'Disable Consumer Account State Content' is set to 'Enabled',Alternative mitigation in place.,
+33.5,Ensure 'Do not show feedback notifications' is set to 'Feedback notifications are disabled',Managable at tenant-level,https://learn.microsoft.com/en-gb/microsoft-365/admin/misc/feedback-user-control
+49.3,Configure 'Accounts: Rename administrator account',Security by obscurity. https://skiptotheendpoint.co.uk/dot-slash-administrator-a-security-risk-analysis/,
+49.4,Configure 'Accounts: Rename guest account',Guest account is disabled and disallowed for login by policy. Rename achieves nothing.,Win - OIB - SC - Device Security - D - Local Security Policies - v4.0
+49.6,Ensure 'Interactive logon: Do not display last signed-in' is set to 'Enabled',Breaks Windows Hello by causing the user to always have to enter their credentials.,
+49.9,Configure 'Interactive logon: Message text for users attempting to log on',Can break Autopilot and preprovisioning. Unnecessary extra steps for users when they don't read it anyway.,Organisation Acceptable Use Policy signed to get an account.
+49.1,Configure 'Interactive logon: Message title for users attempting to log on',Can break Autopilot and preprovisioning. Unnecessary extra steps for users when they don't read it anyway.,Organisation Acceptable Use Policy signed to get an account.
+49.19,Ensure 'Network security: Allow Local System to use computer identity for NTLM' is set to 'Allow',Not relevant for Entra joined devices accessing on-prem resources via Cloud Kerberos Trust.,
+49.2,Ensure 'Network Security: Allow PKU2U authentication requests' is set to 'Block',Enforces default behaviour. Not relevant for Entra joined devices.,
+49.24,Ensure 'Network security: Restrict NTLM: Audit Incoming NTLM Traffic' is set to 'Enable auditing for all accounts',Not relevant for Entra joined devices accessing on-prem resources via Cloud Kerberos Trust.,
+49.26,Ensure 'User Account Control: Behavior of the elevation prompt for standard users' is set to 'Automatically deny elevation requests',Negatively impacts most Helpdesk BAU activities and remote support and troubleshooting.,
+69.2,Ensure 'Allow Input Personalization' is set to 'Block',Negatively impacts users with accessibility needs.,
+73.3,Ensure 'Allow Search To Use Location' is set to 'Block',Negatively impacts user experience. Location & Privacy permissions managed separately.,
+81.3,Ensure 'Allow Telemetry' is set to 'Basic',Telemetry is not scary.,
+81.6,Ensure 'Enable OneSettings Auditing' is set to 'Enabled',Enforces default behaviour.,Use an appropriate EDR which would capture this securely.
+82.2,Ensure 'Remote Procedure Call (RPC) Locator (RpcLocator)' is set to 'Disabled',Service disabling not available via policy.,
+82.27,Ensure 'SSDP Discovery (SSDPSRV)' is set to 'Disabled',Service disabling not available via policy.,
+82.28,Ensure 'UPnP Device Host (upnphost)' is set to 'Disabled',Service disabling not available via policy.,
+82.32,Ensure 'Windows Media Player Network Sharing Service (WMPNetworkSvc)' is set to 'Disabled' or 'Not Installed',Service disabling not available via policy.,
+82.33,Ensure 'Windows Mobile Hotspot Service (icssvc)' is set to 'Disabled',Service disabling not available via policy.,
+98.1,Ensure 'Enable ESS with Supported Peripherals' is set to 'Enhanced sign-in security will be enabled…',Enabled by default.,https://learn.microsoft.com/en-gb/windows/client-management/mdm/passportforwork-csp?WT.mc_id=Portal-Microsoft_Intune_Workflows#devicebiometricsenableesswithsupportedperipherals
+102.1,Ensure 'Allow Clipboard Redirection' is set to 'Not allowed',Windows Sandbox is a niche scenario. Decided on alternative security around Sandbox in v3.4.,https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/blob/main/WINDOWS/CHANGELOG.md#:~:text=Win%20%2D%20OIB%20%2D%20SC%20%2D%20Device%20Security%20%2D%20U%20%2D%20Windows%20Sandbox%20%2D%20v3.4
+104.2,Ensure 'Defer Feature Updates Period in Days' is set to 'Enabled: 180 or more days',Managed via Autopatch/WUfB rings.,
+104.3,Ensure 'Manage preview builds' is set to 'Disable Preview builds',Managed via Autopatch/WUfB rings.,
+104.4,Ensure 'Scheduled Install Day' is set to 'Every day',Managed via Autopatch/WUfB rings.,
