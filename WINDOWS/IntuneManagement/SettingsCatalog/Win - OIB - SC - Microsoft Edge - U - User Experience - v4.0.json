@@ -9,7 +9,7 @@
   "createdDateTime@odata.type": "#DateTimeOffset",
   "createdDateTime": "2026-06-26T09:21:04.1208643Z",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
-  "lastModifiedDateTime": "2026-08-28T13:12:04.4847727Z",
+  "lastModifiedDateTime": "2026-09-30T11:16:02.4630872Z",
   "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
   "platforms": "windows10",
   "roleScopeTagIds@odata.type": "#Collection(String)",
@@ -62,12 +62,17 @@
                 {
                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                   "settingValueTemplateReference": null,
-                  "value": "https://apps.microsoft.com"
+                  "value": "apps.microsoft.com"
                 },
                 {
                   "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
                   "settingValueTemplateReference": null,
-                  "value": "https://apps.microsoft.com/*"
+                  "value": "ms-windows-store://*"
+                },
+                {
+                  "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+                  "settingValueTemplateReference": null,
+                  "value": "javascript://*"
                 }
               ],
               "auditRuleInformation": null,

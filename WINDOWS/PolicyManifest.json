@@ -2,7 +2,7 @@
   "manifestVersion": "1.0",
   "oibVersion": "4.0",
   "platform": "Windows",
-  "generatedDate": "2026-09-09",
+  "generatedDate": "2026-09-30",
   "policies": [
     {
       "oibId": "92CE33B8-FF64-4604-A18D-35555F26C4BE",
@@ -436,8 +436,8 @@
       ]
     },
     {
-      "oibId": "372C2120-9D79-46C3-A798-BA92C5C80707",
-      "name": "Win - OIB - SC - Device Security - D - Security Hardening - v3.7",
+      "oibId": "D35FD54A-F74F-4F61-969F-6E96D3986B41",
+      "name": "Win - OIB - SC - Device Security - D - Security Hardening - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
@@ -447,7 +447,12 @@
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.7",
+          "oibId": "372C2120-9D79-46C3-A798-BA92C5C80707"
+        }
+      ]
     },
     {
       "oibId": "44731D7C-3531-4DFF-9099-C5E06CF325CD",
@@ -619,8 +624,8 @@
       ]
     },
     {
-      "oibId": "4DC5B8D4-1807-465D-888E-6A4A1E6DA7AE",
-      "name": "Win - OIB - SC - Microsoft Edge - D - Updates - v3.6",
+      "oibId": "87556342-57CC-4055-AFC1-D803183A9655",
+      "name": "Win - OIB - SC - Microsoft Edge - D - Updates - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
@@ -630,7 +635,12 @@
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.6",
+          "oibId": "4DC5B8D4-1807-465D-888E-6A4A1E6DA7AE"
+        }
+      ]
     },
     {
       "oibId": "3B1399B4-FC9A-4523-820F-769416D72543",
@@ -1093,20 +1103,6 @@
     {
       "oibId": "16C96944-0F4D-4531-8405-186E04ECD709",
       "name": "Win - OIB - CP - Device Health - U - SecureBoot - v4.0",
-      "platform": "Windows",
-      "policyType": "CompliancePolicies",
-      "scope": "User",
-      "addedIn": "4.0",
-      "status": "active",
-      "supersededBy": [],
-      "skuRequirements": "",
-      "licenseRequirements": "",
-      "tags": [],
-      "previousVersions": []
-    },
-    {
-      "oibId": "53774CE5-AD6F-499A-8614-C7202B983F46",
-      "name": "Win - OIB - CP - Device Health - U - Virtualization Based Security - v4.0",
       "platform": "Windows",
       "policyType": "CompliancePolicies",
       "scope": "User",
