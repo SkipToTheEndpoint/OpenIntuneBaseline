@@ -9,7 +9,7 @@
   "description": "OIBID:F4EEBE99-960A-47EC-841E-3BF030726B97",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2025-02-14T11:51:46.0726544Z",
-  "name": "Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5",
+  "name": "Win - OIB - SC - Device Security - D - Windows Package Manager - v3.5",
   "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
   "platforms": "windows10",
   "priorityMetaData": null,

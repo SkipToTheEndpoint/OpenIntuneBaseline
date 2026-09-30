@@ -1,0 +1,87 @@
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies(assignments(),settings())/$entity",
+  "@odata.editLink": "deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')",
+  "@odata.id": "deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')",
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
+  "assignments@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/assignments/$ref",
+  "assignments@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/assignments",
+  "assignments@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/assignments",
+  "createdDateTime@odata.type": "#DateTimeOffset",
+  "createdDateTime": "2026-08-21T12:54:58.2677191Z",
+  "lastModifiedDateTime@odata.type": "#DateTimeOffset",
+  "lastModifiedDateTime": "2026-08-21T12:59:27.2921501Z",
+  "platforms@odata.type": "#microsoft.graph.deviceManagementConfigurationPlatforms",
+  "platforms": "windows10",
+  "roleScopeTagIds@odata.type": "#Collection(String)",
+  "roleScopeTagIds": [
+    "0"
+  ],
+  "settings@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/settings/$ref",
+  "settings@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/settings",
+  "settings@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/settings",
+  "settings": [
+    {
+      "@odata.editLink": "deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/settings('0')",
+      "@odata.id": "deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/settings('0')",
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/settings('0')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/settings('0')/settingDefinitions",
+      "id": "0",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingInstance",
+        "auditRuleInformation": null,
+        "settingDefinitionId": "device_vendor_msft_policy_config_applicationdefaults_defaultassociationsconfiguration",
+        "settingInstanceTemplateReference": null,
+        "simpleSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationStringSettingValue",
+          "settingValueTemplateReference": null,
+          "value": "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25zPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLmFwcHgiIFByb2dJZD0iQXBwbGljYXRpb25zXG5vdGVwYWQuZXhlIiBBcHBsaWNhdGlvbk5hbWU9Ik5vdGVwYWQiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIuYmF0IiBQcm9nSWQ9IkFwcGxpY2F0aW9uc1xub3RlcGFkLmV4ZSIgQXBwbGljYXRpb25OYW1lPSJOb3RlcGFkIiAvPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLmNhYiIgUHJvZ0lkPSJBcHBsaWNhdGlvbnNcbm90ZXBhZC5leGUiIEFwcGxpY2F0aW9uTmFtZT0iTm90ZXBhZCIgLz4NCiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Ii5jb20iIFByb2dJZD0iQXBwbGljYXRpb25zXG5vdGVwYWQuZXhlIiBBcHBsaWNhdGlvbk5hbWU9Ik5vdGVwYWQiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIuY21kIiBQcm9nSWQ9IkFwcGxpY2F0aW9uc1xub3RlcGFkLmV4ZSIgQXBwbGljYXRpb25OYW1lPSJOb3RlcGFkIiAvPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLmh0YSIgUHJvZ0lkPSJBcHBsaWNhdGlvbnNcbm90ZXBhZC5leGUiIEFwcGxpY2F0aW9uTmFtZT0iTm90ZXBhZCIgLz4NCiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Ii5qcyIgUHJvZ0lkPSJBcHBsaWNhdGlvbnNcbm90ZXBhZC5leGUiIEFwcGxpY2F0aW9uTmFtZT0iTm90ZXBhZCIgLz4NCiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Ii5qc2UiIFByb2dJZD0iQXBwbGljYXRpb25zXG5vdGVwYWQuZXhlIiBBcHBsaWNhdGlvbk5hbWU9Ik5vdGVwYWQiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIucHMxIiBQcm9nSWQ9IkFwcGxpY2F0aW9uc1xub3RlcGFkLmV4ZSIgQXBwbGljYXRpb25OYW1lPSJOb3RlcGFkIiAvPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLnBzbTEiIFByb2dJZD0iQXBwbGljYXRpb25zXG5vdGVwYWQuZXhlIiBBcHBsaWNhdGlvbk5hbWU9Ik5vdGVwYWQiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIuc2N0IiBQcm9nSWQ9IkFwcGxpY2F0aW9uc1xub3RlcGFkLmV4ZSIgQXBwbGljYXRpb25OYW1lPSJOb3RlcGFkIiAvPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLnNoYiIgUHJvZ0lkPSJBcHBsaWNhdGlvbnNcbm90ZXBhZC5leGUiIEFwcGxpY2F0aW9uTmFtZT0iTm90ZXBhZCIgLz4NCiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Ii5zaHMiIFByb2dJZD0iQXBwbGljYXRpb25zXG5vdGVwYWQuZXhlIiBBcHBsaWNhdGlvbk5hbWU9Ik5vdGVwYWQiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIud3NmIiBQcm9nSWQ9IkFwcGxpY2F0aW9uc1xub3RlcGFkLmV4ZSIgQXBwbGljYXRpb25OYW1lPSJOb3RlcGFkIiAvPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLndzaCIgUHJvZ0lkPSJBcHBsaWNhdGlvbnNcbm90ZXBhZC5leGUiIEFwcGxpY2F0aW9uTmFtZT0iTm90ZXBhZCIgLz4NCiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Ii52YmUiIFByb2dJZD0iQXBwbGljYXRpb25zXG5vdGVwYWQuZXhlIiBBcHBsaWNhdGlvbk5hbWU9Ik5vdGVwYWQiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIudmJzIiBQcm9nSWQ9IkFwcGxpY2F0aW9uc1xub3RlcGFkLmV4ZSIgQXBwbGljYXRpb25OYW1lPSJOb3RlcGFkIiAvPg0KPC9EZWZhdWx0QXNzb2NpYXRpb25zPg=="
+        }
+      }
+    }
+  ],
+  "technologies@odata.type": "#microsoft.graph.deviceManagementConfigurationTechnologies",
+  "technologies": "mdm",
+  "creationSource": null,
+  "description": "OIBID:887CEFEC-6882-49E0-A237-91F8D02B2CAB",
+  "id": "9250b1c5-1da1-4372-b579-23c115770457",
+  "name": "Win - OIB - SC - Device Security - D - Script File Associations - v4.0",
+  "priorityMetaData": null,
+  "settingCount": 1,
+  "templateReference": {
+    "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateFamily@odata.type": "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
+    "templateFamily": "none",
+    "templateDisplayName": null,
+    "templateDisplayVersion": null,
+    "templateId": ""
+  },
+  "#microsoft.graph.assign": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/microsoft.graph.assign",
+    "title": "microsoft.graph.assign"
+  },
+  "#microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget",
+    "title": "microsoft.graph.clearEnrollmentTimeDeviceMembershipTarget"
+  },
+  "#microsoft.graph.createCopy": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/microsoft.graph.createCopy",
+    "title": "microsoft.graph.createCopy"
+  },
+  "#microsoft.graph.reorder": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/microsoft.graph.reorder",
+    "title": "microsoft.graph.reorder"
+  },
+  "#microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget",
+    "title": "microsoft.graph.retrieveEnrollmentTimeDeviceMembershipTarget"
+  },
+  "#microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy",
+    "title": "microsoft.graph.retrieveLatestUpgradeDefaultBaselinePolicy"
+  },
+  "#microsoft.graph.setEnrollmentTimeDeviceMembershipTarget": {
+    "target": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('9250b1c5-1da1-4372-b579-23c115770457')/microsoft.graph.setEnrollmentTimeDeviceMembershipTarget",
+    "title": "microsoft.graph.setEnrollmentTimeDeviceMembershipTarget"
+  }
+}

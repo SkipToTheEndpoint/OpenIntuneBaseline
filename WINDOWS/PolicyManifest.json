@@ -1,8 +1,8 @@
 {
   "manifestVersion": "1.0",
-  "oibVersion": "3.8",
+  "oibVersion": "4.0",
   "platform": "Windows",
-  "generatedDate": "2026-05-06",
+  "generatedDate": "2026-09-30",
   "policies": [
     {
       "oibId": "92CE33B8-FF64-4604-A18D-35555F26C4BE",
@@ -12,7 +12,7 @@
       "scope": "Device",
       "addedIn": "3.1",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -26,39 +26,49 @@
       "scope": "Device",
       "addedIn": "3.3",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "80C1B821-B768-43A5-B318-7E2A54290FD8",
-      "name": "Win - OIB - ES - Defender Antivirus - D - AV Configuration - v3.3",
+      "oibId": "2064828D-FB90-4A27-B4F9-3EE30F5A4DA2",
+      "name": "Win - OIB - ES - Defender Antivirus - D - AV Configuration - v4.0",
       "platform": "Windows",
       "policyType": "EndpointSecurity",
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.3",
+          "oibId": "80C1B821-B768-43A5-B318-7E2A54290FD8"
+        }
+      ]
     },
     {
-      "oibId": "288E75FB-FA36-4161-8A92-EE638D902C06",
-      "name": "Win - OIB - ES - Defender Antivirus - D - Security Experience - v3.3",
+      "oibId": "1BDB3565-26E1-4820-B79F-6AFED73C5A67",
+      "name": "Win - OIB - ES - Defender Antivirus - D - Security Experience - v4.0",
       "platform": "Windows",
       "policyType": "EndpointSecurity",
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "MDE",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.3",
+          "oibId": "288E75FB-FA36-4161-8A92-EE638D902C06"
+        }
+      ]
     },
     {
       "oibId": "C1B1A707-F50C-461A-A811-E8D47FED076C",
@@ -68,7 +78,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -82,7 +92,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -96,7 +106,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -110,7 +120,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -124,7 +134,7 @@
       "scope": "User",
       "addedIn": "3.4",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "Enterprise",
       "licenseRequirements": "",
       "tags": [],
@@ -138,7 +148,7 @@
       "scope": "Device",
       "addedIn": "3.7",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -152,7 +162,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -166,7 +176,7 @@
       "scope": "Device",
       "addedIn": "3.8",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -180,25 +190,30 @@
       "scope": "Device",
       "addedIn": "3.2",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "F21E7BB1-65BD-4369-A01D-E23C2024D9F7",
-      "name": "Win - OIB - ES - Windows LAPS - D - LAPS Configuration (24H2+) - v3.6",
+      "oibId": "9E4838C2-960E-47B9-B21F-2AFF6550F285",
+      "name": "Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v4.0",
       "platform": "Windows",
       "policyType": "EndpointSecurity",
       "scope": "Device",
       "addedIn": "3.6",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.6",
+          "oibId": "F21E7BB1-65BD-4369-A01D-E23C2024D9F7"
+        }
+      ]
     },
     {
       "oibId": "C6C9B4A2-2CE6-489A-A1AA-FD5A5DC21F94",
@@ -207,8 +222,10 @@
       "policyType": "EndpointSecurity",
       "scope": "Device",
       "addedIn": "3.0",
-      "status": "active",
-      "supersededBy": "",
+      "status": "deprecated",
+      "supersededBy": [
+        "9E4838C2-960E-47B9-B21F-2AFF6550F285"
+      ],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -222,25 +239,30 @@
       "scope": "Device",
       "addedIn": "3.1",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "7A7AF9FE-1932-44AD-90DB-F15894A2D2D2",
-      "name": "Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v3.8",
+      "oibId": "04F7642A-4399-465D-9253-C04BF23C6BE2",
+      "name": "Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.1",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "MDE",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.8",
+          "oibId": "7A7AF9FE-1932-44AD-90DB-F15894A2D2D2"
+        }
+      ]
     },
     {
       "oibId": "E100EBFD-8D2E-40AC-A9A3-48DBF6764144",
@@ -250,25 +272,30 @@
       "scope": "Device",
       "addedIn": "3.7",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "8A7BDD48-A411-4B91-8096-2D551D175561",
-      "name": "Win - OIB - SC - Device Security - D - Audit and Event Logging - v3.7",
+      "oibId": "34F6F97C-09AA-446B-9664-1DC87BA5C91A",
+      "name": "Win - OIB - SC - Device Security - D - Audit and Event Logging - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.7",
+          "oibId": "8A7BDD48-A411-4B91-8096-2D551D175561"
+        }
+      ]
     },
     {
       "oibId": "C933DA2A-916F-46D4-B2C8-52459180108B",
@@ -278,7 +305,7 @@
       "scope": "Device",
       "addedIn": "3.2",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -292,11 +319,30 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
+    },
+    {
+      "oibId": "4C58ABE2-8804-41BD-82D0-3E966AB57731",
+      "name": "Win - OIB - SC - Device Security - D - Local Security Policies - v4.0",
+      "platform": "Windows",
+      "policyType": "SettingsCatalog",
+      "scope": "Device",
+      "addedIn": "3.6",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": [
+        {
+          "oibVersion": "3.6",
+          "oibId": "D2432603-BDF5-4730-9A7D-ED7C489FA80A"
+        }
+      ]
     },
     {
       "oibId": "B842CFE2-8EFD-4B11-AD59-87E8F295BC80",
@@ -305,22 +351,10 @@
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.0",
-      "status": "active",
-      "supersededBy": "",
-      "skuRequirements": "",
-      "licenseRequirements": "",
-      "tags": [],
-      "previousVersions": []
-    },
-    {
-      "oibId": "D2432603-BDF5-4730-9A7D-ED7C489FA80A",
-      "name": "Win - OIB - SC - Device Security - D - Local Security Policies (24H2+) - v3.6",
-      "platform": "Windows",
-      "policyType": "SettingsCatalog",
-      "scope": "Device",
-      "addedIn": "3.6",
-      "status": "active",
-      "supersededBy": "",
+      "status": "deprecated",
+      "supersededBy": [
+        "4C58ABE2-8804-41BD-82D0-3E966AB57731"
+      ],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -334,7 +368,7 @@
       "scope": "Device",
       "addedIn": "3.2",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -348,7 +382,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -362,7 +396,7 @@
       "scope": "Device",
       "addedIn": "3.7",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -376,39 +410,49 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "64EB18DA-74A8-45B4-8A08-67BAFC82A2A0",
-      "name": "Win - OIB - SC - Device Security - D - Script File Associations - v3.4",
+      "oibId": "887CEFEC-6882-49E0-A237-91F8D02B2CAB",
+      "name": "Win - OIB - SC - Device Security - D - Script File Associations - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.4",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.4",
+          "oibId": "64EB18DA-74A8-45B4-8A08-67BAFC82A2A0"
+        }
+      ]
     },
     {
-      "oibId": "372C2120-9D79-46C3-A798-BA92C5C80707",
-      "name": "Win - OIB - SC - Device Security - D - Security Hardening - v3.7",
+      "oibId": "D35FD54A-F74F-4F61-969F-6E96D3986B41",
+      "name": "Win - OIB - SC - Device Security - D - Security Hardening - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.7",
+          "oibId": "372C2120-9D79-46C3-A798-BA92C5C80707"
+        }
+      ]
     },
     {
       "oibId": "44731D7C-3531-4DFF-9099-C5E06CF325CD",
@@ -418,7 +462,7 @@
       "scope": "Device",
       "addedIn": "3.1",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -432,7 +476,7 @@
       "scope": "Device",
       "addedIn": "3.1",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -440,13 +484,13 @@
     },
     {
       "oibId": "F4EEBE99-960A-47EC-841E-3BF030726B97",
-      "name": "Win - OIB - SC - Device Security - D - Windows Package Manager  - v3.5",
+      "name": "Win - OIB - SC - Device Security - D - Windows Package Manager - v3.5",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.5",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -460,7 +504,7 @@
       "scope": "Device",
       "addedIn": "3.1",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -474,25 +518,30 @@
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "Enterprise",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "D207C002-E1A3-4111-9803-D4E83F5160A7",
-      "name": "Win - OIB - SC - Device Security - U - Power and Device Lock - v3.6",
+      "oibId": "D4027112-4CF4-4E56-82CD-0FC97D43580F",
+      "name": "Win - OIB - SC - Device Security - U - Power and Device Lock - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.6",
+          "oibId": "D207C002-E1A3-4111-9803-D4E83F5160A7"
+        }
+      ]
     },
     {
       "oibId": "30A97E84-21B4-4A67-8D5C-C6E5922892B5",
@@ -502,7 +551,7 @@
       "scope": "User",
       "addedIn": "3.4",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -516,25 +565,30 @@
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "E2ED7D97-4313-40A9-8B0B-3145E8CB73CA",
-      "name": "Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v3.1.1",
+      "oibId": "52D56BB4-789A-41BA-8AF6-60F41A718661",
+      "name": "Win - OIB - SC - Internet Explorer (Legacy) - D - Security - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.1.1",
+          "oibId": "E2ED7D97-4313-40A9-8B0B-3145E8CB73CA"
+        }
+      ]
     },
     {
       "oibId": "7AFCF2FB-6037-49E5-A22F-5E14676EFF69",
@@ -544,39 +598,49 @@
       "scope": "Device",
       "addedIn": "3.2",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "D4CF7340-CBAB-4402-9786-954408792A8A",
-      "name": "Win - OIB - SC - Microsoft Edge - D - Security - v3.8",
+      "oibId": "91BC2795-9140-4B71-AAA6-7D6EB000742F",
+      "name": "Win - OIB - SC - Microsoft Edge - D - Security - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.8",
+          "oibId": "D4CF7340-CBAB-4402-9786-954408792A8A"
+        }
+      ]
     },
     {
-      "oibId": "4DC5B8D4-1807-465D-888E-6A4A1E6DA7AE",
-      "name": "Win - OIB - SC - Microsoft Edge - D - Updates - v3.6",
+      "oibId": "87556342-57CC-4055-AFC1-D803183A9655",
+      "name": "Win - OIB - SC - Microsoft Edge - D - Updates - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.6",
+          "oibId": "4DC5B8D4-1807-465D-888E-6A4A1E6DA7AE"
+        }
+      ]
     },
     {
       "oibId": "3B1399B4-FC9A-4523-820F-769416D72543",
@@ -586,7 +650,21 @@
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "88EEB6C0-A110-4473-BF63-79FB1649CD8B",
+      "name": "Win - OIB - SC - Microsoft Edge - U - Management - v4.0",
+      "platform": "Windows",
+      "policyType": "SettingsCatalog",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -600,39 +678,49 @@
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "1ED22C9C-F667-4513-B249-7254687C43AC",
-      "name": "Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v3.0",
+      "oibId": "187DF539-E00E-42B3-BF6A-C86ADC0183C2",
+      "name": "Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.0",
+          "oibId": "1ED22C9C-F667-4513-B249-7254687C43AC"
+        }
+      ]
     },
     {
-      "oibId": "CD2F5221-54A6-41A9-ACE0-33F424A75FDE",
-      "name": "Win - OIB - SC - Microsoft Edge - U - User Experience - v3.8",
+      "oibId": "FD09768A-A622-4A0D-A944-2D9CFABC4B8E",
+      "name": "Win - OIB - SC - Microsoft Edge - U - User Experience - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "User",
       "addedIn": "3.1",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.8",
+          "oibId": "CD2F5221-54A6-41A9-ACE0-33F424A75FDE"
+        }
+      ]
     },
     {
       "oibId": "A182DB08-2F64-4535-8A7E-C0277D88152B",
@@ -642,8 +730,8 @@
       "scope": "Device",
       "addedIn": "3.6",
       "status": "active",
-      "supersededBy": "",
-      "skuRequirements": "",
+      "supersededBy": [],
+      "skuRequirements": "Enterprise",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
@@ -656,7 +744,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -670,25 +758,30 @@
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "A40F9A90-1B78-4525-AEC7-93ABE0848C9E",
-      "name": "Win - OIB - SC - Microsoft Office - U - Security - v3.6",
+      "oibId": "B549DFD9-5049-4813-A2FB-C860D00290BA",
+      "name": "Win - OIB - SC - Microsoft Office - U - Security - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "User",
       "addedIn": "3.6",
       "status": "active",
-      "supersededBy": "",
-      "skuRequirements": "",
+      "supersededBy": [],
+      "skuRequirements": "Enterprise",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.6",
+          "oibId": "A40F9A90-1B78-4525-AEC7-93ABE0848C9E"
+        }
+      ]
     },
     {
       "oibId": "6EF9DFEA-74B4-485D-AAD2-237F7E2EBAB2",
@@ -698,7 +791,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -712,7 +805,7 @@
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -726,7 +819,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -740,7 +833,7 @@
       "scope": "User",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "Enterprise",
       "licenseRequirements": "",
       "tags": [],
@@ -754,25 +847,30 @@
       "scope": "Device",
       "addedIn": "3.8",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "0EE888FD-C68F-478A-A0F1-F8147967E9DB",
-      "name": "Win - OIB - SC - Windows Apps - D - In-Box App Removal - v3.7",
+      "oibId": "C1738F5B-43FF-4ED9-83AC-8B0AAB92EF98",
+      "name": "Win - OIB - SC - Windows Apps - D - In-Box App Removal - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.7",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "Enterprise",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.7",
+          "oibId": "0EE888FD-C68F-478A-A0F1-F8147967E9DB"
+        }
+      ]
     },
     {
       "oibId": "7796AA16-85E9-4596-A927-3F3E945E5AA3",
@@ -782,7 +880,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -796,7 +894,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -810,7 +908,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -824,25 +922,30 @@
       "scope": "Device",
       "addedIn": "3.8",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
       "previousVersions": []
     },
     {
-      "oibId": "4918DE40-A896-409C-B6FA-885B1C75CA0B",
-      "name": "Win - OIB - SC - Windows User Experience - D - Feature Configuration - v3.8",
+      "oibId": "3EA33AE4-1F7A-43CD-A82E-EE319470F857",
+      "name": "Win - OIB - SC - Windows User Experience - D - Feature Configuration - v4.0",
       "platform": "Windows",
       "policyType": "SettingsCatalog",
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
-      "previousVersions": []
+      "previousVersions": [
+        {
+          "oibVersion": "3.8",
+          "oibId": "4918DE40-A896-409C-B6FA-885B1C75CA0B"
+        }
+      ]
     },
     {
       "oibId": "604FD048-CA7D-4918-AA55-66A4878E0F52",
@@ -852,7 +955,7 @@
       "scope": "Device",
       "addedIn": "3.7",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -866,7 +969,7 @@
       "scope": "User",
       "addedIn": "3.1",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -879,8 +982,11 @@
       "policyType": "CompliancePolicies",
       "scope": "User",
       "addedIn": "3.1",
-      "status": "active",
-      "supersededBy": "",
+      "status": "deprecated",
+      "supersededBy": [
+        "B5611BB2-5671-47CA-BE8C-C9FF1969B2F9",
+        "C122A7C4-50B1-4D4B-A7CD-E7121AE1C24B"
+      ],
       "skuRequirements": "",
       "licenseRequirements": "MDE",
       "tags": [],
@@ -893,8 +999,13 @@
       "policyType": "CompliancePolicies",
       "scope": "User",
       "addedIn": "3.1",
-      "status": "active",
-      "supersededBy": "",
+      "status": "deprecated",
+      "supersededBy": [
+        "6DC752AA-1266-4FBD-BCDE-42384B5881EA",
+        "6712002B-CB62-408B-AC11-BF410B3AD77F",
+        "16C96944-0F4D-4531-8405-186E04ECD709",
+        "53774CE5-AD6F-499A-8614-C7202B983F46"
+      ],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -907,8 +1018,13 @@
       "policyType": "CompliancePolicies",
       "scope": "User",
       "addedIn": "3.1",
-      "status": "active",
-      "supersededBy": "",
+      "status": "deprecated",
+      "supersededBy": [
+        "81E11A62-EDDE-489E-BD48-C6A5E17DF66E",
+        "18361BF2-BD88-47F1-9808-CE306E09D390",
+        "1DD43C82-E1A1-45A7-91C0-094CB38F7328",
+        "24BFFF77-81DC-4867-A8F8-BA8249CAE404"
+      ],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -921,8 +1037,134 @@
       "policyType": "CompliancePolicies",
       "scope": "User",
       "addedIn": "3.1",
+      "status": "deprecated",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "B5611BB2-5671-47CA-BE8C-C9FF1969B2F9",
+      "name": "Win - OIB - CP - Defender - U - Real-Time Protection - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "C122A7C4-50B1-4D4B-A7CD-E7121AE1C24B",
+      "name": "Win - OIB - CP - Defender - U - Security Intelligence - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "6DC752AA-1266-4FBD-BCDE-42384B5881EA",
+      "name": "Win - OIB - CP - Device Health - U - BitLocker - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "6712002B-CB62-408B-AC11-BF410B3AD77F",
+      "name": "Win - OIB - CP - Device Health - U - Code Integrity - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "16C96944-0F4D-4531-8405-186E04ECD709",
+      "name": "Win - OIB - CP - Device Health - U - SecureBoot - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "81E11A62-EDDE-489E-BD48-C6A5E17DF66E",
+      "name": "Win - OIB - CP - Device Security - U - Antispyware - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "18361BF2-BD88-47F1-9808-CE306E09D390",
+      "name": "Win - OIB - CP - Device Security - U - Antivirus - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "1DD43C82-E1A1-45A7-91C0-094CB38F7328",
+      "name": "Win - OIB - CP - Device Security - U - Firewall - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "24BFFF77-81DC-4867-A8F8-BA8249CAE404",
+      "name": "Win - OIB - CP - Device Security - U - TPM - v4.0",
+      "platform": "Windows",
+      "policyType": "CompliancePolicies",
+      "scope": "User",
+      "addedIn": "4.0",
+      "status": "active",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -936,7 +1178,7 @@
       "scope": "Device",
       "addedIn": "3.4",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -950,7 +1192,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -964,7 +1206,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -978,7 +1220,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -992,7 +1234,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -1006,7 +1248,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],
@@ -1020,7 +1262,7 @@
       "scope": "Device",
       "addedIn": "3.0",
       "status": "active",
-      "supersededBy": "",
+      "supersededBy": [],
       "skuRequirements": "",
       "licenseRequirements": "",
       "tags": [],

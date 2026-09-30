@@ -1,5 +1,167 @@
 # OIB Windows Change Log
 
+# Windows v4.0 - 2026-09-30 - 26H2 Edition
+Windows 11 26H2 is upon us, and with it comes the first major version number bump since the OIB's first "proper" release! Since then it's somehow grown far, far bigger than I ever imagined, and having the opportunity to travel into Europe and the US because people want to listen to me talk about the _little passion project that could_ has been genuinely heart-warming.
+
+This release brings user experience and device security settings you're not going to find **anywhere else**, bug fixes thanks to the kind folks providing feedback and raising issues, and adjustments to keep your Intune admin experience manageable at scale.
+
+Because I'm determined to beat Microsoft for the 3rd time running on getting the OIB out before they get their own into Intune, the only setting from [their 26H2 baseline](https://techcommunity.microsoft.com/blog/microsoft-security-baselines/windows-11-version-26h2-security-baseline/4560382) not included relates to Windows Ready Print, mostly because it's not in Settings Catalog at time of writing this, but also because most people are still battling with printers as it is, let alone Ready Print. I'll review and update as required.
+
+I've also updated my [OIB vs CIS Deviation](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/blob/main/WINDOWS/OIB4.0-CIS5.0.0-DeviationRationale) report against their 5.0.0 Intune Benchmark, so you can see exactly what (and why) I've decided to not align here, and try and make those fights with security teams easier.
+
+For your continued trust, support and positive comments, thank you. <3
+
+## Added 🆕
+### 🆕 Compliance
+One of the biggest changes with this release is the separation of Compliance settings into their own policies, rather than grouped by higher-level categories. This allows for more granular control over compliance grace periods and makes it easier to manage potential exclusions per-environment. I've also brought them in-line with the broader OIB naming convention, which they weren't previously.
+
+Below is a table of the new compliance policies, the setting being required, and the non-compliance schedule:
+
+| Policy Name                                                  	| Setting Required                                                    	| Non-Compliance Schedule 	|
+|--------------------------------------------------------------	|---------------------------------------------------------------------	|-------------------------	|
+| Win - OIB - CP - Device Security - U - TPM - v4.0            	| Trusted Platform Module (TPM)                                       	| Immediately             	|
+| Win - OIB - CP - Device Security - U - Firewall - v4.0       	| Firewall                                                            	| Immediately             	|
+| Win - OIB - CP - Device Security - U - Antivirus- v4.0       	| Antivirus                                                           	| Immediately             	|
+| Win - OIB - CP - Device Security - U - Antispyware - v4.0    	| Antispyware                                                         	| Immediately             	|
+| Win - OIB - CP - Device Health - U - SecureBoot - v4.0       	| SecureBoot                                                          	| Immediately             	|
+| Win - OIB - CP - Device Health - U - Code Integrity - v4.0   	| Code Integrity                                                      	| Immediately             	|
+| Win - OIB - CP - Device Health - U - BitLocker - v4.0        	| BitLocker                                                           	| 0.5 Days                	|
+| Win - OIB - CP - Defender - U - Security Intelligence - v4.0 	| Microsoft Defender Antimalware <br>security intelligence up-to-date 	| 0.25 Days               	|
+| Win - OIB - CP - Defender - U - Real-Time Protection - v4.0  	| Real-Time Protection                                                	| Immediately             	|
+
+Keen-eyed among you may notice the absence of what used to form the "Password" compliance policy. My reason for removing these is simple: They're trash.
+
+The longer version to that is that they can be incredibly problematic, but also mostly redundant. Those Password compliance settings exist in the [DeviceLock CSP](https://learn.microsoft.com/en-us/windows/client-management/mdm/policy-csp-devicelock), utilise the Exchange ActiveSync Policy Engine (EAS), and have been around since Windows 8.1. This often catches people off-guard, because people expect Compliance to merely check device settings, but these policies are actually then enforced. Moreover, they only impact local accounts. Things like password policies are either enforced via on-prem in a Hybrid Identity scenario, or by Entra itself if accounts are cloud only.
+
+The only useful setting within that policy was "Maximum minutes of inactivity before password is required", which was enforced via MaxInactivityTimeDeviceLock. Rather than moving this setting elsewhere and still being subject to EAS (or potentially causing conflicts), this has been replaced by "Interactive Logon Machine Inactivity Limit" in the Power and Device Lock policy.
+
+### Settings Catalog
+#### 🆕 **Win - OIB - SC - Microsoft Edge - U - Management - v4.0**
+The Edge Management Service ([https://admin.cloud.microsoft/#/Edge](https://admin.cloud.microsoft/#/Edge)) is an excellent addition to any Enterprise environment, providing centralized control and management of Microsoft Edge settings across *all* user devices (not just ones that are fully-managed).
+From the incredible [Version Monitoring Dashboard](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service-monitoring-dashboard) and more recent [Extensions Monitoring](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-extensions-monitoring) functionality, it allows a bunch of features that are difficult or impossible to achieve natively in Intune (e.g. allowing users to request Extensions for approval).
+
+After playing with it in my environments for some time, the biggest pain-point has been the behaviour of policy application. By default, user policies from the cloud-based management service [will not override GPO/MDM delivered policies](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-management-service#control-policy-source-precedence), which can lead to frustrating results or conflicts. To counteract that, this new policy not only explicitly allows the usage of the Edge Management Service on managed devices, but configures the default user/platform policy application to listen to cloud policies first.
+
+* Added the following settings:
+    * Microsoft Edge management enabled (User) - `Enabled`
+    * Allow cloud-based Microsoft Edge management service user policies to override local user policies. (User) - `Enabled`
+    * Microsoft Edge management service policy overrides platform policy. (User) - `Enabled`
+    * Microsoft Edge management extensions feedback enabled (User) - `Enabled`
+
+> [!NOTE]
+> This does not force you to have to use the Edge Management Service, purely allows "co-management" across Intune and the EMS to be far more frictionless. It's worth noting that if you can't access the admin portal, you'll need the "[Edge Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#edge-administrator)" role in Entra.
+> I would highly recommend enabling both the Version and Extension monitoring features regardless of plans to do anything else. It's literally free reporting.
+
+
+## Changed/Updated 🔄️
+### Settings Catalog
+#### 🔄️**Win - OIB - ES - Windows LAPS - D - LAPS Configuration**
+#### 🔄️**Win - OIB - SC - Device Security - D - Local Security Policies**
+The above policies have not changed at all in content from their "(24H2+)" versions, but have been renamed to reflect currently supported Windows versions with 23H2 end of support on [Nov 26th 2026](https://learn.microsoft.com/en-us/lifecycle/products/windows-11-enterprise-and-education#:~:text=Oct%2031%2C%202023-,Nov%2010%2C%202026,-Version%2022H2). Policy naming has been bumped to 4.0, and they have superseded the previous versions in the policy manifest.
+
+#### 🔄️**Win - OIB - SC - Defender Antivirus - D - Additional Configuration**
+* Added "Disallow Exploit Protection Override" set to `Enabled`. This stops some unwanted and potentially confusing behavior where users could create exploit protection settings but not remove them again due to any actual changes requiring admin rights. Resolves [#247](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/247)
+* Removed "Hide Exclusions From Local Users" as this is implicitly set by the setting "Hide Exclusions From Local Admins" and thus redundant.
+
+#### 🔄️**Win - OIB - SC - Device Security - D - Audit and Event Logging**
+* Changed "Privilege Use Audit Sensitive Privilege Use" from `Success + Failure` to `Success` to match CIS Benchmark.
+
+#### 🔄️**Win - OIB - SC - Device Security - U - Power and Device Lock**
+* Added "Interactive Logon Machine Inactivity Limit" set to `900` (15 minutes) to replace the previous Password compliance policy's "Maximum minutes of inactivity before password is required" setting.
+> [!NOTE]
+> The "15 Minute" inactivity time is driven by the UK NCSC/Cyber Essentials requirements. By all means amend these to suit your business or compliance requirements.
+* Changed the following to be `1800` rather than `900` to avoid a device going to sleep at the same time as being automatically locked.
+    * Specify the system sleep timeout (plugged in)
+    * Unattended Sleep Timeout Plugged In
+
+#### 🔄️**Win - OIB - SC - Device Security - D - Security Hardening**
+* Added "Allow Custom SSPs and APs to be loaded into LSASS" set to `Disabled` to match current CIS and MS baselines.
+* Changed the following Lanman settings to match current CIS benchmark (MS still have this at SMB 3.0.0):
+    * Lanman Server > Min Smb2 Dialect - `SMB 3.1.1`
+    * Lanman Workstation > Min Smb2 Dialect - `SMB 3.1.1`
+
+#### 🔄️**Win - OIB - SC - Device Security - D - Script File Associations**
+* Updated the Base64 string due to typo of `.ps1m` rather than `.psm1`. Resolves [#243](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/243)
+
+#### 🔄️**Win - OIB - SC - Internet Explorer (Legacy) - D - Security**
+* Changed "Prevent bypassing SmartScreen Filter warnings about files that are not commonly downloaded from the Internet" from `Disabled` to `Enabled` to enhance security against potentially harmful downloads.
+* Changed "Turn off encryption support\Secure Protocol combinations" from `Only TLS 1.2` to `Use TLS 1.2 and TLS 1.3` to enhance security while maintaining compatibility with modern protocols. This setting had previously been broken when being applied via CSP but now works as expected. This also aligns with the [MS 26H2 Security Baseline](https://techcommunity.microsoft.com/blog/microsoft-security-baselines/windows-11-version-26h2-security-baseline/4560382).
+
+#### 🔄️**Win - OIB - SC - Microsoft Edge - D - Security**
+* Added the following settings in-line with the Microsoft [Edge v151 Security Baseline](https://techcommunity.microsoft.com/blog/microsoft-security-baselines/security-baseline-for-microsoft-edge-version-151/4549607):
+    * [Enable Process Isolation](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/processisolationenabled?wt.mc_id=EM-MVP-5005288) - `Enabled`
+    * [Enable renderer in app container](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/rendererappcontainerenabled?wt.mc_id=EM-MVP-5005288) - `Enabled`
+    * [Enable the network service sandbox](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/networkservicesandboxenabled?wt.mc_id=EM-MVP-5005288) - `Enabled`
+    * [Configure browser process code integrity guard setting](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/browsercodeintegritysetting?wt.mc_id=EM-MVP-5005288) - `Enabled`
+        * Configure browser process code integrity guard setting -`Enable code integrity guard enforcement in the browser process`
+    * [Enable Application Bound Encryption](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/applicationboundencryptionenabled?wt.mc_id=EM-MVP-5005288) - `Enabled`
+> [!IMPORTANT]
+> As always, test appropriately in your own environment. There have been some reports that Process Isolation and Code Integrity could cause some unwanted effect or impact to PWA's and printing respectively, however it is worth noting that these security features will become default-enabled in the future.
+* Replaced an obsolete version of "Enhance the security state in Microsoft Edge" with its new version, retaining the `Balanced mode` sub-setting.
+
+#### 🔄️**Win - OIB - SC - Microsoft Edge - D - Updates**
+* Removed "Allow Installation" settings from Applications > Microsoft Edge and Microsoft Edge Web View2 Runtime as something has changed to cause the policy to throw conflicts. These are only relevant if you're wanting to explicitly control other channels of installation, such as Beta or Dev channels so is not a reduction in security or functionality. Resolves [#254](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/254)
+
+#### 🔄️**Win - OIB - SC - Microsoft Edge - U - Profiles, Sign-In and Sync**
+* Added the following setting to make sure auth pop-ups to M365 sites are allowed past any potential pop-up blocking:
+    * [Allow M365 authentication popups in work profiles](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/m365authpopupsinworkenabled?wt.mc_id=EM-MVP-5005288) - `Enabled`
+* Added the following setting to stop the default behaviour and prevent users from signing into Edge with non-Microsoft accounts, such as Google or Apple accounts. For those that might re-enable multiple profile creation, this will at least stop a user signing into their Google account within Edge and potentially causing a data leakage issue.
+    * [Enable sign-in to Microsoft Edge using non-Microsoft accounts](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/nonmicrosoftaccountsigninenabled?wt.mc_id=EM-MVP-5005288) - `Disabled`
+
+#### 🔄️**Win - OIB - SC - Microsoft Edge - U - User Experience**
+* Changed "Allow notifications on specific sites" values to to a valid format. Resolves [#213](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/213)
+    * `*.microsoft.com` > `[*.]microsoft.com`
+    * `*.cloud.microsoft` > `[*.]cloud.microsoft.com`
+* "Block access to a list of URLs" changes:
+    * Removed unncessary duplicate online Windows app store entries, keeping just `apps.microsoft.com`
+    * Added `ms-windows-store://*` as a defence in depth measure to block access to the Windows app store via protocol. Resolves [#253](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/253)
+    * Added `javascript://*` to potentially mitigate ClickFix attacks, documented in the Google Chrome DISA STIG. Resolves [#250](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/250)
+* Added the following setting to prevent potential [automatic large download of on-device GenAI models](https://www.neowin.net/news/google-chrome-microsoft-edge-could-quietly-download-up-to-20gb-ai-models-on-windows-11/):
+    * [Settings for GenAI local foundational model](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/genailocalfoundationalmodelsettings?wt.mc_id=EM-MVP-5005288) - `Enabled`
+        * Settings for GenAI local foundational model - `Do not download model`
+* Added the following settings to help keep a cleaner address bar and ensure results are relevant:
+    * [Enable Microsoft Bing trending suggestions in the address bar](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/addressbartrendingsuggestenabled?wt.mc_id=EM-MVP-5005288) - `Disabled`
+    * [Enable Work Search suggestions in the address bar](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/addressbarworksearchresultsenabled?wt.mc_id=EM-MVP-5005288) - `Enabled`
+* Added the following settng to ensure the Edge New Tab page shows just organisational content:
+    * [Configure whether the Discover or Work feed tabs are shown on the New Tab Page](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-policies/configurentpfeedtabvisibility?wt.mc_id=EM-MVP-5005288) - `Enabled`
+        * Configure whether the Discover or Work feed tabs are shown on the New Tab Page. - `Show only the Work feed tab`
+* Removed "Enable Gamer Mode" as the setting is obsolete. Resolves [#235](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/235)
+
+#### 🔄️**Win - OIB - SC - Microsoft Office - U - Security**
+* Updated to align with the Microsoft 365 Apps Security Baseline v2512.
+    * Office:
+        * Block Insecure Protocols (User) - `Enabled`
+        * Block OLE Graph (User) - `Enabled`
+        * Block OrgChart (User) - `Enabled`
+        * Restrict Apps from FPRPC Fallback (User) - `Enabled`
+    * Excel:
+        * File Block includes external link files (User) - `Enabled`
+    * PowerPoint:
+        * OLE Active Content (User) - `Enabled` - `disable (don't allow activating OLE Active Content)`
+
+#### 🔄️**Win - OIB - SC - Windows Apps - D - In-Box App Removal**
+* Changed policy to updated version, "Remove Microsoft Store apps with dynamic list". Selected in-box apps remain the same with the exception of adding `Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe` into the freeform list to pass Graph validation checks.
+
+#### 🔄️**Win - OIB - SC - Windows User Experience - D - Feature Configuration**
+* Added "Allow Cross Device Clipboard" set to `Block` to prevent users from sharing clipboard content across devices.
+
+### Endpoint Security
+🔄️**Win - OIB - ES - Defender Antivirus - D - AV Configuration**
+* Changed "Submit Samples Consent" from `Send safe samples automatically (Default)` to `Send all samples automatically` to align with best practice.
+* Changed Remediation Actions for "Moderate" and "High" severity threats from `Remove` to `Quarantine` following several customer interactions that highlighted the need for recoverable handling of potentially non-harmful files.
+
+🔄️**Win - OIB - ES - Defender Antivirus - D - Security Experience**
+* Changed "Disable Enhanced Notifications" from `Enabled` to `Disabled` to hide some redundant/unhelpful user notifications following a suggestion from Nathan McNulty: https://x.com/NathanMcNulty/status/2087722656674308316
+
+## Removed 🚮
+* Removed the "Win - OIB - Compliance - U - Password - v3.1" compliance policy for reasons documented above.
+
+* Removed the following <24H2 policies with Windows 23H2 being end of support:
+    * **Win - OIB - ES - Windows LAPS - D - LAPS Configuration - v3.1**
+    * **Win - OIB - SC - Device Security - D - Local Security Policies - v3.0**
+
+---
+
 # Windows v3.8 - 2026-04-16 - IR40 Edition 🎂
 > [!IMPORTANT]
 > As part of ongoing and future improvements, I am adding a per-policy tracking GUID (OIBID) to the `description` field of every policy, even ones that otherwise haven't changed this version. 
