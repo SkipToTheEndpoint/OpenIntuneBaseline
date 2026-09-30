@@ -10,7 +10,9 @@ I have tried to utilise available settings to make this work as part of the Time
 
 ### Usage
 **Script type** - Platform Script
-**Assign to** - Users
+
+**Assign to** - Devices
+
 **Script Settings:**
 - Run this script using the logged on credentials - No
 - Enforce script signature check - No
@@ -28,7 +30,9 @@ The end result of this is that pretty shortly after, any pending updates will be
 
 ### Usage
 **Script type** - Platform Script
+
 **Assign to** - Users
+
 **Script Settings:**
 - Run this script using the logged on credentials - No
 - Enforce script signature check - No
