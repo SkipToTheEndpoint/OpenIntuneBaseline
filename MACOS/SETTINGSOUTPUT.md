@@ -42,7 +42,7 @@
 
     - [MacOS - OIB - Microsoft OneDrive - D - Service and Access - v1.0](#section-17)
 
-    - [MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.0](#section-18)
+    - [MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.1](#section-18)
 
     - [MacOS - OIB - Updates - D - Update Configuration - v1.0](#section-19)
 
@@ -1971,7 +1971,7 @@
 ###### Table 30. Settings - MacOS - OIB - Microsoft OneDrive - D - Service and Access - v1.0
 
 
-<h3 id="section-18">MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.0</h3>
+<h3 id="section-18">MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -1983,7 +1983,7 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.0</td>
+<td class='property-column2'>MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
@@ -2011,7 +2011,7 @@
 </tr>
 </table>
 
-###### Table 31. Basics - MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.0
+###### Table 31. Basics - MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.1
 
 
 <table class='table-settings'>
@@ -2072,16 +2072,12 @@
 <td class='property-column2'>True</td>
 </tr>
 <tr class=''>
-<td class='property-column1'>Open at login</td>
-<td class='property-column2'>True</td>
-</tr>
-<tr class=''>
 <td class='property-column1'>Prompt users to enable the Folder Backup feature (Known Folder Move)</td>
 <td class='property-column2'>%OrganizationId%</td>
 </tr>
 </table>
 
-###### Table 32. Settings - MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.0
+###### Table 32. Settings - MacOS - OIB - Microsoft OneDrive - U - Known Folder Move - v1.1
 
 
 <h3 id="section-19">MacOS - OIB - Updates - D - Update Configuration - v1.0</h3>
