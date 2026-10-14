@@ -75,7 +75,17 @@
       "folder": "IOS",
       "status": "in-development",
       "defaultBranch": "main",
-      "releases": []
+      "releases": [
+        {
+          "version": "1.0",
+          "channel": "beta",
+          "releaseDate": "2026-10-15",
+          "branch": "ios-v1.0-beta",
+          "tag": null,
+          "url": "https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/ios-v1.0-beta",
+          "prerelease": true
+        }
+      ]
     },
     {
       "id": "android",
