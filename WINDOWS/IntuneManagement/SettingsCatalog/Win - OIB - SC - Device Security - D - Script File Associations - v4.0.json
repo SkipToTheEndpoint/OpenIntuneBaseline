@@ -43,7 +43,7 @@
   "technologies@odata.type": "#microsoft.graph.deviceManagementConfigurationTechnologies",
   "technologies": "mdm",
   "creationSource": null,
-  "description": "OIBID:887CEFEC-6882-49E0-A237-91F8D02B2CAB",
+  "description": "WARNING: Deploying will break running any PowerShell scripts from Intune in the User context. Amend policy if this functionality is required.\nOIBID:887CEFEC-6882-49E0-A237-91F8D02B2CAB",
   "id": "9250b1c5-1da1-4372-b579-23c115770457",
   "name": "Win - OIB - SC - Device Security - D - Script File Associations - v4.0",
   "priorityMetaData": null,
