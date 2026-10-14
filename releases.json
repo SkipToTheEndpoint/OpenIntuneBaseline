@@ -73,7 +73,7 @@
       "id": "ios",
       "name": "iOS",
       "folder": "IOS",
-      "status": "in-development",
+      "status": "available",
       "defaultBranch": "main",
       "releases": [
         {
