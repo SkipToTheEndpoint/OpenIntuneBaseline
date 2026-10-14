@@ -1,0 +1,98 @@
+{
+  "manifestVersion": "1.0",
+  "repository": "https://github.com/SkipToTheEndpoint/OpenIntuneBaseline",
+  "platforms": [
+    {
+      "id": "windows",
+      "name": "Windows",
+      "folder": "WINDOWS",
+      "status": "available",
+      "defaultBranch": "main",
+      "changelog": "/WINDOWS/CHANGELOG.md",
+      "releases": [
+        {
+          "version": "4.0",
+          "name": "26H2 Edition",
+          "channel": "stable",
+          "releaseDate": "2026-09-30",
+          "branch": "main",
+          "tag": "windows-v4.0",
+          "url": "https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v4.0",
+          "prerelease": false
+        }
+      ]
+    },
+    {
+      "id": "windows365",
+      "name": "Windows 365",
+      "folder": "WINDOWS365",
+      "status": "available",
+      "defaultBranch": "main",
+      "changelog": "/WINDOWS365/CHANGELOG.md",
+      "releases": [
+        {
+          "version": "1.0",
+          "channel": "unstable",
+          "releaseDate": "2024-09-02",
+          "branch": "main",
+          "tag": "win365-v1.0",
+          "url": "https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0",
+          "prerelease": false
+        }
+      ]
+    },
+    {
+      "id": "macos",
+      "name": "MacOS",
+      "folder": "MACOS",
+      "status": "available",
+      "defaultBranch": "main",
+      "changelog": "/MACOS/CHANGELOG.md",
+      "releases": [
+        {
+          "version": "1.0",
+          "channel": "unstable",
+          "releaseDate": "2024-09-02",
+          "branch": "main",
+          "tag": "macos-v1.0",
+          "url": "https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0",
+          "prerelease": false
+        },
+        {
+          "version": "2.0",
+          "channel": "beta",
+          "releaseDate": "2026-01-28",
+          "branch": "macos-v2.0-beta",
+          "tag": null,
+          "url": "https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/macos-v2.0-beta",
+          "prerelease": true
+        }
+      ]
+    },
+    {
+      "id": "ios",
+      "name": "iOS",
+      "folder": "IOS",
+      "status": "in-development",
+      "defaultBranch": "main",
+      "releases": []
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "folder": "ANDROID",
+      "status": "in-development",
+      "defaultBranch": "main",
+      "releases": []
+    },
+    {
+      "id": "byod",
+      "name": "BYOD",
+      "folder": "BYOD",
+      "status": "in-development",
+      "defaultBranch": "main",
+      "changelog": "/BYOD/CHANGELOG.md",
+      "releases": []
+    }
+  ]
+}
