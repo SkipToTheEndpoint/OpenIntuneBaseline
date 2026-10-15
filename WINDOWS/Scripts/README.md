@@ -33,3 +33,19 @@ The end result of this is that pretty shortly after, any pending updates will be
 - Run this script using the logged on credentials - No
 - Enforce script signature check - No
 - Run script in 64-bit PowerShell Host - Yes
+
+## Disable Services
+### Purpose
+This PowerShell script disables unnecessary or insecure Windows services in accordance with the CIS Benchmarks for Level 1 and Level 2 hardening.
+
+It supports full customization to meet your environment’s specific requirements through three main variables:
+- `$LevelOne` / `$LevelTwo` – Enable or disable enforcement of CIS Level 1 and Level 2 services.
+- `$ExcludeList` – A customizable list of services you wish to exclude from enforcement (e.g., Spooler, WinRM).
+
+### Usage
+**Script type** - Platform Script
+**Assign to** - Devices
+**Script Settings:**
+- Run this script using the logged on credentials - No
+- Enforce script signature check - No
+- Run script in 64-bit PowerShell Host - Yes
