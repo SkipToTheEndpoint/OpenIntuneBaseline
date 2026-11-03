@@ -1,0 +1,75 @@
+name: Update Contributors
+
+on:
+  release:
+    types: [published]
+  issues:
+    types: [closed]
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'CONTRIBUTORS.md'
+      - '.all-contributorsrc'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-contributors
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Update CONTRIBUTORS.md
+    if: github.event_name != 'issues' || github.event.issue.state_reason == 'completed'
+    runs-on: ubuntu-latest
+    env:
+      PR_BRANCH: automation/update-contributors
+    steps:
+      # Always build from the default branch; release events would otherwise check out the tag
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Update contributors
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./Scripts/Update-Contributors.ps1 -Mode Update
+
+      - name: Open or update pull request
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BASE_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          if (-not (git status --porcelain -- CONTRIBUTORS.md .all-contributorsrc)) {
+              Write-Host 'Contributors are up to date.'
+              exit 0
+          }
+
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git switch -C $env:PR_BRANCH
+          git add CONTRIBUTORS.md .all-contributorsrc
+          git commit -m 'Update contributors'
+          git push --force origin $env:PR_BRANCH
+
+          $existing = gh pr list --head $env:PR_BRANCH --base $env:BASE_BRANCH --state open --json number --jq '.[0].number'
+          if ($existing) {
+              Write-Host "Updated existing pull request #$existing."
+              exit 0
+          }
+
+          $body = @'
+          Automated update from `Scripts/Update-Contributors.ps1`.
+
+          - **Code contributors** come from the repository contributors API.
+          - **Issue contributors** are authors of issues closed as completed (excluding issues labelled invalid or duplicate).
+
+          Review the added contributions before merging. To adjust a contribution type, edit `.all-contributorsrc` on this branch.
+          '@
+          gh pr create --base $env:BASE_BRANCH --head $env:PR_BRANCH --title 'Update contributors' --body $body
