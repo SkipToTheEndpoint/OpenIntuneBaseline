@@ -1,0 +1,41 @@
+name: Notify docs site
+
+# The docs site (docs.openintunebaseline.com) reads releases.json and the PolicyManifest.json files
+# from this repo at build time. Trigger a rebuild when they change.
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - releases.json
+      - '**/PolicyManifest.json'
+  # Manifest updates are pushed by the Update OIB Manifest workflow using GITHUB_TOKEN, and pushes made
+  # with GITHUB_TOKEN do not trigger other workflows, so also run when that workflow completes.
+  workflow_run:
+    workflows: ['Update OIB Manifest']
+    types: [completed]
+  workflow_dispatch:
+
+concurrency:
+  group: notify-docs
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    # workflow_run fires on failure too; only rebuild when the manifest update succeeded.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    steps:
+      # raw.githubusercontent.com caches files for up to 5 minutes, which is what the docs build reads.
+      # Wait so the rebuild doesn't pick up the previous version.
+      - name: Wait for raw.githubusercontent.com cache to expire
+        run: sleep 330
+
+      - name: Trigger Cloudflare Pages deploy hook
+        env:
+          DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_PAGES_DEPLOY_HOOK }}
+        run: |
+          if [ -z "$DEPLOY_HOOK" ]; then
+            echo "CLOUDFLARE_PAGES_DEPLOY_HOOK is not set"; exit 1
+          fi
+          curl --fail --silent --show-error -X POST "$DEPLOY_HOOK"
