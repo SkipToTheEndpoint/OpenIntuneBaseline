@@ -24,6 +24,8 @@ The biometric timeout and offline block settings were above the framework's reco
 
 The *All Microsoft Apps* app list is maintained by Microsoft, so the apps it contains may differ from v1.
 
+v2.0 targets all app types. To limit the policies to BYOD devices, use a *Managed apps* assignment filter with `(app.deviceManagementType -eq "Unmanaged")`. See the [README](/BYOD/README.md#prerequisites).
+
 ### Differences from Level 2
 #### Targeted Apps
 * The policies target **All Microsoft Apps** instead of only the framework's Core Microsoft Apps group. This protects every Intune SDK-enabled Microsoft app without the list needing manual maintenance.

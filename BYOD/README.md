@@ -9,6 +9,19 @@ The OIB BYOD App Protection policies ("**L2+**") primarily follow "**Level 2 - E
 | iOS - OIB - App Protection - U - BYOD L2+ - v2.0 | iOS/iPadOS |
 
 ## Prerequisites
+#### Assignment Filter
+- Intune **Assignment Filters** (filter type: *Managed apps*) for each platform (Android and iOS/iPadOS), so the policies only apply to unmanaged (BYOD) devices. Use the following rule syntax:
+```
+(app.deviceManagementType -eq "Unmanaged")
+```
+Assign each policy to your target users/groups and set the matching filter to **Include filtered devices in assignment**.
+
+See [Create assignment filters in Microsoft Intune - Microsoft Intune | Microsoft Learn](https://learn.microsoft.com/en-us/intune/fundamentals/filters/overview?wt.mc_id=EM-MVP-5005288) for more information.
+
+>[!WARNING]
+> Without this filter, App Protection Policies will apply to all devices, including managed devices, which is unlikely to be the intended behavior for BYOD scenarios!
+
+#### Entra Conditionaal Access
 - Entra Conditional Access requiring an **app protection policy** for iOS/Android devices. 
 
 See [How to Require Device Compliance with Conditional Access - Microsoft Entra ID | Microsoft Learn](https://learn.microsoft.com/en-us/entra/identity/conditional-access/policy-all-users-device-compliance?wt.mc_id=EM-MVP-5005288) for more information.
