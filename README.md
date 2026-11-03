@@ -29,7 +29,7 @@
 ---
 
 ## About the Author
-James is a Technical Architect and Microsoft MVP in both Intune and Windows, and has been working in the IT industry for over 20 years, with the last 8 being primarily within Intune. He is also a recognised contributor to the CIS Windows Benchmarks.
+James is a Technical Architect and [Microsoft MVP](https://mvp.microsoft.com/en-US/MVP/profile/0d76426f-95fb-ed11-8f6d-000d3a560942) in both Intune and Windows, and has been working in the IT industry for over 20 years, with the last 10 being primarily within Intune. He is also a recognised contributor to the CIS Windows Benchmarks.
 He has a wealth of experience across the Microsoft 365 stack, with a focus on security and compliance, and is a regular attendee and speaker at community events such as [MMS](https://mmsmoa.com/) and [Workplace Ninja Summit](https://www.wpninjas.ch/events/), and is passionate about sharing knowledge and helping others.
 
 ---
@@ -62,54 +62,45 @@ That being said, if there's something you feel is missing or should be included,
 
 ---
 
+## Documentation
+Full documentation for the OpenIntuneBaseline is available at **[docs.openintunebaseline.com](https://docs.openintunebaseline.com)**, including importing, versioning, settings guidance, known issues and the FAQ.
+
+| Platform | Release Status | Current Release | Documentation | Change Log |
+|:---:|:---:|:---:|:---:|:---:|
+| [Windows](/WINDOWS) | Stable | [v4.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v4.0) | [Link](https://docs.openintunebaseline.com/platforms/windows/) | [Link](/WINDOWS/CHANGELOG.md) |
+| [Windows 365](/WINDOWS365) | Unstable | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0) | [Link](https://docs.openintunebaseline.com/platforms/windows365/) | [Link](/WINDOWS365/CHANGELOG.md) |
+| [MacOS](/MACOS) | Unstable<br>Beta | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0)<br>[v2.0 Beta](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/macos-v2.0-beta) | [Link](https://docs.openintunebaseline.com/platforms/macos/) | [Link](/MACOS/CHANGELOG.md) |
+| [iOS](/IOS) | Beta | [v1.0 Beta](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/ios-v1.0-beta) | [Link](https://docs.openintunebaseline.com/platforms/ios/) | - |
+| [Android](/ANDROID) | In Development | - | - | - |
+| [BYOD (App Protection)](/BYOD) | Stable | [v2.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/byod-v2.0) | [Link](https://docs.openintunebaseline.com/platforms/byod/) | [Link](/BYOD/CHANGELOG.md) |
+
+
+---
+
 ## Importing the Baseline
-There are three options to import the baseline:
+There are four options to import the baseline. See [Importing the baseline](https://docs.openintunebaseline.com/getting-started/importing/) for details of each:
 
-### **OIB Deployer**
-
-My own tool, the [OIB Deployer](https://deploy.openintunebaseline.com/), allows for platform-specific, granular deployment of the baseline, as well as being able to check for existing OIB policies in your tenant, and highlight missing or updated policies.
-
-Only requires a single application permission accepting (DeviceManagementConfiguration.ReadWrite.All), and can do a complete import in less than a minute!
-
-### **IntuneManagement**
-The OG deployment method, and how I still export the majority of baseline policies. 
-
-These files have been exported using the [IntuneManagement](https://github.com/Micke-K/IntuneManagement) tool developed by [Mikael Karlsson](https://twitter.com/Micke_K_72), and can be imported in the same way.
-Please consult the IntuneManagement documentation for further information on how to import the baseline or for issues.
-
-You can choose to import as much or as little of the baseline as you wish, though you will need to change the "Root folder" to the appropriate folder for the platform (e.g. WINDOWS), or policy types (e.g. Settings Catalog) you wish to import.
-
-### **Native Import**
-
-I understand not everyone has the ability or permissions to use the IntuneManagement tool, and have been asked to support using the [native import/export functionality in Intune](https://learn.microsoft.com/en-us/mem/intune/configuration/settings-catalog?tabs=sc-search-filter%2Csc-reporting#import-and-export-a-profile).
-
-NOTE: The Native Import is limited to only importing Settings Catalog policies in the Device Configuration blade. This means settings outside of that (e.g. Compliance, Endpoint Security) are not available. I would recommend submitting feedback within Intune to expand the ability to import/export all policy types.
+* **[OIB Deployer](https://deploy.openintunebaseline.com/)** - My own tool, allowing platform-specific, granular deployment of the baseline, and highlighting missing or updated policies in your tenant.
+* **[TenuVault](https://docs.tenuvault.com/baselines/quick-start/)** - Deploys, compares and validates OIB policies in your tenant. Documented separately.
+* **[IntuneManagement](https://github.com/Micke-K/IntuneManagement)** - The OG deployment method, and how I still export the majority of baseline policies.
+* **[Native Import](https://learn.microsoft.com/en-us/mem/intune/configuration/settings-catalog?tabs=sc-search-filter%2Csc-reporting#import-and-export-a-profile)** - Limited to Settings Catalog policies in the Device Configuration blade.
 
 ---
 
 ## Versioning & Repo Structure
-This project started as Windows only and the naming convention has been somewhat... fluid. Now that additional OS's have been added, some form of standardisation is necessary.
-Version numbers will primarily follow the format of `Major.Minor`, occasionally using `Major.Minor.Patch` if something fits in the "bug fix" category.
+Each OS has its own folder, with OS-specific files (readme, changelog, baseline JSON's, supporting information etc.) contained within, and is versioned independently. Version numbers primarily follow the format of `Major.Minor`, occasionally using `Major.Minor.Patch` if something fits in the "bug fix" category.
 
-Each OS will have its own folder, with OS-specific files (readme, changelog, baseline JSON's, supporting information etc.) contained within.
-
-The current OIB versions are:
-| OS | Current Release | Change Log | Wiki Page |
-|:---:|:---:|:---:|:---:|
-| [Windows](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS) | [v4.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/windows-v4.0) | [Link](/WINDOWS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win-readme) |
-| [Windows 365](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/WINDOWS365) | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/win365-v1.0) | [Link](/WINDOWS365/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/win365-readme) |
-| [MacOS](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/tree/main/MACOS) | [v1.0](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/macos-v1.0) | [Link](/MACOS/CHANGELOG.md) | [Link](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/wiki/macos-readme) |
-
-Please consult the wiki pages and README.md in each OS folder for more information.
+The current versions and release channels of every platform are listed in [releases.json](/releases.json) and on the [Releases](https://docs.openintunebaseline.com/reference/releases/) documentation page. See [Versioning and release channels](https://docs.openintunebaseline.com/getting-started/versioning/) for more information.
 
 ---
 
 ## Policy Naming Convention
-Across the OIB, the following naming convention is used, seen below with some examples:
-| OS | | Identifier | | Category | | Device/User Assignment | | Sub-Category | | Version |
-|:---:|:-:|:---:|:-:|:---:|:-:|:---:|:-:|:---:|:-:|:---:|
-| Win | - | OIB | - | Device Security | - | D | - | Login and Lock Screen | - | v3.0 |
-| Win365 | - | OIB | - | Device Security | - | D | - | Resource Redirection | - | v1.0 |
-| MacOS | - | OIB | - | Microsoft Edge | - | D | - | Security | - | v1.0 |
+All policies follow the same naming convention, for example `Win - OIB - Device Security - D - Login and Lock Screen - v3.0`. See [Policy naming convention](https://docs.openintunebaseline.com/getting-started/naming-convention/) for details.
 
-Further information on the naming convention can be found in the [FAQ](/FAQ.md#why-do-policies-have-d-and-u-in-their-name).
+---
+
+## Frequently Asked Questions
+
+ **[Frequently Asked Questions | docs.openintunebaseline.com](https://docs.openintunebaseline.com/faq/)**
+
+If you have a question that isn't answered there, please raise an [issue](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues),post in [discussions](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/discussions), or come ask in the [WinAdmins Discord](https://discord.com/channels/618712310185197588/1504913449233416232)

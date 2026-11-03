@@ -99,10 +99,20 @@
       "id": "byod",
       "name": "BYOD",
       "folder": "BYOD",
-      "status": "in-development",
+      "status": "available",
       "defaultBranch": "main",
       "changelog": "/BYOD/CHANGELOG.md",
-      "releases": []
+      "releases": [
+        {
+          "version": "2.0",
+          "channel": "stable",
+          "releaseDate": "2026-11-03",
+          "branch": "main",
+          "tag": "byod-v2.0",
+          "url": "https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/releases/tag/byod-v2.0",
+          "prerelease": false
+        }
+      ]
     }
   ]
 }
