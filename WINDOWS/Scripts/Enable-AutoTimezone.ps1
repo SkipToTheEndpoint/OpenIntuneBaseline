@@ -4,8 +4,8 @@
    
     .NOTES
         Author: James Robinson | SkipToTheEndpoint | https://skiptotheendpoint.co.uk
-        Version: v1.1
-        Release Date: 2024-08-31
+        Version: v1.2
+        Release Date: 2026-11-03
 
         Intune Info:
         Script type - Platform Script
@@ -29,6 +29,7 @@ $LocationValue = "Allow" # Allow - Forces the "Let apps access your location" to
 $AutoTZValue = "3" # 3 - Enables the automatic time zone setting.
 $LFSVCValue = "1" # 1 - Enables location services.
 $SensorValue = "1" # 1 - Enables the Windows Location Platform for the SENSOR_CATEGORY_LOCATION device sensor set: https://learn.microsoft.com/en-us/windows/win32/sensorsapi/sensor-category-location.
+$AdminFlow = "$env:windir\System32\SystemSettingsAdminFlows.exe" # Used by the Settings app itself to toggle the system-wide location switch, which lfsvc honours on restart.
 
 #### Functions ####
 function Start-Logging {
@@ -64,9 +65,19 @@ try {
     # Set the location value
     Set-RegistryValue -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location" -Name "Value" -Value $LocationValue
 
-    # Enable Auto Timezone value and (re)start service
+    # Turn on the system-wide location switch the supported way, as the registry values alone are reverted by lfsvc on restart (#160)
+    if (Test-Path $AdminFlow) {
+        Write-Host "Enabling system location via $AdminFlow"
+        Start-Process -FilePath $AdminFlow -ArgumentList "SetCamSystemGlobal location 1" -Wait -WindowStyle Hidden
+    }
+    else {
+        Write-Host "$AdminFlow not found, relying on registry values only"
+    }
+
+    # Enable Auto Timezone value and sensor value, then (re)start service so it picks them up
     Set-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\tzautoupdate" -Name "Start" -Value $AutoTZValue
     Set-RegistryValue -Path "HKLM:\SYSTEM\CurrentControlSet\Services\lfsvc\Service\Configuration" -Name "Status" -Value $LFSVCValue
+    Set-RegistryValue -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}" -Name "SensorPermissionState" -Value $SensorValue
     Write-Host "(Re)Starting geolocation service"
     $lfsvc = Get-Service -Name lfsvc
     if ($lfsvc.Status -ne "Running") {
@@ -75,9 +86,6 @@ try {
     else {
         Restart-Service -Name lfsvc -Force
     }
-
-    # Set sensor value
-    Set-RegistryValue -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Sensor\Overrides\{BFA794E4-F964-4FDB-90F6-51056BFE4B44}" -Name "SensorPermissionState" -Value $SensorValue
     Exit 0
 }
 catch {

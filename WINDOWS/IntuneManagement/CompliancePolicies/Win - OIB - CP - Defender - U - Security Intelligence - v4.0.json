@@ -44,7 +44,7 @@
           "actionType": "block",
           "notificationMessageCCList@odata.type": "#Collection(String)",
           "notificationMessageCCList": [],
-          "gracePeriodHours": 0,
+          "gracePeriodHours": 6,
           "id": "57c4a0c7-b60b-49c6-b41c-cbeec62eaa55",
           "notificationTemplateId": "00000000-0000-0000-0000-000000000000"
         }
