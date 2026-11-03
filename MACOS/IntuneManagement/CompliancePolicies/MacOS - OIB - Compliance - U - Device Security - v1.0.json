@@ -39,7 +39,7 @@
     "gatekeeperAllowedAppSource":  "macAppStoreAndIdentifiedDevelopers",
     "firewallEnabled":  true,
     "firewallBlockAllIncoming":  true,
-    "firewallEnableStealthMode":  false,
+    "firewallEnableStealthMode":  true,
     "assignments@odata.context":  "https://graph.microsoft.com/beta/$metadata#deviceManagement/deviceCompliancePolicies(\u0027d95ee62e-8813-4f29-89aa-758ec869fb21\u0027)/microsoft.graph.macOSCompliancePolicy/assignments",
     "assignments@odata.associationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies(\u0027d95ee62e-8813-4f29-89aa-758ec869fb21\u0027)/microsoft.graph.macOSCompliancePolicy/assignments/$ref",
     "assignments@odata.navigationLink":  "https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies(\u0027d95ee62e-8813-4f29-89aa-758ec869fb21\u0027)/microsoft.graph.macOSCompliancePolicy/assignments",
