@@ -1,0 +1,36 @@
+{
+  "manifestVersion": "1.0",
+  "oibVersion": "2.0",
+  "platform": "BYOD",
+  "generatedDate": "2026-10-28",
+  "policies": [
+    {
+      "oibId": "62651D3B-5693-4ED2-96D0-5259BB33AB66",
+      "name": "Android - OIB - App Protection - U - BYOD L2+ - v2.0",
+      "platform": "Android",
+      "policyType": "AppProtection",
+      "scope": "User",
+      "addedIn": "2.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    },
+    {
+      "oibId": "79695F88-44D7-49CA-B06B-6385A3411523",
+      "name": "iOS - OIB - App Protection - U - BYOD L2+ - v2.0",
+      "platform": "iOS",
+      "policyType": "AppProtection",
+      "scope": "User",
+      "addedIn": "2.0",
+      "status": "active",
+      "supersededBy": [],
+      "skuRequirements": "",
+      "licenseRequirements": "",
+      "tags": [],
+      "previousVersions": []
+    }
+  ]
+}
