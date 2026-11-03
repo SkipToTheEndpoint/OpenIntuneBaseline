@@ -250,6 +250,27 @@
           "value": 1800
         }
       }
+    },
+    {
+      "@odata.editLink": "deviceManagement/configurationPolicies('c8fdbdd9-4413-47c5-9195-e4ce8f61cb31')/settings('9')",
+      "@odata.id": "deviceManagement/configurationPolicies('c8fdbdd9-4413-47c5-9195-e4ce8f61cb31')/settings('9')",
+      "@odata.type": "#microsoft.graph.deviceManagementConfigurationSetting",
+      "settingDefinitions@odata.associationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('c8fdbdd9-4413-47c5-9195-e4ce8f61cb31')/settings('9')/settingDefinitions/$ref",
+      "settingDefinitions@odata.navigationLink": "https://graph.microsoft.com/beta/deviceManagement/configurationPolicies('c8fdbdd9-4413-47c5-9195-e4ce8f61cb31')/settings('9')/settingDefinitions",
+      "id": "9",
+      "settingInstance": {
+        "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingInstance",
+        "auditRuleInformation": null,
+        "choiceSettingValue": {
+          "@odata.type": "#microsoft.graph.deviceManagementConfigurationChoiceSettingValue",
+          "children@odata.type": "#Collection(microsoft.graph.deviceManagementConfigurationSettingInstance)",
+          "children": [],
+          "settingValueTemplateReference": null,
+          "value": "device_vendor_msft_policy_config_admx_credentialproviders_allowdomaindelaylock_0"
+        },
+        "settingDefinitionId": "device_vendor_msft_policy_config_admx_credentialproviders_allowdomaindelaylock",
+        "settingInstanceTemplateReference": null
+      }
     }
   ],
   "technologies@odata.type": "#microsoft.graph.deviceManagementConfigurationTechnologies",
@@ -259,7 +280,7 @@
   "id": "c8fdbdd9-4413-47c5-9195-e4ce8f61cb31",
   "name": "Win - OIB - SC - Device Security - U - Power and Device Lock - v4.0",
   "priorityMetaData": null,
-  "settingCount": 9,
+  "settingCount": 10,
   "templateReference": {
     "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
     "templateFamily@odata.type": "#microsoft.graph.deviceManagementConfigurationTemplateFamily",
