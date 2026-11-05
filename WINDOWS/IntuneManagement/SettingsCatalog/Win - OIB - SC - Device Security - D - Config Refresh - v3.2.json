@@ -6,7 +6,7 @@
   "createdDateTime@odata.type": "#DateTimeOffset",
   "createdDateTime": "2024-05-08T18:34:30.6525241Z",
   "creationSource": null,
-  "description": "OIBID:C933DA2A-916F-46D4-B2C8-52459180108B",
+  "description": "WARNING: Config Refresh can cause inconsistent behaviour with certain policies (e.g. Wi-Fi profiles causing brief connectivity interruptions). Assess usage and potential impact against security benefits before enabling.\nOIBID:C933DA2A-916F-46D4-B2C8-52459180108B",
   "lastModifiedDateTime@odata.type": "#DateTimeOffset",
   "lastModifiedDateTime": "2024-12-05T19:41:08.4361634Z",
   "name": "Win - OIB - SC - Device Security - D - Config Refresh - v3.2",
