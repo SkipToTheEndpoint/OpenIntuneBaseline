@@ -2084,7 +2084,7 @@
 ###### Table 32. Settings - Win - OIB - SC - Defender Antivirus - D - Additional Configuration - v4.0
 
 
-<h3 id="section-19">Win - OIB - SC - Device Security - D - Administrator Protection - v3.7</h3>
+<h3 id="section-19">Win - OIB - SC - Device Security - D - Administrator Protection - v4.0.1</h3>
 
 <table class='table-settings'>
 <tr class='table-header1'>
@@ -2096,11 +2096,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Name</td>
-<td class='property-column2'>Win - OIB - SC - Device Security - D - Administrator Protection - v3.7</td>
+<td class='property-column2'>Win - OIB - SC - Device Security - D - Administrator Protection - v4.0.1</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Description</td>
-<td class='property-column2'>OIBID:E100EBFD-8D2E-40AC-A9A3-48DBF6764144</td>
+<td class='property-column2'>OIBID:32BCF079-FF38-4672-8971-59D399FD34D3</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Profile type</td>
@@ -2112,11 +2112,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>Created</td>
-<td class='property-column2'>30 September 2026 18:21:50</td>
+<td class='property-column2'>5 November 2026 12:36:49</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Last modified</td>
-<td class='property-column2'>30 September 2026 18:21:50</td>
+<td class='property-column2'>5 November 2026 12:37:25</td>
 </tr>
 <tr class=''>
 <td class='property-column1'>Scope tags</td>
@@ -2124,7 +2124,7 @@
 </tr>
 </table>
 
-###### Table 33. Basics - Win - OIB - SC - Device Security - D - Administrator Protection - v3.7
+###### Table 33. Basics - Win - OIB - SC - Device Security - D - Administrator Protection - v4.0.1
 
 
 <table class='table-settings'>
@@ -2141,11 +2141,11 @@
 </tr>
 <tr class=''>
 <td class='property-column1'>User Account Control Type Of Admin Approval Mode</td>
-<td class='property-column2'>Admin Approval Mode with Administrator protection</td>
+<td class='property-column2'>Legacy Admin Approval Mode</td>
 </tr>
 </table>
 
-###### Table 34. Settings - Win - OIB - SC - Device Security - D - Administrator Protection - v3.7
+###### Table 34. Settings - Win - OIB - SC - Device Security - D - Administrator Protection - v4.0.1
 
 
 <h3 id="section-20">Win - OIB - SC - Device Security - D - Audit and Event Logging - v4.0</h3>
