@@ -1,5 +1,17 @@
 # OIB Windows Change Log
 
+# Windows v4.0.1 - 2026-11-05 - Bug Fix
+## Changed/Updated 🔄️
+### Settings Catalog
+#### 🔄️**Win - OIB - SC - Device Security - D - Administrator Protection**
+After adding the Administrator Protection policy in v3.7, the underlying features has been changed about quite a bit. The feature is now available as of the October 2026 Security Update. Unfortunately, this has apparently caused various issues with LAPS, and MS have updated their own documentation to state this: https://learn.microsoft.com/en-us/windows/security/application-security/application-control/administrator-protection/?tabs=intune#troubleshooting
+
+On the back of an active discussion has been happening on GitHub under Issue [#264](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/264), an identified resolution has being found, and considering the OIB's intention of managing devices via LAPS, the following change has been made:
+
+* Changed "User Account Control Type Of Admin Approval Mode" from `2 - Admin Approval Mode with Administrator protection` to `1 - Legacy Admin Approval Mode`. Resolves [#264](https://github.com/SkipToTheEndpoint/OpenIntuneBaseline/issues/264)
+
+---
+
 # Windows v4.0 - 2026-09-30 - 26H2 Edition
 Windows 11 26H2 is upon us, and with it comes the first major version number bump since the OIB's first "proper" release! Since then it's somehow grown far, far bigger than I ever imagined, and having the opportunity to travel into Europe and the US because people want to listen to me talk about the _little passion project that could_ has been genuinely heart-warming.
 
@@ -26,7 +38,7 @@ Below is a table of the new compliance policies, the setting being required, and
 | Win - OIB - CP - Device Health - U - SecureBoot - v4.0       	| SecureBoot                                                          	| Immediately             	|
 | Win - OIB - CP - Device Health - U - Code Integrity - v4.0   	| Code Integrity                                                      	| Immediately             	|
 | Win - OIB - CP - Device Health - U - BitLocker - v4.0        	| BitLocker                                                           	| 0.5 Days                	|
-| Win - OIB - CP - Defender - U - Security Intelligence - v4.0 	| Microsoft Defender Antimalware <br>security intelligence up-to-date 	| 0.25 Days               	|
+| Win - OIB - CP - Defender - U - Security Intelligence - v4.0 	| Microsoft Defender Antimalware <br>security intelligence up-to-date 	| Immediately              	|
 | Win - OIB - CP - Defender - U - Real-Time Protection - v4.0  	| Real-Time Protection                                                	| Immediately             	|
 
 Keen-eyed among you may notice the absence of what used to form the "Password" compliance policy. My reason for removing these is simple: They're trash.
